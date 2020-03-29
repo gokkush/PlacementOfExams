@@ -1,0 +1,5 @@
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\DPU_Soft.DAL.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\DPU_Soft.DAL.pdb
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\obj\Debug\DPU_Soft.DAL.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\obj\Debug\DPU_Soft.DAL.pdb
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\obj\Debug\DPU_Soft.DAL.csprojResolveAssemblyReference.cache

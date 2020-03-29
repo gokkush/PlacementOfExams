@@ -1,0 +1,4 @@
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DPU_Soft.PlacementOfExams.Common.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DPU_Soft.PlacementOfExams.Common.pdb
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.pdb

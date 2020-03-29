@@ -1,0 +1,5 @@
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Data\bin\Debug\DPU_Soft.PlacementOfExams.Data.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Data\bin\Debug\DPU_Soft.PlacementOfExams.Data.pdb
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Data\obj\Debug\DPU_Soft.PlacementOfExams.Data.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Data\obj\Debug\DPU_Soft.PlacementOfExams.Data.pdb
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Data\obj\Debug\DPU_Soft.PlacementOfExams.Data.csprojResolveAssemblyReference.cache
