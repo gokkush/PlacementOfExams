@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPU_Soft.PlacementOfExams.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPU_Soft.PlacementOfExams.Common", "DPU_Soft.PlacementOfExams.Common\DPU_Soft.PlacementOfExams.Common.csproj", "{C1F7A0D9-2548-40A9-8B6F-E49ECA3301CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPU_Soft.PlacementOfExams.UI.Yonetim", "DXApplication1\Dpu_Soft.PlacementOfExams.UI.Yonetim\DPU_Soft.PlacementOfExams.UI.Yonetim.csproj", "{B82B9EC2-2413-480C-ABE1-1EEC3F42AFB2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPU_Soft.PlacementOfExams.UI.Yonetim", "Dpu_Soft.PlacementOfExams.UI.Yonetim\DPU_Soft.PlacementOfExams.UI.Yonetim.csproj", "{B82B9EC2-2413-480C-ABE1-1EEC3F42AFB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

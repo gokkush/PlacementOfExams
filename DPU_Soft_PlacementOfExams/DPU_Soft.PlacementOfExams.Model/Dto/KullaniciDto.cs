@@ -12,7 +12,6 @@ namespace DPU_Soft.PlacementOfExams.Model.Dto
     [NotMapped]
     public class KullaniciS:KullaniciEntity
     {
-        public string FakulteAdi { get; set; }
     }
 
     public class KullaniciL:BaseEntity
@@ -23,7 +22,6 @@ namespace DPU_Soft.PlacementOfExams.Model.Dto
 
         public string Email { get; set; }
 
-        public string FakulteAdi { get; set; }
         public string Aciklama { get; set; }
     }
 

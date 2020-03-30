@@ -38,6 +38,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
             switch (_btnEdit.Name)
             {
                 case "txtIl":
+                case "txtAdresIl":
                     {
                         var entity = (IlEntity)ShowListforms<IlListForm>.ShowDialogListForm(_kartTuru,_btnEdit.Id);
                         if (entity!=null)
@@ -48,6 +49,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
                     }
                     break;
                 case "txtIlce":
+                case "txtAdresIlce":
                     {
                         var entity = (IlceEntity)ShowListforms<IlceListForm>.ShowDialogListForm(_kartTuru, _btnEdit.Id, _prmEdit.Id, _prmEdit.Text);
                         if (entity != null)

@@ -15,7 +15,14 @@ namespace DPU_Soft.PlacementOfExams.Common.Enums
         [Description("Filtre Kaydı")]
         Filtre = 5,
         [Description("Kullanici Kaydı")]
-        Kullanici = 6
+        Kullanici = 6,
+        [Description("Kurum Kaydı")]
+        Kurum = 7,
+        [Description("Sube Kaydı")]
+        Sube = 8,
+        [Description("Donem Kaydı")]
+        Donem = 9
+
 
     }
 }

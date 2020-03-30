@@ -93,7 +93,7 @@
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnYeni = new DevExpress.XtraBars.BarButtonItem();
             this.btnSil = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSeç = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSec = new DevExpress.XtraBars.BarButtonItem();
             this.btnDuzelt = new DevExpress.XtraBars.BarButtonItem();
             this.btnYenile = new DevExpress.XtraBars.BarButtonItem();
             this.btnFiltrele = new DevExpress.XtraBars.BarButtonItem();
@@ -149,7 +149,7 @@
             this.ribbonControl.SearchEditItem,
             this.btnYeni,
             this.btnSil,
-            this.btnSeç,
+            this.btnSec,
             this.btnDuzelt,
             this.btnYenile,
             this.btnFiltrele,
@@ -247,14 +247,14 @@
             superToolTip2.Items.Add(toolTipTitleItem4);
             this.btnSil.SuperTip = superToolTip2;
             // 
-            // btnSeç
+            // btnSec
             // 
-            this.btnSeç.Caption = "Seç";
-            this.btnSeç.Id = 3;
-            this.btnSeç.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.apply_16x16;
-            this.btnSeç.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.apply_32x32;
-            this.btnSeç.Name = "btnSeç";
-            this.btnSeç.ShortcutKeyDisplayString = "Enter";
+            this.btnSec.Caption = "Seç";
+            this.btnSec.Id = 3;
+            this.btnSec.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.apply_16x16;
+            this.btnSec.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.apply_32x32;
+            this.btnSec.Name = "btnSec";
+            this.btnSec.ShortcutKeyDisplayString = "Enter";
             toolTipTitleItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             toolTipTitleItem5.Text = "(Enter)";
             toolTipItem3.LeftIndent = 6;
@@ -266,7 +266,7 @@
             superToolTip3.Items.Add(toolTipItem3);
             superToolTip3.Items.Add(toolTipSeparatorItem3);
             superToolTip3.Items.Add(toolTipTitleItem6);
-            this.btnSeç.SuperTip = superToolTip3;
+            this.btnSec.SuperTip = superToolTip3;
             // 
             // btnDuzelt
             // 
@@ -710,7 +710,7 @@
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.btnYeni);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnSil);
-            this.ribbonPageGroup1.ItemLinks.Add(this.btnSeç);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnSec);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnDuzelt);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnYenile);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnFiltrele);
@@ -759,7 +759,7 @@
             // 
             this.sagMenu.ItemLinks.Add(this.btnYeni);
             this.sagMenu.ItemLinks.Add(this.btnSil);
-            this.sagMenu.ItemLinks.Add(this.btnSeç);
+            this.sagMenu.ItemLinks.Add(this.btnSec);
             this.sagMenu.ItemLinks.Add(this.btnDuzelt);
             this.sagMenu.ItemLinks.Add(this.btnYenile);
             this.sagMenu.ItemLinks.Add(this.btnFiltrele);
@@ -792,7 +792,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraBars.BarButtonItem btnYeni;
         private DevExpress.XtraBars.BarButtonItem btnSil;
-        private DevExpress.XtraBars.BarButtonItem btnSeç;
         private DevExpress.XtraBars.BarButtonItem btnDuzelt;
         private DevExpress.XtraBars.BarButtonItem btnYenile;
         private DevExpress.XtraBars.BarButtonItem btnCikis;
@@ -832,5 +831,6 @@
         protected DevExpress.XtraBars.BarStaticItem barGonder;
         protected DevExpress.XtraBars.BarStaticItem barGonderAciklama;
         protected DevExpress.XtraBars.BarButtonItem btnAktifPasifKartlar;
+        public DevExpress.XtraBars.BarButtonItem btnSec;
     }
 }

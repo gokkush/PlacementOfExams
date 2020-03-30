@@ -2,7 +2,7 @@
 
 namespace DPU_Soft.PlacementOfExams.Model.Entities.Base
 {
-    public class BaseHareketEntity:IBaseHareketEntity
+    public class BaseHareketEntity:IBaseEntity
     {
         public int id { get; set; }
     }

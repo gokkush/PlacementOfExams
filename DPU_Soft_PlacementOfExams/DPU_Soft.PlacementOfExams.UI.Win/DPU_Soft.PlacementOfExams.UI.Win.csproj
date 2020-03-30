@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,10 +9,12 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DPU_Soft.PlacementOfExams.UI.Win</RootNamespace>
-    <AssemblyName>DPU_Soft.PlacementOfExams.UI.Win</AssemblyName>
+    <AssemblyName>Sınav Yerleştirme</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +35,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\placement-ico.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Data.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -42,12 +48,10 @@
     <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -79,6 +83,18 @@
     <Compile Include="Forms\BaseForms\BaseListForm.Designer.cs">
       <DependentUpon>BaseListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\DonemForms\DonemEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DonemForms\DonemEditForm.Designer.cs">
+      <DependentUpon>DonemEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DonemForms\DonemListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DonemForms\DonemListForm.Designer.cs">
+      <DependentUpon>DonemListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FiltreForms\FiltreEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +119,18 @@
     <Compile Include="Forms\GeneralForms\BaglantiAyarlariEditForm.Designer.cs">
       <DependentUpon>BaglantiAyarlariEditForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\GeneralForms\BaslatmaEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\BaslatmaEkrani.Designer.cs">
+      <DependentUpon>BaslatmaEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\EmailParametreEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\EmailParametreEditForm.Designer.cs">
+      <DependentUpon>EmailParametreEditForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\GeneralForms\GirisForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +142,12 @@
     </Compile>
     <Compile Include="Forms\GeneralForms\RaporOnizleme.Designer.cs">
       <DependentUpon>RaporOnizleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\SubeDonemSecimiEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\SubeDonemSecimiEditForm.Designer.cs">
+      <DependentUpon>SubeDonemSecimiEditForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\GeneralForms\TabloDokumParametreleri.cs">
       <SubType>Form</SubType>
@@ -145,6 +179,12 @@
     <Compile Include="Forms\IlForms\IlListForm.Designer.cs">
       <DependentUpon>IlListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\KullaniciForms\KullanicibirimYetkileriEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\KullanicibirimYetkileriEditForm.Designer.cs">
+      <DependentUpon>KullanicibirimYetkileriEditForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\KullaniciForms\KullaniciEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,7 +197,18 @@
     <Compile Include="Forms\KullaniciForms\KullaniciListForm.Designer.cs">
       <DependentUpon>KullaniciListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\KullaniciForms\ShoeItems.cs" />
+    <Compile Include="Forms\KullaniciForms\SifreDegistirEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\SifreDegistirEditForm.Designer.cs">
+      <DependentUpon>SifreDegistirEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\SifremiUnuttumEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\SifremiUnuttumEditForm.Designer.cs">
+      <DependentUpon>SifremiUnuttumEditForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\OkulForms\OkulEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +221,18 @@
     <Compile Include="Forms\OkulForms\OkulListForm.Designer.cs">
       <DependentUpon>OkulListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Subeforms\SubeEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Subeforms\SubeEditForm.Designer.cs">
+      <DependentUpon>SubeEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Subeforms\SubeListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Subeforms\SubeListForm.Designer.cs">
+      <DependentUpon>SubeListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UniversiteForms\UnvEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +244,12 @@
     </Compile>
     <Compile Include="Forms\UniversiteForms\UnvListForm.Designer.cs">
       <DependentUpon>UnvListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\Base\BaseTablo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Base\BaseTablo.Designer.cs">
+      <DependentUpon>BaseTablo.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UserControls\Controls\DpuButtonEdit.cs">
       <SubType>Component</SubType>
@@ -216,6 +285,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Forms\UserControls\Controls\DpuIbanTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\DpuLookUpEdit.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Forms\UserControls\Controls\DpuMailTextEdit.cs">
@@ -266,10 +338,29 @@
     <Compile Include="Forms\UserControls\Controls\Navigators\smallNavigator.Designer.cs">
       <DependentUpon>smallNavigator.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UserControls\KullaniciBirimYetkileriFormTable\DonemTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\KullaniciBirimYetkileriFormTable\DonemTable.Designer.cs">
+      <DependentUpon>DonemTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\KullaniciBirimYetkileriFormTable\KullaniciTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\KullaniciBirimYetkileriFormTable\KullaniciTable.Designer.cs">
+      <DependentUpon>KullaniciTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\KullaniciBirimYetkileriFormTable\SubeTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\KullaniciBirimYetkileriFormTable\SubeTable.Designer.cs">
+      <DependentUpon>SubeTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Functions\FileFunctions.cs" />
     <Compile Include="Functions\FilterFunctions.cs" />
     <Compile Include="Functions\GeneralFunctions.cs" />
     <Compile Include="Functions\SelectFunctions.cs" />
+    <Compile Include="Functions\SelectRowFunctions.cs" />
     <Compile Include="Functions\TablePrintingFunctions.cs" />
     <Compile Include="Interfaces\IStatusBarAciklama.cs" />
     <Compile Include="Interfaces\IStatusBarKisayol.cs" />
@@ -291,6 +382,12 @@
     <EmbeddedResource Include="Forms\BaseForms\BaseListForm.tr-TR.resx">
       <DependentUpon>BaseListForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DonemForms\DonemEditForm.resx">
+      <DependentUpon>DonemEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DonemForms\DonemListForm.resx">
+      <DependentUpon>DonemListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FiltreForms\FiltreEditForm.resx">
       <DependentUpon>FiltreEditForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -303,14 +400,26 @@
     <EmbeddedResource Include="Forms\GeneralForms\AnaForm.resx">
       <DependentUpon>AnaForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\AnaForm.tr-TR.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\GeneralForms\BaglantiAyarlariEditForm.resx">
       <DependentUpon>BaglantiAyarlariEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\BaslatmaEkrani.resx">
+      <DependentUpon>BaslatmaEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\EmailParametreEditForm.resx">
+      <DependentUpon>EmailParametreEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GeneralForms\GirisForm.resx">
       <DependentUpon>GirisForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GeneralForms\RaporOnizleme.resx">
       <DependentUpon>RaporOnizleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\SubeDonemSecimiEditForm.resx">
+      <DependentUpon>SubeDonemSecimiEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GeneralForms\TabloDokumParametreleri.resx">
       <DependentUpon>TabloDokumParametreleri.cs</DependentUpon>
@@ -327,8 +436,20 @@
     <EmbeddedResource Include="Forms\IlForms\IlListForm.resx">
       <DependentUpon>IlListForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciForms\KullanicibirimYetkileriEditForm.resx">
+      <DependentUpon>KullanicibirimYetkileriEditForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\KullaniciForms\KullaniciEditForm.resx">
       <DependentUpon>KullaniciEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciForms\KullaniciListForm.resx">
+      <DependentUpon>KullaniciListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciForms\SifreDegistirEditForm.resx">
+      <DependentUpon>SifreDegistirEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciForms\SifremiUnuttumEditForm.resx">
+      <DependentUpon>SifremiUnuttumEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OkulForms\OkulEditForm.resx">
       <DependentUpon>OkulEditForm.cs</DependentUpon>
@@ -336,11 +457,20 @@
     <EmbeddedResource Include="Forms\OkulForms\OkulListForm.resx">
       <DependentUpon>OkulListForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Subeforms\SubeEditForm.resx">
+      <DependentUpon>SubeEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Subeforms\SubeListForm.resx">
+      <DependentUpon>SubeListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\UniversiteForms\UnvEditForm.resx">
       <DependentUpon>UnvEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UniversiteForms\UnvListForm.resx">
       <DependentUpon>UnvListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\Base\BaseTablo.resx">
+      <DependentUpon>BaseTablo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserControls\Controls\Navigators\InsUptNavigator.resx">
       <DependentUpon>InsUptNavigator.cs</DependentUpon>
@@ -350,6 +480,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserControls\Controls\Navigators\smallNavigator.resx">
       <DependentUpon>smallNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\KullaniciBirimYetkileriFormTable\DonemTable.resx">
+      <DependentUpon>DonemTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\KullaniciBirimYetkileriFormTable\KullaniciTable.resx">
+      <DependentUpon>KullaniciTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\KullaniciBirimYetkileriFormTable\SubeTable.resx">
+      <DependentUpon>SubeTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -559,6 +698,10 @@
       <Project>{C1F7A0D9-2548-40A9-8B6F-E49ECA3301CA}</Project>
       <Name>DPU_Soft.PlacementOfExams.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DPU_Soft.PlacementOfExams.Data\DPU_Soft.PlacementOfExams.Data.csproj">
+      <Project>{8AB59FA3-88C5-4B18-8BC4-8F7C5FFEE2B7}</Project>
+      <Name>DPU_Soft.PlacementOfExams.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DPU_Soft.PlacementOfExams.Model\DPU_Soft.PlacementOfExams.Model.csproj">
       <Project>{9b75f401-df20-4ef3-b0ec-a0a011038a67}</Project>
       <Name>DPU_Soft.PlacementOfExams.Model</Name>
@@ -651,7 +794,24 @@
   <ItemGroup>
     <None Include="Resources\assigntome_32x32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Turkiye.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\placement-ico.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

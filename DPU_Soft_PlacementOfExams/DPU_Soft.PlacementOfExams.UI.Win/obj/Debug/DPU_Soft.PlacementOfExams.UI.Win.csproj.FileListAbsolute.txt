@@ -10,10 +10,6 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DP
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Navigators.smallNavigator.resources
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.resources
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.csproj.GenerateResource.cache
-C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.exe.licenses
-C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\DPU_Soft.PlacementOfExams.UI.Win.exe.config
-C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\DPU_Soft.PlacementOfExams.UI.Win.exe
-C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\DPU_Soft.PlacementOfExams.UI.Win.pdb
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\DevExpress.Data.v19.2.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\DevExpress.Printing.v19.2.Core.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\DevExpress.Utils.v19.2.dll
@@ -110,17 +106,13 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\es
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\ja\DevExpress.Office.v19.2.Core.resources.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\ru\DevExpress.Office.v19.2.Core.resources.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.csproj.CopyComplete
-C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.exe
-C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.pdb
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.IlceForms.IlceEditForm.resources
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.IlceForms.IlceListForm.resources
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.IlForms.IlListForm.resources
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.UniversiteForms.UnvEditForm.resources
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.UniversiteForms.UnvListForm.resources
-C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\tr-TR\DPU_Soft.PlacementOfExams.UI.Win.resources.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.FiltreForms.FiltreEditForm.resources
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms.BaseEditForm.tr-TR.resources
-C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\tr-TR\DPU_Soft.PlacementOfExams.UI.Win.resources.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.FiltreForms.FiltreListForm.resources
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms.BaseListForm.tr-TR.resources
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.FiltreForms.FiltreEditForm.tr-TR.resources
@@ -131,3 +123,28 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DP
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.KullaniciForms.KullaniciEditForm.resources
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\System.ValueTuple.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\System.ValueTuple.xml
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms.EmailParametreEditForm.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.Subeforms.SubeEditForm.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.Subeforms.SubeListForm.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms.AnaForm.tr-TR.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.DonemForms.DonemEditForm.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.DonemForms.DonemListForm.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.KullaniciForms.KullaniciListForm.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base.BaseTablo.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.KullaniciBirimYetkileriFormTable.KullaniciTable.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.KullaniciForms.SifremiUnuttumEditForm.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.KullaniciBirimYetkileriFormTable.SubeTable.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.KullaniciForms.KullanicibirimYetkileriEditForm.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.KullaniciBirimYetkileriFormTable.DonemTable.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms.SubeDonemSecimiEditForm.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.KullaniciForms.SifreDegistirEditForm.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms.BaslatmaEkrani.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\DPU_Soft.PlacementOfExams.Data.dll.config
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\Sınav Yerleştirme.exe.config
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\Sınav Yerleştirme.exe
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\Sınav Yerleştirme.pdb
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\tr-TR\Sınav Yerleştirme.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\Sınav Yerleştirme.exe.licenses
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\tr-TR\Sınav Yerleştirme.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\Sınav Yerleştirme.exe
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\Sınav Yerleştirme.pdb

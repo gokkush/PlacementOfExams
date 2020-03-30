@@ -14,9 +14,9 @@ using System.Windows.Forms;
 
 namespace DPU_Soft.BLL.General
 {
-    public class IlBll:BaseGenelBll<IlEntity>, IBaseGenelBll,IBaseCommonBll
+    public class IlBll:BaseGenelBll<IlEntity>, IBaseHareketSelectBll,IBaseCommonBll
     {
-        private KartTuru _kartTuru;
+       // private KartTuru _kartTuru;
         public IlBll():base(KartTuru.Il)
         {
 

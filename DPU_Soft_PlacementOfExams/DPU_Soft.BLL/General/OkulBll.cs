@@ -13,7 +13,7 @@ using DPU_Soft.BLL.Base.Interfaces;
 
 namespace DPU_Soft.BLL.General
 {
-    public class OkulBll: BaseGenelBll<OkulEntity> , IBaseGenelBll,IBaseCommonBll
+    public class OkulBll: BaseGenelBll<OkulEntity> , IBaseHareketSelectBll,IBaseCommonBll
     {
         public OkulBll():base(KartTuru.Okul)
         {

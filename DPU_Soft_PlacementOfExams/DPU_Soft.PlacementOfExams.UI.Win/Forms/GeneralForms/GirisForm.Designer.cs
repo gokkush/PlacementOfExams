@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition1 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition2 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition3 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition1 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition2 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition3 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition4 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition5 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition6 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition7 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition8 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition9 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition4 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition5 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition6 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition10 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition11 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition12 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition13 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition14 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition15 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition16 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition17 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition18 = new DevExpress.XtraLayout.RowDefinition();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GirisForm));
             this.dpuDataLayoutControl1 = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuDataLayoutControl();
+            this.txtFakulte = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuLookUpEdit();
             this.btnBaglantiAyarlari = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuHyperLinkLabelControl();
             this.btnSifremiUnuttum = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuHyperLinkLabelControl();
-            this.txtGuvenlikKodu = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuTextEdit();
             this.btnCikis = new DevExpress.XtraEditors.SimpleButton();
             this.btnGiris = new DevExpress.XtraEditors.SimpleButton();
             this.txtSifre = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuTextEdit();
@@ -54,12 +55,12 @@
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.dpuDataLayoutControl1)).BeginInit();
             this.dpuDataLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGuvenlikKodu.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFakulte.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSifre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
@@ -68,17 +69,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             this.SuspendLayout();
             // 
             // dpuDataLayoutControl1
             // 
             this.dpuDataLayoutControl1.BackColor = System.Drawing.Color.Transparent;
+            this.dpuDataLayoutControl1.Controls.Add(this.txtFakulte);
             this.dpuDataLayoutControl1.Controls.Add(this.btnBaglantiAyarlari);
             this.dpuDataLayoutControl1.Controls.Add(this.btnSifremiUnuttum);
-            this.dpuDataLayoutControl1.Controls.Add(this.txtGuvenlikKodu);
             this.dpuDataLayoutControl1.Controls.Add(this.btnCikis);
             this.dpuDataLayoutControl1.Controls.Add(this.btnGiris);
             this.dpuDataLayoutControl1.Controls.Add(this.txtSifre);
@@ -91,6 +92,27 @@
             this.dpuDataLayoutControl1.Size = new System.Drawing.Size(416, 340);
             this.dpuDataLayoutControl1.TabIndex = 0;
             this.dpuDataLayoutControl1.Text = "dpuDataLayoutControl";
+            // 
+            // txtFakulte
+            // 
+            this.txtFakulte.EnterMoveNextControl = true;
+            this.txtFakulte.Location = new System.Drawing.Point(85, 234);
+            this.txtFakulte.Name = "txtFakulte";
+            this.txtFakulte.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.txtFakulte.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtFakulte.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtFakulte.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Kod", "Kod", 30, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("KurumAdi", "Üniversite Adı", 80, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            this.txtFakulte.Properties.HeaderClickMode = DevExpress.XtraEditors.Controls.HeaderClickMode.AutoSearch;
+            this.txtFakulte.Properties.ShowFooter = false;
+            this.txtFakulte.Size = new System.Drawing.Size(319, 20);
+            this.txtFakulte.StatusBarAciklama = null;
+            this.txtFakulte.StatusBarKisayol = "F4 : ";
+            this.txtFakulte.StatusBarKisayolAciklama = "Seçim Yap";
+            this.txtFakulte.StyleController = this.dpuDataLayoutControl1;
+            this.txtFakulte.TabIndex = 6;
             // 
             // btnBaglantiAyarlari
             // 
@@ -110,26 +132,13 @@
             this.btnSifremiUnuttum.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.btnSifremiUnuttum.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSifremiUnuttum.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.btnSifremiUnuttum.Location = new System.Drawing.Point(292, 234);
+            this.btnSifremiUnuttum.Location = new System.Drawing.Point(292, 205);
             this.btnSifremiUnuttum.Name = "btnSifremiUnuttum";
             this.btnSifremiUnuttum.Size = new System.Drawing.Size(112, 25);
             this.btnSifremiUnuttum.StatusBarAciklama = null;
             this.btnSifremiUnuttum.StyleController = this.dpuDataLayoutControl1;
             this.btnSifremiUnuttum.TabIndex = 5;
             this.btnSifremiUnuttum.Text = "Şifremi Unuttum";
-            // 
-            // txtGuvenlikKodu
-            // 
-            this.txtGuvenlikKodu.EnterMoveNextControl = true;
-            this.txtGuvenlikKodu.Location = new System.Drawing.Point(98, 234);
-            this.txtGuvenlikKodu.Name = "txtGuvenlikKodu";
-            this.txtGuvenlikKodu.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.txtGuvenlikKodu.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtGuvenlikKodu.Properties.MaxLength = 50;
-            this.txtGuvenlikKodu.Size = new System.Drawing.Size(190, 20);
-            this.txtGuvenlikKodu.StatusBarAciklama = null;
-            this.txtGuvenlikKodu.StyleController = this.dpuDataLayoutControl1;
-            this.txtGuvenlikKodu.TabIndex = 2;
             // 
             // btnCikis
             // 
@@ -156,12 +165,13 @@
             // txtSifre
             // 
             this.txtSifre.EnterMoveNextControl = true;
-            this.txtSifre.Location = new System.Drawing.Point(98, 205);
+            this.txtSifre.Location = new System.Drawing.Point(85, 205);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txtSifre.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtSifre.Properties.MaxLength = 50;
-            this.txtSifre.Size = new System.Drawing.Size(190, 20);
+            this.txtSifre.Properties.UseSystemPasswordChar = true;
+            this.txtSifre.Size = new System.Drawing.Size(203, 20);
             this.txtSifre.StatusBarAciklama = null;
             this.txtSifre.StyleController = this.dpuDataLayoutControl1;
             this.txtSifre.TabIndex = 1;
@@ -169,12 +179,12 @@
             // txtKullaniciAdi
             // 
             this.txtKullaniciAdi.EnterMoveNextControl = true;
-            this.txtKullaniciAdi.Location = new System.Drawing.Point(98, 176);
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(85, 176);
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
             this.txtKullaniciAdi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txtKullaniciAdi.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtKullaniciAdi.Properties.MaxLength = 50;
-            this.txtKullaniciAdi.Size = new System.Drawing.Size(190, 20);
+            this.txtKullaniciAdi.Size = new System.Drawing.Size(203, 20);
             this.txtKullaniciAdi.StatusBarAciklama = null;
             this.txtKullaniciAdi.StyleController = this.dpuDataLayoutControl1;
             this.txtKullaniciAdi.TabIndex = 0;
@@ -189,49 +199,49 @@
             this.layoutControlItem2,
             this.layoutControlItem3,
             this.layoutControlItem4,
+            this.layoutControlItem7,
             this.layoutControlItem5,
-            this.layoutControlItem6,
-            this.layoutControlItem7});
+            this.layoutControlItem6});
             this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
             this.Root.Name = "Root";
-            columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition1.Width = 165D;
-            columnDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition2.Width = 115D;
-            columnDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition3.Width = 115D;
+            columnDefinition4.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition4.Width = 165D;
+            columnDefinition5.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition5.Width = 115D;
+            columnDefinition6.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition6.Width = 115D;
             this.Root.OptionsTableLayoutGroup.ColumnDefinitions.AddRange(new DevExpress.XtraLayout.ColumnDefinition[] {
-            columnDefinition1,
-            columnDefinition2,
-            columnDefinition3});
-            rowDefinition1.Height = 70D;
-            rowDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition2.Height = 30D;
-            rowDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition3.Height = 24D;
-            rowDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition4.Height = 40D;
-            rowDefinition4.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition5.Height = 29D;
-            rowDefinition5.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition6.Height = 29D;
-            rowDefinition6.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition7.Height = 29D;
-            rowDefinition7.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition8.Height = 29D;
-            rowDefinition8.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition9.Height = 24D;
-            rowDefinition9.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition4,
+            columnDefinition5,
+            columnDefinition6});
+            rowDefinition10.Height = 70D;
+            rowDefinition10.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition11.Height = 30D;
+            rowDefinition11.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition12.Height = 24D;
+            rowDefinition12.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition13.Height = 40D;
+            rowDefinition13.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition14.Height = 29D;
+            rowDefinition14.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition15.Height = 29D;
+            rowDefinition15.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition16.Height = 29D;
+            rowDefinition16.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition17.Height = 29D;
+            rowDefinition17.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition18.Height = 24D;
+            rowDefinition18.SizeType = System.Windows.Forms.SizeType.Absolute;
             this.Root.OptionsTableLayoutGroup.RowDefinitions.AddRange(new DevExpress.XtraLayout.RowDefinition[] {
-            rowDefinition1,
-            rowDefinition2,
-            rowDefinition3,
-            rowDefinition4,
-            rowDefinition5,
-            rowDefinition6,
-            rowDefinition7,
-            rowDefinition8,
-            rowDefinition9});
+            rowDefinition10,
+            rowDefinition11,
+            rowDefinition12,
+            rowDefinition13,
+            rowDefinition14,
+            rowDefinition15,
+            rowDefinition16,
+            rowDefinition17,
+            rowDefinition18});
             this.Root.Size = new System.Drawing.Size(416, 340);
             this.Root.TextVisible = false;
             // 
@@ -262,7 +272,7 @@
             this.layoutControlItem1.OptionsTableLayoutItem.RowIndex = 4;
             this.layoutControlItem1.Size = new System.Drawing.Size(280, 29);
             this.layoutControlItem1.Text = "Kullanıcı Adı:";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(83, 13);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(70, 13);
             // 
             // layoutControlItem2
             // 
@@ -277,7 +287,7 @@
             this.layoutControlItem2.OptionsTableLayoutItem.RowIndex = 5;
             this.layoutControlItem2.Size = new System.Drawing.Size(280, 29);
             this.layoutControlItem2.Text = "Şifre:";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(83, 13);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(70, 13);
             // 
             // layoutControlItem3
             // 
@@ -305,36 +315,6 @@
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
-            // layoutControlItem5
-            // 
-            this.layoutControlItem5.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.layoutControlItem5.AppearanceItemCaption.ForeColor = System.Drawing.Color.Black;
-            this.layoutControlItem5.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem5.AppearanceItemCaption.Options.UseForeColor = true;
-            this.layoutControlItem5.Control = this.txtGuvenlikKodu;
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 222);
-            this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.OptionsTableLayoutItem.ColumnSpan = 2;
-            this.layoutControlItem5.OptionsTableLayoutItem.RowIndex = 6;
-            this.layoutControlItem5.Size = new System.Drawing.Size(280, 29);
-            this.layoutControlItem5.Text = "Güvenlik Kodu:";
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(83, 13);
-            // 
-            // layoutControlItem6
-            // 
-            this.layoutControlItem6.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.layoutControlItem6.AppearanceItemCaption.Options.UseForeColor = true;
-            this.layoutControlItem6.Control = this.btnSifremiUnuttum;
-            this.layoutControlItem6.Location = new System.Drawing.Point(280, 222);
-            this.layoutControlItem6.MinSize = new System.Drawing.Size(80, 17);
-            this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.OptionsTableLayoutItem.ColumnIndex = 2;
-            this.layoutControlItem6.OptionsTableLayoutItem.RowIndex = 6;
-            this.layoutControlItem6.Size = new System.Drawing.Size(116, 29);
-            this.layoutControlItem6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem6.TextVisible = false;
-            // 
             // layoutControlItem7
             // 
             this.layoutControlItem7.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
@@ -350,6 +330,36 @@
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
+            // layoutControlItem5
+            // 
+            this.layoutControlItem5.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem5.AppearanceItemCaption.ForeColor = System.Drawing.Color.Black;
+            this.layoutControlItem5.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem5.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem5.Control = this.txtFakulte;
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 222);
+            this.layoutControlItem5.Name = "layoutControlItem5";
+            this.layoutControlItem5.OptionsTableLayoutItem.ColumnSpan = 3;
+            this.layoutControlItem5.OptionsTableLayoutItem.RowIndex = 6;
+            this.layoutControlItem5.Size = new System.Drawing.Size(396, 29);
+            this.layoutControlItem5.Text = "Falükte:";
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(70, 13);
+            // 
+            // layoutControlItem6
+            // 
+            this.layoutControlItem6.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem6.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem6.Control = this.btnSifremiUnuttum;
+            this.layoutControlItem6.Location = new System.Drawing.Point(280, 193);
+            this.layoutControlItem6.MinSize = new System.Drawing.Size(80, 17);
+            this.layoutControlItem6.Name = "layoutControlItem6";
+            this.layoutControlItem6.OptionsTableLayoutItem.ColumnIndex = 2;
+            this.layoutControlItem6.OptionsTableLayoutItem.RowIndex = 5;
+            this.layoutControlItem6.Size = new System.Drawing.Size(116, 29);
+            this.layoutControlItem6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem6.TextVisible = false;
+            // 
             // GirisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -361,13 +371,16 @@
             this.Controls.Add(this.dpuDataLayoutControl1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("GirisForm.IconOptions.Icon")));
+            this.IconOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.placement_icon;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GirisForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş";
             ((System.ComponentModel.ISupportInitialize)(this.dpuDataLayoutControl1)).EndInit();
             this.dpuDataLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txtGuvenlikKodu.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFakulte.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSifre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
@@ -376,9 +389,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -386,7 +399,6 @@
         #endregion
 
         private UserControls.Controls.DpuDataLayoutControl dpuDataLayoutControl1;
-        private UserControls.Controls.DpuTextEdit txtGuvenlikKodu;
         private DevExpress.XtraEditors.SimpleButton btnCikis;
         private DevExpress.XtraEditors.SimpleButton btnGiris;
         private UserControls.Controls.DpuTextEdit txtSifre;
@@ -397,10 +409,11 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private UserControls.Controls.DpuHyperLinkLabelControl btnBaglantiAyarlari;
         private UserControls.Controls.DpuHyperLinkLabelControl btnSifremiUnuttum;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
+        private UserControls.Controls.DpuLookUpEdit txtFakulte;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
     }
 }

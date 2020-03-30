@@ -37,9 +37,13 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
         {
             InitializeComponent();
         }
-        protected internal virtual void Yukle() 
+        public virtual void Yukle() 
         { 
                     
+        }
+        protected virtual void Giris()
+        {
+
         }
         protected internal virtual IBaseEntity ReturnEntity()
         {
@@ -81,7 +85,9 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
                         break;
                     case BaseEdit edt:
                         edt.EditValueChanged += Control_EditValueChanged;
-
+                        break;
+                    case DpuGridControl grd:
+                        grd.MainView.GotFocus += Control_GotFocus;
                         break;
                 }
 
@@ -137,7 +143,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             _formSablonKayitedilecek = true;
         }
 
-        private void BaseEditForm_FormClosing(object sender, FormClosingEventArgs e)
+        protected virtual void BaseEditForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             SablonKaydet();
             if (btnKaydet.Visibility == BarItemVisibility.Never || !btnKaydet.Enabled) return;
@@ -189,7 +195,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             GuncelNesneOlustur();
         }
 
-        private void Control_KeyDown(object sender, KeyEventArgs e)
+        protected virtual void Control_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode==Keys.Escape)
             {
@@ -223,7 +229,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
 
         }
 
-        private void Buttom_ItemClick(object sender, ItemClickEventArgs e)
+        protected virtual void Buttom_ItemClick(object sender, ItemClickEventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
             if (e.Item==btnYeni)
@@ -266,12 +272,18 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             {
                 SifreSifirla();
             }
+            else if (e.Item==btnGiris)
+            {
+                Giris();
+            }
             else if (e.Item==btnCikis)
             {
                 Close();
             }
             Cursor.Current = DefaultCursor;
         }
+
+
 
         protected virtual void SifreSifirla()
         {
@@ -286,6 +298,11 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
         protected virtual void Yazdir()
         {
             
+        }
+
+        protected virtual void TabloYukle()
+        {
+
         }
 
         private void FarkliKaydet()
@@ -382,12 +399,12 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
 
         protected virtual bool EntityInsert()
         {
-            return ((IBaseGenelBll)Bll).Insert(CurrentEntity);
+            return ((IBaseHareketSelectBll)Bll).Insert(CurrentEntity);
         }
 
         protected virtual bool EntityUpdate()
         {
-            return ((IBaseGenelBll)Bll).Update(OldEntity, CurrentEntity);
+            return ((IBaseHareketSelectBll)Bll).Update(OldEntity, CurrentEntity);
         }
         protected virtual void NesneyiKontrollereBagla()
         {

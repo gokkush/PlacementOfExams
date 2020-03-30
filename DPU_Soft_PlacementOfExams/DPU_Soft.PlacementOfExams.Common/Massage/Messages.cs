@@ -6,12 +6,12 @@ using System.Windows.Forms;
 namespace DPU_Soft.PlacementOfExams.Common.Massage
 {
     
-    public  class Messages
+    public static class Messages
     { 
-        public static void ALCCalistir(Form frm, string mesaj, string baslik)
+        public static void ALCCalistir(string mesaj, string baslik)
         {
             DevExpress.XtraBars.Alerter.AlertControl _alert = new DevExpress.XtraBars.Alerter.AlertControl();
-            _alert.Show(frm, mesaj, baslik);
+            _alert.Show(Form.ActiveForm, mesaj, baslik);
         }
         public static void HataMesaji(string hataMesaji)
         {
@@ -79,6 +79,11 @@ namespace DPU_Soft.PlacementOfExams.Common.Massage
         public static DialogResult TabloExportMesaj(string dosyaFormati)
         {
             return EvetSeciliEvetHayir($"İlgili Tablo, {dosyaFormati} olarak Dışarı aktarılacaktır. Onaylıyor musunuz?", "Aktarım Onayı");
+        }
+
+        public static DialogResult EmailgonderimOnayi()
+        {
+            return HayirSeciliEvetHayir($"Kullanıcı Şifresi sıfırlanarak, Kullanıcı Bilgilerini İçeren Yeni Bir Mail Gönderilecektir. Onaylıyor musunuz?", "Şifre Sıfırla Onayı");
         }
     }
 }

@@ -24,14 +24,14 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
 
         }
 
-        protected internal override void Yukle()
+        public override void Yukle()
         {
             OldEntity = new BaglantiAyarlari
             {
                 Server= ConfigurationManager.AppSettings["Server"],
-                YetkilendirmeTuru= ConfigurationManager.AppSettings["Yetki"].GetEnum<YetkilendirmeTuru>(),
+                YetkilendirmeTuru= ConfigurationManager.AppSettings["YetkilendirmeTuru"].GetEnum<YetkilendirmeTuru>(),
                 KullaniciAdi= ConfigurationManager.AppSettings["KullaniciAdi"].ConvertToSecureString(),
-                Sifre= ConfigurationManager.AppSettings["Yetki"].GetEnum<YetkilendirmeTuru>()==YetkilendirmeTuru.SqlServer?"Burası Şifre Alanıdır".ConvertToSecureString():"".ConvertToSecureString()
+                Sifre= ConfigurationManager.AppSettings["YetkilendirmeTuru"].GetEnum<YetkilendirmeTuru>()==YetkilendirmeTuru.SqlServer?"Burası Şifre Alanıdır".ConvertToSecureString():"".ConvertToSecureString()
             };
             NesneyiKontrollereBagla();
         }
@@ -39,9 +39,9 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
         protected override void NesneyiKontrollereBagla()
         {
             txtServer.Text = ConfigurationManager.AppSettings["Server"];
-            txtYetkilendirmeTuru.SelectedItem = ConfigurationManager.AppSettings["Yetki"];
+            txtYetkilendirmeTuru.SelectedItem = ConfigurationManager.AppSettings["YetkilendirmeTuru"];
             txtKullaniciAdi.Text = ConfigurationManager.AppSettings["KullaniciAdi"];
-            txtSifre.Text = ConfigurationManager.AppSettings["Yetki"].GetEnum<YetkilendirmeTuru>() == YetkilendirmeTuru.SqlServer ? "Şifre Gizlidir": "";
+            txtSifre.Text = ConfigurationManager.AppSettings["YetkilendirmeTuru"].GetEnum<YetkilendirmeTuru>() == YetkilendirmeTuru.SqlServer ? "Şifre Gizlidir": "";
 
         }
 
@@ -68,7 +68,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
                     case "Server":
                         Win.Functions.GeneralFunctions.AppSettingsWrite(x, txtServer.Text);
                         break;
-                    case "Yetki":
+                    case "YetkilendirmeTuru":
                         Win.Functions.GeneralFunctions.AppSettingsWrite(x, txtYetkilendirmeTuru.Text);
                         break;
 

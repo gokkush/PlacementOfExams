@@ -15,6 +15,15 @@ namespace DPU_Soft.BLL.Base
     {
         private KartTuru _kartTuru;
 
+        public BaseGenelBll()
+        {
+
+        }
+
+        public BaseGenelBll(Control ctrl):base (ctrl)
+        {
+
+        }
         public BaseGenelBll(KartTuru kartTuru)
         {
             _kartTuru = kartTuru;

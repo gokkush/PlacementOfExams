@@ -21,7 +21,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.OkulForms
 
         }
 
-        protected internal override void Yukle()
+        public override void Yukle()
         {
             OldEntity = BaseIslemTuru == IslemTuru.EntityInsert ? new OkulS():((OkulBll)Bll).Single(FilterFunctions.Filter<OkulEntity>(Id));
             NesneyiKontrollereBagla();

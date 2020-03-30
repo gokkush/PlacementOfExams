@@ -19,6 +19,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win
         [STAThread]
         static void Main()
         {
+            Functions.GeneralFunctions.EncryptConfigFile(AppDomain.CurrentDomain.SetupInformation.ApplicationName, "connectionStrings", "appSettings");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Thread.CurrentThread.CurrentCulture = new CultureInfo("tr-TR");
@@ -26,7 +27,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win
 
             SkinManager.EnableFormSkins();
             UserLookAndFeel.Default.SetSkinStyle("Office 2010 Blue");
-            Application.Run(new AnaForm());
+            Application.Run(new GirisForm());
         }
     }
 }

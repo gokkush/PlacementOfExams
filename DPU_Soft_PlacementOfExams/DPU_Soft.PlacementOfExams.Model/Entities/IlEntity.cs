@@ -10,7 +10,7 @@ namespace DPU_Soft.PlacementOfExams.Model.Entities
         [Index("IX_Kod", IsUnique =true)]
         public override string Kod { get; set; }
         
-        [Required,StringLength(50), ZorunluAlan("İl Adı", "txtIlAdi")]
+        [Required,StringLength(50), ZorunluAlan("Il Adı", "txtIlAdi")]
         public string IlAdi { get; set; }
         [StringLength(500)]
         public string Aciklama { get; set; }

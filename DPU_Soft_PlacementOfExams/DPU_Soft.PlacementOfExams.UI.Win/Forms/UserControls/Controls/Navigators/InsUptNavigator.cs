@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Navigators
 {
-    public partial class InsUptNavigator : UserControl
+    public partial class InsUptNavigator : XtraUserControl
     {
         public InsUptNavigator()
         {

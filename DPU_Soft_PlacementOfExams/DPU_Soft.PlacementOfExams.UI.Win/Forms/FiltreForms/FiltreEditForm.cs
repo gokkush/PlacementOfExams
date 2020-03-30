@@ -30,7 +30,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.FiltreForms
             
         }
 
-        protected internal override void Yukle()
+        public override void Yukle()
         {
             txtFiltreMetni.SourceControl = _filtreGrid;
 

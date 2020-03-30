@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DPU_Soft.BLL.Base.Interfaces
 {
-    public interface IBaseGenelBll
+    public interface IBaseHareketSelectBll
     {
         bool Insert(BaseEntity entity);
 

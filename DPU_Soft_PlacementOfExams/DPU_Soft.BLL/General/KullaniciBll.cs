@@ -15,7 +15,7 @@ using System.Windows.Forms;
 
 namespace DPU_Soft.BLL.General
 {
-    public class KullaniciBll : BaseGenelBll<KullaniciEntity>, IBaseGenelBll, IBaseCommonBll
+    public class KullaniciBll : BaseGenelBll<KullaniciEntity>, IBaseHareketSelectBll, IBaseCommonBll
     {
 
         public KullaniciBll():base(KartTuru.Kullanici)
@@ -34,11 +34,25 @@ namespace DPU_Soft.BLL.General
             {
                 Id = x.Id,
                 Kod = x.Kod,
-                FakulteAdi = x.Okul.FakulteAdi,
                 Adi = x.Adi,
                 Soyadi = x.Soyadi,
                 Email = x.Email,
-                OkulId = x.OkulId,
+                durum = x.durum,
+                Aciklama = x.Aciklama
+
+
+            });
+        }
+
+        public BaseEntity SingleDetail(Expression<Func<KullaniciEntity, bool>> filter)
+        {
+            return Basesingle(filter, x => new KullaniciS
+            {
+                Id = x.Id,
+                Kod = x.Kod,
+                Adi = x.Adi,
+                Soyadi = x.Soyadi,
+                Email = x.Email,
                 Sifre = x.Sifre,
                 GizliKelime = x.GizliKelime,
                 durum = x.durum,
@@ -54,7 +68,6 @@ namespace DPU_Soft.BLL.General
             {
                 Id = x.Id,
                 Kod = x.Kod,
-                FakulteAdi = x.Okul.FakulteAdi,
                 Adi = x.Adi,
                 Soyadi = x.Soyadi,
                 Email = x.Email,

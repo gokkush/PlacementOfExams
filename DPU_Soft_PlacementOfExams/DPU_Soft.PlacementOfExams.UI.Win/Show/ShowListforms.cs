@@ -1,5 +1,6 @@
 ﻿using DPU_Soft.PlacementOfExams.Common.Enums;
 using DPU_Soft.PlacementOfExams.Model.Entities.Base;
+using DPU_Soft.PlacementOfExams.Model.Entities.Base.Interfaces;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms;
 using System;
 using System.Collections.Generic;
@@ -45,5 +46,65 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Show
                 return frm.DialogResult == DialogResult.OK ? frm.SecilenEntity : null;
             }
         }
+        public static IEnumerable<IBaseEntity> ShowDialogListForm(KartTuru kartTuru, IList<long> listeDisiTutulacakKayitlar, bool multiSelect, params object[] prm)
+        {
+
+
+            using (var frm = (TForm)Activator.CreateInstance(typeof(TForm), prm))
+            {
+                frm.ListeDisiTutulacakKayitlar = listeDisiTutulacakKayitlar;
+                frm.MultiSelect = multiSelect;
+                frm.Yukle();
+                frm.RowSelect = new Functions.SelectRowFunctions(frm.Tablo);
+                if (frm.EklenebilecekEntityVar)
+                    frm.ShowDialog();
+                return frm.DialogResult == DialogResult.OK ? frm.SecilenEntities : null;
+            }
+        }
+        public static IEnumerable<IBaseEntity>ShowDialogListForm(IList<long> listeDisiTutulacakKayitlar, bool multiSelect, params object[] prm)
+        {
+        
+
+            using (var frm = (TForm)Activator.CreateInstance(typeof(TForm), prm))
+            {
+                frm.ListeDisiTutulacakKayitlar = listeDisiTutulacakKayitlar;
+                frm.MultiSelect = multiSelect;
+                frm.Yukle();
+                frm.RowSelect = new Functions.SelectRowFunctions(frm.Tablo);
+                if (frm.EklenebilecekEntityVar)
+                    frm.ShowDialog();
+                return frm.DialogResult == DialogResult.OK ? frm.SecilenEntities: null;
+            }
+        }
+
+        public static void ShowDialogListForm()
+        {
+            using (var frm = (TForm)Activator.CreateInstance(typeof(TForm)))
+            {
+                frm.AktifPasifButonGoster = true;
+                frm.Yukle();
+                frm.ShowDialog();
+                
+            }
+        }
+
+        public static IEnumerable<IBaseEntity> ShowDialogListForm2(KartTuru kartTuru, IList<long> listeDisiTutulacakKayitlar, bool multiSelect, params object[] prm)
+        {
+            using (var frm = (TForm)Activator.CreateInstance(typeof(TForm), prm))
+            {
+                frm.ListeDisiTutulacakKayitlar = listeDisiTutulacakKayitlar;
+                frm.MultiSelect = multiSelect;
+                frm.Yukle();
+                frm.RowSelect = new Functions.SelectRowFunctions(frm.Tablo);
+
+                if (frm.EklenebilecekEntityVar)
+                    frm.ShowDialog();
+
+                return frm.DialogResult == DialogResult.OK ? frm.SecilenEntities : null;
+
+            }
+        }
+
+
     }
 }

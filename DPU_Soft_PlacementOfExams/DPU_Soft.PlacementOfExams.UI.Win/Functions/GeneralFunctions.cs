@@ -17,6 +17,13 @@ using DPU_Soft.PlacementOfExams.UI.Win.Properties;
 using DPU_Soft.BLL.Functions;
 using System.Security.Cryptography;
 using System.Text;
+using DPU_Soft.BLL.General;
+using DPU_Soft.PlacementOfExams.Model.Entities;
+using System.Net.Mail;
+using System.Net;
+using DPU_Soft.PlacementOfExams.Model.Entities.Base.Interfaces;
+using DevExpress.XtraGrid.Views.Base;
+using System.ComponentModel;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
 {
@@ -55,8 +62,15 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
                 Messages.KartSecmemeHataMesaj();
             }
             return default(T);
+        }
 
+        public static T GetRow<T>(this GridView tablo, int rowHandle)
+        {
+            if (tablo.FocusedRowHandle > -1)
+                return (T)tablo.GetRow(rowHandle);
+                Messages.KartSecmemeHataMesaj();
 
+            return default(T);
         }
 
         private static VeriDegisimYeri VeriDegisimYeriGetir<T>(T oldEntity, T currentEntity)
@@ -102,7 +116,16 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
             btnYeni.Enabled = !buttonEnabeledDurumu;
             btnSil.Enabled = !buttonEnabeledDurumu;
         }
+        public static void ButtonEnabledDurumu<T>(BarButtonItem btnYeni, BarButtonItem btnKaydet, BarButtonItem btnGeriAl, BarButtonItem btnSil, T oldEntity, T currentEntity,bool tableValueChanged)
+        {
+            var veriDegisimYeri = tableValueChanged?VeriDegisimYeri.Tablo: VeriDegisimYeriGetir(oldEntity, currentEntity);
+            var buttonEnabeledDurumu = veriDegisimYeri == VeriDegisimYeri.Alan|| veriDegisimYeri==VeriDegisimYeri.Tablo;
 
+            btnKaydet.Enabled = buttonEnabeledDurumu;
+            btnGeriAl.Enabled = buttonEnabeledDurumu;
+            btnYeni.Enabled = !buttonEnabeledDurumu;
+            btnSil.Enabled = !buttonEnabeledDurumu;
+        }
         public static void ButtonEnabledDurumu<T>(BarButtonItem btnKaydet,BarButtonItem btnFarkliKaydet, BarButtonItem btnSil,IslemTuru islemTuru, T oldEntity, T currentEntity)
         {
             var veriDegisimYeri = VeriDegisimYeriGetir(oldEntity, currentEntity);
@@ -311,11 +334,97 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
             return (secureSifre, secureGizliKelime, sifre, gizliKelime); 
         }
 
-        //public static bool SifreMailiGonder(this string kullaniciAdi, string fakulteAdi, string eMail, SecureString secureSifre, SecureString secureGizlikKelime)
-        //{
+        public static bool SifreMailiGonder(this string kullaniciAdi, string eMail, SecureString secureSifre, SecureString secureGizlikKelime)
+        {
+            using (var bll=new MailParametreBll())
+            {
+                var entity = (MailParametreEntity)bll.Single(null);
+                if (entity==null)
+                {
+                    Messages.HataMesaji("E-mail gönderilemedi. Fakültenin e-mail parametreleri girilmemniş. Lütfen kontrol ediniz.");
+                    return false;
+                }
+                var client = new SmtpClient
+                {
+                    Port = entity.PortNo,
+                    Host=entity.Host,
+                    EnableSsl=entity.SslKullan==EvetHayir.Evet,
+                    UseDefaultCredentials=true,
+                    Credentials=new NetworkCredential(entity.Email,entity.Sifre.Decrypt(entity.Id+entity.Kod).ConvertToSecureString())
 
-        //}
-        
-        
+                };
+
+                var mesaj = new MailMessage
+                {
+                    From = new MailAddress(entity.Email, "DPU_Soft PlacementOfExams"),
+                    To = { eMail },
+                    Subject = "PlacementOfExams Kullanıcı Bilgileri",
+                    IsBodyHtml = true,
+                    Body = "PlacementOfExams Programı için gereken Kullanıcı Adı, Şifre ve Gizli Kelime Bilgileri aşağıda belirtilmiştir.<br/>" +
+                            "Lütfen programa giriş yaptıkran sonra bu bilgileri değiştiriniz!<br/><br/><br/>" +
+                            $"<b>Kullanıcı Adı:</b> {kullaniciAdi}<br/>" +
+                            $"<b>Şifre        :</b> {secureSifre.ConvertToUnSecureString()}<br/>" +
+                            $"<b>Gizli Kelime :</b> {secureGizlikKelime.ConvertToUnSecureString()}<br/>"
+
+                };
+
+                try
+                {
+                    Cursor.Current = Cursors.WaitCursor;
+
+                    client.Send(mesaj);
+
+                    Cursor.Current = Cursors.Default;
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    Messages.HataMesaji(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public static void RefreshDataSource(this GridView tablo)
+        {
+            var source = tablo.DataController.ListSource.Cast<IBaseHareketEntity>().ToList();
+
+            if (!source.Any(x => x.Delete)) return;
+            var rowHandle = tablo.FocusedRowHandle;
+
+            tablo.CustomRowFilter += Tablo_CustomRowFilter;
+            tablo.RefreshData();
+            tablo.CustomRowFilter-= Tablo_CustomRowFilter;
+            tablo.RowFocus(rowHandle);
+            void Tablo_CustomRowFilter(object sender, RowFilterEventArgs e)
+            {
+                var entity = source[e.ListSourceRow];
+                if (entity == null) return;
+                if (!entity.Delete) return;
+                e.Visible = false;
+                e.Handled = true;
+            }
+        }
+
+        public static BindingList<T> ToBindingList<T>(this IEnumerable<BaseHareketEntity>list)
+        {
+            return new BindingList<T>((IList<T>)list);
+        }
+
+        public static void EncryptConfigFile(string configFileName, params string[] prm)
+        {
+            var configration = ConfigurationManager.OpenExeConfiguration(configFileName);
+            foreach (var x in prm)
+            {
+                var section = configration.GetSection(x);
+                if (section.SectionInformation.IsProtected) return;
+                else
+                    section.SectionInformation.ProtectSection("DataProtectionConfigurationProvider");
+
+                section.SectionInformation.ForceSave = true;
+                configration.Save();
+
+            }
+        }
     }
 }

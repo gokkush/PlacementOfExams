@@ -6,6 +6,8 @@ using DPU_Soft.PlacementOfExams.UI.Win.Functions;
 using DPU_Soft.PlacementOfExams.Model.Entities;
 using DevExpress.XtraBars;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.IlceForms;
+using DPU_Soft.PlacementOfExams.Common.Massage;
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.IlForms
 

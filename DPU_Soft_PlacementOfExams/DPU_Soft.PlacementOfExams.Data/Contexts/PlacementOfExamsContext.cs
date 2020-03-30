@@ -31,6 +31,12 @@ namespace DPU_Soft.PlacementOfExams.Data.Contexts
         public DbSet<FiltreEntity> Filtre { get; set; }
 
         public DbSet<KullaniciEntity> Kullanici { get; set; }
+
+        public DbSet<MailParametreEntity> MailParametre { get; set; }
+
+        public DbSet<SubeEntity> Sube { get; set; }
+        public DbSet<DonemEntity> Donem { get; set; }
+        public DbSet<KullaniciBirimYetkileriEntity> KullaniciBirimYetkileri { get; set; }
     }
 
 

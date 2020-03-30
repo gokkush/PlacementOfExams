@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace DPU_Soft.BLL.General
 {
-    public class UniversiteBll : BaseGenelBll<UniversiteEntity>, IBaseGenelBll,IBaseCommonBll
+    public class UniversiteBll : BaseGenelBll<UniversiteEntity>, IBaseHareketSelectBll,IBaseCommonBll
     {
         public UniversiteBll():base(KartTuru.Universite)
         {

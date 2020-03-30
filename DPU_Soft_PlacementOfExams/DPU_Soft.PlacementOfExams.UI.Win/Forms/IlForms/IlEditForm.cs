@@ -19,7 +19,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.IlForms
             EventsLoad();
         }
 
-        protected internal override void Yukle()
+        public override void Yukle()
         {
             OldEntity = BaseIslemTuru == IslemTuru.EntityInsert ? new IlEntity() : ((IlBll)Bll).Single(FilterFunctions.Filter<IlEntity>(Id));
             NesneyiKontrollereBagla();

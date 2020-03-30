@@ -22,5 +22,7 @@ namespace DPU_Soft.PlacementOfExams.Model.Dto
 
         public string Aciklama { get; set; }
 
+
+
     }
 }

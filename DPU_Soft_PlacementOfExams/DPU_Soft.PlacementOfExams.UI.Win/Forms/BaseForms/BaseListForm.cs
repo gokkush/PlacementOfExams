@@ -14,6 +14,9 @@ using DPU_Soft.PlacementOfExams.UI.Win.Show;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.FiltreForms;
 using DPU_Soft.PlacementOfExams.Model.Entities;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms;
+using System.Collections;
+using System.Collections.Generic;
+using DPU_Soft.PlacementOfExams.Common.Massage;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
 {
@@ -28,12 +31,16 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
         protected bool AktifKartlariGoster=true;
         protected internal bool AktifPasifButonGoster=false;
         protected internal bool MultiSelect;
+        protected internal bool EklenebilecekEntityVar=false;
         protected internal BaseEntity SecilenEntity;
         protected IBaseBll Bll;
         protected ControlNavigator Navigator;
         protected internal long? SeciliGelecekId;
         protected BarItem[] ShowItems;
         protected BarItem[] HideItems;
+        protected internal IList<long> ListeDisiTutulacakKayitlar;
+        protected internal SelectRowFunctions RowSelect;
+        protected internal IList<BaseEntity> SecilenEntities;
 
         public BaseListForm()
         {
@@ -135,7 +142,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
         private void ButtonGizleGoster()
         {
             
-            btnSeç.Visibility = AktifPasifButonGoster ? BarItemVisibility.Never : IsMdiChild ? BarItemVisibility.Never : BarItemVisibility.Always;
+            btnSec.Visibility = AktifPasifButonGoster ? BarItemVisibility.Never : IsMdiChild ? BarItemVisibility.Never : BarItemVisibility.Always;
             barEnter.Visibility = IsMdiChild ? BarItemVisibility.Never : BarItemVisibility.Always;
             barEnterAciklama.Visibility=IsMdiChild?BarItemVisibility.Never: BarItemVisibility.Always;
             btnAktifPasifKartlar.Visibility=AktifPasifButonGoster? BarItemVisibility.Always: !IsMdiChild? BarItemVisibility.Never: BarItemVisibility.Always;
@@ -218,11 +225,17 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             Tablo.RowFocus(Tablo.FocusedRowHandle);
         }
 
-        private void SelectEntity()
+        protected virtual void SelectEntity()
         {
             if (MultiSelect)
             {
-                //güncellenecek
+                SecilenEntities = new List<BaseEntity>();
+                if (RowSelect.SelectedRowCount() == 0) 
+                {
+                    Messages.KartSecmemeHataMesaj();
+                    return;
+                }
+                SecilenEntities = RowSelect.GetSelectedRows();
 
             }
             else
@@ -248,7 +261,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
 
         protected virtual void Yazdir()
         {
-            TablePrintingFunctions.Yazdir(Tablo,Tablo.ViewCaption,AnaForm.FakulteAdi);
+            TablePrintingFunctions.Yazdir(Tablo,Tablo.ViewCaption,AnaForm.SubeAdi);
         }
 
         private void FormCaptionAyarla()
@@ -278,7 +291,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
         {
             if (!IsMdiChild)
             {
-                //Güncelle
                 SelectEntity();
             }
             else
@@ -322,7 +334,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
                 EntityDelete();
             }
 
-            else if (e.Item == btnSeç)
+            else if (e.Item == btnSec)
             {
                 SelectEntity();
             }

@@ -13,13 +13,28 @@ using DPU_Soft.PlacementOfExams.UI.Win.Forms.OkulForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Show;
 using DPU_Soft.PlacementOfExams.Common.Enums;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.IlForms;
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.Subeforms;
+using DPU_Soft.PlacementOfExams.Model.Entities;
+using DPU_Soft.PlacementOfExams.Common.Massage;
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.KullaniciForms;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
 {
     public partial class AnaForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public static string FakulteAdi = " Fakültesi";
-        public static string DersAdi = " Dersi";
+        public static string KurumAdi = "Üniversite";
+        public static long DonemId;
+        public static string DonemAdi = "Dönemi...";
+        public static long SubeId;
+        public static string SubeAdi = "Dönemi...";
+        public static long KullaniciId;
+        public static string KullaniciAdi;
+        public static List<long> YetkiliOlunanSubeler = new List<long>() ;
+        public static DonemEntity Donem;
+        
+
+        
+
 
         public AnaForm()
         {
@@ -41,24 +56,65 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
 
 
             }
+            FormClosing += AnaForm_FormClosing;
+        }
+        private void SubeDonemSecimi(bool subeSecimButonunaBasildi)
+        {
+            ShowEditforms<SubeDonemSecimiEditForm>.ShowDialogEditForm(null,KullaniciId,subeSecimButonunaBasildi,SubeId,DonemId);
+            barDonem.Caption = DonemAdi;
+            btnSubeSecim.Caption = SubeAdi;
+        }
+
+        private void AnaForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
         }
 
         private void Butonlar_ItemClick(object sender, ItemClickEventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             if (e.Item == btnOkulKartlari)
                 ShowListforms<OkulListForm>.ShowListForm(KartTuru.Okul);
             else if (e.Item==btnIlKartlari)
             {
                 ShowListforms<IlListForm>.ShowListForm(KartTuru.Il);
             }
+            else if (e.Item==btnSube)
+            {
+                ShowListforms<SubeListForm>.ShowListForm(KartTuru.Sube);
+            }
+            else if (e.Item==btnSubeSecim)
+            {
+                for (int i = 0; i < Application.OpenForms.Count; i++)
+                {
+                    if (Application.OpenForms[i] is GirisForm || Application.OpenForms[i] is AnaForm) continue;
+                    Application.OpenForms[i].Close();
+                    i--;
+                }
 
+                SubeDonemSecimi(true);
+            }
+            else if (e.Item==btnSifreDegistir)
+            {
+                ShowEditforms<SifreDegistirEditForm>.ShowDialogEditForm(IslemTuru.EntityUpdate);
+            }
+
+            Cursor.Current = Cursors.Default;
         }
 
-        public void Mesaj(string Baslik, string Mesaj)
+        private void AnaForm_Load(object sender, EventArgs e)
         {
-            ALC.Show(this, Baslik, Mesaj);
+            barKullanici.Caption = KullaniciAdi;
+            barKurum.Caption = KurumAdi;
+            SubeDonemSecimi(false);
+
+            if (Donem==null) 
+            {
+                Messages.HataMesaji("Dönem Parametreleri yüklenemedi. Sistem Yöneticisine Başvurunuz.");
+                Application.ExitThread();
+                return;
+            }
         }
-
-
     }
 }

@@ -112,7 +112,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
             var dersDegerBrick = new TextBrick(BorderSide.None, 0, Color.Transparent, Color.Transparent, Color.Black)
             {
                 Font = regularFont,
-                Text = ":  " + AnaForm.DersAdi
+                Text = ":  " + AnaForm.SubeAdi
             };
             _ps.Graph.DrawBrick(dersDegerBrick, new RectangleF(55, 40, 200, 15));
 

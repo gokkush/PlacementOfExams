@@ -14,6 +14,8 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls
         {
             Properties.AppearanceFocused.BackColor = Color.LightSkyBlue;
             Properties.AllowNullInput = DefaultBoolean.False;
+            Properties.DisplayFormat.FormatType = FormatType.Numeric;
+            Properties.DisplayFormat.FormatString = "n2";
             Properties.EditMask = "n2";
         }
 

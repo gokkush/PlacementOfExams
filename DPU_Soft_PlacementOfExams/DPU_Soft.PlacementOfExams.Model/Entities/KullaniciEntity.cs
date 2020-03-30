@@ -30,9 +30,7 @@ namespace DPU_Soft.PlacementOfExams.Model.Entities
         [Required, StringLength(50)]
         public string GizliKelime { get; set; }
 
-        [Required, StringLength(100), ZorunluAlan("Fakülte", "txtOkul")]
-        public long OkulId { get; set; }
+        [StringLength(500)]
         public string Aciklama { get; set; }
-        public OkulEntity Okul { get; set; }
     }
 }

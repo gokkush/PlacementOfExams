@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition1 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition2 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition1 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition2 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition3 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition4 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition3 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition4 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition5 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition6 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition7 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition8 = new DevExpress.XtraLayout.RowDefinition();
             this.dpuDataLayoutControl = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuDataLayoutControl();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.txtServer = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuTextEdit();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtYetkilendirmeTuru = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuComboBoxEdit();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtKullaniciAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuTextEdit();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.txtSifre = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuTextEdit();
+            this.txtKullaniciAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuTextEdit();
+            this.txtYetkilendirmeTuru = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuComboBoxEdit();
+            this.txtServer = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuTextEdit();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpuDataLayoutControl)).BeginInit();
             this.dpuDataLayoutControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtServer.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtYetkilendirmeTuru.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSifre.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtYetkilendirmeTuru.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtServer.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,6 +86,67 @@
             this.dpuDataLayoutControl.TabIndex = 0;
             this.dpuDataLayoutControl.Text = "dpuDataLayoutControl1";
             // 
+            // txtSifre
+            // 
+            this.txtSifre.EnterMoveNextControl = true;
+            this.txtSifre.Location = new System.Drawing.Point(107, 84);
+            this.txtSifre.MenuManager = this.ribbonControl;
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.txtSifre.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtSifre.Properties.MaxLength = 50;
+            this.txtSifre.Properties.UseSystemPasswordChar = true;
+            this.txtSifre.Size = new System.Drawing.Size(201, 20);
+            this.txtSifre.StatusBarAciklama = "Şifre Giriniz";
+            this.txtSifre.StyleController = this.dpuDataLayoutControl;
+            this.txtSifre.TabIndex = 3;
+            // 
+            // txtKullaniciAdi
+            // 
+            this.txtKullaniciAdi.EnterMoveNextControl = true;
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(107, 60);
+            this.txtKullaniciAdi.MenuManager = this.ribbonControl;
+            this.txtKullaniciAdi.Name = "txtKullaniciAdi";
+            this.txtKullaniciAdi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.txtKullaniciAdi.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtKullaniciAdi.Properties.MaxLength = 50;
+            this.txtKullaniciAdi.Size = new System.Drawing.Size(201, 20);
+            this.txtKullaniciAdi.StatusBarAciklama = "Kullanıcı Adı Giriniz";
+            this.txtKullaniciAdi.StyleController = this.dpuDataLayoutControl;
+            this.txtKullaniciAdi.TabIndex = 2;
+            // 
+            // txtYetkilendirmeTuru
+            // 
+            this.txtYetkilendirmeTuru.EnterMoveNextControl = true;
+            this.txtYetkilendirmeTuru.Location = new System.Drawing.Point(107, 36);
+            this.txtYetkilendirmeTuru.MenuManager = this.ribbonControl;
+            this.txtYetkilendirmeTuru.Name = "txtYetkilendirmeTuru";
+            this.txtYetkilendirmeTuru.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.txtYetkilendirmeTuru.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtYetkilendirmeTuru.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtYetkilendirmeTuru.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtYetkilendirmeTuru.Size = new System.Drawing.Size(201, 20);
+            this.txtYetkilendirmeTuru.StatusBarAciklama = "Yetkilendirme Türü";
+            this.txtYetkilendirmeTuru.StatusBarKisayol = "F4 : ";
+            this.txtYetkilendirmeTuru.StatusBarKisayolAciklama = "Seçim Yap";
+            this.txtYetkilendirmeTuru.StyleController = this.dpuDataLayoutControl;
+            this.txtYetkilendirmeTuru.TabIndex = 1;
+            // 
+            // txtServer
+            // 
+            this.txtServer.EnterMoveNextControl = true;
+            this.txtServer.Location = new System.Drawing.Point(107, 12);
+            this.txtServer.MenuManager = this.ribbonControl;
+            this.txtServer.Name = "txtServer";
+            this.txtServer.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.txtServer.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtServer.Properties.MaxLength = 50;
+            this.txtServer.Size = new System.Drawing.Size(339, 20);
+            this.txtServer.StatusBarAciklama = "Server Adı Giriniz";
+            this.txtServer.StyleController = this.dpuDataLayoutControl;
+            this.txtServer.TabIndex = 0;
+            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -97,42 +158,28 @@
             this.layoutControlItem4});
             this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
             this.Root.Name = "Root";
-            columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition1.Width = 300D;
-            columnDefinition2.SizeType = System.Windows.Forms.SizeType.Percent;
-            columnDefinition2.Width = 100D;
+            columnDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition3.Width = 300D;
+            columnDefinition4.SizeType = System.Windows.Forms.SizeType.Percent;
+            columnDefinition4.Width = 100D;
             this.Root.OptionsTableLayoutGroup.ColumnDefinitions.AddRange(new DevExpress.XtraLayout.ColumnDefinition[] {
-            columnDefinition1,
-            columnDefinition2});
-            rowDefinition1.Height = 24D;
-            rowDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition2.Height = 24D;
-            rowDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition3.Height = 24D;
-            rowDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition4.Height = 100D;
-            rowDefinition4.SizeType = System.Windows.Forms.SizeType.Percent;
+            columnDefinition3,
+            columnDefinition4});
+            rowDefinition5.Height = 24D;
+            rowDefinition5.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition6.Height = 24D;
+            rowDefinition6.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition7.Height = 24D;
+            rowDefinition7.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition8.Height = 100D;
+            rowDefinition8.SizeType = System.Windows.Forms.SizeType.Percent;
             this.Root.OptionsTableLayoutGroup.RowDefinitions.AddRange(new DevExpress.XtraLayout.RowDefinition[] {
-            rowDefinition1,
-            rowDefinition2,
-            rowDefinition3,
-            rowDefinition4});
+            rowDefinition5,
+            rowDefinition6,
+            rowDefinition7,
+            rowDefinition8});
             this.Root.Size = new System.Drawing.Size(458, 116);
             this.Root.TextVisible = false;
-            // 
-            // txtServer
-            // 
-            this.txtServer.EnterMoveNextControl = true;
-            this.txtServer.Location = new System.Drawing.Point(116, 12);
-            this.txtServer.MenuManager = this.ribbonControl;
-            this.txtServer.Name = "txtServer";
-            this.txtServer.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.txtServer.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtServer.Properties.MaxLength = 50;
-            this.txtServer.Size = new System.Drawing.Size(330, 20);
-            this.txtServer.StatusBarAciklama = "Server Adı Giriniz";
-            this.txtServer.StyleController = this.dpuDataLayoutControl;
-            this.txtServer.TabIndex = 0;
             // 
             // layoutControlItem1
             // 
@@ -146,24 +193,6 @@
             this.layoutControlItem1.Text = "Server:";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(92, 13);
             // 
-            // txtYetkilendirmeTuru
-            // 
-            this.txtYetkilendirmeTuru.EnterMoveNextControl = true;
-            this.txtYetkilendirmeTuru.Location = new System.Drawing.Point(116, 36);
-            this.txtYetkilendirmeTuru.MenuManager = this.ribbonControl;
-            this.txtYetkilendirmeTuru.Name = "txtYetkilendirmeTuru";
-            this.txtYetkilendirmeTuru.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.txtYetkilendirmeTuru.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtYetkilendirmeTuru.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtYetkilendirmeTuru.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.txtYetkilendirmeTuru.Size = new System.Drawing.Size(192, 20);
-            this.txtYetkilendirmeTuru.StatusBarAciklama = "Yetkilendirme Türü";
-            this.txtYetkilendirmeTuru.StatusBarKisayol = "F4 : ";
-            this.txtYetkilendirmeTuru.StatusBarKisayolAciklama = "Seçim Yap";
-            this.txtYetkilendirmeTuru.StyleController = this.dpuDataLayoutControl;
-            this.txtYetkilendirmeTuru.TabIndex = 1;
-            // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
@@ -176,20 +205,6 @@
             this.layoutControlItem2.Text = "Yetkilendirme Türü:";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(92, 13);
             // 
-            // txtKullaniciAdi
-            // 
-            this.txtKullaniciAdi.EnterMoveNextControl = true;
-            this.txtKullaniciAdi.Location = new System.Drawing.Point(116, 60);
-            this.txtKullaniciAdi.MenuManager = this.ribbonControl;
-            this.txtKullaniciAdi.Name = "txtKullaniciAdi";
-            this.txtKullaniciAdi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.txtKullaniciAdi.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtKullaniciAdi.Properties.MaxLength = 50;
-            this.txtKullaniciAdi.Size = new System.Drawing.Size(192, 20);
-            this.txtKullaniciAdi.StatusBarAciklama = "Kullanıcı Adı Giriniz";
-            this.txtKullaniciAdi.StyleController = this.dpuDataLayoutControl;
-            this.txtKullaniciAdi.TabIndex = 2;
-            // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
@@ -201,20 +216,6 @@
             this.layoutControlItem3.Size = new System.Drawing.Size(300, 24);
             this.layoutControlItem3.Text = "Kullanıcı Adı:";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(92, 13);
-            // 
-            // txtSifre
-            // 
-            this.txtSifre.EnterMoveNextControl = true;
-            this.txtSifre.Location = new System.Drawing.Point(116, 84);
-            this.txtSifre.MenuManager = this.ribbonControl;
-            this.txtSifre.Name = "txtSifre";
-            this.txtSifre.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.txtSifre.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtSifre.Properties.MaxLength = 50;
-            this.txtSifre.Size = new System.Drawing.Size(192, 20);
-            this.txtSifre.StatusBarAciklama = "Şifre Giriniz";
-            this.txtSifre.StyleController = this.dpuDataLayoutControl;
-            this.txtSifre.TabIndex = 3;
             // 
             // layoutControlItem4
             // 
@@ -237,20 +238,21 @@
             this.IconOptions.ShowIcon = false;
             this.MinimumSize = new System.Drawing.Size(460, 250);
             this.Name = "BaglantiAyarlariEditForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bağlantı Ayarları";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.dpuDataLayoutControl, 0);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpuDataLayoutControl)).EndInit();
             this.dpuDataLayoutControl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtServer.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtYetkilendirmeTuru.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSifre.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtYetkilendirmeTuru.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtServer.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

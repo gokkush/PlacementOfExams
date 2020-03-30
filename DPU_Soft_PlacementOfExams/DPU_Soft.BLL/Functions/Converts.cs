@@ -1,5 +1,7 @@
 ﻿using DPU_Soft.PlacementOfExams.Model.Entities.Base.Interfaces;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace DPU_Soft.BLL.Functions
@@ -24,6 +26,12 @@ namespace DPU_Soft.BLL.Functions
 
             }
             return hedef;
+        }
+
+        public static IEnumerable<TTarget> EntityListConvert<TTarget>(this IEnumerable<IBaseEntity> source)
+        {
+            return source?.Select(x => x.EntityConvert<TTarget>()).ToList();
+            
         }
     }
 }
