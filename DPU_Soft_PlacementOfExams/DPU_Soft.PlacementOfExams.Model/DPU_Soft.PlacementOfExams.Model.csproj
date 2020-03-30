@@ -41,6 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Base\BaseEntity.cs" />
+    <Compile Include="Entities\Base\BaseEntityDurum.cs" />
+    <Compile Include="Entities\Base\BaseHareketEntity.cs" />
+    <Compile Include="Entities\IlceEntity.cs" />
+    <Compile Include="Entities\IlEntity.cs" />
+    <Compile Include="Entities\Okul.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

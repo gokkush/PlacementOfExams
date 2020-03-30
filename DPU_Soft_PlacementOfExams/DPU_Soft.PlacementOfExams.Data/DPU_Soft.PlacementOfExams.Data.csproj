@@ -51,6 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contexts\BaseDbContext.cs" />
+    <Compile Include="Contexts\PlacementOfExamsContext.cs" />
+    <Compile Include="PlacementOfExamsMiggration\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
