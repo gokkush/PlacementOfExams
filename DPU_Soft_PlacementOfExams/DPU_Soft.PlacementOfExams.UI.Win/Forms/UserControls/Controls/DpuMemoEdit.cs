@@ -12,7 +12,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls
 
         public DpuMemoEdit()
         {
-            Properties.Appearance.BackColor = Color.LightSkyBlue;
+            Properties.AppearanceFocused.BackColor = Color.LightSkyBlue;
             Properties.MaxLength = 500;
         }
         public override bool EnterMoveNextControl { get; set; } = true;

@@ -1,6 +1,8 @@
-﻿namespace DPU_Soft.PlacementOfExams.Model.Entities.Base
+﻿using DPU_Soft.PlacementOfExams.Model.Entities.Base.Interfaces;
+
+namespace DPU_Soft.PlacementOfExams.Model.Entities.Base
 {
-    public class BaseHareketEntity
+    public class BaseHareketEntity:IBaseHareketEntity
     {
         public int id { get; set; }
     }

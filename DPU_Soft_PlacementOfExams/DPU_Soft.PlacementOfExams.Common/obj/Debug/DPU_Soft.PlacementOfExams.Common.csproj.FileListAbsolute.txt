@@ -1,4 +1,97 @@
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DPU_Soft.PlacementOfExams.Common.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DPU_Soft.PlacementOfExams.Common.pdb
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Data.v19.2.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Printing.v19.2.Core.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Utils.v19.2.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.XtraBars.v19.2.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.XtraEditors.v19.2.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Pdf.v19.2.Core.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Sparkline.v19.2.Core.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Data.v19.2.xml
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Printing.v19.2.Core.xml
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Utils.v19.2.xml
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.XtraBars.v19.2.xml
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.XtraEditors.v19.2.xml
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Pdf.v19.2.Core.xml
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Sparkline.v19.2.Core.xml
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\de\DevExpress.Data.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\es\DevExpress.Data.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ja\DevExpress.Data.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ru\DevExpress.Data.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\de\DevExpress.Printing.v19.2.Core.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\es\DevExpress.Printing.v19.2.Core.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ja\DevExpress.Printing.v19.2.Core.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ru\DevExpress.Printing.v19.2.Core.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\de\DevExpress.Utils.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\es\DevExpress.Utils.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ja\DevExpress.Utils.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ru\DevExpress.Utils.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\de\DevExpress.XtraBars.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\es\DevExpress.XtraBars.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ja\DevExpress.XtraBars.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ru\DevExpress.XtraBars.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\de\DevExpress.XtraEditors.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\es\DevExpress.XtraEditors.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ja\DevExpress.XtraEditors.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ru\DevExpress.XtraEditors.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\de\DevExpress.Pdf.v19.2.Core.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\es\DevExpress.Pdf.v19.2.Core.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ja\DevExpress.Pdf.v19.2.Core.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ru\DevExpress.Pdf.v19.2.Core.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\de\DevExpress.Sparkline.v19.2.Core.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\es\DevExpress.Sparkline.v19.2.Core.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ja\DevExpress.Sparkline.v19.2.Core.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ru\DevExpress.Sparkline.v19.2.Core.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.csproj.CopyComplete
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.pdb
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.csprojAssemblyReference.cache
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DPU_Soft.PlacementOfExams.Common.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DPU_Soft.PlacementOfExams.Common.pdb
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Data.v19.2.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Printing.v19.2.Core.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Utils.v19.2.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.XtraBars.v19.2.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.XtraEditors.v19.2.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Pdf.v19.2.Core.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Sparkline.v19.2.Core.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Data.v19.2.xml
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Printing.v19.2.Core.xml
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Utils.v19.2.xml
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.XtraBars.v19.2.xml
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.XtraEditors.v19.2.xml
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Pdf.v19.2.Core.xml
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Sparkline.v19.2.Core.xml
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\de\DevExpress.Data.v19.2.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\es\DevExpress.Data.v19.2.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ja\DevExpress.Data.v19.2.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ru\DevExpress.Data.v19.2.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\de\DevExpress.Printing.v19.2.Core.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\es\DevExpress.Printing.v19.2.Core.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ja\DevExpress.Printing.v19.2.Core.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ru\DevExpress.Printing.v19.2.Core.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\de\DevExpress.Utils.v19.2.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\es\DevExpress.Utils.v19.2.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ja\DevExpress.Utils.v19.2.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ru\DevExpress.Utils.v19.2.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\de\DevExpress.XtraBars.v19.2.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\es\DevExpress.XtraBars.v19.2.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ja\DevExpress.XtraBars.v19.2.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ru\DevExpress.XtraBars.v19.2.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\de\DevExpress.XtraEditors.v19.2.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\es\DevExpress.XtraEditors.v19.2.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ja\DevExpress.XtraEditors.v19.2.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ru\DevExpress.XtraEditors.v19.2.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\de\DevExpress.Pdf.v19.2.Core.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\es\DevExpress.Pdf.v19.2.Core.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ja\DevExpress.Pdf.v19.2.Core.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ru\DevExpress.Pdf.v19.2.Core.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\de\DevExpress.Sparkline.v19.2.Core.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\es\DevExpress.Sparkline.v19.2.Core.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ja\DevExpress.Sparkline.v19.2.Core.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ru\DevExpress.Sparkline.v19.2.Core.resources.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.csprojAssemblyReference.cache
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.csproj.CoreCompileInputs.cache
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.csproj.CopyComplete
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.dll
+C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.pdb
