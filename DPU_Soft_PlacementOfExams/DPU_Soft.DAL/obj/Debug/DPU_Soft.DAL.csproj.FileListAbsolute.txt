@@ -1,8 +1,5 @@
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\DPU_Soft.DAL.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\DPU_Soft.DAL.pdb
-C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\obj\Debug\DPU_Soft.DAL.dll
-C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\obj\Debug\DPU_Soft.DAL.pdb
-C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\obj\Debug\DPU_Soft.DAL.csprojResolveAssemblyReference.cache
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\DPU_Soft.PlacementOfExams.Common.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\EntityFramework.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\EntityFramework.SqlServer.dll
@@ -45,3 +42,13 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\de\DevExpress.Pdf.v19.
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\es\DevExpress.Pdf.v19.2.Core.resources.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\ja\DevExpress.Pdf.v19.2.Core.resources.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\ru\DevExpress.Pdf.v19.2.Core.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\obj\Debug\DPU_Soft.DAL.csprojAssemblyReference.cache
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\obj\Debug\DPU_Soft.DAL.csproj.CopyComplete
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\obj\Debug\DPU_Soft.DAL.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\obj\Debug\DPU_Soft.DAL.pdb
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\DevExpress.XtraBars.v19.2.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\DevExpress.XtraBars.v19.2.xml
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\de\DevExpress.XtraBars.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\es\DevExpress.XtraBars.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\ja\DevExpress.XtraBars.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\ru\DevExpress.XtraBars.v19.2.resources.dll

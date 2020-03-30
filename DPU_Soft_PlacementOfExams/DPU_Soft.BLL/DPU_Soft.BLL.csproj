@@ -53,9 +53,15 @@
   <ItemGroup>
     <Compile Include="Base\BaseBll.cs" />
     <Compile Include="Base\Interfaces\IBaseBll.cs" />
+    <Compile Include="Base\Interfaces\IBaseCommonBll.cs" />
+    <Compile Include="Base\Interfaces\IBaseGenelBll.cs" />
     <Compile Include="Functions\Converts.cs" />
     <Compile Include="Functions\GeneralFunctions.cs" />
+    <Compile Include="Functions\ValidationFunctions.cs" />
+    <Compile Include="General\IlBll.cs" />
+    <Compile Include="General\IlceBll.cs" />
     <Compile Include="General\OkulBll.cs" />
+    <Compile Include="General\UniversiteBll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

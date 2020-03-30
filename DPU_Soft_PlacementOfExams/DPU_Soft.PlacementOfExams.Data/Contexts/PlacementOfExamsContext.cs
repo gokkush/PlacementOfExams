@@ -27,7 +27,7 @@ namespace DPU_Soft.PlacementOfExams.Data.Contexts
 
         public DbSet<IlEntity> Il { get; set; }
         public DbSet<IlceEntity> Ilce { get; set; }
-        public DbSet<Okul> Okul { get; set; }
+        public DbSet<OkulEntity> Okul { get; set; }
     }
 
 

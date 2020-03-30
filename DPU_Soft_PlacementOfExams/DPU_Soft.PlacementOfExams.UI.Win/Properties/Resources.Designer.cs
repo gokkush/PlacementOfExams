@@ -19,7 +19,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -136,6 +136,26 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Properties {
         internal static System.Drawing.Bitmap article_32x32 {
             get {
                 object obj = ResourceManager.GetObject("article_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap changeview_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("changeview_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap changeview_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("changeview_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -303,6 +323,66 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap documentmap_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("documentmap_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap documentmap_16x161 {
+            get {
+                object obj = ResourceManager.GetObject("documentmap_16x161", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap documentmap_16x162 {
+            get {
+                object obj = ResourceManager.GetObject("documentmap_16x162", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap documentmap_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("documentmap_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap documentmap_32x321 {
+            get {
+                object obj = ResourceManager.GetObject("documentmap_32x321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap documentmap_32x322 {
+            get {
+                object obj = ResourceManager.GetObject("documentmap_32x322", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap doublefirst_16x16 {
             get {
                 object obj = ResourceManager.GetObject("doublefirst_16x16", resourceCulture);
@@ -396,6 +476,86 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Properties {
         internal static System.Drawing.Bitmap export_32x32 {
             get {
                 object obj = ResourceManager.GetObject("export_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exporttodocx_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("exporttodocx_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exporttodocx_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("exporttodocx_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exporttopdf_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("exporttopdf_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exporttopdf_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("exporttopdf_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exporttotxt_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("exporttotxt_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exporttotxt_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("exporttotxt_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exporttoxlsx_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("exporttoxlsx_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exporttoxlsx_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("exporttoxlsx_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -9,10 +9,11 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Windows.Forms;
 using System.Linq;
+using DPU_Soft.BLL.Base.Interfaces;
 
 namespace DPU_Soft.BLL.General
 {
-    public class OkulBll:BaseBll<Okul,PlacementOfExamsContext>
+    public class OkulBll:BaseBll<OkulEntity,PlacementOfExamsContext>, IBaseGenelBll,IBaseCommonBll
     {
         public OkulBll()
         {
@@ -23,32 +24,33 @@ namespace DPU_Soft.BLL.General
 
         }
 
-        public BaseEntity Single(Expression<Func<Okul,bool>> filter)
+        public BaseEntity Single(Expression<Func<OkulEntity,bool>> filter)
         {
             return Basesingle(filter, x => new OkulS
             {
-                id = x.id,
+                Id = x.Id,
                 Kod = x.Kod,
-                UniversiteAdi = x.UniversiteAdi,
-                FakulteAdi=x.FakulteAdi,
-                IlId = x.IlceId,
+                FakulteAdi = x.FakulteAdi,
+                UniversiteId = x.UniversiteId,
+                UniversiteAdi=x.Universite.UniversiteAdi,
+                IlId = x.IlId,
                 IlAdi = x.Il.IlAdi,
-                IlceId=x.IlceId,
+                IlceId = x.IlceId,
                 IlceAdi = x.Ilce.IlceAdi,
-                Aciklama=x.Aciklama,
-                durum=x.durum
-                
-            });
+                Aciklama = x.Aciklama,
+                durum = x.durum
+
+            }) ;
         }
         
-        public IEnumerable<BaseEntity> List(Expression<Func<Okul, bool>> filter)
+        public IEnumerable<BaseEntity> List(Expression<Func<OkulEntity, bool>> filter)
         {
             return BaseList(filter, x => new OkulL
             {
-                id = x.id,
+                Id = x.Id,
                 Kod=x.Kod,
-                UniversiteAdi=x.UniversiteAdi,
                 FakulteAdi=x.FakulteAdi,
+                UniversiteAdi=x.Universite.UniversiteAdi,
                 IlAdi=x.Il.IlAdi,
                 IlceAdi=x.Ilce.IlceAdi,
                 Aciklama=x.Aciklama
@@ -71,6 +73,11 @@ namespace DPU_Soft.BLL.General
         {
             return BaseDelete(entity, KartTuru.Okul);
 
+        }
+
+        public string YeniKodVer()
+        {
+            return BaseYeniKodVer(KartTuru.Okul, x => x.Kod);
         }
     }
 }
