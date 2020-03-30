@@ -143,6 +143,26 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap assigntome_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("assigntome_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap assigntome_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("assigntome_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap changeview_16x16 {
             get {
                 object obj = ResourceManager.GetObject("changeview_16x16", resourceCulture);
@@ -606,6 +626,26 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Properties {
         internal static System.Drawing.Bitmap first_16x162 {
             get {
                 object obj = ResourceManager.GetObject("first_16x162", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap giris {
+            get {
+                object obj = ResourceManager.GetObject("giris", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap giris1 {
+            get {
+                object obj = ResourceManager.GetObject("giris1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

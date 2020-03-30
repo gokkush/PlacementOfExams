@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPU_Soft.DAL", "DPU_Soft.DAL\DPU_Soft.DAL.csproj", "{C2D069CC-BA71-4777-A65C-39B3B90621AA}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPU_Soft.PlacementOfExams.Model", "DPU_Soft.PlacementOfExams.Model\DPU_Soft.PlacementOfExams.Model.csproj", "{9B75F401-DF20-4EF3-B0EC-A0A011038A67}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPU_Soft.PlacementOfExams.Common", "DPU_Soft.PlacementOfExams.Common\DPU_Soft.PlacementOfExams.Common.csproj", "{C1F7A0D9-2548-40A9-8B6F-E49ECA3301CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPU_Soft.PlacementOfExams.UI.Yonetim", "DXApplication1\Dpu_Soft.PlacementOfExams.UI.Yonetim\DPU_Soft.PlacementOfExams.UI.Yonetim.csproj", "{B82B9EC2-2413-480C-ABE1-1EEC3F42AFB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,8 +47,15 @@ Global
 		{C1F7A0D9-2548-40A9-8B6F-E49ECA3301CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1F7A0D9-2548-40A9-8B6F-E49ECA3301CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1F7A0D9-2548-40A9-8B6F-E49ECA3301CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B82B9EC2-2413-480C-ABE1-1EEC3F42AFB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B82B9EC2-2413-480C-ABE1-1EEC3F42AFB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B82B9EC2-2413-480C-ABE1-1EEC3F42AFB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B82B9EC2-2413-480C-ABE1-1EEC3F42AFB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2B3DC38-FECE-4727-95FD-55A6E9A72EEB}
 	EndGlobalSection
 EndGlobal

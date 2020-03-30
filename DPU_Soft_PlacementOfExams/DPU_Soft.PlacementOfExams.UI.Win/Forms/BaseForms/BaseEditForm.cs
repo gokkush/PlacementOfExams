@@ -1,14 +1,4 @@
 ﻿using System;
-<<<<<<< HEAD
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-=======
->>>>>>> yandal
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraBars.Ribbon;
@@ -19,34 +9,22 @@ using DPU_Soft.BLL.Base.Interfaces;
 using DPU_Soft.PlacementOfExams.Model.Entities.Base;
 using DPU_Soft.PlacementOfExams.UI.Win.Functions;
 using DPU_Soft.PlacementOfExams.Common.Massage;
-<<<<<<< HEAD
-=======
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid;
 using DPU_Soft.PlacementOfExams.UI.Win.Interfaces;
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseEditForm.cs
->>>>>>> yandal
-=======
 using DevExpress.XtraPrinting.Native;
 using DevExpress.Utils.Extensions;
 using DPU_Soft.PlacementOfExams.Model.Entities.Base.Interfaces;
->>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseEditForm.cs
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
 {
     public partial class BaseEditForm : RibbonForm
     {
-<<<<<<< HEAD
-=======
         private bool _formSablonKayitedilecek;
->>>>>>> yandal
         protected internal IslemTuru BaseIslemTuru;
         protected internal long Id;
         protected internal bool RefreshYapilacak;
         protected DpuDataLayoutControl DataLayoutControl;
-<<<<<<< HEAD
-=======
         protected DpuDataLayoutControl[] DataLayoutControls;
->>>>>>> yandal
         protected IBaseBll Bll;
         protected KartTuru BaseKartTuru;
         protected BaseEntity OldEntity;
@@ -76,9 +54,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             }
 
             //form Events
-<<<<<<< HEAD
-            Load += BaseEditForm_Load;
-=======
             LocationChanged += BaseEditForm_LocationChanged;
             SizeChanged += BaseEditForm_SizeChanged;
             Load += BaseEditForm_Load;
@@ -236,35 +211,21 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
  
                 }
             }
->>>>>>> yandal
         }
 
         private void BaseEditForm_Load(object sender, EventArgs e)
         {
             IsLoaded = true;
             GuncelNesneOlustur();
-<<<<<<< HEAD
-            //SablonYukle();
-            //ButtonGizleGoster();
-            Id = BaseIslemTuru.IdOlustur(OldEntity);
-=======
             SablonYukle();
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseEditForm.cs
-            //ButtonGizleGoster();
->>>>>>> yandal
-=======
             ButtonGizleGoster();
->>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseEditForm.cs
             //güncelleme Yap
 
         }
 
         private void Buttom_ItemClick(object sender, ItemClickEventArgs e)
         {
-<<<<<<< HEAD
-=======
             Cursor.Current = Cursors.WaitCursor;
->>>>>>> yandal
             if (e.Item==btnYeni)
             {
                 //Yetki Kontrolü
@@ -301,14 +262,20 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             {
                 BaskiOnizleme();
             }
+            else if (e.Item==btnSifreSifirla)
+            {
+                SifreSifirla();
+            }
             else if (e.Item==btnCikis)
             {
                 Close();
             }
-<<<<<<< HEAD
-=======
             Cursor.Current = DefaultCursor;
->>>>>>> yandal
+        }
+
+        protected virtual void SifreSifirla()
+        {
+           
         }
 
         protected virtual void BaskiOnizleme()
@@ -331,20 +298,12 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
 
         protected virtual void SecimYap(object sender)
         {
-<<<<<<< HEAD
-
-        }
-        private void EntityDelete()
-        {
-            throw new NotImplementedException();
-=======
         }
         private void EntityDelete()
         {
             if (!((IBaseCommonBll)Bll).Delete(OldEntity)) return;
             RefreshYapilacak = true;
             Close();
->>>>>>> yandal
         }
 
         private void ButtonGizleGoster()
@@ -362,15 +321,11 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
 
         private void GeriAl()
         {
-<<<<<<< HEAD
-            throw new NotImplementedException();
-=======
             if (Messages.HayirSeciliEvetHayir("Yapılan değişikler geri alınacaktır. Onaylıyor musunuz?", "Geri Al Onay") != DialogResult.Yes) return;
             if (BaseIslemTuru == IslemTuru.EntityUpdate)
                 Yukle();
             else
                 Close();
->>>>>>> yandal
         }
 
         private bool Kaydet(bool kapanis)
@@ -417,11 +372,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
                         return true;
                     
                 case DialogResult.Cancel:
-<<<<<<< HEAD
-                    return true;
-=======
                     return false;
->>>>>>> yandal
 
             }
             return false;

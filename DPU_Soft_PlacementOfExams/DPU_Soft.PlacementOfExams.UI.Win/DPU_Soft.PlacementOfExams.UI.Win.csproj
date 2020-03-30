@@ -51,7 +51,11 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -88,33 +92,23 @@
       <DependentUpon>FiltreListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\GeneralForms\AnaForm.cs">
-<<<<<<< HEAD
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\GeneralForms\AnaForm.Designer.cs">
       <DependentUpon>AnaForm.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/DPU_Soft.PlacementOfExams.UI.Win.csproj
-<<<<<<< HEAD
-    <Compile Include="Forms\OkulForms\OkulKarti.cs">
-=======
->>>>>>> yandal
+    <Compile Include="Forms\GeneralForms\BaglantiAyarlariEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\GeneralForms\AnaForm.Designer.cs">
-      <DependentUpon>AnaForm.cs</DependentUpon>
+    <Compile Include="Forms\GeneralForms\BaglantiAyarlariEditForm.Designer.cs">
+      <DependentUpon>BaglantiAyarlariEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\IlceForms\IlceEditForm.cs">
+    <Compile Include="Forms\GeneralForms\GirisForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\IlceForms\IlceEditForm.Designer.cs">
-      <DependentUpon>IlceEditForm.cs</DependentUpon>
+    <Compile Include="Forms\GeneralForms\GirisForm.Designer.cs">
+      <DependentUpon>GirisForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\IlceForms\IlceListForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-=======
-=======
     <Compile Include="Forms\GeneralForms\RaporOnizleme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,7 +121,6 @@
     <Compile Include="Forms\GeneralForms\TabloDokumParametreleri.Designer.cs">
       <DependentUpon>TabloDokumParametreleri.cs</DependentUpon>
     </Compile>
->>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/DPU_Soft.PlacementOfExams.UI.Win.csproj
     <Compile Include="Forms\IlceForms\IlceEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,7 +130,6 @@
     <Compile Include="Forms\IlceForms\IlceListForm.cs">
       <SubType>Form</SubType>
     </Compile>
->>>>>>> yandal
     <Compile Include="Forms\IlceForms\IlceListForm.Designer.cs">
       <DependentUpon>IlceListForm.cs</DependentUpon>
     </Compile>
@@ -153,6 +145,19 @@
     <Compile Include="Forms\IlForms\IlListForm.Designer.cs">
       <DependentUpon>IlListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\KullaniciForms\KullaniciEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\KullaniciEditForm.Designer.cs">
+      <DependentUpon>KullaniciEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\KullaniciListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\KullaniciListForm.Designer.cs">
+      <DependentUpon>KullaniciListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\ShoeItems.cs" />
     <Compile Include="Forms\OkulForms\OkulEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +212,9 @@
     <Compile Include="Forms\UserControls\Controls\DpuFilterControl.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Forms\UserControls\Controls\DpuHyperLinkLabelControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms\UserControls\Controls\DpuIbanTextEdit.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -258,10 +266,7 @@
     <Compile Include="Forms\UserControls\Controls\Navigators\smallNavigator.Designer.cs">
       <DependentUpon>smallNavigator.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-=======
     <Compile Include="Functions\FileFunctions.cs" />
->>>>>>> yandal
     <Compile Include="Functions\FilterFunctions.cs" />
     <Compile Include="Functions\GeneralFunctions.cs" />
     <Compile Include="Functions\SelectFunctions.cs" />
@@ -276,42 +281,13 @@
     <Compile Include="Show\ShowListforms.cs" />
     <EmbeddedResource Include="Forms\BaseForms\BaseEditForm.resx">
       <DependentUpon>BaseEditForm.cs</DependentUpon>
-<<<<<<< HEAD
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BaseForms\BaseListForm.resx">
-      <DependentUpon>BaseListForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\GeneralForms\AnaForm.resx">
-      <DependentUpon>AnaForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\IlceForms\IlceEditForm.resx">
-      <DependentUpon>IlceEditForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\IlceForms\IlceListForm.resx">
-      <DependentUpon>IlceListForm.cs</DependentUpon>
-=======
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BaseForms\BaseEditForm.tr-TR.resx">
       <DependentUpon>BaseEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BaseForms\BaseListForm.resx">
       <DependentUpon>BaseListForm.cs</DependentUpon>
->>>>>>> yandal
     </EmbeddedResource>
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/DPU_Soft.PlacementOfExams.UI.Win.csproj
-<<<<<<< HEAD
-    <EmbeddedResource Include="Forms\GeneralForms\AnaForm.resx">
-      <DependentUpon>AnaForm.cs</DependentUpon>
-    </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="Forms\OkulForms\OkulKarti.resx">
-      <DependentUpon>OkulKarti.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="Forms\IlForms\IlEditForm.resx">
-      <DependentUpon>IlEditForm.cs</DependentUpon>
->>>>>>> yandal
-=======
-=======
     <EmbeddedResource Include="Forms\BaseForms\BaseListForm.tr-TR.resx">
       <DependentUpon>BaseListForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -327,13 +303,18 @@
     <EmbeddedResource Include="Forms\GeneralForms\AnaForm.resx">
       <DependentUpon>AnaForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\BaglantiAyarlariEditForm.resx">
+      <DependentUpon>BaglantiAyarlariEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\GirisForm.resx">
+      <DependentUpon>GirisForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\GeneralForms\RaporOnizleme.resx">
       <DependentUpon>RaporOnizleme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GeneralForms\TabloDokumParametreleri.resx">
       <DependentUpon>TabloDokumParametreleri.cs</DependentUpon>
     </EmbeddedResource>
->>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/DPU_Soft.PlacementOfExams.UI.Win.csproj
     <EmbeddedResource Include="Forms\IlceForms\IlceEditForm.resx">
       <DependentUpon>IlceEditForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -342,24 +323,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\IlForms\IlEditForm.resx">
       <DependentUpon>IlEditForm.cs</DependentUpon>
->>>>>>> yandal
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\IlForms\IlListForm.resx">
       <DependentUpon>IlListForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciForms\KullaniciEditForm.resx">
+      <DependentUpon>KullaniciEditForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\OkulForms\OkulEditForm.resx">
       <DependentUpon>OkulEditForm.cs</DependentUpon>
-<<<<<<< HEAD
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OkulForms\OkulListForm.resx">
       <DependentUpon>OkulListForm.cs</DependentUpon>
     </EmbeddedResource>
-=======
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\OkulForms\OkulListForm.resx">
-      <DependentUpon>OkulListForm.cs</DependentUpon>
-    </EmbeddedResource>
->>>>>>> yandal
     <EmbeddedResource Include="Forms\UniversiteForms\UnvEditForm.resx">
       <DependentUpon>UnvEditForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -579,19 +555,10 @@
       <Project>{2d404d7a-f15c-4e9f-9100-d208b7cd3c6b}</Project>
       <Name>DPU_Soft.BLL</Name>
     </ProjectReference>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> yandal
     <ProjectReference Include="..\DPU_Soft.PlacementOfExams.Common\DPU_Soft.PlacementOfExams.Common.csproj">
       <Project>{C1F7A0D9-2548-40A9-8B6F-E49ECA3301CA}</Project>
       <Name>DPU_Soft.PlacementOfExams.Common</Name>
     </ProjectReference>
-<<<<<<< HEAD
->>>>>>> yandal
-=======
->>>>>>> yandal
     <ProjectReference Include="..\DPU_Soft.PlacementOfExams.Model\DPU_Soft.PlacementOfExams.Model.csproj">
       <Project>{9b75f401-df20-4ef3-b0ec-a0a011038a67}</Project>
       <Name>DPU_Soft.PlacementOfExams.Model</Name>
@@ -600,11 +567,6 @@
   <ItemGroup>
     <None Include="Resources\placement_icon.png" />
   </ItemGroup>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> yandal
   <ItemGroup>
     <None Include="Resources\exporttoxlsx_16x16.png" />
   </ItemGroup>
@@ -629,9 +591,6 @@
   <ItemGroup>
     <None Include="Resources\exporttotxt_32x32.png" />
   </ItemGroup>
-<<<<<<< HEAD
->>>>>>> yandal
-=======
   <ItemGroup>
     <None Include="Resources\documentmap_16x16.png" />
   </ItemGroup>
@@ -656,9 +615,6 @@
   <ItemGroup>
     <None Include="Resources\documentmap_16x162.png" />
   </ItemGroup>
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/DPU_Soft.PlacementOfExams.UI.Win.csproj
->>>>>>> yandal
-=======
   <ItemGroup>
     <None Include="Resources\saveall_16x16.png" />
   </ItemGroup>
@@ -686,7 +642,15 @@
   <ItemGroup>
     <None Include="Resources\printpreview_32x32.png" />
   </ItemGroup>
->>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/DPU_Soft.PlacementOfExams.UI.Win.csproj
+  <ItemGroup>
+    <None Include="Resources\giris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assigntome_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assigntome_32x32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

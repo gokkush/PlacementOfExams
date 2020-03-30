@@ -62,13 +62,6 @@
             resources.ApplyResources(this.btnOkulKartlari, "btnOkulKartlari");
             this.btnOkulKartlari.Id = 1;
             this.btnOkulKartlari.Name = "btnOkulKartlari";
-<<<<<<< HEAD
-<<<<<<< HEAD
-            this.btnOkulKartlari.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnOkulKartlari_ItemClick);
-=======
->>>>>>> yandal
-=======
->>>>>>> yandal
             // 
             // btnIlKartlari
             // 

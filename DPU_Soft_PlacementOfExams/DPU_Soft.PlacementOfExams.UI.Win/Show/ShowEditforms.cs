@@ -39,7 +39,17 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Show
             }
 
         }
+        public static bool ShowDialogEditForm(IslemTuru islemTuru)
+        {
+            using (var frm=(TForm)Activator.CreateInstance(typeof(TForm)))
+            {
+                frm.BaseIslemTuru = islemTuru;
+                frm.Yukle();
+                frm.ShowDialog();
+                return frm.RefreshYapilacak;
+            }
 
+        }
         public static T ShowDialogEditForm<T>(params object[] prm) where T:IBaseEntity
         {
             using (var frm = (TForm)Activator.CreateInstance(typeof(TForm), prm))

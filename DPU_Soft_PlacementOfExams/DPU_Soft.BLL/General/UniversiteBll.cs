@@ -13,75 +13,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace DPU_Soft.BLL.General
 {
-<<<<<<< HEAD
-    public class UniversiteBll : BaseBll<UniversiteEntity, PlacementOfExamsContext>, IBaseGenelBll
-=======
-    public class UniversiteBll : BaseBll<UniversiteEntity, PlacementOfExamsContext>, IBaseGenelBll,IBaseCommonBll
->>>>>>> yandal
+    public class UniversiteBll : BaseGenelBll<UniversiteEntity>, IBaseGenelBll,IBaseCommonBll
     {
-        public UniversiteBll()
+        public UniversiteBll():base(KartTuru.Universite)
         {
 
         }
-        public UniversiteBll(Control ctrl) : base(ctrl)
+        public UniversiteBll(Control ctrl) : base(ctrl,KartTuru.Universite)
         {
 
         }
 
-        public BaseEntity Single(Expression<Func<UniversiteEntity, bool>> filter)
-        {
-            return Basesingle(filter, x => new UniversiteEntity
-            {
-<<<<<<< HEAD
-                id = x.id,
-=======
-                Id = x.Id,
->>>>>>> yandal
-                Kod = x.Kod,
-                UniversiteAdi = x.UniversiteAdi,
-                Aciklama = x.Aciklama,
-                durum = x.durum
-
-            });
-        }
-
-        public IEnumerable<BaseEntity> List(Expression<Func<UniversiteEntity, bool>> filter)
-        {
-<<<<<<< HEAD
-            return BaseList(filter, x => new UniversiteEntity
-            {
-                id = x.id,
-                Kod = x.Kod,
-                UniversiteAdi = x.UniversiteAdi,
-                Aciklama = x.Aciklama
-
-            }).OrderBy(x => x.Kod).ToList();
-=======
-            return BaseList(filter, x => x).OrderBy(x => x.Kod).ToList();
->>>>>>> yandal
-        }
-
-        public bool Insert(BaseEntity entity)
-        {
-            return BaseInsert(entity, x => x.Kod == entity.Kod);
-        }
-
-        public bool Update(BaseEntity oldEntity, BaseEntity currentEntity)
-        {
-            return BaseUpdate(oldEntity, currentEntity, x => x.Kod == currentEntity.Kod);
-
-        }
-
-        public bool Delete(BaseEntity entity)
-        {
-            return BaseDelete(entity, KartTuru.Universite);
-
-        }
-
-        public string YeniKodVer()
-        {
-            return BaseYeniKodVer(KartTuru.Universite, x => x.Kod);
-        }
     }
 }
 

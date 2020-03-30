@@ -16,11 +16,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
         }
         public static Expression<Func<T,bool>> Filter<T>(long id) where T:BaseEntity
         {
-<<<<<<< HEAD
-            return x => x.id == id;
-=======
             return x => x.Id == id;
->>>>>>> yandal
         }
     }
 }

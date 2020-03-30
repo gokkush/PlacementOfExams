@@ -5,10 +5,7 @@ using DPU_Soft.PlacementOfExams.Common.Enums;
 using DPU_Soft.PlacementOfExams.Model.Dto;
 using DPU_Soft.PlacementOfExams.UI.Win.Functions;
 using DPU_Soft.PlacementOfExams.Model.Entities;
-<<<<<<< HEAD
-=======
 using DevExpress.XtraEditors;
->>>>>>> yandal
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.OkulForms
 {
@@ -30,10 +27,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.OkulForms
             NesneyiKontrollereBagla();
 
             if (BaseIslemTuru != IslemTuru.EntityInsert) return;
-<<<<<<< HEAD
-=======
             Id = BaseIslemTuru.IdOlustur(OldEntity);
->>>>>>> yandal
             txtKod.Text = ((OkulBll)Bll).YeniKodVer();
             txtOkulAdi.Focus();
         }
@@ -47,11 +41,8 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.OkulForms
             txtIl.Text = entity.IlAdi;
             txtIlce.Id = entity.IlceId;
             txtIlce.Text = entity.IlceAdi;
-<<<<<<< HEAD
-=======
             txtUnvAdi.Id = entity.UniversiteId;
             txtUnvAdi.Text = entity.UniversiteAdi;
->>>>>>> yandal
             txtAciklama.Text = entity.Aciklama;
             tglDurum.IsOn = entity.durum;
         }
@@ -60,19 +51,12 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.OkulForms
         {
             CurrentEntity = new OkulEntity
             {
-<<<<<<< HEAD
-                id = Id,
-=======
                 Id = Id,
->>>>>>> yandal
                 Kod = txtKod.Text,
                 FakulteAdi = txtOkulAdi.Text,
                 IlId = Convert.ToInt64(txtIl.Id),
                 IlceId = Convert.ToInt64(txtIlce.Id),
-<<<<<<< HEAD
-=======
                 UniversiteId= Convert.ToInt64(txtUnvAdi.Id),
->>>>>>> yandal
                 Aciklama = txtAciklama.Text,
                 durum=tglDurum.IsOn                                         
 
@@ -83,9 +67,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.OkulForms
 
         protected override void SecimYap(object sender)
         {
-<<<<<<< HEAD
-            base.SecimYap(sender);
-=======
             if (!(sender is ButtonEdit))
                 return;
             using (var sec= new SelectFunctions())
@@ -104,7 +85,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.OkulForms
         {
             if (sender != txtIl) return;
             txtIl.ControlEnabledChange(txtIlce);
->>>>>>> yandal
         }
 
     }

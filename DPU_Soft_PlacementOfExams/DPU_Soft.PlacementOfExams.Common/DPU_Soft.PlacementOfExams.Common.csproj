@@ -47,30 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.Common/DPU_Soft.PlacementOfExams.Common.csproj
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <Compile Include="Enums\KartTuru.cs" />
-=======
-    <Compile Include="Enums\IslemTuru.cs" />
-    <Compile Include="Enums\KartTuru.cs" />
-    <Compile Include="Enums\VeriDegisimYeri.cs" />
->>>>>>> yandal
-=======
-=======
     <Compile Include="Enums\DokumSekli.cs" />
->>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.Common/DPU_Soft.PlacementOfExams.Common.csproj
     <Compile Include="Enums\DosyaTuru.cs" />
     <Compile Include="Enums\EvetHayir.cs" />
     <Compile Include="Enums\IslemTuru.cs" />
     <Compile Include="Enums\KartTuru.cs" />
     <Compile Include="Enums\RaporuKagidaSigdir.cs" />
     <Compile Include="Enums\VeriDegisimYeri.cs" />
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.Common/DPU_Soft.PlacementOfExams.Common.csproj
->>>>>>> yandal
-=======
     <Compile Include="Enums\YazdirmaYonu.cs" />
->>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.Common/DPU_Soft.PlacementOfExams.Common.csproj
+    <Compile Include="Enums\YetkilendirmeTuru.cs" />
     <Compile Include="Functions\EnumFunctions.cs" />
     <Compile Include="Massage\Messages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,10 +1,14 @@
-﻿using DPU_Soft.DAL.Base;
+﻿using DevExpress.Utils.Extensions;
+using DPU_Soft.DAL.Base;
 using DPU_Soft.DAL.Interfaces;
 using DPU_Soft.PlacementOfExams.Model.Entities.Base.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.Entity;
+using System.Runtime.InteropServices;
+using System.Security;
+
 
 namespace DPU_Soft.BLL.Functions
 {
@@ -28,6 +32,13 @@ namespace DPU_Soft.BLL.Functions
                         alanlar.Add(prop.Name);
                         }                   
                 }
+                if (prop.PropertyType == typeof(SecureString))
+                {
+                    var oldStr = ((SecureString)oldValue).ConvertToUnSecureString();
+                    var curStr= ((SecureString)currentValue).ConvertToUnSecureString();
+                    if (!oldStr.Equals(curStr))
+                        alanlar.Add(prop.Name);
+                }
                 else if (!currentValue.Equals(oldValue))
                 {
                     alanlar.Add(prop.Name);
@@ -49,6 +60,23 @@ namespace DPU_Soft.BLL.Functions
         {
             uof?.Dispose();
             uof = new UnitOfWork<T>(CreateContext<TContext>());
+        }
+
+        public static SecureString ConvertToSecureString(this string value)
+        {
+            var secureString = new SecureString();
+            if (value.Length > 0)
+                value.ToCharArray().ForEach(x => secureString.AppendChar(x));
+            secureString.MakeReadOnly();
+
+
+            return secureString;
+        }
+
+        public static string ConvertToUnSecureString(this SecureString value)
+        {
+            var result = Marshal.SecureStringToBSTR(value);
+            return Marshal.PtrToStringAuto(result);
         }
     }
 }

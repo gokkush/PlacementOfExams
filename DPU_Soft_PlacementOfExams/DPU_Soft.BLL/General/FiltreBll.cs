@@ -12,49 +12,18 @@ using System.Windows.Forms;
 
 namespace DPU_Soft.BLL.General
 {
-    public class FiltreBll : BaseBll<FiltreEntity, PlacementOfExamsContext>, IBaseCommonBll
+    public class FiltreBll : BaseGenelBll<FiltreEntity>, IBaseCommonBll
     {
-        public FiltreBll()
+        public FiltreBll():base(KartTuru.Filtre)
         {
 
         }
 
-        public FiltreBll(Control ctrl):base(ctrl)
+        public FiltreBll(Control ctrl):base(ctrl,KartTuru.Filtre)
         {
 
         }
 
-        public BaseEntity Single(Expression<Func<FiltreEntity, bool>> filter)
-        {
-            return Basesingle(filter, x => x);
-        }
-
-        public IEnumerable<BaseEntity> List(Expression<Func<FiltreEntity, bool>> filter)
-        {
-            return BaseList(filter, x => x).OrderBy(x => x.Kod).ToList();
-        }
-
-        public bool Insert(BaseEntity entity, Expression<Func<FiltreEntity, bool>> filter)
-        {
-            return BaseInsert(entity, filter);
-        }
-
-        public bool Update(BaseEntity oldEntity, BaseEntity currentEntity, Expression<Func<FiltreEntity, bool>> filter)
-        {
-            return BaseUpdate(oldEntity, currentEntity, filter);
-
-        }
-
-        public bool Delete(BaseEntity entity)
-        {
-            return BaseDelete(entity, KartTuru.Filtre);
-
-        }
-
-        public string YeniKodVer(Expression<Func<FiltreEntity, bool>> filter)
-        {
-            return BaseYeniKodVer(KartTuru.Filtre, x => x.Kod, filter);
-        }
 
     }
 }

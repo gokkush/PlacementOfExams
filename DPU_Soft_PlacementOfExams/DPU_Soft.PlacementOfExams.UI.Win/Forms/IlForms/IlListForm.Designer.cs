@@ -36,13 +36,6 @@
             this.colKod = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colIlAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colAciklama = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlForms/IlListForm.Designer.cs
-<<<<<<< HEAD
-=======
-
->>>>>>> yandal
-=======
->>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlForms/IlListForm.Designer.cs
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
@@ -51,10 +44,7 @@
             // ribbonControl
             // 
             this.ribbonControl.ExpandCollapseItem.Id = 0;
-<<<<<<< HEAD
-=======
             this.ribbonControl.MaxItemId = 43;
->>>>>>> yandal
             // 
             // 
             // 
@@ -62,36 +52,14 @@
             this.ribbonControl.SearchEditItem.EditWidth = ((int)(resources.GetObject("ribbonControl.SearchEditItem.EditWidth")));
             this.ribbonControl.SearchEditItem.Id = -5000;
             this.ribbonControl.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
-<<<<<<< HEAD
-            this.ribbonControl.Size = new System.Drawing.Size(818, 109);
-=======
             this.ribbonControl.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.ShowOnMultiplePages;
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlForms/IlListForm.Designer.cs
-            this.ribbonControl.Size = new System.Drawing.Size(936, 109);
->>>>>>> yandal
-=======
             resources.ApplyResources(this.ribbonControl, "ribbonControl");
->>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlForms/IlListForm.Designer.cs
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
             // longNavigator
             // 
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlForms/IlListForm.Designer.cs
-            this.longNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
-<<<<<<< HEAD
-            this.longNavigator.Location = new System.Drawing.Point(0, 247);
-            this.longNavigator.Name = "longNavigator";
-            this.longNavigator.Size = new System.Drawing.Size(818, 24);
-=======
-            this.longNavigator.Location = new System.Drawing.Point(0, 248);
-            this.longNavigator.Name = "longNavigator";
-            this.longNavigator.Size = new System.Drawing.Size(936, 24);
->>>>>>> yandal
-            this.longNavigator.TabIndex = 2;
-=======
             resources.ApplyResources(this.longNavigator, "longNavigator");
             this.longNavigator.Name = "longNavigator";
->>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlForms/IlListForm.Designer.cs
             // 
             // grid
             // 
@@ -99,15 +67,6 @@
             this.grid.MainView = this.tablo;
             this.grid.MenuManager = this.ribbonControl;
             this.grid.Name = "grid";
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlForms/IlListForm.Designer.cs
-<<<<<<< HEAD
-            this.grid.Size = new System.Drawing.Size(818, 138);
-=======
-            this.grid.Size = new System.Drawing.Size(936, 139);
->>>>>>> yandal
-            this.grid.TabIndex = 3;
-=======
->>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlForms/IlListForm.Designer.cs
             this.grid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.tablo});
             // 
@@ -189,29 +148,11 @@
             this.colAciklama.StatusBarAciklama = null;
             this.colAciklama.StatusBarKisayol = null;
             this.colAciklama.StatusBarKisayolAciklama = null;
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlForms/IlListForm.Designer.cs
-            this.colAciklama.Visible = true;
-            this.colAciklama.VisibleIndex = 2;
-            this.colAciklama.Width = 389;
-<<<<<<< HEAD
-=======
-
->>>>>>> yandal
-=======
->>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlForms/IlListForm.Designer.cs
             // 
             // IlListForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlForms/IlListForm.Designer.cs
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(818, 295);
-=======
-            this.ClientSize = new System.Drawing.Size(936, 296);
->>>>>>> yandal
-=======
->>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlForms/IlListForm.Designer.cs
             this.Controls.Add(this.grid);
             this.Controls.Add(this.longNavigator);
             this.IconOptions.ShowIcon = false;

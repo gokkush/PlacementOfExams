@@ -14,73 +14,16 @@ using System.Windows.Forms;
 
 namespace DPU_Soft.BLL.General
 {
-<<<<<<< HEAD
-    public class IlBll:BaseBll<IlEntity, PlacementOfExamsContext>, IBaseGenelBll
-=======
-    public class IlBll:BaseBll<IlEntity, PlacementOfExamsContext>, IBaseGenelBll,IBaseCommonBll
->>>>>>> yandal
+    public class IlBll:BaseGenelBll<IlEntity>, IBaseGenelBll,IBaseCommonBll
     {
-        public IlBll()
+        private KartTuru _kartTuru;
+        public IlBll():base(KartTuru.Il)
         {
 
         }
-        public IlBll(Control ctrl) : base(ctrl)
+        public IlBll(Control ctrl) : base(ctrl,KartTuru.Il)
         {
 
-        }
-        public BaseEntity Single(Expression<Func<IlEntity, bool>> filter)
-        {
-<<<<<<< HEAD
-            return Basesingle(filter, x => new IlEntity
-            {
-                id = x.id,
-                Kod = x.Kod,
-                IlAdi = x.IlAdi,
-                Aciklama = x.Aciklama,
-                durum = x.durum
-
-            });
-=======
-            return Basesingle(filter, x => x);
->>>>>>> yandal
-        }
-
-        public IEnumerable<BaseEntity> List(Expression<Func<IlEntity, bool>> filter)
-        {
-<<<<<<< HEAD
-            return BaseList(filter, x => new IlEntity
-            {
-                id = x.id,
-                Kod = x.Kod,
-                IlAdi = x.IlAdi,
-                Aciklama = x.Aciklama
-
-            }).OrderBy(x => x.Kod).ToList();
-=======
-            return BaseList(filter, x => x).OrderBy(x => x.Kod).ToList();
->>>>>>> yandal
-        }
-
-        public bool Insert(BaseEntity entity)
-        {
-            return BaseInsert(entity, x => x.Kod == entity.Kod);
-        }
-
-        public bool Update(BaseEntity oldEntity, BaseEntity currentEntity)
-        {
-            return BaseUpdate(oldEntity, currentEntity, x => x.Kod == currentEntity.Kod);
-
-        }
-
-        public bool Delete(BaseEntity entity)
-        {
-            return BaseDelete(entity, KartTuru.Il);
-
-        }
-
-        public string YeniKodVer()
-        {
-            return BaseYeniKodVer(KartTuru.Il, x => x.Kod);
         }
     }
 

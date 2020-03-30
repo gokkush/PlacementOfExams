@@ -4,25 +4,19 @@ using DevExpress.XtraGrid.Views.Grid;
 using DPU_Soft.PlacementOfExams.Common.Enums;
 using DPU_Soft.PlacementOfExams.Common.Massage;
 using DPU_Soft.PlacementOfExams.Model.Entities.Base;
-<<<<<<< HEAD
-=======
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls;
->>>>>>> yandal
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-<<<<<<< HEAD
-=======
 using System.Windows.Forms;
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Functions/GeneralFunctions.cs
->>>>>>> yandal
-=======
-using DevExpress.XtraGrid.Views.Base;
-using DevExpress.XtraPrinting;
 using System.Drawing.Printing;
->>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Functions/GeneralFunctions.cs
+using System.Configuration;
+using System.Security;
+using System.Data.SqlClient;
+using DPU_Soft.PlacementOfExams.UI.Win.Properties;
+using DPU_Soft.BLL.Functions;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
 {
@@ -32,11 +26,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
         {
             if (tablo.FocusedRowHandle>-1)
             {
-<<<<<<< HEAD
-                return (long)tablo.GetFocusedRowCellValue("Id");
-=======
                 return  (long)tablo.GetFocusedRowCellValue("Id");
->>>>>>> yandal
             }
             Messages.KartSecmemeHataMesaj();
             return -1;
@@ -87,7 +77,14 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
                         return VeriDegisimYeri.Alan;
                         }
                     }
-                    else if (!currentValue.Equals(oldValue))
+                if (prop.PropertyType == typeof(SecureString))
+                {
+                    var oldStr = ((SecureString)oldValue).ConvertToUnSecureString();
+                    var curStr = ((SecureString)currentValue).ConvertToUnSecureString();
+                    if (!oldStr.Equals(curStr))
+                        return VeriDegisimYeri.Alan;
+                }
+                else if (!currentValue.Equals(oldValue))
                     {
                     return VeriDegisimYeri.Alan;
                     }
@@ -149,11 +146,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
                 var randomSayi = SifirEkle(new Random().Next(0,99).ToString());
                 return yil + ay + gun + saat + dakika + saniye + miliSaniye + randomSayi;
             }
-<<<<<<< HEAD
-            return islemTuru == IslemTuru.EntityUpdate ? selectedEntity.id : long.Parse(Id());
-
-        }
-=======
             return islemTuru == IslemTuru.EntityUpdate ? selectedEntity.Id : long.Parse(Id());
 
         }
@@ -199,9 +191,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
             sagMenu.ShowPopup(Control.MousePosition);
             
         }
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Functions/GeneralFunctions.cs
->>>>>>> yandal
-=======
 
         public static List<string> YazicilariListele()
         {
@@ -213,6 +202,120 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
             var settings = new PrinterSettings();
             return settings.PrinterName;
         }
->>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Functions/GeneralFunctions.cs
+
+        public static void AppSettingsWrite(string key, string value)
+        {
+            var configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            configuration.AppSettings.Settings[key].Value = value;
+            configuration.Save(ConfigurationSaveMode.Modified);
+            ConfigurationManager.RefreshSection("appSettings");
+        }
+
+        public static void CreateConnectionString(string initialCatalog, string server,SecureString kullaniciAdi, SecureString sifre, YetkilendirmeTuru yetkilendirmeTuru)
+        {
+            SqlConnectionStringBuilder builder = null;
+
+            switch (yetkilendirmeTuru)
+            {
+                case YetkilendirmeTuru.SqlServer:
+                    builder = new SqlConnectionStringBuilder
+                    {
+                        
+                        DataSource = server,
+                        UserID = kullaniciAdi.ConvertToUnSecureString(),
+                        Password=sifre.ConvertToUnSecureString(),
+                        InitialCatalog = initialCatalog,
+                        MultipleActiveResultSets = true
+
+                    };
+                    break;
+                case YetkilendirmeTuru.Windows:
+                    builder = new SqlConnectionStringBuilder
+                    {
+                        DataSource = server,
+                        IntegratedSecurity = true,
+                        InitialCatalog = initialCatalog,
+                        MultipleActiveResultSets = true
+                    };
+                    break;
+            }
+            var configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            configuration.ConnectionStrings.ConnectionStrings["PlacementOfExamsContext"].ConnectionString = builder?.ConnectionString;
+            configuration.Save(ConfigurationSaveMode.Modified);
+            ConfigurationManager.RefreshSection("connectionStrings");
+            Settings.Default.Reset();
+            Settings.Default.Save();
+        }
+
+
+
+        public static bool BaglantiKontrolu(string server, SecureString kullaniciAdi, SecureString sifre, YetkilendirmeTuru yetkilendirmeTuru, bool genelMesajVer= false)
+        {
+            CreateConnectionString("", server, kullaniciAdi, sifre, yetkilendirmeTuru);
+
+            using (var con= new SqlConnection(BLL.Functions.GeneralFunctions.GetConnectionString()))
+            {
+                try
+                {
+                    if (con.ConnectionString == "") 
+                        return false;
+                    con.Open();
+                    return true;
+                }
+                catch (SqlException ex)
+                {
+                    if (genelMesajVer)
+                    {
+                        Messages.HataMesaji("Bağlantı ayarlarınız hatalıdır. Lütfen Kontrol ediniz.");
+                        return false;
+                    }
+
+                    switch (ex.Number)
+                    {
+                        case 18456:
+                            Messages.HataMesaji("Server kullanıcı adı veya şifre hatalıdır.");
+                            break;
+                        default:
+                            Messages.HataMesaji(ex.Message);
+                            break;
+                    }
+                }
+                return false;
+            }
+        }
+
+        public static string md5Sifrele(this string value)
+        {
+            var md5 = new MD5CryptoServiceProvider();
+            var byt = Encoding.UTF8.GetBytes(value);
+            byt = md5.ComputeHash(byt);
+            var md5Sifre = BitConverter.ToString(byt).Replace("-","");
+            return md5Sifre;
+        }
+        public static (SecureString secureSifre, SecureString secureGizliKelime, string sifre, string gizliKelime) SifreUret()
+        {
+            string RandomDegerUret(int minValue, int count)
+            {
+                var random = new Random();
+                const string karakterTablosu = "0123456789ABCDEFGHIJKLMNOPQRSTUWXVYZabcdefghijklmnopqrsdtuwxvz";
+                string sonuc = null;
+                for (int i = 0; i < count; i++)
+                    sonuc += karakterTablosu[random.Next(minValue, karakterTablosu.Length - 1)].ToString() ;
+                return sonuc;
+            }
+
+            var secureSifre = RandomDegerUret(0,8).ConvertToSecureString();
+            var secureGizliKelime = RandomDegerUret(9, 10).ConvertToSecureString();
+            var sifre = secureSifre.ConvertToUnSecureString().md5Sifrele();
+            var gizliKelime = secureGizliKelime.ConvertToUnSecureString().md5Sifrele();
+            return (secureSifre, secureGizliKelime, sifre, gizliKelime); 
+        }
+
+        //public static bool SifreMailiGonder(this string kullaniciAdi, string fakulteAdi, string eMail, SecureString secureSifre, SecureString secureGizlikKelime)
+        //{
+
+        //}
+        
+        
     }
 }

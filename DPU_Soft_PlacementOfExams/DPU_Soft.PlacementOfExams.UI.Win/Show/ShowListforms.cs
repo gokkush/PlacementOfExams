@@ -22,8 +22,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Show
             frm.Show();
         }
 
-<<<<<<< HEAD
-=======
         public static void ShowListForm(KartTuru kartTuru,params object[]prm)
         {
             //yetki Kontrolü Yapılacak
@@ -35,7 +33,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Show
         }
 
 
->>>>>>> yandal
         public static BaseEntity ShowDialogListForm(KartTuru kartTuru, long? seciliGelecekId, params object[] prm)
         {
             //Yetki Kontrolü

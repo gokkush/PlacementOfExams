@@ -184,16 +184,10 @@
             this.btnFormatsizExcelDosyasi,
             this.btnWordDosyasi,
             this.btnPdfDosyasi,
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseListForm.Designer.cs
-            this.btnTxtDosyasi});
-            this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 40;
-=======
             this.btnTxtDosyasi,
             this.btnBagliKartlar});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl.MaxItemId = 41;
->>>>>>> yandal:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseCardsForm.Designer.cs
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -761,8 +755,6 @@
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "ribbonPage2";
             // 
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseListForm.Designer.cs
-=======
             // sagMenu
             // 
             this.sagMenu.ItemLinks.Add(this.btnYeni);
@@ -774,7 +766,6 @@
             this.sagMenu.Name = "sagMenu";
             this.sagMenu.Ribbon = this.ribbonControl;
             // 
->>>>>>> yandal:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseCardsForm.Designer.cs
             // BaseListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -824,15 +815,10 @@
         private DevExpress.XtraBars.BarButtonItem btnWordDosyasi;
         private DevExpress.XtraBars.BarButtonItem btnPdfDosyasi;
         private DevExpress.XtraBars.BarButtonItem btnTxtDosyasi;
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseListForm.Designer.cs
-=======
         private DevExpress.XtraBars.PopupMenu sagMenu;
         protected DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         protected DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
         protected DevExpress.XtraBars.BarButtonItem btnBagliKartlar;
-<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseListForm.Designer.cs
->>>>>>> yandal:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseCardsForm.Designer.cs
-=======
         protected DevExpress.XtraBars.BarButtonItem btnFiltrele;
         protected DevExpress.XtraBars.BarButtonItem btnKolonlar;
         protected DevExpress.XtraBars.BarButtonItem btnYazdir;
@@ -846,6 +832,5 @@
         protected DevExpress.XtraBars.BarStaticItem barGonder;
         protected DevExpress.XtraBars.BarStaticItem barGonderAciklama;
         protected DevExpress.XtraBars.BarButtonItem btnAktifPasifKartlar;
->>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseListForm.Designer.cs
     }
 }
