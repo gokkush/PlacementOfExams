@@ -208,6 +208,8 @@
             this.statusBarAciklama.Id = 6;
             this.statusBarAciklama.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.suggestion_16x16;
             this.statusBarAciklama.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.suggestion_32x32;
+            this.statusBarAciklama.ItemAppearance.Normal.ForeColor = System.Drawing.Color.DarkBlue;
+            this.statusBarAciklama.ItemAppearance.Normal.Options.UseForeColor = true;
             this.statusBarAciklama.Name = "statusBarAciklama";
             this.statusBarAciklama.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -215,12 +217,18 @@
             // 
             this.statusBarKisayol.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.statusBarKisayol.Id = 7;
+            this.statusBarKisayol.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.statusBarKisayol.ItemAppearance.Normal.ForeColor = System.Drawing.Color.DarkBlue;
+            this.statusBarKisayol.ItemAppearance.Normal.Options.UseFont = true;
+            this.statusBarKisayol.ItemAppearance.Normal.Options.UseForeColor = true;
             this.statusBarKisayol.Name = "statusBarKisayol";
             // 
             // statusBarKisayolAciklama
             // 
             this.statusBarKisayolAciklama.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.statusBarKisayolAciklama.Id = 8;
+            this.statusBarKisayolAciklama.ItemAppearance.Normal.ForeColor = System.Drawing.Color.Green;
+            this.statusBarKisayolAciklama.ItemAppearance.Normal.Options.UseForeColor = true;
             this.statusBarKisayolAciklama.Name = "statusBarKisayolAciklama";
             // 
             // ribbonPage1
@@ -255,7 +263,7 @@
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "ribbonPage2";
             // 
-            // BaseCardForm
+            // BaseEditForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -264,7 +272,7 @@
             this.Controls.Add(this.ribbonControl);
             this.IconOptions.ShowIcon = false;
             this.MinimizeBox = false;
-            this.Name = "BaseCardForm";
+            this.Name = "BaseEditForm";
             this.Ribbon = this.ribbonControl;
             this.ShowInTaskbar = false;
             this.StatusBar = this.ribbonStatusBar1;

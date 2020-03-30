@@ -1,5 +1,6 @@
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DPU_Soft.PlacementOfExams.Common.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DPU_Soft.PlacementOfExams.Common.pdb
+<<<<<<< HEAD
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Data.v19.2.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Printing.v19.2.Core.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Utils.v19.2.dll
@@ -46,6 +47,8 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DP
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.pdb
 <<<<<<< HEAD
+=======
+>>>>>>> yandal
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Data.v19.2.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Printing.v19.2.Core.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\DevExpress.Utils.v19.2.dll
@@ -88,6 +91,7 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\de
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\es\DevExpress.Sparkline.v19.2.Core.resources.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ja\DevExpress.Sparkline.v19.2.Core.resources.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ru\DevExpress.Sparkline.v19.2.Core.resources.dll
+<<<<<<< HEAD
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.csprojResolveAssemblyReference.cache
 =======
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.csprojAssemblyReference.cache
@@ -140,4 +144,10 @@ C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU
 C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.csproj.CopyComplete
 C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.dll
 C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.pdb
+>>>>>>> yandal
+=======
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.csproj.CopyComplete
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.pdb
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.csprojAssemblyReference.cache
 >>>>>>> yandal

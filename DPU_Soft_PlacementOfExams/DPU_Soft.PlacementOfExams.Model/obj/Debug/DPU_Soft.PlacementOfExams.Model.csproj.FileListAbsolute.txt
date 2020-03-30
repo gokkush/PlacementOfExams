@@ -1,6 +1,7 @@
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\DPU_Soft.PlacementOfExams.Model.dll.config
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\DPU_Soft.PlacementOfExams.Model.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\DPU_Soft.PlacementOfExams.Model.pdb
+<<<<<<< HEAD
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\EntityFramework.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\EntityFramework.SqlServer.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\EntityFramework.xml
@@ -10,10 +11,13 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\obj\Debug\DPU
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\obj\Debug\DPU_Soft.PlacementOfExams.Model.pdb
 <<<<<<< HEAD
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\DPU_Soft.PlacementOfExams.Model.dll.config
+=======
+>>>>>>> yandal
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\EntityFramework.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\EntityFramework.SqlServer.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\EntityFramework.xml
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\EntityFramework.SqlServer.xml
+<<<<<<< HEAD
 =======
 C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\DPU_Soft.PlacementOfExams.Model.dll.config
 C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\DPU_Soft.PlacementOfExams.Model.dll
@@ -27,4 +31,10 @@ C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU
 C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\obj\Debug\DPU_Soft.PlacementOfExams.Model.csproj.CopyComplete
 C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\obj\Debug\DPU_Soft.PlacementOfExams.Model.dll
 C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\obj\Debug\DPU_Soft.PlacementOfExams.Model.pdb
+>>>>>>> yandal
+=======
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\obj\Debug\DPU_Soft.PlacementOfExams.Model.csproj.CopyComplete
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\obj\Debug\DPU_Soft.PlacementOfExams.Model.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\obj\Debug\DPU_Soft.PlacementOfExams.Model.pdb
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\obj\Debug\DPU_Soft.PlacementOfExams.Model.csprojAssemblyReference.cache
 >>>>>>> yandal

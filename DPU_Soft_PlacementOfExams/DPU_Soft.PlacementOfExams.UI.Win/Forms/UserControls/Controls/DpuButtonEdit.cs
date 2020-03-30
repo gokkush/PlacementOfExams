@@ -32,17 +32,17 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls
                 var oldValue = _id;
                 var newValue = value;
                 if (newValue == oldValue)
-                {
                     return;
-                }
-                else _id = value;
-                IdChanged?.Invoke(this, new IdChangedEventArgs(oldValue, newValue));
+                 _id = value;
+                IdChanged(this, new IdChangedEventArgs(oldValue, newValue));
+                EnabledChange(this, EventArgs.Empty);
 
             }
         }
 
-        public event EventHandler<IdChangedEventArgs> IdChanged;
+        public event EventHandler<IdChangedEventArgs> IdChanged=delegate { };
 
+        public event EventHandler EnabledChange = delegate { };
         #endregion
         
     }

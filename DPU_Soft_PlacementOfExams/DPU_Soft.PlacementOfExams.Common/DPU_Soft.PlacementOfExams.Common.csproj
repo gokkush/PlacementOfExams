@@ -48,8 +48,15 @@
   </ItemGroup>
   <ItemGroup>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Enums\KartTuru.cs" />
 =======
+    <Compile Include="Enums\IslemTuru.cs" />
+    <Compile Include="Enums\KartTuru.cs" />
+    <Compile Include="Enums\VeriDegisimYeri.cs" />
+>>>>>>> yandal
+=======
+    <Compile Include="Enums\DosyaTuru.cs" />
     <Compile Include="Enums\IslemTuru.cs" />
     <Compile Include="Enums\KartTuru.cs" />
     <Compile Include="Enums\VeriDegisimYeri.cs" />

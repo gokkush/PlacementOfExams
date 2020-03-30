@@ -14,7 +14,11 @@ using System.Windows.Forms;
 
 namespace DPU_Soft.BLL.General
 {
+<<<<<<< HEAD
     public class IlBll:BaseBll<IlEntity, PlacementOfExamsContext>, IBaseGenelBll
+=======
+    public class IlBll:BaseBll<IlEntity, PlacementOfExamsContext>, IBaseGenelBll,IBaseCommonBll
+>>>>>>> yandal
     {
         public IlBll()
         {
@@ -26,6 +30,7 @@ namespace DPU_Soft.BLL.General
         }
         public BaseEntity Single(Expression<Func<IlEntity, bool>> filter)
         {
+<<<<<<< HEAD
             return Basesingle(filter, x => new IlEntity
             {
                 id = x.id,
@@ -35,10 +40,14 @@ namespace DPU_Soft.BLL.General
                 durum = x.durum
 
             });
+=======
+            return Basesingle(filter, x => x);
+>>>>>>> yandal
         }
 
         public IEnumerable<BaseEntity> List(Expression<Func<IlEntity, bool>> filter)
         {
+<<<<<<< HEAD
             return BaseList(filter, x => new IlEntity
             {
                 id = x.id,
@@ -47,6 +56,9 @@ namespace DPU_Soft.BLL.General
                 Aciklama = x.Aciklama
 
             }).OrderBy(x => x.Kod).ToList();
+=======
+            return BaseList(filter, x => x).OrderBy(x => x.Kod).ToList();
+>>>>>>> yandal
         }
 
         public bool Insert(BaseEntity entity)

@@ -22,6 +22,20 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Show
             frm.Show();
         }
 
+<<<<<<< HEAD
+=======
+        public static void ShowListForm(KartTuru kartTuru,params object[]prm)
+        {
+            //yetki Kontrolü Yapılacak
+            var frm = (TForm)Activator.CreateInstance(typeof(TForm),prm);
+            frm.MdiParent = Form.ActiveForm;
+
+            frm.Yukle();
+            frm.Show();
+        }
+
+
+>>>>>>> yandal
         public static BaseEntity ShowDialogListForm(KartTuru kartTuru, long? seciliGelecekId, params object[] prm)
         {
             //Yetki Kontrolü

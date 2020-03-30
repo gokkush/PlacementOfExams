@@ -74,6 +74,11 @@ namespace DPU_Soft.DAL.Base
             return filter == null ? _dbSet.Select(selector) : _dbSet.Where(filter).Select(selector);
         }
 
+        public int Count(Expression<Func<T, bool>> filter = null)
+        {
+            return filter == null ? _dbSet.Count() : _dbSet.Count(filter);
+        }
+
         public TResult Find<TResult>(Expression<Func<T, bool>> filter, Expression<Func<T, TResult>> selector)
         {
             return filter == null ? _dbSet.Select(selector).FirstOrDefault() : _dbSet.Where(filter).Select(selector).FirstOrDefault();

@@ -200,6 +200,7 @@
             // 
             // longNavigator
             // 
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/OkulForms/OkulListForm.Designer.cs
 <<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/OkulForms/OkulKartlari.Designer.cs
             this.longNavigator1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.longNavigator1.Location = new System.Drawing.Point(0, 382);
@@ -207,12 +208,17 @@
             this.longNavigator1.Size = new System.Drawing.Size(913, 24);
             this.longNavigator1.TabIndex = 3;
 =======
+=======
+>>>>>>> yandal:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/OkulForms/OkulKartlari.Designer.cs
             this.longNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.longNavigator.Location = new System.Drawing.Point(0, 382);
             this.longNavigator.Name = "longNavigator";
             this.longNavigator.Size = new System.Drawing.Size(913, 24);
             this.longNavigator.TabIndex = 3;
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/OkulForms/OkulListForm.Designer.cs
 >>>>>>> yandal:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/OkulForms/OkulListForm.Designer.cs
+=======
+>>>>>>> yandal:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/OkulForms/OkulKartlari.Designer.cs
             // 
             // OkulListForm
             // 

@@ -10,6 +10,7 @@ namespace DPU_Soft.DAL.Base
 {
     public class UnitOfWork<T> : IUnitOfWork<T> where T : class
     {
+        
         private readonly DbContext _context;
         public UnitOfWork(DbContext context)
         {

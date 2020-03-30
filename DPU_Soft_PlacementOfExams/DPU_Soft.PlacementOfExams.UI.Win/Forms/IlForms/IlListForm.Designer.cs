@@ -35,6 +35,10 @@
             this.colKod = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colIlAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colAciklama = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
+<<<<<<< HEAD
+=======
+
+>>>>>>> yandal
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
@@ -43,6 +47,10 @@
             // ribbonControl
             // 
             this.ribbonControl.ExpandCollapseItem.Id = 0;
+<<<<<<< HEAD
+=======
+            this.ribbonControl.MaxItemId = 43;
+>>>>>>> yandal
             // 
             // 
             // 
@@ -50,15 +58,26 @@
             this.ribbonControl.SearchEditItem.EditWidth = 150;
             this.ribbonControl.SearchEditItem.Id = -5000;
             this.ribbonControl.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+<<<<<<< HEAD
             this.ribbonControl.Size = new System.Drawing.Size(818, 109);
+=======
+            this.ribbonControl.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.ShowOnMultiplePages;
+            this.ribbonControl.Size = new System.Drawing.Size(936, 109);
+>>>>>>> yandal
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
             // longNavigator
             // 
             this.longNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
+<<<<<<< HEAD
             this.longNavigator.Location = new System.Drawing.Point(0, 247);
             this.longNavigator.Name = "longNavigator";
             this.longNavigator.Size = new System.Drawing.Size(818, 24);
+=======
+            this.longNavigator.Location = new System.Drawing.Point(0, 248);
+            this.longNavigator.Name = "longNavigator";
+            this.longNavigator.Size = new System.Drawing.Size(936, 24);
+>>>>>>> yandal
             this.longNavigator.TabIndex = 2;
             // 
             // grid
@@ -68,7 +87,11 @@
             this.grid.MainView = this.tablo;
             this.grid.MenuManager = this.ribbonControl;
             this.grid.Name = "grid";
+<<<<<<< HEAD
             this.grid.Size = new System.Drawing.Size(818, 138);
+=======
+            this.grid.Size = new System.Drawing.Size(936, 139);
+>>>>>>> yandal
             this.grid.TabIndex = 3;
             this.grid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.tablo});
@@ -160,12 +183,20 @@
             this.colAciklama.Visible = true;
             this.colAciklama.VisibleIndex = 2;
             this.colAciklama.Width = 389;
+<<<<<<< HEAD
+=======
+
+>>>>>>> yandal
             // 
             // IlListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(818, 295);
+=======
+            this.ClientSize = new System.Drawing.Size(936, 296);
+>>>>>>> yandal
             this.Controls.Add(this.grid);
             this.Controls.Add(this.longNavigator);
             this.IconOptions.ShowIcon = false;

@@ -27,6 +27,10 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.IlceForms
             BaseKartTuru = KartTuru.Ilce;
             //FormShow = new ShowEditforms<IlceEditForm>();
             base.Navigator = longNavigator.Navigator;
+<<<<<<< HEAD
+=======
+            Text = Text + " - (" + _ilAdi + ")";
+>>>>>>> yandal
         }
         protected override void Listele()
         {
@@ -36,8 +40,13 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.IlceForms
         protected override void ShowEditForm(long id)
         {
             var result= new ShowEditforms<IlceEditForm>().ShowDialogeditForm(KartTuru.Ilce,id,_ilId,_ilAdi);
+<<<<<<< HEAD
 
             //işlemler
+=======
+            ShowEditFormDefault(result);
+
+>>>>>>> yandal
         }
     }
 }

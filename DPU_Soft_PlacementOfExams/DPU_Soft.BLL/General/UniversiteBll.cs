@@ -13,7 +13,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace DPU_Soft.BLL.General
 {
+<<<<<<< HEAD
     public class UniversiteBll : BaseBll<UniversiteEntity, PlacementOfExamsContext>, IBaseGenelBll
+=======
+    public class UniversiteBll : BaseBll<UniversiteEntity, PlacementOfExamsContext>, IBaseGenelBll,IBaseCommonBll
+>>>>>>> yandal
     {
         public UniversiteBll()
         {
@@ -28,7 +32,11 @@ namespace DPU_Soft.BLL.General
         {
             return Basesingle(filter, x => new UniversiteEntity
             {
+<<<<<<< HEAD
                 id = x.id,
+=======
+                Id = x.Id,
+>>>>>>> yandal
                 Kod = x.Kod,
                 UniversiteAdi = x.UniversiteAdi,
                 Aciklama = x.Aciklama,
@@ -39,6 +47,7 @@ namespace DPU_Soft.BLL.General
 
         public IEnumerable<BaseEntity> List(Expression<Func<UniversiteEntity, bool>> filter)
         {
+<<<<<<< HEAD
             return BaseList(filter, x => new UniversiteEntity
             {
                 id = x.id,
@@ -47,6 +56,9 @@ namespace DPU_Soft.BLL.General
                 Aciklama = x.Aciklama
 
             }).OrderBy(x => x.Kod).ToList();
+=======
+            return BaseList(filter, x => x).OrderBy(x => x.Kod).ToList();
+>>>>>>> yandal
         }
 
         public bool Insert(BaseEntity entity)

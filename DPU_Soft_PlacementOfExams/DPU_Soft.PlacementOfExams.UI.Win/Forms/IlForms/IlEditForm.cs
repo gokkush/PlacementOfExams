@@ -25,6 +25,10 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.IlForms
             NesneyiKontrollereBagla();
 
             if (BaseIslemTuru != IslemTuru.EntityInsert) return;
+<<<<<<< HEAD
+=======
+            Id = BaseIslemTuru.IdOlustur(OldEntity);
+>>>>>>> yandal
             txtKod.Text = ((IlBll)Bll).YeniKodVer();
             txtIlAdi.Focus();
         }
@@ -42,7 +46,11 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.IlForms
         {
             CurrentEntity = new IlEntity
             {
+<<<<<<< HEAD
                 id = Id,
+=======
+                Id = Id,
+>>>>>>> yandal
                 Kod = txtKod.Text,
                 IlAdi = txtIlAdi.Text,
                 Aciklama = txtAciklama.Text,

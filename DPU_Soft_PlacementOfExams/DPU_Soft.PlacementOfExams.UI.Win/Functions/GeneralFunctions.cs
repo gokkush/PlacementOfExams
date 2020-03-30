@@ -3,11 +3,19 @@ using DevExpress.XtraGrid.Views.Grid;
 using DPU_Soft.PlacementOfExams.Common.Enums;
 using DPU_Soft.PlacementOfExams.Common.Massage;
 using DPU_Soft.PlacementOfExams.Model.Entities.Base;
+<<<<<<< HEAD
+=======
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls;
+>>>>>>> yandal
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
+=======
+using System.Windows.Forms;
+>>>>>>> yandal
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
 {
@@ -17,7 +25,11 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
         {
             if (tablo.FocusedRowHandle>-1)
             {
+<<<<<<< HEAD
                 return (long)tablo.GetFocusedRowCellValue("Id");
+=======
+                return  (long)tablo.GetFocusedRowCellValue("Id");
+>>>>>>> yandal
             }
             Messages.KartSecmemeHataMesaj();
             return -1;
@@ -109,8 +121,56 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
                 var randomSayi = SifirEkle(new Random().Next(0,99).ToString());
                 return yil + ay + gun + saat + dakika + saniye + miliSaniye + randomSayi;
             }
+<<<<<<< HEAD
             return islemTuru == IslemTuru.EntityUpdate ? selectedEntity.id : long.Parse(Id());
 
         }
+=======
+            return islemTuru == IslemTuru.EntityUpdate ? selectedEntity.Id : long.Parse(Id());
+
+        }
+
+        public static void ControlEnabledChange(this DpuButtonEdit baseEdit, Control prmEdit)
+        {
+            switch (prmEdit)
+            {
+                case DpuButtonEdit edt:
+                    edt.Enabled = baseEdit.Id.HasValue&&baseEdit.Id>0;
+                   // edt.Id = null;
+                    edt.EditValue = null;
+                    break;
+
+            }
+        }
+
+        public static void RowFocus(this GridView tablo, string aranacakKolon, object aranacakDeger)
+        {
+            var rowHandle = 0;
+            for (int i = 0; i < tablo.RowCount; i++)
+            {
+                var bulunanDeger = tablo.GetRowCellValue(i,aranacakKolon);
+                if (aranacakDeger.Equals(bulunanDeger)) rowHandle = i;
+                
+            }
+            tablo.FocusedRowHandle = rowHandle;
+        }
+
+        public static void RowFocus(this GridView tablo, int rowhandle)
+        {
+            if (rowhandle <= 0) return;
+            if (rowhandle == tablo.RowCount - 1)
+                tablo.FocusedRowHandle = rowhandle;
+            else
+                tablo.FocusedRowHandle = rowhandle - 1;
+            
+        }
+
+        public static void SagMenuGoster(this MouseEventArgs e,PopupMenu sagMenu)
+        {
+            if (e.Button != MouseButtons.Right) return;
+            sagMenu.ShowPopup(Control.MousePosition);
+            
+        }
+>>>>>>> yandal
     }
 }

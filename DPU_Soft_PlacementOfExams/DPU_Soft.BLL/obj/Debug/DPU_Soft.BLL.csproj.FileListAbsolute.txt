@@ -2,6 +2,7 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\obj\Debug\DPU_Soft.BLL.csprojAss
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DPU_Soft.BLL.dll.config
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DPU_Soft.BLL.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DPU_Soft.BLL.pdb
+<<<<<<< HEAD
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DPU_Soft.DAL.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DPU_Soft.PlacementOfExams.Common.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DPU_Soft.PlacementOfExams.Data.dll
@@ -57,6 +58,8 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\obj\Debug\DPU_Soft.BLL.pdb
 <<<<<<< HEAD
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\obj\Debug\DPU_Soft.BLL.csprojResolveAssemblyReference.cache
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DPU_Soft.BLL.dll.config
+=======
+>>>>>>> yandal
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DPU_Soft.DAL.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DPU_Soft.PlacementOfExams.Common.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DPU_Soft.PlacementOfExams.Data.dll
@@ -73,6 +76,7 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DPU_Soft.DAL.pdb
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DPU_Soft.PlacementOfExams.Common.pdb
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DPU_Soft.PlacementOfExams.Data.pdb
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DPU_Soft.PlacementOfExams.Model.pdb
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DPU_Soft.PlacementOfExams.Model.dll.config
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\EntityFramework.xml
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\EntityFramework.SqlServer.xml
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DevExpress.XtraEditors.v19.2.xml
@@ -105,6 +109,7 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\de\DevExpress.Pdf.v19.
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\es\DevExpress.Pdf.v19.2.Core.resources.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\ja\DevExpress.Pdf.v19.2.Core.resources.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\ru\DevExpress.Pdf.v19.2.Core.resources.dll
+<<<<<<< HEAD
 =======
 C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DPU_Soft.BLL.dll.config
 C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DPU_Soft.BLL.dll
@@ -163,4 +168,15 @@ C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU
 C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\obj\Debug\DPU_Soft.BLL.csproj.CopyComplete
 C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\obj\Debug\DPU_Soft.BLL.dll
 C:\Users\GOKKUSH\Desktop\GÖMÜLÜ TASARIM\YEDEK-4\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\obj\Debug\DPU_Soft.BLL.pdb
+>>>>>>> yandal
+=======
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\obj\Debug\DPU_Soft.BLL.csproj.CopyComplete
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\obj\Debug\DPU_Soft.BLL.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\obj\Debug\DPU_Soft.BLL.pdb
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DevExpress.XtraBars.v19.2.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\DevExpress.XtraBars.v19.2.xml
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\de\DevExpress.XtraBars.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\es\DevExpress.XtraBars.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\ja\DevExpress.XtraBars.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.BLL\bin\Debug\ru\DevExpress.XtraBars.v19.2.resources.dll
 >>>>>>> yandal

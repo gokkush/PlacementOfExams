@@ -31,8 +31,14 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.IlceForms
 
             Text = Text + " - (" + _ilAdi + ")";
             if (BaseIslemTuru != IslemTuru.EntityInsert) return;
+<<<<<<< HEAD
             txtKod.Text = ((IlceBll)Bll).YeniKodVer(x=>x.IlId==_ilId);
             txtIl.Focus();
+=======
+            Id = BaseIslemTuru.IdOlustur(OldEntity);
+            txtKod.Text = ((IlceBll)Bll).YeniKodVer(x=>x.IlId==_ilId);
+            txtIlceAdi.Focus();
+>>>>>>> yandal
         }
         protected override void NesneyiKontrollereBagla()
         {
@@ -48,7 +54,11 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.IlceForms
         {
             CurrentEntity = new IlceEntity
             {
+<<<<<<< HEAD
                 id = Id,
+=======
+                Id = Id,
+>>>>>>> yandal
                 Kod = txtKod.Text,
                 IlceAdi = txtIlceAdi.Text,
                 IlId = _ilId,
@@ -62,7 +72,11 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.IlceForms
 
         protected override bool EntityInsert()
         {
+<<<<<<< HEAD
             return ((IlceBll)Bll).Insert(CurrentEntity,x=>x.Kod==CurrentEntity.Kod && x.IlId==_ilId);
+=======
+            return ((IlceBll)Bll).Insert(CurrentEntity, x=>x.Kod==CurrentEntity.Kod && x.IlId==_ilId);
+>>>>>>> yandal
         }
 
         protected override bool EntityUpdate()

@@ -54,9 +54,18 @@
     <Compile Include="Base\BaseBll.cs" />
     <Compile Include="Base\Interfaces\IBaseBll.cs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <Compile Include="Base\Interfaces\IBaseCommonBll.cs" />
+    <Compile Include="Base\Interfaces\IBaseGenelBll.cs" />
+>>>>>>> yandal
     <Compile Include="Functions\Converts.cs" />
     <Compile Include="Functions\GeneralFunctions.cs" />
+    <Compile Include="Functions\ValidationFunctions.cs" />
+    <Compile Include="General\IlBll.cs" />
+    <Compile Include="General\IlceBll.cs" />
     <Compile Include="General\OkulBll.cs" />
+<<<<<<< HEAD
 =======
     <Compile Include="Base\Interfaces\IBaseGenelBll.cs" />
     <Compile Include="Functions\Converts.cs" />
@@ -64,6 +73,9 @@
     <Compile Include="General\IlBll.cs" />
     <Compile Include="General\IlceBll.cs" />
     <Compile Include="General\OkulBll.cs" />
+    <Compile Include="General\UniversiteBll.cs" />
+>>>>>>> yandal
+=======
     <Compile Include="General\UniversiteBll.cs" />
 >>>>>>> yandal
     <Compile Include="Properties\AssemblyInfo.cs" />

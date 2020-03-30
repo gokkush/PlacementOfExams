@@ -14,7 +14,11 @@ using System.Windows.Forms;
 
 namespace DPU_Soft.BLL.General
 {
+<<<<<<< HEAD
     public class IlceBll: BaseBll<IlceEntity, PlacementOfExamsContext>
+=======
+    public class IlceBll: BaseBll<IlceEntity, PlacementOfExamsContext>,IBaseCommonBll
+>>>>>>> yandal
     {
         public IlceBll()
         {

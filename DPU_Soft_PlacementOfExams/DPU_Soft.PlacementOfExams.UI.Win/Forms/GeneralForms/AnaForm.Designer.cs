@@ -36,6 +36,7 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ALC = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.btnIlKartlari = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
@@ -45,10 +46,11 @@
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl.ExpandCollapseItem,
+            this.ribbonControl.SearchEditItem,
             this.btnOkulKartlari,
-            this.ribbonControl.SearchEditItem});
+            this.btnIlKartlari});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 2;
+            this.ribbonControl.MaxItemId = 3;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rPTanimlar});
@@ -61,7 +63,10 @@
             this.btnOkulKartlari.Id = 1;
             this.btnOkulKartlari.Name = "btnOkulKartlari";
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnOkulKartlari.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnOkulKartlari_ItemClick);
+=======
+>>>>>>> yandal
 =======
 >>>>>>> yandal
             // 
@@ -75,6 +80,7 @@
             // rPCAnaTanim
             // 
             this.rPCAnaTanim.ItemLinks.Add(this.btnOkulKartlari);
+            this.rPCAnaTanim.ItemLinks.Add(this.btnIlKartlari);
             this.rPCAnaTanim.Name = "rPCAnaTanim";
             this.rPCAnaTanim.Text = "Ana Tanımlamalar";
             // 
@@ -88,6 +94,12 @@
             // xtraTabbedMdiManager
             // 
             this.xtraTabbedMdiManager.MdiParent = this;
+            // 
+            // btnIlKartlari
+            // 
+            this.btnIlKartlari.Caption = "İl Kaydı";
+            this.btnIlKartlari.Id = 2;
+            this.btnIlKartlari.Name = "btnIlKartlari";
             // 
             // AnaForm
             // 
@@ -118,5 +130,6 @@
         private DevExpress.XtraBars.BarButtonItem btnOkulKartlari;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
+        private DevExpress.XtraBars.BarButtonItem btnIlKartlari;
     }
 }

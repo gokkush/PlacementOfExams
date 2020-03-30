@@ -42,7 +42,11 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UniversiteForms
         {
             CurrentEntity = new UniversiteEntity
             {
+<<<<<<< HEAD
                 id = Id,
+=======
+                Id = Id,
+>>>>>>> yandal
                 Kod = txtKod.Text,
                 UniversiteAdi = txtUnvAdi.Text,
                 Aciklama = txtAciklama.Text,
