@@ -33,6 +33,7 @@
             this.colId = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colKod = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colUniversiteAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
+            this.colFakulteAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colIlAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colIlceAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colAciklama = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
@@ -62,7 +63,7 @@
             this.grid.MainView = this.tablo;
             this.grid.MenuManager = this.ribbonControl;
             this.grid.Name = "grid";
-            this.grid.Size = new System.Drawing.Size(913, 217);
+            this.grid.Size = new System.Drawing.Size(913, 273);
             this.grid.TabIndex = 2;
             this.grid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.tablo});
@@ -83,6 +84,7 @@
             this.colId,
             this.colKod,
             this.colUniversiteAdi,
+            this.colFakulteAdi,
             this.colIlAdi,
             this.colIlceAdi,
             this.colAciklama});
@@ -142,7 +144,20 @@
             this.colUniversiteAdi.StatusBarKisayolAciklama = null;
             this.colUniversiteAdi.Visible = true;
             this.colUniversiteAdi.VisibleIndex = 1;
-            this.colUniversiteAdi.Width = 180;
+            this.colUniversiteAdi.Width = 162;
+            // 
+            // colFakulteAdi
+            // 
+            this.colFakulteAdi.Caption = "Fakülte Adı";
+            this.colFakulteAdi.FieldName = "FakulteAdi";
+            this.colFakulteAdi.Name = "colFakulteAdi";
+            this.colFakulteAdi.OptionsColumn.AllowEdit = false;
+            this.colFakulteAdi.StatusBarAciklama = null;
+            this.colFakulteAdi.StatusBarKisayol = null;
+            this.colFakulteAdi.StatusBarKisayolAciklama = null;
+            this.colFakulteAdi.Visible = true;
+            this.colFakulteAdi.VisibleIndex = 2;
+            this.colFakulteAdi.Width = 209;
             // 
             // colIlAdi
             // 
@@ -154,7 +169,7 @@
             this.colIlAdi.StatusBarKisayol = null;
             this.colIlAdi.StatusBarKisayolAciklama = null;
             this.colIlAdi.Visible = true;
-            this.colIlAdi.VisibleIndex = 2;
+            this.colIlAdi.VisibleIndex = 3;
             this.colIlAdi.Width = 150;
             // 
             // colIlceAdi
@@ -167,7 +182,7 @@
             this.colIlceAdi.StatusBarKisayol = null;
             this.colIlceAdi.StatusBarKisayolAciklama = null;
             this.colIlceAdi.Visible = true;
-            this.colIlceAdi.VisibleIndex = 3;
+            this.colIlceAdi.VisibleIndex = 4;
             this.colIlceAdi.Width = 150;
             // 
             // colAciklama
@@ -180,13 +195,13 @@
             this.colAciklama.StatusBarKisayol = null;
             this.colAciklama.StatusBarKisayolAciklama = null;
             this.colAciklama.Visible = true;
-            this.colAciklama.VisibleIndex = 4;
-            this.colAciklama.Width = 340;
+            this.colAciklama.VisibleIndex = 5;
+            this.colAciklama.Width = 320;
             // 
             // longNavigator1
             // 
             this.longNavigator1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.longNavigator1.Location = new System.Drawing.Point(0, 326);
+            this.longNavigator1.Location = new System.Drawing.Point(0, 382);
             this.longNavigator1.Name = "longNavigator1";
             this.longNavigator1.Size = new System.Drawing.Size(913, 24);
             this.longNavigator1.TabIndex = 3;
@@ -195,7 +210,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(913, 374);
+            this.ClientSize = new System.Drawing.Size(913, 430);
             this.Controls.Add(this.grid);
             this.Controls.Add(this.longNavigator1);
             this.IconOptions.ShowIcon = false;
@@ -224,5 +239,6 @@
         private UserControls.Controls.Grid.DpuGridColumn colIlAdi;
         private UserControls.Controls.Grid.DpuGridColumn colIlceAdi;
         private UserControls.Controls.Grid.DpuGridColumn colAciklama;
+        private UserControls.Controls.Grid.DpuGridColumn colFakulteAdi;
     }
 }

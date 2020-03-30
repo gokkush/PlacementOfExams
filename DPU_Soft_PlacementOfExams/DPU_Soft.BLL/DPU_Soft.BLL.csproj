@@ -30,8 +30,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,7 +51,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\BaseBll.cs" />
+    <Compile Include="Base\Interfaces\IBaseBll.cs" />
+    <Compile Include="Functions\Converts.cs" />
+    <Compile Include="Functions\GeneralFunctions.cs" />
+    <Compile Include="General\OkulBll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DPU_Soft.DAL\DPU_Soft.DAL.csproj">
+      <Project>{c2d069cc-ba71-4777-a65c-39b3b90621aa}</Project>
+      <Name>DPU_Soft.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DPU_Soft.PlacementOfExams.Common\DPU_Soft.PlacementOfExams.Common.csproj">
+      <Project>{c1f7a0d9-2548-40a9-8b6f-e49eca3301ca}</Project>
+      <Name>DPU_Soft.PlacementOfExams.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DPU_Soft.PlacementOfExams.Data\DPU_Soft.PlacementOfExams.Data.csproj">
+      <Project>{8ab59fa3-88c5-4b18-8bc4-8f7c5ffee2b7}</Project>
+      <Name>DPU_Soft.PlacementOfExams.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DPU_Soft.PlacementOfExams.Model\DPU_Soft.PlacementOfExams.Model.csproj">
+      <Project>{9b75f401-df20-4ef3-b0ec-a0a011038a67}</Project>
+      <Name>DPU_Soft.PlacementOfExams.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

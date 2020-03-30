@@ -1,5 +1,4 @@
-﻿using DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms;
-using DPU_Soft.PlacementOfExams.UI.Win.Forms.OkulForms;
+﻿using DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +17,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new OkulKarti());
+            Application.Run(new AnaForm());
         }
     }
 }

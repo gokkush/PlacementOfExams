@@ -2,3 +2,8 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\DPU
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\DPU_Soft.PlacementOfExams.Model.pdb
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\obj\Debug\DPU_Soft.PlacementOfExams.Model.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\obj\Debug\DPU_Soft.PlacementOfExams.Model.pdb
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\DPU_Soft.PlacementOfExams.Model.dll.config
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\EntityFramework.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\EntityFramework.xml
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Model\bin\Debug\EntityFramework.SqlServer.xml
