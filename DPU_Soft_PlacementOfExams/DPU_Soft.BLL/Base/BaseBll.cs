@@ -73,6 +73,16 @@ namespace DPU_Soft.BLL.Base
             return _unitOfWork.Save();
         }
 
+<<<<<<< HEAD
+=======
+        protected string BaseYeniKodVer(KartTuru kartTuru, Expression<Func<T,string>> filter,Expression<Func<T,bool>>where =null)
+        {
+            GeneralFunctions.CreateUnitOfWork<T, TContext>(ref _unitOfWork);
+            return _unitOfWork.Rep.YeniKodVer(kartTuru,filter,where);
+
+        }
+
+>>>>>>> yandal
         #region IDisposable Support
  
         public void Dispose()
@@ -81,6 +91,10 @@ namespace DPU_Soft.BLL.Base
             _unitOfWork?.Dispose();           
 
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> yandal
         #endregion
 
     }

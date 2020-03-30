@@ -1,6 +1,6 @@
 ﻿namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
 {
-    partial class BaseCardsForm
+    partial class BaseListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -94,6 +94,13 @@
             this.btnYazdir = new DevExpress.XtraBars.BarButtonItem();
             this.btnCikis = new DevExpress.XtraBars.BarButtonItem();
             this.btnGonder = new DevExpress.XtraBars.BarSubItem();
+            this.btnExcelDosyalari = new DevExpress.XtraBars.BarSubItem();
+            this.btnStandartExcelDosyasi = new DevExpress.XtraBars.BarButtonItem();
+            this.btnFormatliExcelDosyasi = new DevExpress.XtraBars.BarButtonItem();
+            this.btnFormatsizExcelDosyasi = new DevExpress.XtraBars.BarButtonItem();
+            this.btnWordDosyasi = new DevExpress.XtraBars.BarButtonItem();
+            this.btnPdfDosyasi = new DevExpress.XtraBars.BarButtonItem();
+            this.btnTxtDosyasi = new DevExpress.XtraBars.BarButtonItem();
             this.barInsert = new DevExpress.XtraBars.BarStaticItem();
             this.barInsertAciklama = new DevExpress.XtraBars.BarStaticItem();
             this.barDelete = new DevExpress.XtraBars.BarStaticItem();
@@ -160,9 +167,16 @@
             this.barGonderAciklama,
             this.barCikis,
             this.barCikisAciklama,
-            this.btnAktifPasifKartlar});
+            this.btnAktifPasifKartlar,
+            this.btnExcelDosyalari,
+            this.btnStandartExcelDosyasi,
+            this.btnFormatliExcelDosyasi,
+            this.btnFormatsizExcelDosyasi,
+            this.btnWordDosyasi,
+            this.btnPdfDosyasi,
+            this.btnTxtDosyasi});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 33;
+            this.ribbonControl.MaxItemId = 40;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -376,6 +390,11 @@
             this.btnGonder.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.export_16x16;
             this.btnGonder.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.export_32x32;
             this.btnGonder.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F12);
+            this.btnGonder.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnExcelDosyalari),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnWordDosyasi),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnPdfDosyasi),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnTxtDosyasi)});
             this.btnGonder.Name = "btnGonder";
             toolTipTitleItem19.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.comment_16x16;
             toolTipTitleItem19.Text = "(F12)";
@@ -389,6 +408,69 @@
             superToolTip10.Items.Add(toolTipSeparatorItem10);
             superToolTip10.Items.Add(toolTipTitleItem20);
             this.btnGonder.SuperTip = superToolTip10;
+            // 
+            // btnExcelDosyalari
+            // 
+            this.btnExcelDosyalari.Caption = "Excell Dosyaları";
+            this.btnExcelDosyalari.Id = 33;
+            this.btnExcelDosyalari.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.exporttoxlsx_16x16;
+            this.btnExcelDosyalari.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.exporttoxlsx_32x32;
+            this.btnExcelDosyalari.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnStandartExcelDosyasi),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnFormatliExcelDosyasi),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnFormatsizExcelDosyasi)});
+            this.btnExcelDosyalari.Name = "btnExcelDosyalari";
+            // 
+            // btnStandartExcelDosyasi
+            // 
+            this.btnStandartExcelDosyasi.Caption = "Excell Dosyası(Standart)";
+            this.btnStandartExcelDosyasi.Id = 34;
+            this.btnStandartExcelDosyasi.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.exporttoxlsx_16x16;
+            this.btnStandartExcelDosyasi.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G), (System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S));
+            this.btnStandartExcelDosyasi.Name = "btnStandartExcelDosyasi";
+            // 
+            // btnFormatliExcelDosyasi
+            // 
+            this.btnFormatliExcelDosyasi.Caption = "Excel Dosyası (Formatlı)";
+            this.btnFormatliExcelDosyasi.Id = 35;
+            this.btnFormatliExcelDosyasi.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.exporttoxlsx_16x16;
+            this.btnFormatliExcelDosyasi.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G), (System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F));
+            this.btnFormatliExcelDosyasi.Name = "btnFormatliExcelDosyasi";
+            // 
+            // btnFormatsizExcelDosyasi
+            // 
+            this.btnFormatsizExcelDosyasi.Caption = "Excel Dosyası (Formatsız)";
+            this.btnFormatsizExcelDosyasi.Id = 36;
+            this.btnFormatsizExcelDosyasi.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.exporttoxlsx_16x16;
+            this.btnFormatsizExcelDosyasi.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G), (System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z));
+            this.btnFormatsizExcelDosyasi.Name = "btnFormatsizExcelDosyasi";
+            // 
+            // btnWordDosyasi
+            // 
+            this.btnWordDosyasi.Caption = "Word Dosyası";
+            this.btnWordDosyasi.Id = 37;
+            this.btnWordDosyasi.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.exporttodocx_16x16;
+            this.btnWordDosyasi.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.exporttodocx_32x32;
+            this.btnWordDosyasi.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G), (System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W));
+            this.btnWordDosyasi.Name = "btnWordDosyasi";
+            // 
+            // btnPdfDosyasi
+            // 
+            this.btnPdfDosyasi.Caption = "PDF Dosyası";
+            this.btnPdfDosyasi.Id = 38;
+            this.btnPdfDosyasi.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.exporttopdf_16x16;
+            this.btnPdfDosyasi.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.exporttopdf_32x32;
+            this.btnPdfDosyasi.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G), (System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P));
+            this.btnPdfDosyasi.Name = "btnPdfDosyasi";
+            // 
+            // btnTxtDosyasi
+            // 
+            this.btnTxtDosyasi.Caption = "Txt Dosyası";
+            this.btnTxtDosyasi.Id = 39;
+            this.btnTxtDosyasi.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.exporttotxt_16x16;
+            this.btnTxtDosyasi.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.exporttotxt_32x32;
+            this.btnTxtDosyasi.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G), (System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T));
+            this.btnTxtDosyasi.Name = "btnTxtDosyasi";
             // 
             // barInsert
             // 
@@ -639,7 +721,7 @@
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "ribbonPage2";
             // 
-            // BaseCardsForm
+            // BaseListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -648,7 +730,7 @@
             this.Controls.Add(this.ribbonControl);
             this.IconOptions.ShowIcon = false;
             this.MinimizeBox = false;
-            this.Name = "BaseCardsForm";
+            this.Name = "BaseListForm";
             this.Ribbon = this.ribbonControl;
             this.ShowInTaskbar = false;
             this.StatusBar = this.ribbonStatusBar1;
@@ -695,5 +777,12 @@
         private DevExpress.XtraBars.BarStaticItem barCikis;
         private DevExpress.XtraBars.BarStaticItem barCikisAciklama;
         private DevExpress.XtraBars.BarButtonItem btnAktifPasifKartlar;
+        private DevExpress.XtraBars.BarSubItem btnExcelDosyalari;
+        private DevExpress.XtraBars.BarButtonItem btnStandartExcelDosyasi;
+        private DevExpress.XtraBars.BarButtonItem btnFormatliExcelDosyasi;
+        private DevExpress.XtraBars.BarButtonItem btnFormatsizExcelDosyasi;
+        private DevExpress.XtraBars.BarButtonItem btnWordDosyasi;
+        private DevExpress.XtraBars.BarButtonItem btnPdfDosyasi;
+        private DevExpress.XtraBars.BarButtonItem btnTxtDosyasi;
     }
 }

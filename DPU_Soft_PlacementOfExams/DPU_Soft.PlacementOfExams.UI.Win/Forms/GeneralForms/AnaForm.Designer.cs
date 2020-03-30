@@ -60,7 +60,10 @@
             this.btnOkulKartlari.Caption = "Üniversite Kaydı";
             this.btnOkulKartlari.Id = 1;
             this.btnOkulKartlari.Name = "btnOkulKartlari";
+<<<<<<< HEAD
             this.btnOkulKartlari.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnOkulKartlari_ItemClick);
+=======
+>>>>>>> yandal
             // 
             // rPTanimlar
             // 

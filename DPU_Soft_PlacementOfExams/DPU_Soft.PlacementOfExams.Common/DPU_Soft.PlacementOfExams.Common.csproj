@@ -47,7 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Enums\KartTuru.cs" />
+=======
+    <Compile Include="Enums\IslemTuru.cs" />
+    <Compile Include="Enums\KartTuru.cs" />
+    <Compile Include="Enums\VeriDegisimYeri.cs" />
+>>>>>>> yandal
     <Compile Include="Functions\EnumFunctions.cs" />
     <Compile Include="Massage\Messages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

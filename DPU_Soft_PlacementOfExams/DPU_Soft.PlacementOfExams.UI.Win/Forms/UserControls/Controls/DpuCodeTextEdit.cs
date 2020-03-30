@@ -10,7 +10,8 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls
     {
         public DpuCodeTextEdit()
         {
-            Properties.Appearance.BackColor = Color.LightSkyBlue;
+            Properties.Appearance.BackColor = Color.Moccasin;
+            Properties.AppearanceFocused.BackColor = Color.LightSkyBlue;
             Properties.Appearance.TextOptions.HAlignment = HorzAlignment.Center;
             Properties.MaxLength = 20;
             StatusBarAciklama = "Kod Giriniz.";

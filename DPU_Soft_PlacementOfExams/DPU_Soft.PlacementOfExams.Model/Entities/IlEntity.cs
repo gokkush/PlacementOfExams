@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DPU_Soft.PlacementOfExams.Model.Entities
 {
-    public class IlEntity:BaseEntityDurum
+    public class IlEntity:BaseDurumEntity
     {
         [Index("IX_Kod", IsUnique =true)]
         public override string Kod { get; set; }

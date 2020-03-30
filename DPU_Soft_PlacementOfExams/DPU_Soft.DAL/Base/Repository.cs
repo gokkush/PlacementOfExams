@@ -4,6 +4,8 @@ using System.Linq.Expressions;
 using DPU_Soft.DAL.Interfaces;
 using System.Data.Entity;
 using System.Linq;
+using DPU_Soft.PlacementOfExams.Common.Enums;
+using DPU_Soft.PlacementOfExams.Common.Functions;
 
 namespace DPU_Soft.DAL.Base
 {
@@ -77,6 +79,42 @@ namespace DPU_Soft.DAL.Base
             return filter == null ? _dbSet.Select(selector).FirstOrDefault() : _dbSet.Where(filter).Select(selector).FirstOrDefault();
         }
 
+        public string YeniKodVer(KartTuru kartTuru, Expression<Func<T, string>> filter, Expression<Func<T, bool>> where = null)
+        {
+            string Kod()
+            {
+                string kod = null;
+                var kodDizi = kartTuru.ToName().Split(' ');
+                for (int i = 0; i < kodDizi.Length-1; i++)
+                {
+                    kod += kodDizi[i];
+                    if (i + 1 < kodDizi.Length - 1)
+                        kod += " ";
+                }
+                return kod += "-00001";
+            }
+            string YeniKodVer(string kod)
+            {
+                var sayisalDegerler = "";
+                foreach (var karakter in kod)
+                {
+                    if (char.IsDigit(karakter))
+                        sayisalDegerler += karakter;
+                    else sayisalDegerler = "";
+                }
+                var artisSonrasiDeger = (int.Parse(sayisalDegerler) + 1).ToString();
+                var fark = kod.Length - artisSonrasiDeger.Length;
+                if (fark < 0)
+                    fark = 0;
+
+                var yeniDeger = kod.Substring(0, fark);
+                yeniDeger += artisSonrasiDeger;
+                return yeniDeger;
+            }
+            var maxKod = where == null ? _dbSet.Max(filter) : _dbSet.Where(where).Max(filter);
+            return maxKod == null ? Kod() : YeniKodVer(maxKod);
+        }
+
         #region IDisposable Support
         private bool _disposedValue = false; 
 
@@ -102,6 +140,8 @@ namespace DPU_Soft.DAL.Base
             GC.SuppressFinalize(this);
 
         }
+
+
 
 
         #endregion

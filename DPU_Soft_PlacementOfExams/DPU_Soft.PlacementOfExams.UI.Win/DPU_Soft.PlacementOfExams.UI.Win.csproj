@@ -63,35 +63,80 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\BaseForms\BaseCardForm.cs">
+    <Compile Include="Forms\BaseForms\BaseEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BaseForms\BaseCardForm.Designer.cs">
-      <DependentUpon>BaseCardForm.cs</DependentUpon>
+    <Compile Include="Forms\BaseForms\BaseEditForm.Designer.cs">
+      <DependentUpon>BaseEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BaseForms\BaseCardsForm.cs">
+    <Compile Include="Forms\BaseForms\BaseListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BaseForms\BaseCardsForm.Designer.cs">
-      <DependentUpon>BaseCardsForm.cs</DependentUpon>
+    <Compile Include="Forms\BaseForms\BaseListForm.Designer.cs">
+      <DependentUpon>BaseListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\GeneralForms\AnaForm.cs">
+<<<<<<< HEAD
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\GeneralForms\AnaForm.Designer.cs">
       <DependentUpon>AnaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\OkulForms\OkulKarti.cs">
+=======
+>>>>>>> yandal
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\OkulForms\OkulKarti.Designer.cs">
-      <DependentUpon>OkulKarti.cs</DependentUpon>
+    <Compile Include="Forms\GeneralForms\AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\OkulForms\OkulKartlari.cs">
+    <Compile Include="Forms\IlceForms\IlceEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\OkulForms\OkulKartlari.Designer.cs">
-      <DependentUpon>OkulKartlari.cs</DependentUpon>
+    <Compile Include="Forms\IlceForms\IlceEditForm.Designer.cs">
+      <DependentUpon>IlceEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IlceForms\IlceListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IlceForms\IlceListForm.Designer.cs">
+      <DependentUpon>IlceListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IlForms\IlEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IlForms\IlEditForm.Designer.cs">
+      <DependentUpon>IlEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IlForms\IlListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IlForms\IlListForm.Designer.cs">
+      <DependentUpon>IlListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OkulForms\OkulEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OkulForms\OkulEditForm.Designer.cs">
+      <DependentUpon>OkulEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OkulForms\OkulListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OkulForms\OkulListForm.Designer.cs">
+      <DependentUpon>OkulListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UniversiteForms\UnvEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UniversiteForms\UnvEditForm.Designer.cs">
+      <DependentUpon>UnvEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UniversiteForms\UnvListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UniversiteForms\UnvListForm.Designer.cs">
+      <DependentUpon>UnvListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UserControls\Controls\DpuButtonEdit.cs">
       <SubType>Component</SubType>
@@ -174,24 +219,56 @@
     <Compile Include="Forms\UserControls\Controls\Navigators\smallNavigator.Designer.cs">
       <DependentUpon>smallNavigator.cs</DependentUpon>
     </Compile>
+    <Compile Include="Functions\FilterFunctions.cs" />
+    <Compile Include="Functions\GeneralFunctions.cs" />
+    <Compile Include="Functions\SelectFunctions.cs" />
     <Compile Include="Interfaces\IStatusBarAciklama.cs" />
     <Compile Include="Interfaces\IStatusBarKisayol.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\BaseForms\BaseCardForm.resx">
-      <DependentUpon>BaseCardForm.cs</DependentUpon>
+    <Compile Include="Show\Interfaces\IBaseFormshow.cs" />
+    <Compile Include="Show\ShowEditforms.cs" />
+    <Compile Include="Show\ShowListforms.cs" />
+    <EmbeddedResource Include="Forms\BaseForms\BaseEditForm.resx">
+      <DependentUpon>BaseEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BaseForms\BaseCardsForm.resx">
-      <DependentUpon>BaseCardsForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\BaseForms\BaseListForm.resx">
+      <DependentUpon>BaseListForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IlceForms\IlceEditForm.resx">
+      <DependentUpon>IlceEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IlceForms\IlceListForm.resx">
+      <DependentUpon>IlceListForm.cs</DependentUpon>
+    </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Forms\GeneralForms\AnaForm.resx">
       <DependentUpon>AnaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OkulForms\OkulKarti.resx">
       <DependentUpon>OkulKarti.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Forms\IlForms\IlEditForm.resx">
+      <DependentUpon>IlEditForm.cs</DependentUpon>
+>>>>>>> yandal
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\OkulForms\OkulKartlari.resx">
-      <DependentUpon>OkulKartlari.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\IlForms\IlListForm.resx">
+      <DependentUpon>IlListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OkulForms\OkulEditForm.resx">
+      <DependentUpon>OkulEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OkulForms\OkulListForm.resx">
+      <DependentUpon>OkulListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UniversiteForms\UnvEditForm.resx">
+      <DependentUpon>UnvEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UniversiteForms\UnvListForm.resx">
+      <DependentUpon>UnvListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserControls\Controls\Navigators\InsUptNavigator.resx">
       <DependentUpon>InsUptNavigator.cs</DependentUpon>
@@ -406,6 +483,13 @@
       <Project>{2d404d7a-f15c-4e9f-9100-d208b7cd3c6b}</Project>
       <Name>DPU_Soft.BLL</Name>
     </ProjectReference>
+<<<<<<< HEAD
+=======
+    <ProjectReference Include="..\DPU_Soft.PlacementOfExams.Common\DPU_Soft.PlacementOfExams.Common.csproj">
+      <Project>{C1F7A0D9-2548-40A9-8B6F-E49ECA3301CA}</Project>
+      <Name>DPU_Soft.PlacementOfExams.Common</Name>
+    </ProjectReference>
+>>>>>>> yandal
     <ProjectReference Include="..\DPU_Soft.PlacementOfExams.Model\DPU_Soft.PlacementOfExams.Model.csproj">
       <Project>{9b75f401-df20-4ef3-b0ec-a0a011038a67}</Project>
       <Name>DPU_Soft.PlacementOfExams.Model</Name>
@@ -414,6 +498,33 @@
   <ItemGroup>
     <None Include="Resources\placement_icon.png" />
   </ItemGroup>
+<<<<<<< HEAD
+=======
+  <ItemGroup>
+    <None Include="Resources\exporttoxlsx_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxlsx_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttodocx_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttodocx_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttopdf_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttopdf_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttotxt_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttotxt_32x32.png" />
+  </ItemGroup>
+>>>>>>> yandal
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

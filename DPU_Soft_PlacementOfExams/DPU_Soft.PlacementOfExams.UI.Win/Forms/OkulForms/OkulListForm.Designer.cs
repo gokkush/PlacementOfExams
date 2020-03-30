@@ -1,6 +1,6 @@
 ﻿namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.OkulForms
 {
-    partial class OkulKartlari
+    partial class OkulListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -37,7 +37,7 @@
             this.colIlAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colIlceAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colAciklama = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
-            this.longNavigator1 = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Navigators.LongNavigator();
+            this.longNavigator = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Navigators.LongNavigator();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
@@ -198,27 +198,35 @@
             this.colAciklama.VisibleIndex = 5;
             this.colAciklama.Width = 320;
             // 
-            // longNavigator1
+            // longNavigator
             // 
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/OkulForms/OkulKartlari.Designer.cs
             this.longNavigator1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.longNavigator1.Location = new System.Drawing.Point(0, 382);
             this.longNavigator1.Name = "longNavigator1";
             this.longNavigator1.Size = new System.Drawing.Size(913, 24);
             this.longNavigator1.TabIndex = 3;
+=======
+            this.longNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.longNavigator.Location = new System.Drawing.Point(0, 382);
+            this.longNavigator.Name = "longNavigator";
+            this.longNavigator.Size = new System.Drawing.Size(913, 24);
+            this.longNavigator.TabIndex = 3;
+>>>>>>> yandal:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/OkulForms/OkulListForm.Designer.cs
             // 
-            // OkulKartlari
+            // OkulListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(913, 430);
             this.Controls.Add(this.grid);
-            this.Controls.Add(this.longNavigator1);
+            this.Controls.Add(this.longNavigator);
             this.IconOptions.ShowIcon = false;
             this.MinimumSize = new System.Drawing.Size(915, 375);
-            this.Name = "OkulKartlari";
+            this.Name = "OkulListForm";
             this.Text = "Okul Kartları";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
-            this.Controls.SetChildIndex(this.longNavigator1, 0);
+            this.Controls.SetChildIndex(this.longNavigator, 0);
             this.Controls.SetChildIndex(this.grid, 0);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
@@ -234,7 +242,7 @@
         private UserControls.Controls.Grid.DpuGridView tablo;
         private UserControls.Controls.Grid.DpuGridColumn colId;
         private UserControls.Controls.Grid.DpuGridColumn colKod;
-        private UserControls.Controls.Navigators.LongNavigator longNavigator1;
+        private UserControls.Controls.Navigators.LongNavigator longNavigator;
         private UserControls.Controls.Grid.DpuGridColumn colUniversiteAdi;
         private UserControls.Controls.Grid.DpuGridColumn colIlAdi;
         private UserControls.Controls.Grid.DpuGridColumn colIlceAdi;
