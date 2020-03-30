@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraBars;
+using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Views.Grid;
 using DPU_Soft.PlacementOfExams.Common.Enums;
 using DPU_Soft.PlacementOfExams.Common.Massage;
@@ -15,7 +16,13 @@ using System.Threading.Tasks;
 <<<<<<< HEAD
 =======
 using System.Windows.Forms;
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Functions/GeneralFunctions.cs
 >>>>>>> yandal
+=======
+using DevExpress.XtraGrid.Views.Base;
+using DevExpress.XtraPrinting;
+using System.Drawing.Printing;
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Functions/GeneralFunctions.cs
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
 {
@@ -34,6 +41,18 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
             Messages.KartSecmemeHataMesaj();
             return -1;
         }
+
+        public static void ShowGridPreview(this GridControl grid)
+        {
+            if (!grid.IsPrintingAvailable)
+            {
+                Messages.HataMesaji("Yazdırma Ekranı Açılamadı");
+                return;
+            }
+            
+            grid.ShowPrintPreview();
+        }
+
 
         public static T GetRow<T>(this GridView tablo, bool mesajVer = true)
         {
@@ -87,6 +106,15 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
             btnSil.Enabled = !buttonEnabeledDurumu;
         }
 
+        public static void ButtonEnabledDurumu<T>(BarButtonItem btnKaydet,BarButtonItem btnFarkliKaydet, BarButtonItem btnSil,IslemTuru islemTuru, T oldEntity, T currentEntity)
+        {
+            var veriDegisimYeri = VeriDegisimYeriGetir(oldEntity, currentEntity);
+            var buttonEnabeledDurumu = veriDegisimYeri == VeriDegisimYeri.Alan;
+
+            btnKaydet.Enabled = buttonEnabeledDurumu;
+            btnFarkliKaydet.Enabled = islemTuru!=IslemTuru.EntityInsert;
+            btnSil.Enabled = !buttonEnabeledDurumu;
+        }
         public static long IdOlustur(this IslemTuru islemTuru, BaseEntity selectedEntity)
         {
             string SifirEkle(string deger)
@@ -171,6 +199,20 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
             sagMenu.ShowPopup(Control.MousePosition);
             
         }
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Functions/GeneralFunctions.cs
 >>>>>>> yandal
+=======
+
+        public static List<string> YazicilariListele()
+        {
+            return PrinterSettings.InstalledPrinters.Cast<string>().ToList();
+        }
+
+        public static string DefaultYazici()
+        {
+            var settings = new PrinterSettings();
+            return settings.PrinterName;
+        }
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Functions/GeneralFunctions.cs
     }
 }

@@ -75,6 +75,18 @@
     <Compile Include="Forms\BaseForms\BaseListForm.Designer.cs">
       <DependentUpon>BaseListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FiltreForms\FiltreEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FiltreForms\FiltreEditForm.Designer.cs">
+      <DependentUpon>FiltreEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FiltreForms\FiltreListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FiltreForms\FiltreListForm.Designer.cs">
+      <DependentUpon>FiltreListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\GeneralForms\AnaForm.cs">
 <<<<<<< HEAD
       <SubType>Form</SubType>
@@ -82,6 +94,7 @@
     <Compile Include="Forms\GeneralForms\AnaForm.Designer.cs">
       <DependentUpon>AnaForm.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/DPU_Soft.PlacementOfExams.UI.Win.csproj
 <<<<<<< HEAD
     <Compile Include="Forms\OkulForms\OkulKarti.cs">
 =======
@@ -101,6 +114,20 @@
       <SubType>Form</SubType>
     </Compile>
 =======
+=======
+    <Compile Include="Forms\GeneralForms\RaporOnizleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\RaporOnizleme.Designer.cs">
+      <DependentUpon>RaporOnizleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\TabloDokumParametreleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\TabloDokumParametreleri.Designer.cs">
+      <DependentUpon>TabloDokumParametreleri.cs</DependentUpon>
+    </Compile>
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/DPU_Soft.PlacementOfExams.UI.Win.csproj
     <Compile Include="Forms\IlceForms\IlceEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,11 +265,13 @@
     <Compile Include="Functions\FilterFunctions.cs" />
     <Compile Include="Functions\GeneralFunctions.cs" />
     <Compile Include="Functions\SelectFunctions.cs" />
+    <Compile Include="Functions\TablePrintingFunctions.cs" />
     <Compile Include="Interfaces\IStatusBarAciklama.cs" />
     <Compile Include="Interfaces\IStatusBarKisayol.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Show\Interfaces\IBaseFormshow.cs" />
+    <Compile Include="Show\ShowRibbonForms.cs" />
     <Compile Include="Show\ShowEditforms.cs" />
     <Compile Include="Show\ShowListforms.cs" />
     <EmbeddedResource Include="Forms\BaseForms\BaseEditForm.resx">
@@ -262,10 +291,14 @@
       <DependentUpon>IlceListForm.cs</DependentUpon>
 =======
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BaseForms\BaseEditForm.tr-TR.resx">
+      <DependentUpon>BaseEditForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\BaseForms\BaseListForm.resx">
       <DependentUpon>BaseListForm.cs</DependentUpon>
 >>>>>>> yandal
     </EmbeddedResource>
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/DPU_Soft.PlacementOfExams.UI.Win.csproj
 <<<<<<< HEAD
     <EmbeddedResource Include="Forms\GeneralForms\AnaForm.resx">
       <DependentUpon>AnaForm.cs</DependentUpon>
@@ -278,6 +311,29 @@
       <DependentUpon>IlEditForm.cs</DependentUpon>
 >>>>>>> yandal
 =======
+=======
+    <EmbeddedResource Include="Forms\BaseForms\BaseListForm.tr-TR.resx">
+      <DependentUpon>BaseListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FiltreForms\FiltreEditForm.resx">
+      <DependentUpon>FiltreEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FiltreForms\FiltreEditForm.tr-TR.resx">
+      <DependentUpon>FiltreEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FiltreForms\FiltreListForm.resx">
+      <DependentUpon>FiltreListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\RaporOnizleme.resx">
+      <DependentUpon>RaporOnizleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\TabloDokumParametreleri.resx">
+      <DependentUpon>TabloDokumParametreleri.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/DPU_Soft.PlacementOfExams.UI.Win.csproj
     <EmbeddedResource Include="Forms\IlceForms\IlceEditForm.resx">
       <DependentUpon>IlceEditForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -600,7 +656,37 @@
   <ItemGroup>
     <None Include="Resources\documentmap_16x162.png" />
   </ItemGroup>
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/DPU_Soft.PlacementOfExams.UI.Win.csproj
 >>>>>>> yandal
+=======
+  <ItemGroup>
+    <None Include="Resources\saveall_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveall_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertrangefilter_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertrangefilter_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yazici.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printpreview_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printpreview_32x32.png" />
+  </ItemGroup>
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/DPU_Soft.PlacementOfExams.UI.Win.csproj
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

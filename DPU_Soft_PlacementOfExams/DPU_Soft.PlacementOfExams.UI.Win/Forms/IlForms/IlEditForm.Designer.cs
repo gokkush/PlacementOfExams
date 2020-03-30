@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IlEditForm));
             DevExpress.XtraLayout.ColumnDefinition columnDefinition1 = new DevExpress.XtraLayout.ColumnDefinition();
             DevExpress.XtraLayout.ColumnDefinition columnDefinition2 = new DevExpress.XtraLayout.ColumnDefinition();
             DevExpress.XtraLayout.ColumnDefinition columnDefinition3 = new DevExpress.XtraLayout.ColumnDefinition();
@@ -65,10 +66,10 @@
             // 
             // 
             this.ribbonControl.SearchEditItem.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
-            this.ribbonControl.SearchEditItem.EditWidth = 150;
+            this.ribbonControl.SearchEditItem.EditWidth = ((int)(resources.GetObject("ribbonControl.SearchEditItem.EditWidth")));
             this.ribbonControl.SearchEditItem.Id = -5000;
             this.ribbonControl.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
-            this.ribbonControl.Size = new System.Drawing.Size(398, 109);
+            resources.ApplyResources(this.ribbonControl, "ribbonControl");
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
             // dpuDataLayoutControl
@@ -77,64 +78,54 @@
             this.dpuDataLayoutControl.Controls.Add(this.txtIlAdi);
             this.dpuDataLayoutControl.Controls.Add(this.tglDurum);
             this.dpuDataLayoutControl.Controls.Add(this.txtKod);
-            this.dpuDataLayoutControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dpuDataLayoutControl.Location = new System.Drawing.Point(0, 109);
+            resources.ApplyResources(this.dpuDataLayoutControl, "dpuDataLayoutControl");
             this.dpuDataLayoutControl.Name = "dpuDataLayoutControl";
             this.dpuDataLayoutControl.OptionsFocus.EnableAutoTabOrder = false;
             this.dpuDataLayoutControl.Root = this.Root;
-            this.dpuDataLayoutControl.Size = new System.Drawing.Size(398, 156);
-            this.dpuDataLayoutControl.TabIndex = 0;
-            this.dpuDataLayoutControl.Text = "dpuDataLayoutControl";
             // 
             // txtAciklama
             // 
             this.txtAciklama.EnterMoveNextControl = true;
-            this.txtAciklama.Location = new System.Drawing.Point(60, 60);
+            resources.ApplyResources(this.txtAciklama, "txtAciklama");
             this.txtAciklama.MenuManager = this.ribbonControl;
             this.txtAciklama.Name = "txtAciklama";
             this.txtAciklama.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txtAciklama.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtAciklama.Properties.MaxLength = 500;
-            this.txtAciklama.Size = new System.Drawing.Size(326, 84);
             this.txtAciklama.StatusBarAciklama = "Açıklama Giriniz.";
             this.txtAciklama.StyleController = this.dpuDataLayoutControl;
-            this.txtAciklama.TabIndex = 1;
             // 
             // txtIlAdi
             // 
             this.txtIlAdi.EnterMoveNextControl = true;
-            this.txtIlAdi.Location = new System.Drawing.Point(60, 36);
+            resources.ApplyResources(this.txtIlAdi, "txtIlAdi");
             this.txtIlAdi.MenuManager = this.ribbonControl;
             this.txtIlAdi.Name = "txtIlAdi";
             this.txtIlAdi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txtIlAdi.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtIlAdi.Properties.MaxLength = 50;
-            this.txtIlAdi.Size = new System.Drawing.Size(326, 20);
             this.txtIlAdi.StatusBarAciklama = "İl Adı Giriniz!";
             this.txtIlAdi.StyleController = this.dpuDataLayoutControl;
-            this.txtIlAdi.TabIndex = 0;
             // 
             // tglDurum
             // 
-            this.tglDurum.Location = new System.Drawing.Point(291, 12);
+            resources.ApplyResources(this.tglDurum, "tglDurum");
             this.tglDurum.MenuManager = this.ribbonControl;
             this.tglDurum.Name = "tglDurum";
             this.tglDurum.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
             this.tglDurum.Properties.Appearance.Options.UseForeColor = true;
-            this.tglDurum.Properties.AutoHeight = false;
+            this.tglDurum.Properties.AutoHeight = ((bool)(resources.GetObject("tglDurum.Properties.AutoHeight")));
             this.tglDurum.Properties.AutoWidth = true;
-            this.tglDurum.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.tglDurum.Properties.OffText = "Pasif";
-            this.tglDurum.Properties.OnText = "Aktif";
-            this.tglDurum.Size = new System.Drawing.Size(77, 20);
+            this.tglDurum.Properties.GlyphAlignment = ((DevExpress.Utils.HorzAlignment)(resources.GetObject("tglDurum.Properties.GlyphAlignment")));
+            this.tglDurum.Properties.OffText = resources.GetString("tglDurum.Properties.OffText");
+            this.tglDurum.Properties.OnText = resources.GetString("tglDurum.Properties.OnText");
             this.tglDurum.StatusBarAciklama = "Kaydın kullanım durumunu belirleyiniz.";
             this.tglDurum.StyleController = this.dpuDataLayoutControl;
-            this.tglDurum.TabIndex = 2;
             // 
             // txtKod
             // 
             this.txtKod.EnterMoveNextControl = true;
-            this.txtKod.Location = new System.Drawing.Point(60, 12);
+            resources.ApplyResources(this.txtKod, "txtKod");
             this.txtKod.MenuManager = this.ribbonControl;
             this.txtKod.Name = "txtKod";
             this.txtKod.Properties.Appearance.BackColor = System.Drawing.Color.Moccasin;
@@ -144,10 +135,8 @@
             this.txtKod.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txtKod.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtKod.Properties.MaxLength = 20;
-            this.txtKod.Size = new System.Drawing.Size(148, 20);
             this.txtKod.StatusBarAciklama = "Kod Giriniz.";
             this.txtKod.StyleController = this.dpuDataLayoutControl;
-            this.txtKod.TabIndex = 3;
             // 
             // Root
             // 
@@ -191,7 +180,7 @@
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(200, 24);
-            this.layoutControlItem1.Text = "İl Kodu:";
+            resources.ApplyResources(this.layoutControlItem1, "layoutControlItem1");
             this.layoutControlItem1.TextSize = new System.Drawing.Size(45, 13);
             // 
             // layoutControlItem2
@@ -216,7 +205,7 @@
             this.layoutControlItem3.OptionsTableLayoutItem.ColumnSpan = 3;
             this.layoutControlItem3.OptionsTableLayoutItem.RowIndex = 1;
             this.layoutControlItem3.Size = new System.Drawing.Size(378, 24);
-            this.layoutControlItem3.Text = "İl Adı:";
+            resources.ApplyResources(this.layoutControlItem3, "layoutControlItem3");
             this.layoutControlItem3.TextSize = new System.Drawing.Size(45, 13);
             // 
             // layoutControlItem4
@@ -229,19 +218,16 @@
             this.layoutControlItem4.OptionsTableLayoutItem.ColumnSpan = 3;
             this.layoutControlItem4.OptionsTableLayoutItem.RowIndex = 2;
             this.layoutControlItem4.Size = new System.Drawing.Size(378, 88);
-            this.layoutControlItem4.Text = "Açıklama:";
+            resources.ApplyResources(this.layoutControlItem4, "layoutControlItem4");
             this.layoutControlItem4.TextSize = new System.Drawing.Size(45, 13);
             // 
             // IlEditForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(398, 289);
             this.Controls.Add(this.dpuDataLayoutControl);
             this.IconOptions.ShowIcon = false;
-            this.MinimumSize = new System.Drawing.Size(400, 290);
             this.Name = "IlEditForm";
-            this.Text = "İl Kayıt Kartı";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.dpuDataLayoutControl, 0);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();

@@ -14,7 +14,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
         {
             return x => x.durum == aktifKartlariGoster;
         }
-        public static Expression<Func<T,bool>> Filter<T>(long id) where T:BaseDurumEntity
+        public static Expression<Func<T,bool>> Filter<T>(long id) where T:BaseEntity
         {
 <<<<<<< HEAD
             return x => x.id == id;

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseListForm));
             DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
             DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem1 = new DevExpress.Utils.ToolTipSeparatorItem();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
@@ -218,11 +219,11 @@
             this.btnYeni.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.addfile_32x32;
             this.btnYeni.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Insert));
             this.btnYeni.Name = "btnYeni";
-            toolTipTitleItem1.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.comment_16x16;
+            toolTipTitleItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             toolTipTitleItem1.Text = "(Insert)";
             toolTipItem1.LeftIndent = 6;
             toolTipItem1.Text = "Yeni Kart Ekle";
-            toolTipTitleItem2.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipTitleItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             toolTipTitleItem2.LeftIndent = 6;
             toolTipTitleItem2.Text = "Formu Yeni Kart Ekleme Modunda Açar";
             superToolTip1.Items.Add(toolTipTitleItem1);
@@ -239,11 +240,11 @@
             this.btnSil.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.deletelist_32x32;
             this.btnSil.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.Delete);
             this.btnSil.Name = "btnSil";
-            toolTipTitleItem3.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.comment_16x16;
+            toolTipTitleItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             toolTipTitleItem3.Text = "(Delete)";
             toolTipItem2.LeftIndent = 6;
             toolTipItem2.Text = "Seçilen Kaydı sil";
-            toolTipTitleItem4.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipTitleItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             toolTipTitleItem4.LeftIndent = 6;
             toolTipTitleItem4.Text = "Seçilen Kayıt Onayınızdan Sonra Silinir.";
             superToolTip2.Items.Add(toolTipTitleItem3);
@@ -260,11 +261,11 @@
             this.btnSeç.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.apply_32x32;
             this.btnSeç.Name = "btnSeç";
             this.btnSeç.ShortcutKeyDisplayString = "Enter";
-            toolTipTitleItem5.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.comment_16x16;
+            toolTipTitleItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             toolTipTitleItem5.Text = "(Enter)";
             toolTipItem3.LeftIndent = 6;
             toolTipItem3.Text = "Kaydı Seç";
-            toolTipTitleItem6.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipTitleItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
             toolTipTitleItem6.LeftIndent = 6;
             toolTipTitleItem6.Text = "Seçilen Kayıt Önceki Kayda Aktarılır.";
             superToolTip3.Items.Add(toolTipTitleItem5);
@@ -281,11 +282,11 @@
             this.btnDuzelt.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.edit_32x32;
             this.btnDuzelt.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F2);
             this.btnDuzelt.Name = "btnDuzelt";
-            toolTipTitleItem7.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.comment_16x16;
+            toolTipTitleItem7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             toolTipTitleItem7.Text = "(F2)";
             toolTipItem4.LeftIndent = 6;
             toolTipItem4.Text = "Düzelt";
-            toolTipTitleItem8.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipTitleItem8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
             toolTipTitleItem8.LeftIndent = 6;
             toolTipTitleItem8.Text = "Seçilen Kayıt Düzeltilmek İçin Açılır.";
             superToolTip4.Items.Add(toolTipTitleItem7);
@@ -302,11 +303,11 @@
             this.btnYenile.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.convert_32x32;
             this.btnYenile.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F5);
             this.btnYenile.Name = "btnYenile";
-            toolTipTitleItem9.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.comment_16x16;
+            toolTipTitleItem9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
             toolTipTitleItem9.Text = "(F5)";
             toolTipItem5.LeftIndent = 6;
             toolTipItem5.Text = "Yenile";
-            toolTipTitleItem10.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipTitleItem10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
             toolTipTitleItem10.LeftIndent = 6;
             toolTipTitleItem10.Text = "Tablo Verileri Yeniden Sorgulanarak Listelenir.";
             superToolTip5.Items.Add(toolTipTitleItem9);
@@ -323,11 +324,11 @@
             this.btnFiltrele.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.crossdatasourcefiltering_32x32;
             this.btnFiltrele.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F8);
             this.btnFiltrele.Name = "btnFiltrele";
-            toolTipTitleItem11.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.comment_16x16;
+            toolTipTitleItem11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
             toolTipTitleItem11.Text = "(F8)";
             toolTipItem6.LeftIndent = 6;
             toolTipItem6.Text = "Filtrele";
-            toolTipTitleItem12.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipTitleItem12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image11")));
             toolTipTitleItem12.LeftIndent = 6;
             toolTipTitleItem12.Text = "Tabloya Filtre Eklenerek Sorgulama Yapılır.";
             superToolTip6.Items.Add(toolTipTitleItem11);
@@ -344,11 +345,11 @@
             this.btnKolonlar.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.weekend_32x32;
             this.btnKolonlar.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O));
             this.btnKolonlar.Name = "btnKolonlar";
-            toolTipTitleItem13.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.comment_16x16;
+            toolTipTitleItem13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image12")));
             toolTipTitleItem13.Text = "(Ctrl+O)";
             toolTipItem7.LeftIndent = 6;
             toolTipItem7.Text = "Sütun Seç";
-            toolTipTitleItem14.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipTitleItem14.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image13")));
             toolTipTitleItem14.LeftIndent = 6;
             toolTipTitleItem14.Text = "Tabloya Eklemek İçin Sütun Seçilir.";
             superToolTip7.Items.Add(toolTipTitleItem13);
@@ -365,11 +366,11 @@
             this.btnYazdir.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.print_32x32;
             this.btnYazdir.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P));
             this.btnYazdir.Name = "btnYazdir";
-            toolTipTitleItem15.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.comment_16x16;
+            toolTipTitleItem15.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image14")));
             toolTipTitleItem15.Text = "(Ctrl+P)";
             toolTipItem8.LeftIndent = 6;
             toolTipItem8.Text = "Yazdır";
-            toolTipTitleItem16.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipTitleItem16.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image15")));
             toolTipTitleItem16.LeftIndent = 6;
             toolTipTitleItem16.Text = "Tablodaki Veriler Yazdırılır.";
             superToolTip8.Items.Add(toolTipTitleItem15);
@@ -386,11 +387,11 @@
             this.btnCikis.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.close_32x321;
             this.btnCikis.Name = "btnCikis";
             this.btnCikis.ShortcutKeyDisplayString = "Esc";
-            toolTipTitleItem17.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.comment_16x16;
+            toolTipTitleItem17.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image16")));
             toolTipTitleItem17.Text = "Esc";
             toolTipItem9.LeftIndent = 6;
             toolTipItem9.Text = "Çıkış";
-            toolTipTitleItem18.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipTitleItem18.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image17")));
             toolTipTitleItem18.LeftIndent = 6;
             toolTipTitleItem18.Text = "Form Kapatılarak Çıkılır.";
             superToolTip9.Items.Add(toolTipTitleItem17);
@@ -412,11 +413,11 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.btnPdfDosyasi),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnTxtDosyasi)});
             this.btnGonder.Name = "btnGonder";
-            toolTipTitleItem19.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.comment_16x16;
+            toolTipTitleItem19.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image18")));
             toolTipTitleItem19.Text = "(F12)";
             toolTipItem10.LeftIndent = 6;
             toolTipItem10.Text = "Dosyaya Gönder";
-            toolTipTitleItem20.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipTitleItem20.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image19")));
             toolTipTitleItem20.LeftIndent = 6;
             toolTipTitleItem20.Text = "Tabloyu Belirlenen Dosya biçimine Göre Kaydeder.";
             superToolTip10.Items.Add(toolTipTitleItem19);
@@ -669,11 +670,11 @@
             this.btnAktifPasifKartlar.ItemAppearance.Pressed.Options.UseForeColor = true;
             this.btnAktifPasifKartlar.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L));
             this.btnAktifPasifKartlar.Name = "btnAktifPasifKartlar";
-            toolTipTitleItem21.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.comment_16x16;
+            toolTipTitleItem21.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image20")));
             toolTipTitleItem21.Text = "Ctrl+L";
             toolTipItem11.LeftIndent = 6;
             toolTipItem11.Text = "Aktif veya Pasif Kayıtları Listele";
-            toolTipTitleItem22.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipTitleItem22.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image21")));
             toolTipTitleItem22.LeftIndent = 6;
             toolTipTitleItem22.Text = "Aktif veya Pasif Kayıtları Listeler";
             superToolTip11.Items.Add(toolTipTitleItem21);
@@ -691,10 +692,10 @@
             this.btnBagliKartlar.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B));
             this.btnBagliKartlar.Name = "btnBagliKartlar";
             toolTipTitleItem23.Text = "(Ctrl+B)";
-            toolTipItem12.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.comment_16x16;
+            toolTipItem12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image22")));
             toolTipItem12.LeftIndent = 6;
             toolTipItem12.Text = "Bağlı Kartlar";
-            toolTipTitleItem24.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipTitleItem24.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image23")));
             toolTipTitleItem24.LeftIndent = 6;
             toolTipTitleItem24.Text = "İlgili Karta Bağlı Alt Kartlar";
             superToolTip12.Items.Add(toolTipTitleItem23);
@@ -803,11 +804,7 @@
         private DevExpress.XtraBars.BarButtonItem btnSeç;
         private DevExpress.XtraBars.BarButtonItem btnDuzelt;
         private DevExpress.XtraBars.BarButtonItem btnYenile;
-        private DevExpress.XtraBars.BarButtonItem btnFiltrele;
-        private DevExpress.XtraBars.BarButtonItem btnKolonlar;
-        private DevExpress.XtraBars.BarButtonItem btnYazdir;
         private DevExpress.XtraBars.BarButtonItem btnCikis;
-        private DevExpress.XtraBars.BarSubItem btnGonder;
         private DevExpress.XtraBars.BarStaticItem barInsert;
         private DevExpress.XtraBars.BarStaticItem barInsertAciklama;
         private DevExpress.XtraBars.BarStaticItem barDelete;
@@ -818,17 +815,8 @@
         private DevExpress.XtraBars.BarStaticItem barDuzeltAciklama;
         private DevExpress.XtraBars.BarStaticItem barYenile;
         private DevExpress.XtraBars.BarStaticItem barYenileAciklama;
-        private DevExpress.XtraBars.BarStaticItem barFiltrele;
-        private DevExpress.XtraBars.BarStaticItem barFiltrelemeAciklama;
-        private DevExpress.XtraBars.BarStaticItem barKolonlar;
-        private DevExpress.XtraBars.BarStaticItem barKolonlarAciklama;
-        private DevExpress.XtraBars.BarStaticItem barYazdir;
-        private DevExpress.XtraBars.BarStaticItem barYazdirAciklama;
-        private DevExpress.XtraBars.BarStaticItem barGonder;
-        private DevExpress.XtraBars.BarStaticItem barGonderAciklama;
         private DevExpress.XtraBars.BarStaticItem barCikis;
         private DevExpress.XtraBars.BarStaticItem barCikisAciklama;
-        private DevExpress.XtraBars.BarButtonItem btnAktifPasifKartlar;
         private DevExpress.XtraBars.BarSubItem btnExcelDosyalari;
         private DevExpress.XtraBars.BarButtonItem btnStandartExcelDosyasi;
         private DevExpress.XtraBars.BarButtonItem btnFormatliExcelDosyasi;
@@ -842,6 +830,22 @@
         protected DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         protected DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
         protected DevExpress.XtraBars.BarButtonItem btnBagliKartlar;
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseListForm.Designer.cs
 >>>>>>> yandal:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseCardsForm.Designer.cs
+=======
+        protected DevExpress.XtraBars.BarButtonItem btnFiltrele;
+        protected DevExpress.XtraBars.BarButtonItem btnKolonlar;
+        protected DevExpress.XtraBars.BarButtonItem btnYazdir;
+        protected DevExpress.XtraBars.BarSubItem btnGonder;
+        protected DevExpress.XtraBars.BarStaticItem barFiltrele;
+        protected DevExpress.XtraBars.BarStaticItem barFiltrelemeAciklama;
+        protected DevExpress.XtraBars.BarStaticItem barKolonlar;
+        protected DevExpress.XtraBars.BarStaticItem barKolonlarAciklama;
+        protected DevExpress.XtraBars.BarStaticItem barYazdir;
+        protected DevExpress.XtraBars.BarStaticItem barYazdirAciklama;
+        protected DevExpress.XtraBars.BarStaticItem barGonder;
+        protected DevExpress.XtraBars.BarStaticItem barGonderAciklama;
+        protected DevExpress.XtraBars.BarButtonItem btnAktifPasifKartlar;
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseListForm.Designer.cs
     }
 }

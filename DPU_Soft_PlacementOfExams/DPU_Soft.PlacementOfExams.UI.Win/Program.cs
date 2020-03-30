@@ -2,8 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+using DevExpress.Skins;
+using DevExpress.LookAndFeel;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win
 {
@@ -17,6 +21,11 @@ namespace DPU_Soft.PlacementOfExams.UI.Win
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("tr-TR");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("tr-TR");
+
+            SkinManager.EnableFormSkins();
+            UserLookAndFeel.Default.SetSkinStyle("Office 2010 Blue");
             Application.Run(new AnaForm());
         }
     }

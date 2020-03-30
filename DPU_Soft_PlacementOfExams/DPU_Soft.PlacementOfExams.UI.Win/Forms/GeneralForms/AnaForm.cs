@@ -26,6 +26,9 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
 {
     public partial class AnaForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+        public static string FakulteAdi = " Fakültesi";
+        public static string DersAdi = " Dersi";
+
         public AnaForm()
         {
             InitializeComponent();

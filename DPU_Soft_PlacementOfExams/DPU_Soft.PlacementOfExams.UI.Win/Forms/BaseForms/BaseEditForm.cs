@@ -23,7 +23,13 @@ using DPU_Soft.PlacementOfExams.Common.Massage;
 =======
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid;
 using DPU_Soft.PlacementOfExams.UI.Win.Interfaces;
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseEditForm.cs
 >>>>>>> yandal
+=======
+using DevExpress.XtraPrinting.Native;
+using DevExpress.Utils.Extensions;
+using DPU_Soft.PlacementOfExams.Model.Entities.Base.Interfaces;
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseEditForm.cs
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
 {
@@ -47,6 +53,8 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
         protected BaseEntity CurrentEntity;
         protected bool IsLoaded;
         protected bool KayitSonrasiFormuKapat = true;
+        protected BarItem[] ShowItems;
+        protected BarItem[] HideItems;
         public BaseEditForm()
         {
             InitializeComponent();
@@ -54,6 +62,10 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
         protected internal virtual void Yukle() 
         { 
                     
+        }
+        protected internal virtual IBaseEntity ReturnEntity()
+        {
+            return null;
         }
         protected void EventsLoad()
         {
@@ -79,6 +91,13 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
 
                 switch (control)
                 {
+                    case FilterControl edt:
+                        edt.FilterChanged+= Control_EditValueChanged;
+                        break;
+                    case ComboBoxEdit edt:
+                        edt.SelectedValueChanged += Control_SelectedValueChanged;
+                        edt.EditValueChanged+= Control_EditValueChanged;
+                        break;
                     case DpuButtonEdit edt:
                         edt.IdChanged += Control_IdChanged;
                         edt.EnabledChange += Control_EnabledChange;
@@ -87,6 +106,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
                         break;
                     case BaseEdit edt:
                         edt.EditValueChanged += Control_EditValueChanged;
+
                         break;
                 }
 
@@ -101,6 +121,11 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
                 foreach (var layout in DataLayoutControls)
                     foreach (Control ctrl in layout.Controls)
                         ControlEvents(ctrl);
+        }
+
+        protected virtual void Control_SelectedValueChanged(object sender, EventArgs e)
+        {
+            
         }
 
         private void Control_Leave(object sender, EventArgs e)
@@ -143,6 +168,11 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             if (btnKaydet.Visibility == BarItemVisibility.Never || !btnKaydet.Enabled) return;
             if (!Kaydet(true))
                 e.Cancel = true;
+        }
+
+        protected virtual void FiltreUygula()
+        {
+
         }
 
         protected void SablonKaydet()
@@ -219,8 +249,12 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             Id = BaseIslemTuru.IdOlustur(OldEntity);
 =======
             SablonYukle();
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseEditForm.cs
             //ButtonGizleGoster();
 >>>>>>> yandal
+=======
+            ButtonGizleGoster();
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseEditForm.cs
             //güncelleme Yap
 
         }
@@ -241,13 +275,31 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             {
                 Kaydet(false);
             }
+            else if (e.Item==btnFarkliKaydet)
+            {
+                //Yetki kontrolü
+                FarkliKaydet();
+            }
             else if (e.Item==btnGeriAl)
             {
                 GeriAl();
             }
             else if (e.Item==btnSil)
             {
+                //Yetki Kontrolü
                 EntityDelete();
+            }
+            else if (e.Item == btnUygula)
+            {
+                FiltreUygula();
+            }
+            else if (e.Item==btnYazdir)
+            {
+                Yazdir();
+            }
+            else if (e.Item==btnBaskiOnizleme)
+            {
+                BaskiOnizleme();
             }
             else if (e.Item==btnCikis)
             {
@@ -257,6 +309,24 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
 =======
             Cursor.Current = DefaultCursor;
 >>>>>>> yandal
+        }
+
+        protected virtual void BaskiOnizleme()
+        {
+            
+        }
+
+        protected virtual void Yazdir()
+        {
+            
+        }
+
+        private void FarkliKaydet()
+        {
+            if (Messages.EvetSeciliEvetHayir("Bu filtre referans alınarak yeni bir filtre oluşturulacaktır. Onaylıyor musunuz?", "Kayıt Onayı") != DialogResult.Yes) return;
+            BaseIslemTuru = IslemTuru.EntityInsert;
+            Yukle();
+            if (Kaydet(true)) Close();
         }
 
         protected virtual void SecimYap(object sender)
@@ -276,6 +346,19 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             Close();
 >>>>>>> yandal
         }
+
+        private void ButtonGizleGoster()
+        {
+
+          
+            ShowItems?.ForEach(x => x.Visibility = BarItemVisibility.Always);
+            HideItems?.ForEach(x => x.Visibility = BarItemVisibility.Never);
+            /* Yukarıdaki kodun aynısı foreach (BarItem item in ShowItems)
+            {
+                item.Visibility = BarItemVisibility.Always;
+            }*/
+        }
+
 
         private void GeriAl()
         {

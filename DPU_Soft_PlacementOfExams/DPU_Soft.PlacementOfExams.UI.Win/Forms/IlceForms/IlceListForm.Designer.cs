@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IlceListForm));
             this.grid = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridControl();
             this.tablo = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridView();
             this.colId = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colKod = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
-            this.longNavigator = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Navigators.LongNavigator();
             this.colIlceAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colAciklama = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
+            this.longNavigator = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Navigators.LongNavigator();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
@@ -47,27 +48,24 @@
             // 
             // 
             this.ribbonControl.SearchEditItem.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
-            this.ribbonControl.SearchEditItem.EditWidth = 150;
+            this.ribbonControl.SearchEditItem.EditWidth = ((int)(resources.GetObject("ribbonControl.SearchEditItem.EditWidth")));
             this.ribbonControl.SearchEditItem.Id = -5000;
             this.ribbonControl.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
-            this.ribbonControl.Size = new System.Drawing.Size(850, 109);
+            resources.ApplyResources(this.ribbonControl, "ribbonControl");
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
             // grid
             // 
-            this.grid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grid.Location = new System.Drawing.Point(0, 109);
+            resources.ApplyResources(this.grid, "grid");
             this.grid.MainView = this.tablo;
             this.grid.MenuManager = this.ribbonControl;
             this.grid.Name = "grid";
-            this.grid.Size = new System.Drawing.Size(850, 166);
-            this.grid.TabIndex = 2;
             this.grid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.tablo});
             // 
             // tablo
             // 
-            this.tablo.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tablo.Appearance.FooterPanel.Font = ((System.Drawing.Font)(resources.GetObject("tablo.Appearance.FooterPanel.Font")));
             this.tablo.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
             this.tablo.Appearance.FooterPanel.Options.UseFont = true;
             this.tablo.Appearance.FooterPanel.Options.UseForeColor = true;
@@ -99,11 +97,11 @@
             this.tablo.StatusBarAciklama = null;
             this.tablo.StatusBarKisayol = null;
             this.tablo.StatusBarKisayolAciklama = null;
-            this.tablo.ViewCaption = "İlçe Kayıtları";
+            resources.ApplyResources(this.tablo, "tablo");
             // 
             // colId
             // 
-            this.colId.Caption = "Id";
+            resources.ApplyResources(this.colId, "colId");
             this.colId.FieldName = "Id";
             this.colId.Name = "colId";
             this.colId.OptionsColumn.AllowEdit = false;
@@ -116,61 +114,47 @@
             // 
             this.colKod.AppearanceCell.Options.UseTextOptions = true;
             this.colKod.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colKod.Caption = "Kod";
+            resources.ApplyResources(this.colKod, "colKod");
             this.colKod.FieldName = "Kod";
             this.colKod.Name = "colKod";
             this.colKod.OptionsColumn.AllowEdit = false;
             this.colKod.StatusBarAciklama = null;
             this.colKod.StatusBarKisayol = null;
             this.colKod.StatusBarKisayolAciklama = null;
-            this.colKod.Visible = true;
-            this.colKod.VisibleIndex = 0;
-            this.colKod.Width = 103;
-            // 
-            // longNavigator
-            // 
-            this.longNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.longNavigator.Location = new System.Drawing.Point(0, 275);
-            this.longNavigator.Name = "longNavigator";
-            this.longNavigator.Size = new System.Drawing.Size(850, 24);
-            this.longNavigator.TabIndex = 3;
             // 
             // colIlceAdi
             // 
-            this.colIlceAdi.Caption = "İlçe Adı";
+            resources.ApplyResources(this.colIlceAdi, "colIlceAdi");
             this.colIlceAdi.FieldName = "IlceAdi";
             this.colIlceAdi.Name = "colIlceAdi";
             this.colIlceAdi.OptionsColumn.AllowEdit = false;
             this.colIlceAdi.StatusBarAciklama = null;
             this.colIlceAdi.StatusBarKisayol = null;
             this.colIlceAdi.StatusBarKisayolAciklama = null;
-            this.colIlceAdi.Visible = true;
-            this.colIlceAdi.VisibleIndex = 1;
-            this.colIlceAdi.Width = 155;
             // 
             // colAciklama
             // 
-            this.colAciklama.Caption = "Açıklama";
+            resources.ApplyResources(this.colAciklama, "colAciklama");
             this.colAciklama.FieldName = "Aciklama";
             this.colAciklama.Name = "colAciklama";
             this.colAciklama.OptionsColumn.AllowEdit = false;
             this.colAciklama.StatusBarAciklama = null;
             this.colAciklama.StatusBarKisayol = null;
             this.colAciklama.StatusBarKisayolAciklama = null;
-            this.colAciklama.Visible = true;
-            this.colAciklama.VisibleIndex = 2;
-            this.colAciklama.Width = 304;
+            // 
+            // longNavigator
+            // 
+            resources.ApplyResources(this.longNavigator, "longNavigator");
+            this.longNavigator.Name = "longNavigator";
             // 
             // IlceListForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 323);
             this.Controls.Add(this.grid);
             this.Controls.Add(this.longNavigator);
             this.IconOptions.ShowIcon = false;
             this.Name = "IlceListForm";
-            this.Text = "İlçe Kayıtları";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.longNavigator, 0);
             this.Controls.SetChildIndex(this.grid, 0);

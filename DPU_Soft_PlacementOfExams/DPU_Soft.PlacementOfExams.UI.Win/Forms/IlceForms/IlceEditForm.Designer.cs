@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IlceEditForm));
             DevExpress.XtraLayout.ColumnDefinition columnDefinition1 = new DevExpress.XtraLayout.ColumnDefinition();
             DevExpress.XtraLayout.ColumnDefinition columnDefinition2 = new DevExpress.XtraLayout.ColumnDefinition();
             DevExpress.XtraLayout.ColumnDefinition columnDefinition3 = new DevExpress.XtraLayout.ColumnDefinition();
@@ -85,10 +86,10 @@
             // 
             // 
             this.ribbonControl.SearchEditItem.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
-            this.ribbonControl.SearchEditItem.EditWidth = 150;
+            this.ribbonControl.SearchEditItem.EditWidth = ((int)(resources.GetObject("ribbonControl.SearchEditItem.EditWidth")));
             this.ribbonControl.SearchEditItem.Id = -5000;
             this.ribbonControl.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
-            this.ribbonControl.Size = new System.Drawing.Size(398, 109);
+            resources.ApplyResources(this.ribbonControl, "ribbonControl");
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
             // dpuDataLayoutControl
@@ -101,53 +102,53 @@
 >>>>>>> yandal
             this.dpuDataLayoutControl.Controls.Add(this.txtIlceAdi);
             this.dpuDataLayoutControl.Controls.Add(this.txtKod);
-            this.dpuDataLayoutControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dpuDataLayoutControl.Location = new System.Drawing.Point(0, 109);
+            resources.ApplyResources(this.dpuDataLayoutControl, "dpuDataLayoutControl");
             this.dpuDataLayoutControl.Name = "dpuDataLayoutControl";
             this.dpuDataLayoutControl.OptionsFocus.EnableAutoTabOrder = false;
             this.dpuDataLayoutControl.Root = this.Root;
-            this.dpuDataLayoutControl.Size = new System.Drawing.Size(398, 156);
-            this.dpuDataLayoutControl.TabIndex = 2;
-            this.dpuDataLayoutControl.Text = "dpuDataLayoutControl1";
             // 
             // tglDurum
             // 
-            this.tglDurum.Location = new System.Drawing.Point(291, 12);
+            resources.ApplyResources(this.tglDurum, "tglDurum");
             this.tglDurum.MenuManager = this.ribbonControl;
             this.tglDurum.Name = "tglDurum";
             this.tglDurum.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
             this.tglDurum.Properties.Appearance.Options.UseForeColor = true;
-            this.tglDurum.Properties.AutoHeight = false;
+            this.tglDurum.Properties.AutoHeight = ((bool)(resources.GetObject("tglDurum.Properties.AutoHeight")));
             this.tglDurum.Properties.AutoWidth = true;
-            this.tglDurum.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.tglDurum.Properties.OffText = "Pasif";
-            this.tglDurum.Properties.OnText = "Aktif";
-            this.tglDurum.Size = new System.Drawing.Size(77, 20);
+            this.tglDurum.Properties.GlyphAlignment = ((DevExpress.Utils.HorzAlignment)(resources.GetObject("tglDurum.Properties.GlyphAlignment")));
+            this.tglDurum.Properties.OffText = resources.GetString("tglDurum.Properties.OffText");
+            this.tglDurum.Properties.OnText = resources.GetString("tglDurum.Properties.OnText");
             this.tglDurum.StatusBarAciklama = "Kaydın kullanım durumunu belirleyiniz.";
             this.tglDurum.StyleController = this.dpuDataLayoutControl;
-            this.tglDurum.TabIndex = 8;
             // 
             // txtAciklama
             // 
             this.txtAciklama.EnterMoveNextControl = true;
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlceForms/IlceEditForm.Designer.cs
 <<<<<<< HEAD
             this.txtAciklama.Location = new System.Drawing.Point(78, 84);
 =======
             this.txtAciklama.Location = new System.Drawing.Point(63, 60);
 >>>>>>> yandal
+=======
+            resources.ApplyResources(this.txtAciklama, "txtAciklama");
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlceForms/IlceEditForm.Designer.cs
             this.txtAciklama.MenuManager = this.ribbonControl;
             this.txtAciklama.Name = "txtAciklama";
             this.txtAciklama.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txtAciklama.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtAciklama.Properties.MaxLength = 500;
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlceForms/IlceEditForm.Designer.cs
 <<<<<<< HEAD
             this.txtAciklama.Size = new System.Drawing.Size(308, 60);
 =======
             this.txtAciklama.Size = new System.Drawing.Size(323, 84);
 >>>>>>> yandal
+=======
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlceForms/IlceEditForm.Designer.cs
             this.txtAciklama.StatusBarAciklama = "Açıklama Giriniz.";
             this.txtAciklama.StyleController = this.dpuDataLayoutControl;
-            this.txtAciklama.TabIndex = 7;
             // 
 <<<<<<< HEAD
             // txtIl
@@ -176,30 +177,40 @@
             // txtIlceAdi
             // 
             this.txtIlceAdi.EnterMoveNextControl = true;
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlceForms/IlceEditForm.Designer.cs
             this.txtIlceAdi.Location = new System.Drawing.Point(63, 36);
 >>>>>>> yandal
+=======
+            resources.ApplyResources(this.txtIlceAdi, "txtIlceAdi");
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlceForms/IlceEditForm.Designer.cs
             this.txtIlceAdi.MenuManager = this.ribbonControl;
             this.txtIlceAdi.Name = "txtIlceAdi";
             this.txtIlceAdi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txtIlceAdi.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtIlceAdi.Properties.MaxLength = 50;
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlceForms/IlceEditForm.Designer.cs
 <<<<<<< HEAD
             this.txtIlceAdi.Size = new System.Drawing.Size(308, 20);
 =======
             this.txtIlceAdi.Size = new System.Drawing.Size(323, 20);
 >>>>>>> yandal
+=======
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlceForms/IlceEditForm.Designer.cs
             this.txtIlceAdi.StatusBarAciklama = "İlçe Adı Giriniz!";
             this.txtIlceAdi.StyleController = this.dpuDataLayoutControl;
-            this.txtIlceAdi.TabIndex = 5;
             // 
             // txtKod
             // 
             this.txtKod.EnterMoveNextControl = true;
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlceForms/IlceEditForm.Designer.cs
 <<<<<<< HEAD
             this.txtKod.Location = new System.Drawing.Point(78, 12);
 =======
             this.txtKod.Location = new System.Drawing.Point(63, 12);
 >>>>>>> yandal
+=======
+            resources.ApplyResources(this.txtKod, "txtKod");
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlceForms/IlceEditForm.Designer.cs
             this.txtKod.MenuManager = this.ribbonControl;
             this.txtKod.Name = "txtKod";
             this.txtKod.Properties.Appearance.BackColor = System.Drawing.Color.Moccasin;
@@ -209,14 +220,16 @@
             this.txtKod.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txtKod.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtKod.Properties.MaxLength = 20;
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlceForms/IlceEditForm.Designer.cs
 <<<<<<< HEAD
             this.txtKod.Size = new System.Drawing.Size(130, 20);
 =======
             this.txtKod.Size = new System.Drawing.Size(145, 20);
 >>>>>>> yandal
+=======
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlceForms/IlceEditForm.Designer.cs
             this.txtKod.StatusBarAciklama = "Kod Giriniz.";
             this.txtKod.StyleController = this.dpuDataLayoutControl;
-            this.txtKod.TabIndex = 4;
             // 
             // Root
             // 
@@ -276,10 +289,14 @@
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(200, 24);
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlceForms/IlceEditForm.Designer.cs
             this.layoutControlItem1.Text = "İlçe Kodu:";
 <<<<<<< HEAD
             this.layoutControlItem1.TextSize = new System.Drawing.Size(63, 13);
 =======
+=======
+            resources.ApplyResources(this.layoutControlItem1, "layoutControlItem1");
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlceForms/IlceEditForm.Designer.cs
             this.layoutControlItem1.TextSize = new System.Drawing.Size(48, 13);
 >>>>>>> yandal
             // 
@@ -293,6 +310,7 @@
             this.layoutControlItem2.OptionsTableLayoutItem.ColumnSpan = 3;
             this.layoutControlItem2.OptionsTableLayoutItem.RowIndex = 1;
             this.layoutControlItem2.Size = new System.Drawing.Size(378, 24);
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlceForms/IlceEditForm.Designer.cs
             this.layoutControlItem2.Text = "İlçe Adı:";
 <<<<<<< HEAD
             this.layoutControlItem2.TextSize = new System.Drawing.Size(63, 13);
@@ -309,6 +327,9 @@
             this.layoutControlItem3.Text = "Bulunduğu İl:";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(63, 13);
 =======
+=======
+            resources.ApplyResources(this.layoutControlItem2, "layoutControlItem2");
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/IlceForms/IlceEditForm.Designer.cs
             this.layoutControlItem2.TextSize = new System.Drawing.Size(48, 13);
 >>>>>>> yandal
             // 
@@ -331,7 +352,7 @@
             this.layoutControlItem4.OptionsTableLayoutItem.ColumnSpan = 3;
             this.layoutControlItem4.OptionsTableLayoutItem.RowIndex = 2;
             this.layoutControlItem4.Size = new System.Drawing.Size(378, 88);
-            this.layoutControlItem4.Text = "Açıklama:";
+            resources.ApplyResources(this.layoutControlItem4, "layoutControlItem4");
             this.layoutControlItem4.TextSize = new System.Drawing.Size(48, 13);
 >>>>>>> yandal
             // 
@@ -349,14 +370,11 @@
             // 
             // IlceEditForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(398, 289);
             this.Controls.Add(this.dpuDataLayoutControl);
             this.IconOptions.ShowIcon = false;
-            this.MinimumSize = new System.Drawing.Size(400, 290);
             this.Name = "IlceEditForm";
-            this.Text = "İlçe Kayıt Kartı";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.dpuDataLayoutControl, 0);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();

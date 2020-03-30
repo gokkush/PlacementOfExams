@@ -37,7 +37,7 @@
       <property name="Name">colFakulteAdi</property>
       <property name="VisibleIndex">1</property>
       <property name="Visible">true</property>
-      <property name="Width">309</property>
+      <property name="Width">225</property>
       <property name="MinWidth">20</property>
       <property name="MaxWidth">0</property>
     </property>
@@ -45,7 +45,7 @@
       <property name="Name">colIlAdi</property>
       <property name="VisibleIndex">3</property>
       <property name="Visible">true</property>
-      <property name="Width">150</property>
+      <property name="Width">98</property>
       <property name="MinWidth">20</property>
       <property name="MaxWidth">0</property>
     </property>
@@ -53,7 +53,7 @@
       <property name="Name">colIlceAdi</property>
       <property name="VisibleIndex">4</property>
       <property name="Visible">true</property>
-      <property name="Width">150</property>
+      <property name="Width">99</property>
       <property name="MinWidth">20</property>
       <property name="MaxWidth">0</property>
     </property>
@@ -61,13 +61,26 @@
       <property name="Name">colAciklama</property>
       <property name="VisibleIndex">5</property>
       <property name="Visible">true</property>
-      <property name="Width">320</property>
+      <property name="Width">245</property>
       <property name="MinWidth">20</property>
       <property name="MaxWidth">0</property>
     </property>
   </property>
   <property name="GroupSummary" iskey="true" value="0" />
   <property name="ActiveFilterString" />
+  <property name="MRUFiltersInfo" iskey="true" value="1">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="NonColumnFilter" />
+      <property name="ColumnsFilter" iskey="true" value="1">
+        <property name="Item1" isnull="true" iskey="true">
+          <property name="Type">Custom</property>
+          <property name="FilterString">Contains([IlAdi], 'ANKARA')</property>
+          <property name="DisplayText" />
+          <property name="ColumnName">colIlAdi</property>
+        </property>
+      </property>
+    </property>
+  </property>
   <property name="SortInfoState" iskey="true" value="1">
     <property name="Item1" isnull="true" iskey="true">
       <property name="Orders">Ascending</property>

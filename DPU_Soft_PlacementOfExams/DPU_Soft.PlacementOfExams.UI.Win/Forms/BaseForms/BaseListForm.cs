@@ -26,14 +26,25 @@ using DPU_Soft.BLL.Base.Interfaces;
 =======
 using DevExpress.XtraPrinting.Native;
 using DevExpress.Utils.Extensions;
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseListForm.cs
 >>>>>>> yandal
+=======
+using DPU_Soft.PlacementOfExams.UI.Win.Show;
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.FiltreForms;
+using DPU_Soft.PlacementOfExams.Model.Entities;
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms;
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseListForm.cs
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
 {
     public partial class BaseListForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+<<<<<<< HEAD:DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseListForm.cs
 <<<<<<< HEAD
 =======
+=======
+        private long _filtreId;
+>>>>>>> yandal:YEDEK-9/DPU_Soft_PlacementOfExams/DPU_Soft.PlacementOfExams.UI.Win/Forms/BaseForms/BaseListForm.cs
         private bool _formSablonKayitEdilecek;
         private bool _tabloSablonKayitedilecek;
 >>>>>>> yandal
@@ -81,12 +92,28 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             Tablo.ColumnWidthChanged += Tablo_ColumnWidthChanged;
             Tablo.ColumnPositionChanged += Tablo_ColumnPositionChanged;
             Tablo.EndSorting += Tablo_EndSorting;
+            Tablo.FilterEditorCreated += Tablo_FilterEditorCreated;
+            Tablo.ColumnFilterChanged += Tablo_ColumnFilterChanged;
+
             //Form Events
             Shown += BaseListForm_Shown;
             Load += BaseListForm_Load;
             FormClosing += BaseListForm_FormClosing;
             LocationChanged += BaseListForm_LocationChanged;
             SizeChanged += BaseListForm_SizeChanged;
+        }
+
+        private void Tablo_ColumnFilterChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(Tablo.ActiveFilterString))
+                _filtreId = 0;
+        }
+
+        private void Tablo_FilterEditorCreated(object sender, DevExpress.XtraGrid.Views.Base.FilterControlEventArgs e)
+        {
+            e.ShowFilterEditor = false;
+            ShowEditforms<FiltreEditForm>.ShowDialogeditForm(KartTuru.Filtre, _filtreId, BaseKartTuru, Tablo.GridControl);
+
         }
 
         private void BaseListForm_SizeChanged(object sender, EventArgs e)
@@ -142,6 +169,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
 
         private void ButtonGizleGoster()
         {
+            
             btnSeç.Visibility = AktifPasifButonGoster ? BarItemVisibility.Never : IsMdiChild ? BarItemVisibility.Never : BarItemVisibility.Always;
             barEnter.Visibility = IsMdiChild ? BarItemVisibility.Never : BarItemVisibility.Always;
             barEnterAciklama.Visibility=IsMdiChild?BarItemVisibility.Never: BarItemVisibility.Always;
@@ -157,7 +185,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
 
         private void SutunGizleGoster()
         {
-            throw new NotImplementedException();
+           // throw new NotImplementedException();
         }
 
         private void SablonKaydet()
@@ -256,12 +284,15 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
 
         private void FiltreSec()
         {
-            throw new NotImplementedException();
+            var entity = (FiltreEntity)ShowListforms<FiltreListForm>.ShowDialogListForm(KartTuru.Filtre,_filtreId,BaseKartTuru,Tablo.GridControl);
+            if (entity == null) return;
+            _filtreId = entity.Id;
+            Tablo.ActiveFilterString = entity.FiltreMetni;
         }
 
-        private void Yazdir()
+        protected virtual void Yazdir()
         {
-            throw new NotImplementedException();
+            TablePrintingFunctions.Yazdir(Tablo,Tablo.ViewCaption,AnaForm.FakulteAdi);
         }
 
         private void FormCaptionAyarla()

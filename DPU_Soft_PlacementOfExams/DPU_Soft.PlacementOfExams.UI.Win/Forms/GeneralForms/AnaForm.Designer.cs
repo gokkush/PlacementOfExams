@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaForm));
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnOkulKartlari = new DevExpress.XtraBars.BarButtonItem();
+            this.btnIlKartlari = new DevExpress.XtraBars.BarButtonItem();
             this.rPTanimlar = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rPCAnaTanim = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ALC = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.btnIlKartlari = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
@@ -49,17 +50,16 @@
             this.ribbonControl.SearchEditItem,
             this.btnOkulKartlari,
             this.btnIlKartlari});
-            this.ribbonControl.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.ribbonControl, "ribbonControl");
             this.ribbonControl.MaxItemId = 3;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rPTanimlar});
-            this.ribbonControl.Size = new System.Drawing.Size(893, 158);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
             // 
             // btnOkulKartlari
             // 
-            this.btnOkulKartlari.Caption = "Üniversite Kaydı";
+            resources.ApplyResources(this.btnOkulKartlari, "btnOkulKartlari");
             this.btnOkulKartlari.Id = 1;
             this.btnOkulKartlari.Name = "btnOkulKartlari";
 <<<<<<< HEAD
@@ -70,42 +70,40 @@
 =======
 >>>>>>> yandal
             // 
+            // btnIlKartlari
+            // 
+            resources.ApplyResources(this.btnIlKartlari, "btnIlKartlari");
+            this.btnIlKartlari.Id = 2;
+            this.btnIlKartlari.Name = "btnIlKartlari";
+            // 
             // rPTanimlar
             // 
             this.rPTanimlar.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.rPCAnaTanim});
             this.rPTanimlar.Name = "rPTanimlar";
-            this.rPTanimlar.Text = "Tanımlamalar";
+            resources.ApplyResources(this.rPTanimlar, "rPTanimlar");
             // 
             // rPCAnaTanim
             // 
             this.rPCAnaTanim.ItemLinks.Add(this.btnOkulKartlari);
             this.rPCAnaTanim.ItemLinks.Add(this.btnIlKartlari);
             this.rPCAnaTanim.Name = "rPCAnaTanim";
-            this.rPCAnaTanim.Text = "Ana Tanımlamalar";
+            resources.ApplyResources(this.rPCAnaTanim, "rPCAnaTanim");
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 454);
+            resources.ApplyResources(this.ribbonStatusBar, "ribbonStatusBar");
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbonControl;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(893, 24);
             // 
             // xtraTabbedMdiManager
             // 
             this.xtraTabbedMdiManager.MdiParent = this;
             // 
-            // btnIlKartlari
-            // 
-            this.btnIlKartlari.Caption = "İl Kaydı";
-            this.btnIlKartlari.Id = 2;
-            this.btnIlKartlari.Name = "btnIlKartlari";
-            // 
             // AnaForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(893, 478);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbonControl);
             this.IconOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.placement_icon;
@@ -113,7 +111,6 @@
             this.Name = "AnaForm";
             this.Ribbon = this.ribbonControl;
             this.StatusBar = this.ribbonStatusBar;
-            this.Text = "PlacementOfExams";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).EndInit();

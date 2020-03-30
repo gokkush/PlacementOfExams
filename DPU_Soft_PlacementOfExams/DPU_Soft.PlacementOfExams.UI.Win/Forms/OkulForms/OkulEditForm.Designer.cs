@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OkulEditForm));
             DevExpress.XtraLayout.ColumnDefinition columnDefinition1 = new DevExpress.XtraLayout.ColumnDefinition();
             DevExpress.XtraLayout.ColumnDefinition columnDefinition2 = new DevExpress.XtraLayout.ColumnDefinition();
             DevExpress.XtraLayout.ColumnDefinition columnDefinition3 = new DevExpress.XtraLayout.ColumnDefinition();
@@ -80,10 +81,10 @@
             // 
             // 
             this.ribbonControl.SearchEditItem.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
-            this.ribbonControl.SearchEditItem.EditWidth = 150;
+            this.ribbonControl.SearchEditItem.EditWidth = ((int)(resources.GetObject("ribbonControl.SearchEditItem.EditWidth")));
             this.ribbonControl.SearchEditItem.Id = -5000;
             this.ribbonControl.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
-            this.ribbonControl.Size = new System.Drawing.Size(594, 109);
+            resources.ApplyResources(this.ribbonControl, "ribbonControl");
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
             // dpuDataLayoutControl
@@ -95,33 +96,27 @@
             this.dpuDataLayoutControl.Controls.Add(this.txtIlce);
             this.dpuDataLayoutControl.Controls.Add(this.txtIl);
             this.dpuDataLayoutControl.Controls.Add(this.txtKod);
-            this.dpuDataLayoutControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dpuDataLayoutControl.Location = new System.Drawing.Point(0, 109);
+            resources.ApplyResources(this.dpuDataLayoutControl, "dpuDataLayoutControl");
             this.dpuDataLayoutControl.Name = "dpuDataLayoutControl";
             this.dpuDataLayoutControl.OptionsFocus.EnableAutoTabOrder = false;
             this.dpuDataLayoutControl.Root = this.Root;
-            this.dpuDataLayoutControl.Size = new System.Drawing.Size(594, 220);
-            this.dpuDataLayoutControl.TabIndex = 0;
-            this.dpuDataLayoutControl.Text = "dpuDataLayoutControl1";
             // 
             // txtOkulAdi
             // 
             this.txtOkulAdi.EnterMoveNextControl = true;
-            this.txtOkulAdi.Location = new System.Drawing.Point(72, 36);
+            resources.ApplyResources(this.txtOkulAdi, "txtOkulAdi");
             this.txtOkulAdi.MenuManager = this.ribbonControl;
             this.txtOkulAdi.Name = "txtOkulAdi";
             this.txtOkulAdi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txtOkulAdi.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtOkulAdi.Properties.MaxLength = 50;
-            this.txtOkulAdi.Size = new System.Drawing.Size(510, 20);
             this.txtOkulAdi.StatusBarAciklama = "Fakülte Adı Giriniz!";
             this.txtOkulAdi.StyleController = this.dpuDataLayoutControl;
-            this.txtOkulAdi.TabIndex = 0;
             // 
             // txtUnvAdi
             // 
             this.txtUnvAdi.Id = null;
-            this.txtUnvAdi.Location = new System.Drawing.Point(72, 108);
+            resources.ApplyResources(this.txtUnvAdi, "txtUnvAdi");
             this.txtUnvAdi.MenuManager = this.ribbonControl;
             this.txtUnvAdi.Name = "txtUnvAdi";
             this.txtUnvAdi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
@@ -129,48 +124,42 @@
             this.txtUnvAdi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.txtUnvAdi.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.txtUnvAdi.Size = new System.Drawing.Size(432, 20);
             this.txtUnvAdi.StatusBarAciklama = "Bağlı Üniversite Seçiniz.";
             this.txtUnvAdi.StatusBarKisayol = "F4: ";
             this.txtUnvAdi.StatusBarKisayolAciklama = "Üniversite Seç";
             this.txtUnvAdi.StyleController = this.dpuDataLayoutControl;
-            this.txtUnvAdi.TabIndex = 3;
             // 
             // txtAciklama
             // 
             this.txtAciklama.EnterMoveNextControl = true;
-            this.txtAciklama.Location = new System.Drawing.Point(72, 132);
+            resources.ApplyResources(this.txtAciklama, "txtAciklama");
             this.txtAciklama.MenuManager = this.ribbonControl;
             this.txtAciklama.Name = "txtAciklama";
             this.txtAciklama.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txtAciklama.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtAciklama.Properties.MaxLength = 500;
-            this.txtAciklama.Size = new System.Drawing.Size(510, 76);
             this.txtAciklama.StatusBarAciklama = "Açıklama Giriniz.";
             this.txtAciklama.StyleController = this.dpuDataLayoutControl;
-            this.txtAciklama.TabIndex = 4;
             // 
             // tglDurum
             // 
-            this.tglDurum.Location = new System.Drawing.Point(508, 12);
+            resources.ApplyResources(this.tglDurum, "tglDurum");
             this.tglDurum.MenuManager = this.ribbonControl;
             this.tglDurum.Name = "tglDurum";
             this.tglDurum.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
             this.tglDurum.Properties.Appearance.Options.UseForeColor = true;
-            this.tglDurum.Properties.AutoHeight = false;
+            this.tglDurum.Properties.AutoHeight = ((bool)(resources.GetObject("tglDurum.Properties.AutoHeight")));
             this.tglDurum.Properties.AutoWidth = true;
-            this.tglDurum.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.tglDurum.Properties.OffText = "Pasif";
-            this.tglDurum.Properties.OnText = "Aktif";
-            this.tglDurum.Size = new System.Drawing.Size(77, 20);
+            this.tglDurum.Properties.GlyphAlignment = ((DevExpress.Utils.HorzAlignment)(resources.GetObject("tglDurum.Properties.GlyphAlignment")));
+            this.tglDurum.Properties.OffText = resources.GetString("tglDurum.Properties.OffText");
+            this.tglDurum.Properties.OnText = resources.GetString("tglDurum.Properties.OnText");
             this.tglDurum.StatusBarAciklama = "Kaydın kullanım durumunu belirleyiniz.";
             this.tglDurum.StyleController = this.dpuDataLayoutControl;
-            this.tglDurum.TabIndex = 5;
             // 
             // txtIlce
             // 
             this.txtIlce.Id = null;
-            this.txtIlce.Location = new System.Drawing.Point(72, 84);
+            resources.ApplyResources(this.txtIlce, "txtIlce");
             this.txtIlce.MenuManager = this.ribbonControl;
             this.txtIlce.Name = "txtIlce";
             this.txtIlce.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
@@ -178,17 +167,15 @@
             this.txtIlce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.txtIlce.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.txtIlce.Size = new System.Drawing.Size(136, 20);
             this.txtIlce.StatusBarAciklama = "İlçe Seçimi Yapınız!";
             this.txtIlce.StatusBarKisayol = "F4: ";
             this.txtIlce.StatusBarKisayolAciklama = "İlçe Seç";
             this.txtIlce.StyleController = this.dpuDataLayoutControl;
-            this.txtIlce.TabIndex = 2;
             // 
             // txtIl
             // 
             this.txtIl.Id = null;
-            this.txtIl.Location = new System.Drawing.Point(72, 60);
+            resources.ApplyResources(this.txtIl, "txtIl");
             this.txtIl.MenuManager = this.ribbonControl;
             this.txtIl.Name = "txtIl";
             this.txtIl.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
@@ -196,17 +183,15 @@
             this.txtIl.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.txtIl.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.txtIl.Size = new System.Drawing.Size(136, 20);
             this.txtIl.StatusBarAciklama = "İl Şeçimi Yapınız!";
             this.txtIl.StatusBarKisayol = "F4: ";
             this.txtIl.StatusBarKisayolAciklama = "İl Seç";
             this.txtIl.StyleController = this.dpuDataLayoutControl;
-            this.txtIl.TabIndex = 1;
             // 
             // txtKod
             // 
             this.txtKod.EnterMoveNextControl = true;
-            this.txtKod.Location = new System.Drawing.Point(72, 12);
+            resources.ApplyResources(this.txtKod, "txtKod");
             this.txtKod.MenuManager = this.ribbonControl;
             this.txtKod.Name = "txtKod";
             this.txtKod.Properties.Appearance.BackColor = System.Drawing.Color.Moccasin;
@@ -216,10 +201,8 @@
             this.txtKod.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txtKod.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtKod.Properties.MaxLength = 20;
-            this.txtKod.Size = new System.Drawing.Size(136, 20);
             this.txtKod.StatusBarAciklama = "Kod Giriniz.";
             this.txtKod.StyleController = this.dpuDataLayoutControl;
-            this.txtKod.TabIndex = 6;
             // 
             // Root
             // 
@@ -275,7 +258,7 @@
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(200, 24);
-            this.layoutControlItem1.Text = "Kod:";
+            resources.ApplyResources(this.layoutControlItem1, "layoutControlItem1");
             this.layoutControlItem1.TextSize = new System.Drawing.Size(57, 13);
             // 
             // layoutControlItem3
@@ -287,7 +270,7 @@
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.OptionsTableLayoutItem.RowIndex = 2;
             this.layoutControlItem3.Size = new System.Drawing.Size(200, 24);
-            this.layoutControlItem3.Text = "İl:";
+            resources.ApplyResources(this.layoutControlItem3, "layoutControlItem3");
             this.layoutControlItem3.TextSize = new System.Drawing.Size(57, 13);
             // 
             // layoutControlItem4
@@ -299,7 +282,7 @@
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.OptionsTableLayoutItem.RowIndex = 3;
             this.layoutControlItem4.Size = new System.Drawing.Size(200, 24);
-            this.layoutControlItem4.Text = "İlçe:";
+            resources.ApplyResources(this.layoutControlItem4, "layoutControlItem4");
             this.layoutControlItem4.TextSize = new System.Drawing.Size(57, 13);
             // 
             // layoutControlItem5
@@ -324,7 +307,7 @@
             this.layoutControlItem6.OptionsTableLayoutItem.ColumnSpan = 3;
             this.layoutControlItem6.OptionsTableLayoutItem.RowIndex = 5;
             this.layoutControlItem6.Size = new System.Drawing.Size(574, 80);
-            this.layoutControlItem6.Text = "Açıklama: ";
+            resources.ApplyResources(this.layoutControlItem6, "layoutControlItem6");
             this.layoutControlItem6.TextSize = new System.Drawing.Size(57, 13);
             // 
             // layoutControlItem7
@@ -337,7 +320,7 @@
             this.layoutControlItem7.OptionsTableLayoutItem.ColumnSpan = 2;
             this.layoutControlItem7.OptionsTableLayoutItem.RowIndex = 4;
             this.layoutControlItem7.Size = new System.Drawing.Size(496, 24);
-            this.layoutControlItem7.Text = "Üniversite:";
+            resources.ApplyResources(this.layoutControlItem7, "layoutControlItem7");
             this.layoutControlItem7.TextSize = new System.Drawing.Size(57, 13);
             // 
             // layoutControlItem2
@@ -350,19 +333,16 @@
             this.layoutControlItem2.OptionsTableLayoutItem.ColumnSpan = 3;
             this.layoutControlItem2.OptionsTableLayoutItem.RowIndex = 1;
             this.layoutControlItem2.Size = new System.Drawing.Size(574, 24);
-            this.layoutControlItem2.Text = "Fakülte Adı:";
+            resources.ApplyResources(this.layoutControlItem2, "layoutControlItem2");
             this.layoutControlItem2.TextSize = new System.Drawing.Size(57, 13);
             // 
             // OkulEditForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 353);
             this.Controls.Add(this.dpuDataLayoutControl);
             this.IconOptions.ShowIcon = false;
-            this.MinimumSize = new System.Drawing.Size(350, 310);
             this.Name = "OkulEditForm";
-            this.Text = "FAKÜLTE KAYDI";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.dpuDataLayoutControl, 0);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();

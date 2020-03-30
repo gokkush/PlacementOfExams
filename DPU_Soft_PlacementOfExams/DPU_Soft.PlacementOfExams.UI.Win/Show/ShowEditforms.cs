@@ -1,4 +1,5 @@
 ﻿using DPU_Soft.PlacementOfExams.Common.Enums;
+using DPU_Soft.PlacementOfExams.Model.Entities.Base.Interfaces;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Show.Interfaces;
 using System;
@@ -25,7 +26,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Show
         
         }
 
-        public long ShowDialogeditForm(KartTuru kartTuru, long id, params object[] prm) 
+        public static long ShowDialogeditForm(KartTuru kartTuru, long id, params object[] prm) 
         {
             //Yetki Kontrolü
             using (var frm = (TForm)Activator.CreateInstance(typeof(TForm),prm))
@@ -37,6 +38,16 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Show
                 return frm.RefreshYapilacak ? frm.Id : 0;
             }
 
+        }
+
+        public static T ShowDialogEditForm<T>(params object[] prm) where T:IBaseEntity
+        {
+            using (var frm = (TForm)Activator.CreateInstance(typeof(TForm), prm))
+            {
+                frm.Yukle();
+                frm.ShowDialog();
+                return (T)frm.ReturnEntity();
+            }
         }
     }
 }
