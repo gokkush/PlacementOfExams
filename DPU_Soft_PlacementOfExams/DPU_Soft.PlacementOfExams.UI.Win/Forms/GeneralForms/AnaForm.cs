@@ -17,6 +17,8 @@ using DPU_Soft.PlacementOfExams.UI.Win.Forms.Subeforms;
 using DPU_Soft.PlacementOfExams.Model.Entities;
 using DPU_Soft.PlacementOfExams.Common.Massage;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.KullaniciForms;
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavSalonForms;
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.GozetmenForms;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
 {
@@ -76,13 +78,13 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
             Cursor.Current = Cursors.WaitCursor;
             if (e.Item == btnOkulKartlari)
                 ShowListforms<OkulListForm>.ShowListForm(KartTuru.Okul);
-            else if (e.Item==btnIlKartlari)
+            else if (e.Item==btnGozetmen)
             {
-                ShowListforms<IlListForm>.ShowListForm(KartTuru.Il);
+                ShowListforms<GozetmenListForm>.ShowListForm(KartTuru.Gozetmen);
             }
-            else if (e.Item==btnSube)
+            else if (e.Item==btnSinavSalon)
             {
-                ShowListforms<SubeListForm>.ShowListForm(KartTuru.Sube);
+                ShowListforms<SinavSalonuListForm>.ShowListForm(KartTuru.Salon);
             }
             else if (e.Item==btnSubeSecim)
             {

@@ -155,6 +155,18 @@
     <Compile Include="Forms\GeneralForms\TabloDokumParametreleri.Designer.cs">
       <DependentUpon>TabloDokumParametreleri.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\GozetmenForms\GozetmenEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GozetmenForms\GozetmenEditForm.Designer.cs">
+      <DependentUpon>GozetmenEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GozetmenForms\GozetmenListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GozetmenForms\GozetmenListForm.Designer.cs">
+      <DependentUpon>GozetmenListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\IlceForms\IlceEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +232,18 @@
     </Compile>
     <Compile Include="Forms\OkulForms\OkulListForm.Designer.cs">
       <DependentUpon>OkulListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SinavSalonForms\SinavSalonuEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SinavSalonForms\SinavSalonuEditForm.Designer.cs">
+      <DependentUpon>SinavSalonuEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SinavSalonForms\SinavSalonuListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SinavSalonForms\SinavSalonuListForm.Designer.cs">
+      <DependentUpon>SinavSalonuListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Subeforms\SubeEditForm.cs">
       <SubType>Form</SubType>
@@ -424,6 +448,12 @@
     <EmbeddedResource Include="Forms\GeneralForms\TabloDokumParametreleri.resx">
       <DependentUpon>TabloDokumParametreleri.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GozetmenForms\GozetmenEditForm.resx">
+      <DependentUpon>GozetmenEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GozetmenForms\GozetmenListForm.resx">
+      <DependentUpon>GozetmenListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\IlceForms\IlceEditForm.resx">
       <DependentUpon>IlceEditForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -456,6 +486,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OkulForms\OkulListForm.resx">
       <DependentUpon>OkulListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SinavSalonForms\SinavSalonuEditForm.resx">
+      <DependentUpon>SinavSalonuEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SinavSalonForms\SinavSalonuListForm.resx">
+      <DependentUpon>SinavSalonuListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Subeforms\SubeEditForm.resx">
       <DependentUpon>SubeEditForm.cs</DependentUpon>

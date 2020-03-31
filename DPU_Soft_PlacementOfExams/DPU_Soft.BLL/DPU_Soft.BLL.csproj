@@ -67,6 +67,7 @@
     <Compile Include="Functions\ValidationFunctions.cs" />
     <Compile Include="General\DonemBll.cs" />
     <Compile Include="General\FiltreBll.cs" />
+    <Compile Include="General\GozetmenBll.cs" />
     <Compile Include="General\IlBll.cs" />
     <Compile Include="General\IlceBll.cs" />
     <Compile Include="General\KullaniciBirimYetkileriBll.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="General\KurumBll.cs" />
     <Compile Include="General\MailParametreBll.cs" />
     <Compile Include="General\OkulBll.cs" />
+    <Compile Include="General\SinavSalonuBll.cs" />
     <Compile Include="General\SubeBll.cs" />
     <Compile Include="General\UniversiteBll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

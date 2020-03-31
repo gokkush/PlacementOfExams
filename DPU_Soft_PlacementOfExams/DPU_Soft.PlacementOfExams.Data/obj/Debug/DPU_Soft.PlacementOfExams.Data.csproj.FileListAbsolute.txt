@@ -56,3 +56,4 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Data\bin\Debug\es\D
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Data\bin\Debug\ja\DevExpress.Pdf.v19.2.Core.resources.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Data\bin\Debug\ru\DevExpress.Pdf.v19.2.Core.resources.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Data\bin\Debug\DPU_Soft.PlacementOfExams.Data.dll.config
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Data\obj\Debug\DPU_Soft.PlacementOfExams.Data.csproj.CoreCompileInputs.cache

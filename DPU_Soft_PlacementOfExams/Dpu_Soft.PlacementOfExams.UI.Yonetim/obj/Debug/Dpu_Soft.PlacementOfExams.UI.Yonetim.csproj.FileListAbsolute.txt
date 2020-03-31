@@ -231,3 +231,4 @@ C:\PROJE\DPU_Soft_PlacementOfExams\Dpu_Soft.PlacementOfExams.UI.Yonetim\bin\Debu
 C:\PROJE\DPU_Soft_PlacementOfExams\Dpu_Soft.PlacementOfExams.UI.Yonetim\obj\Debug\Sınav Yerleştirme Yönetim Modülü.exe.licenses
 C:\PROJE\DPU_Soft_PlacementOfExams\Dpu_Soft.PlacementOfExams.UI.Yonetim\obj\Debug\Sınav Yerleştirme Yönetim Modülü.exe
 C:\PROJE\DPU_Soft_PlacementOfExams\Dpu_Soft.PlacementOfExams.UI.Yonetim\obj\Debug\Sınav Yerleştirme Yönetim Modülü.pdb
+C:\PROJE\DPU_Soft_PlacementOfExams\Dpu_Soft.PlacementOfExams.UI.Yonetim\obj\Debug\DPU_Soft.PlacementOfExams.UI.Yonetim.csproj.CoreCompileInputs.cache

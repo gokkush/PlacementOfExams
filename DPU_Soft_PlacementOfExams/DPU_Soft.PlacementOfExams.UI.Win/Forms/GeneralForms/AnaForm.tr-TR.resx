@@ -117,8 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnSube.Caption" xml:space="preserve">
-    <value>Şube</value>
+  <data name="btnGozetmen.Caption" xml:space="preserve">
+    <value>Gözetmenler</value>
+  </data>
+  <data name="btnSinavSalon.Caption" xml:space="preserve">
+    <value>Sınav Salonları</value>
   </data>
   <data name="btnSubeSecim.Caption" xml:space="preserve">
     <value>barButtonItem1</value>

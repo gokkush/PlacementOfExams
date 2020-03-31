@@ -66,6 +66,7 @@
     <Compile Include="Entities\DokumParametreleri.cs" />
     <Compile Include="Entities\DonemEntity.cs" />
     <Compile Include="Entities\FiltreEntity.cs" />
+    <Compile Include="Entities\GozetmenEntity.cs" />
     <Compile Include="Entities\IlceEntity.cs" />
     <Compile Include="Entities\IlEntity.cs" />
     <Compile Include="Entities\KullaniciBirimYetkileriEntity.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Entities\KurumEntity.cs" />
     <Compile Include="Entities\MailParametreEntity.cs" />
     <Compile Include="Entities\OkulEntity.cs" />
+    <Compile Include="Entities\SinavSalonuEntity.cs" />
     <Compile Include="Entities\SubeEntity.cs" />
     <Compile Include="Entities\UniversiteEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

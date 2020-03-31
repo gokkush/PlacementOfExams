@@ -52,3 +52,4 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\de\DevExpress.XtraBars
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\es\DevExpress.XtraBars.v19.2.resources.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\ja\DevExpress.XtraBars.v19.2.resources.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\bin\Debug\ru\DevExpress.XtraBars.v19.2.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.DAL\obj\Debug\DPU_Soft.DAL.csproj.CoreCompileInputs.cache

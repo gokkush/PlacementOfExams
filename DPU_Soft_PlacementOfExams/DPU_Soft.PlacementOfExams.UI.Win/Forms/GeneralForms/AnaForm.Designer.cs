@@ -32,8 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaForm));
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnOkulKartlari = new DevExpress.XtraBars.BarButtonItem();
-            this.btnIlKartlari = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSube = new DevExpress.XtraBars.BarButtonItem();
+            this.btnGozetmen = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSinavSalon = new DevExpress.XtraBars.BarButtonItem();
             this.btnSubeSecim = new DevExpress.XtraBars.BarButtonItem();
             this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
             this.barKullanici = new DevExpress.XtraBars.BarStaticItem();
@@ -42,12 +42,12 @@
             this.barStaticItem5 = new DevExpress.XtraBars.BarStaticItem();
             this.barDonem = new DevExpress.XtraBars.BarStaticItem();
             this.barStaticItem7 = new DevExpress.XtraBars.BarStaticItem();
+            this.btnSifreDegistir = new DevExpress.XtraBars.BarButtonItem();
             this.rPTanimlar = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rPCAnaTanim = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ALC = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.btnSifreDegistir = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
@@ -64,8 +64,8 @@
             this.ribbonControl.ExpandCollapseItem,
             this.ribbonControl.SearchEditItem,
             this.btnOkulKartlari,
-            this.btnIlKartlari,
-            this.btnSube,
+            this.btnGozetmen,
+            this.btnSinavSalon,
             this.btnSubeSecim,
             this.barStaticItem1,
             this.barKullanici,
@@ -90,23 +90,23 @@
             this.btnOkulKartlari.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnOkulKartlari.ImageOptions.SvgImage")));
             this.btnOkulKartlari.Name = "btnOkulKartlari";
             // 
-            // btnIlKartlari
+            // btnGozetmen
             // 
-            resources.ApplyResources(this.btnIlKartlari, "btnIlKartlari");
-            this.btnIlKartlari.Id = 2;
-            this.btnIlKartlari.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnIlKartlari.ImageOptions.ImageIndex")));
-            this.btnIlKartlari.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnIlKartlari.ImageOptions.LargeImageIndex")));
-            this.btnIlKartlari.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnIlKartlari.ImageOptions.SvgImage")));
-            this.btnIlKartlari.Name = "btnIlKartlari";
+            resources.ApplyResources(this.btnGozetmen, "btnGozetmen");
+            this.btnGozetmen.Id = 2;
+            this.btnGozetmen.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnIlKartlari.ImageOptions.ImageIndex")));
+            this.btnGozetmen.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnIlKartlari.ImageOptions.LargeImageIndex")));
+            this.btnGozetmen.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnIlKartlari.ImageOptions.SvgImage")));
+            this.btnGozetmen.Name = "btnGozetmen";
             // 
-            // btnSube
+            // btnSinavSalon
             // 
-            resources.ApplyResources(this.btnSube, "btnSube");
-            this.btnSube.Id = 3;
-            this.btnSube.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnSube.ImageOptions.ImageIndex")));
-            this.btnSube.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnSube.ImageOptions.LargeImageIndex")));
-            this.btnSube.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSube.ImageOptions.SvgImage")));
-            this.btnSube.Name = "btnSube";
+            resources.ApplyResources(this.btnSinavSalon, "btnSinavSalon");
+            this.btnSinavSalon.Id = 3;
+            this.btnSinavSalon.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnSinavSalon.ImageOptions.ImageIndex")));
+            this.btnSinavSalon.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnSinavSalon.ImageOptions.LargeImageIndex")));
+            this.btnSinavSalon.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSinavSalon.ImageOptions.SvgImage")));
+            this.btnSinavSalon.Name = "btnSinavSalon";
             // 
             // btnSubeSecim
             // 
@@ -200,6 +200,15 @@
             this.barStaticItem7.ItemAppearance.Normal.Options.UseForeColor = true;
             this.barStaticItem7.Name = "barStaticItem7";
             // 
+            // btnSifreDegistir
+            // 
+            resources.ApplyResources(this.btnSifreDegistir, "btnSifreDegistir");
+            this.btnSifreDegistir.Id = 12;
+            this.btnSifreDegistir.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnSifreDegistir.ImageOptions.ImageIndex")));
+            this.btnSifreDegistir.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnSifreDegistir.ImageOptions.LargeImageIndex")));
+            this.btnSifreDegistir.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSifreDegistir.ImageOptions.SvgImage")));
+            this.btnSifreDegistir.Name = "btnSifreDegistir";
+            // 
             // rPTanimlar
             // 
             this.rPTanimlar.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -210,8 +219,8 @@
             // rPCAnaTanim
             // 
             this.rPCAnaTanim.ItemLinks.Add(this.btnOkulKartlari);
-            this.rPCAnaTanim.ItemLinks.Add(this.btnIlKartlari);
-            this.rPCAnaTanim.ItemLinks.Add(this.btnSube);
+            this.rPCAnaTanim.ItemLinks.Add(this.btnGozetmen);
+            this.rPCAnaTanim.ItemLinks.Add(this.btnSinavSalon);
             this.rPCAnaTanim.ItemLinks.Add(this.btnSifreDegistir);
             this.rPCAnaTanim.Name = "rPCAnaTanim";
             resources.ApplyResources(this.rPCAnaTanim, "rPCAnaTanim");
@@ -233,15 +242,6 @@
             // xtraTabbedMdiManager
             // 
             this.xtraTabbedMdiManager.MdiParent = this;
-            // 
-            // btnSifreDegistir
-            // 
-            resources.ApplyResources(this.btnSifreDegistir, "btnSifreDegistir");
-            this.btnSifreDegistir.Id = 12;
-            this.btnSifreDegistir.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem1.ImageOptions.ImageIndex")));
-            this.btnSifreDegistir.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem1.ImageOptions.LargeImageIndex")));
-            this.btnSifreDegistir.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
-            this.btnSifreDegistir.Name = "btnSifreDegistir";
             // 
             // AnaForm
             // 
@@ -271,8 +271,8 @@
         private DevExpress.XtraBars.BarButtonItem btnOkulKartlari;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
-        private DevExpress.XtraBars.BarButtonItem btnIlKartlari;
-        private DevExpress.XtraBars.BarButtonItem btnSube;
+        private DevExpress.XtraBars.BarButtonItem btnGozetmen;
+        private DevExpress.XtraBars.BarButtonItem btnSinavSalon;
         private DevExpress.XtraBars.BarButtonItem btnSubeSecim;
         private DevExpress.XtraBars.BarStaticItem barStaticItem1;
         private DevExpress.XtraBars.BarStaticItem barKullanici;
