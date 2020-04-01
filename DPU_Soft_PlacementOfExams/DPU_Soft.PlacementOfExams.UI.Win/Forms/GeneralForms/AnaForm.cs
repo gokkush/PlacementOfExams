@@ -1,24 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
-using DevExpress.XtraEditors;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.OkulForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Show;
 using DPU_Soft.PlacementOfExams.Common.Enums;
-using DPU_Soft.PlacementOfExams.UI.Win.Forms.IlForms;
-using DPU_Soft.PlacementOfExams.UI.Win.Forms.Subeforms;
 using DPU_Soft.PlacementOfExams.Model.Entities;
 using DPU_Soft.PlacementOfExams.Common.Massage;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.KullaniciForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavSalonForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.GozetmenForms;
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.DersForms;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
 {
@@ -80,7 +72,8 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
                 ShowListforms<OkulListForm>.ShowListForm(KartTuru.Okul);
             else if (e.Item==btnGozetmen)
             {
-                ShowListforms<GozetmenListForm>.ShowListForm(KartTuru.Gozetmen);
+                ShowListforms<GozetmenListForm>.ShowListForm(KartTuru.Gozetmen, SubeId, SubeAdi);
+                //ShowListforms<GozetmenListForm>.ShowListForm(KartTuru.Gozetmen); //Eğer Gözetmenler tüm fakültelerde aynı ise
             }
             else if (e.Item==btnSinavSalon)
             {
@@ -100,6 +93,14 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
             else if (e.Item==btnSifreDegistir)
             {
                 ShowEditforms<SifreDegistirEditForm>.ShowDialogEditForm(IslemTuru.EntityUpdate);
+            }
+            else if (e.Item == btnDers)
+            {
+                ShowListforms<DersListForm>.ShowListForm(KartTuru.Ders);
+            }
+            else if (e.Item==btnDersYetki)
+            {
+                ShowEditforms<DersYetkiEditForm>.ShowDialogEditForm();
             }
 
             Cursor.Current = Cursors.Default;

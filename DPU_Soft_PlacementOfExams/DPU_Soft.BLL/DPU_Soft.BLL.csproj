@@ -65,6 +65,8 @@
     <Compile Include="Functions\Converts.cs" />
     <Compile Include="Functions\GeneralFunctions.cs" />
     <Compile Include="Functions\ValidationFunctions.cs" />
+    <Compile Include="General\DersBll.cs" />
+    <Compile Include="General\DersYetkiBll.cs" />
     <Compile Include="General\DonemBll.cs" />
     <Compile Include="General\FiltreBll.cs" />
     <Compile Include="General\GozetmenBll.cs" />

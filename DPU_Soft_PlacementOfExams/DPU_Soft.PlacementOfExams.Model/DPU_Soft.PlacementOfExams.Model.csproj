@@ -52,6 +52,8 @@
   <ItemGroup>
     <Compile Include="Attributes\Kod.cs" />
     <Compile Include="Attributes\ZorunluAlan.cs" />
+    <Compile Include="Dto\DersDto.cs" />
+    <Compile Include="Dto\DersYetkiDto.cs" />
     <Compile Include="Dto\KullaniciBirimyetkileriDto.cs" />
     <Compile Include="Dto\KullaniciDto.cs" />
     <Compile Include="Dto\OkulDto.cs" />
@@ -63,6 +65,8 @@
     <Compile Include="Entities\Base\BaseHareketEntity.cs" />
     <Compile Include="Entities\Base\Interfaces\IBaseEntity.cs" />
     <Compile Include="Entities\Base\Interfaces\IBaseHareketEntity.cs" />
+    <Compile Include="Entities\DersEntity.cs" />
+    <Compile Include="Entities\DersYetkiEntity.cs" />
     <Compile Include="Entities\DokumParametreleri.cs" />
     <Compile Include="Entities\DonemEntity.cs" />
     <Compile Include="Entities\FiltreEntity.cs" />

@@ -319,10 +319,13 @@
             this.txtVersiyon.AllowHotTrack = false;
             this.txtVersiyon.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
             this.txtVersiyon.AppearanceItemCaption.Options.UseForeColor = true;
-            this.txtVersiyon.Location = new System.Drawing.Point(446, 0);
+            this.txtVersiyon.AppearanceItemCaption.Options.UseTextOptions = true;
+            this.txtVersiyon.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.txtVersiyon.Location = new System.Drawing.Point(356, 0);
             this.txtVersiyon.Name = "txtVersiyon";
-            this.txtVersiyon.OptionsTableLayoutItem.ColumnIndex = 5;
-            this.txtVersiyon.Size = new System.Drawing.Size(84, 24);
+            this.txtVersiyon.OptionsTableLayoutItem.ColumnIndex = 4;
+            this.txtVersiyon.OptionsTableLayoutItem.ColumnSpan = 2;
+            this.txtVersiyon.Size = new System.Drawing.Size(174, 24);
             this.txtVersiyon.TextSize = new System.Drawing.Size(92, 13);
             // 
             // GirisForm

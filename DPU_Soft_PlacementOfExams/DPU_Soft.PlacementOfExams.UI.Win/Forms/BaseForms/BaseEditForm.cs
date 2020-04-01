@@ -22,6 +22,8 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
         private bool _formSablonKayitedilecek;
         protected internal IslemTuru BaseIslemTuru;
         protected internal long Id;
+        protected internal long SubeId;
+        protected internal long DonemId;
         protected internal bool RefreshYapilacak;
         protected DpuDataLayoutControl DataLayoutControl;
         protected DpuDataLayoutControl[] DataLayoutControls;
@@ -272,6 +274,10 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             {
                 SifreSifirla();
             }
+            else if (e.Item == btnExceldenAl)
+            {
+                ExcelAl();
+            }
             else if (e.Item==btnGiris)
             {
                 Giris();
@@ -280,10 +286,14 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             {
                 Close();
             }
+
             Cursor.Current = DefaultCursor;
         }
 
+        protected virtual void ExcelAl()
+        {
 
+        }
 
         protected virtual void SifreSifirla()
         {

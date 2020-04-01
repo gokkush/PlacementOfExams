@@ -43,11 +43,14 @@
             this.barDonem = new DevExpress.XtraBars.BarStaticItem();
             this.barStaticItem7 = new DevExpress.XtraBars.BarStaticItem();
             this.btnSifreDegistir = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDers = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDersYetki = new DevExpress.XtraBars.BarButtonItem();
             this.rPTanimlar = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rPCAnaTanim = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ALC = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.btnDD = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
@@ -74,8 +77,11 @@
             this.barStaticItem5,
             this.barDonem,
             this.barStaticItem7,
-            this.btnSifreDegistir});
-            this.ribbonControl.MaxItemId = 13;
+            this.btnSifreDegistir,
+            this.btnDers,
+            this.btnDersYetki,
+            this.btnDD});
+            this.ribbonControl.MaxItemId = 16;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rPTanimlar});
@@ -94,9 +100,9 @@
             // 
             resources.ApplyResources(this.btnGozetmen, "btnGozetmen");
             this.btnGozetmen.Id = 2;
-            this.btnGozetmen.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnIlKartlari.ImageOptions.ImageIndex")));
-            this.btnGozetmen.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnIlKartlari.ImageOptions.LargeImageIndex")));
-            this.btnGozetmen.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnIlKartlari.ImageOptions.SvgImage")));
+            this.btnGozetmen.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnGozetmen.ImageOptions.ImageIndex")));
+            this.btnGozetmen.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnGozetmen.ImageOptions.LargeImageIndex")));
+            this.btnGozetmen.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnGozetmen.ImageOptions.SvgImage")));
             this.btnGozetmen.Name = "btnGozetmen";
             // 
             // btnSinavSalon
@@ -209,6 +215,24 @@
             this.btnSifreDegistir.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSifreDegistir.ImageOptions.SvgImage")));
             this.btnSifreDegistir.Name = "btnSifreDegistir";
             // 
+            // btnDers
+            // 
+            resources.ApplyResources(this.btnDers, "btnDers");
+            this.btnDers.Id = 13;
+            this.btnDers.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnDers.ImageOptions.ImageIndex")));
+            this.btnDers.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnDers.ImageOptions.LargeImageIndex")));
+            this.btnDers.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDers.ImageOptions.SvgImage")));
+            this.btnDers.Name = "btnDers";
+            // 
+            // btnDersYetki
+            // 
+            resources.ApplyResources(this.btnDersYetki, "btnDersYetki");
+            this.btnDersYetki.Id = 14;
+            this.btnDersYetki.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnDersYetki.ImageOptions.ImageIndex")));
+            this.btnDersYetki.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnDersYetki.ImageOptions.LargeImageIndex")));
+            this.btnDersYetki.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDersYetki.ImageOptions.SvgImage")));
+            this.btnDersYetki.Name = "btnDersYetki";
+            // 
             // rPTanimlar
             // 
             this.rPTanimlar.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -222,6 +246,9 @@
             this.rPCAnaTanim.ItemLinks.Add(this.btnGozetmen);
             this.rPCAnaTanim.ItemLinks.Add(this.btnSinavSalon);
             this.rPCAnaTanim.ItemLinks.Add(this.btnSifreDegistir);
+            this.rPCAnaTanim.ItemLinks.Add(this.btnDers);
+            this.rPCAnaTanim.ItemLinks.Add(this.btnDersYetki);
+            this.rPCAnaTanim.ItemLinks.Add(this.btnDD);
             this.rPCAnaTanim.Name = "rPCAnaTanim";
             resources.ApplyResources(this.rPCAnaTanim, "rPCAnaTanim");
             // 
@@ -242,6 +269,15 @@
             // xtraTabbedMdiManager
             // 
             this.xtraTabbedMdiManager.MdiParent = this;
+            // 
+            // btnDD
+            // 
+            resources.ApplyResources(this.btnDD, "btnDD");
+            this.btnDD.Id = 15;
+            this.btnDD.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem1.ImageOptions.ImageIndex")));
+            this.btnDD.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem1.ImageOptions.LargeImageIndex")));
+            this.btnDD.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.btnDD.Name = "btnDD";
             // 
             // AnaForm
             // 
@@ -282,5 +318,8 @@
         private DevExpress.XtraBars.BarStaticItem barDonem;
         private DevExpress.XtraBars.BarStaticItem barStaticItem7;
         private DevExpress.XtraBars.BarButtonItem btnSifreDegistir;
+        private DevExpress.XtraBars.BarButtonItem btnDers;
+        private DevExpress.XtraBars.BarButtonItem btnDersYetki;
+        private DevExpress.XtraBars.BarButtonItem btnDD;
     }
 }

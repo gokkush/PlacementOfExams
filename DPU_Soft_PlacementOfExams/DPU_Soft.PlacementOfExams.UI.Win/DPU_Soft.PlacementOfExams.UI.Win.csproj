@@ -83,6 +83,30 @@
     <Compile Include="Forms\BaseForms\BaseListForm.Designer.cs">
       <DependentUpon>BaseListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\DersForms\DersEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DersForms\DersEditForm.Designer.cs">
+      <DependentUpon>DersEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DersForms\DersListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DersForms\DersListForm.Designer.cs">
+      <DependentUpon>DersListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DersForms\DersYetkiEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DersForms\DersYetkiEditForm.Designer.cs">
+      <DependentUpon>DersYetkiEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DersForms\DersYetkiListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DersForms\DersYetkiListForm.Designer.cs">
+      <DependentUpon>DersYetkiListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DonemForms\DonemEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,6 +299,12 @@
     <Compile Include="Forms\UserControls\Base\BaseTablo.Designer.cs">
       <DependentUpon>BaseTablo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UserControls\Controls\DersSecFormTable\DersTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\DersSecFormTable\DersTable.Designer.cs">
+      <DependentUpon>DersTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UserControls\Controls\DpuButtonEdit.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -406,6 +436,18 @@
     <EmbeddedResource Include="Forms\BaseForms\BaseListForm.tr-TR.resx">
       <DependentUpon>BaseListForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DersForms\DersEditForm.resx">
+      <DependentUpon>DersEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DersForms\DersListForm.resx">
+      <DependentUpon>DersListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DersForms\DersYetkiEditForm.resx">
+      <DependentUpon>DersYetkiEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DersForms\DersYetkiListForm.resx">
+      <DependentUpon>DersYetkiListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DonemForms\DonemEditForm.resx">
       <DependentUpon>DonemEditForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -507,6 +549,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserControls\Base\BaseTablo.resx">
       <DependentUpon>BaseTablo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\Controls\DersSecFormTable\DersTable.resx">
+      <DependentUpon>DersTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserControls\Controls\Navigators\InsUptNavigator.resx">
       <DependentUpon>InsUptNavigator.cs</DependentUpon>
@@ -838,6 +883,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\placement-ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxls_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxls_32x32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

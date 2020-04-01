@@ -257,7 +257,7 @@
             this.layoutControlItem2.OptionsTableLayoutItem.ColumnSpan = 2;
             this.layoutControlItem2.OptionsTableLayoutItem.RowIndex = 1;
             this.layoutControlItem2.Size = new System.Drawing.Size(438, 24);
-            this.layoutControlItem2.Text = "Üniversite Adı:";
+            this.layoutControlItem2.Text = "Fakülte Adı:";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(101, 13);
             // 
             // layoutControlItem3
@@ -318,7 +318,7 @@
             this.IconOptions.ShowIcon = false;
             this.MinimumSize = new System.Drawing.Size(460, 300);
             this.Name = "KurumEditForm";
-            this.Text = "Üniversite Kartı";
+            this.Text = "Fakülte Kartı";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.dpuDataLayoutControl, 0);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();

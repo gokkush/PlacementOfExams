@@ -190,7 +190,7 @@
     <value>Kullanıcı</value>
   </data>
   <data name="barStaticItem3.Caption" xml:space="preserve">
-    <value>Üniversite:</value>
+    <value>Fakülte:</value>
   </data>
   <data name="barKurum.Caption" xml:space="preserve">
     <value>Kurum</value>
@@ -202,9 +202,29 @@
     <value>Dönem</value>
   </data>
   <data name="barStaticItem7.Caption" xml:space="preserve">
-    <value>Fakülte:</value>
+    <value>Şube:</value>
   </data>
   <data name="btnSifreDegistir.Caption" xml:space="preserve">
     <value>Şifre Değiştir</value>
+  </data>
+  <data name="btnDers.Caption" xml:space="preserve">
+    <value>Dersler</value>
+  </data>
+  <data name="btnDersYetki.Caption" xml:space="preserve">
+    <value>Ders Yetkileri</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnDersYetki.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="btnDersYetki.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnDersYetki.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnDD.Caption" xml:space="preserve">
+    <value>barButtonItem1</value>
   </data>
 </root>

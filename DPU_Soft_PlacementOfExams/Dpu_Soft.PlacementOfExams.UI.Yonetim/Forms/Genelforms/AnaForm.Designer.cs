@@ -669,7 +669,7 @@
             this.tablo.StatusBarAciklama = null;
             this.tablo.StatusBarKisayol = null;
             this.tablo.StatusBarKisayolAciklama = null;
-            this.tablo.ViewCaption = "Üniversite Kartları";
+            this.tablo.ViewCaption = "Fakülte Kartları";
             // 
             // colKod
             // 
@@ -686,7 +686,7 @@
             // 
             // colKurumAdi
             // 
-            this.colKurumAdi.Caption = "Üniversite Adı";
+            this.colKurumAdi.Caption = "Fakülte Adı";
             this.colKurumAdi.FieldName = "KurumAdi";
             this.colKurumAdi.Name = "colKurumAdi";
             this.colKurumAdi.OptionsColumn.AllowEdit = false;
