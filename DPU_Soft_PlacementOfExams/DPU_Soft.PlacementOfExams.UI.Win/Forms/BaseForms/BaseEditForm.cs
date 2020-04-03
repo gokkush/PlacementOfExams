@@ -88,6 +88,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
                     case BaseEdit edt:
                         edt.EditValueChanged += Control_EditValueChanged;
                         break;
+
                     case DpuGridControl grd:
                         grd.MainView.GotFocus += Control_GotFocus;
                         break;

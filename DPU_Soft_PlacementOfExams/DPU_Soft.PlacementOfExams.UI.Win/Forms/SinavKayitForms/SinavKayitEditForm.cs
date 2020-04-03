@@ -8,6 +8,7 @@ using DPU_Soft.PlacementOfExams.Model.Dto;
 using DPU_Soft.PlacementOfExams.UI.Win.Functions;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms;
 using DevExpress.XtraEditors;
+using System;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
 {
@@ -51,6 +52,10 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
             tglDurum.IsOn = entity.durum;
         }
 
+        protected override void Control_SelectedValueChanged(object sender, EventArgs e)
+        {
+            GuncelNesneOlustur();
+        }
         protected override void GuncelNesneOlustur()
         {
             CurrentEntity = new SinavKayitEntity
@@ -60,13 +65,15 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
                 DersId = (long)txtDers.Id,
                 DonemId = AnaForm.DonemId,
                 SubeId = AnaForm.SubeId,
-                SinavAdi = BaseIslemTuru == IslemTuru.EntityInsert ? txtDers.Text + " (" + AnaForm.SubeAdi + ") (" + AnaForm.DonemAdi:_sinavAdi+")",
+                SinavAdi = BaseIslemTuru == IslemTuru.EntityInsert ? txtDers.Text + "-" + AnaForm.SubeAdi + " - " + AnaForm.DonemAdi : _sinavAdi,
                 Aciklama = txtAciklama.Text,
+                SinavTuru = txtSinavTuru.Text.GetEnum<SinavTuru>(),
                 durum = tglDurum.IsOn
 
             };
 
             ButtonEnabledDurumu();
+        
         }
 
         protected override bool EntityInsert()
