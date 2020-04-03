@@ -34,6 +34,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavSalonForms
             txtKod.Text = entity.Kod;
             txtSalonAdi.Text = entity.SalonAdi;
             txtSalonKapasitesi.Value = entity.SalonKapasitesi;
+            txtGozetmenSayisi.Value = entity.GozetmenSayisi;
             txtAciklama.Text = entity.Aciklama;
             tglDurum.IsOn = entity.durum;
         }
@@ -46,6 +47,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavSalonForms
                 Kod = txtKod.Text,
                 SalonAdi = txtSalonAdi.Text,
                 SalonKapasitesi=(int)txtSalonKapasitesi.Value,
+                GozetmenSayisi=(int)txtGozetmenSayisi.Value,
                 Aciklama = txtAciklama.Text,
                 durum = tglDurum.IsOn
 

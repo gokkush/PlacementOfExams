@@ -213,18 +213,7 @@
   <data name="btnDersYetki.Caption" xml:space="preserve">
     <value>Ders Yetkileri</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnDersYetki.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btnDersYetki.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnDersYetki.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnDD.Caption" xml:space="preserve">
-    <value>barButtonItem1</value>
+  <data name="btnSinavKayitlari.Caption" xml:space="preserve">
+    <value>Sınav Kayıtları</value>
   </data>
 </root>

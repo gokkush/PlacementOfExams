@@ -136,17 +136,23 @@
   <data name="&gt;&gt;btnOkulKartlari.Name" xml:space="preserve">
     <value>btnOkulKartlari</value>
   </data>
-  <data name="&gt;&gt;ribbonControl.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;btnDers.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="btnOkulKartlari.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
+  </data>
+  <data name="&gt;&gt;ribbonControl.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;ribbonStatusBar.Name" xml:space="preserve">
     <value>ribbonStatusBar</value>
   </data>
   <data name="btnOkulKartlari.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
+  </data>
+  <data name="&gt;&gt;barKullanici.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnSubeSecim.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
@@ -177,11 +183,14 @@
   <data name="&gt;&gt;barStaticItem3.Name" xml:space="preserve">
     <value>barStaticItem3</value>
   </data>
+  <data name="&gt;&gt;btnSinavKayitlari.Name" xml:space="preserve">
+    <value>btnSinavKayitlari</value>
+  </data>
   <data name="btnIlKartlari.Caption" xml:space="preserve">
     <value>İl Kaydı</value>
   </data>
-  <data name="btnDersYetki.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="ribbonStatusBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 454</value>
   </data>
   <data name="barKurum.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -228,9 +237,6 @@
   <data name="btnDers.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;btnGozetmen.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="&gt;&gt;barStaticItem1.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -264,8 +270,11 @@
   <data name="barStaticItem2.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
-  <data name="&gt;&gt;barStaticItem7.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="btnDD.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="btnDers.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="&gt;&gt;btnDD.Name" xml:space="preserve">
     <value>btnDD</value>
@@ -282,9 +291,6 @@
   <data name="&gt;&gt;ribbonStatusBar.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="ribbonControl.ExpandCollapseItem.SearchTags" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="ribbonControl.ExpandCollapseItem.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
@@ -297,11 +303,11 @@
   <data name="btnSinavSalon.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
-  <data name="barStaticItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="btnDersYetki.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
+  </data>
+  <data name="barStaticItem5.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btnOkulKartlari.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -324,17 +330,14 @@
   <data name="&gt;&gt;barStaticItem3.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="btnOkulKartlari.Caption" xml:space="preserve">
-    <value>Üniversite Kaydı</value>
+  <data name="barStaticItem3.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barStaticItem6.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="barStaticItem5.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+  <data name="btnDD.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
-  </data>
-  <data name="&gt;&gt;ribbonStatusBar.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="ribbonControl.ExpandCollapseItem.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -345,11 +348,14 @@
   <data name="barButtonItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="barStaticItem2.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
   <data name="&gt;&gt;btnSifreDegistir.Name" xml:space="preserve">
     <value>btnSifreDegistir</value>
   </data>
-  <data name="barStaticItem5.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="&gt;&gt;btnSinavKayitlari.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="btnSubeSecim.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -366,13 +372,16 @@
   <data name="barStaticItem2.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="barStaticItem3.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
   <data name="barStaticItem4.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="&gt;&gt;btnSubeSecim.Name" xml:space="preserve">
     <value>btnSubeSecim</value>
   </data>
-  <data name="barStaticItem3.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="ribbonControl.ExpandCollapseItem.SearchTags" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="&gt;&gt;rPCAnaTanim.Name" xml:space="preserve">
@@ -381,8 +390,11 @@
   <data name="btnSifreDegistir.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
-  <data name="btnDers.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="barStaticItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="barStaticItem7.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="ribbonControl.ExpandCollapseItem.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -396,13 +408,13 @@
   <data name="&gt;&gt;btnIlKartlari.Name" xml:space="preserve">
     <value>btnIlKartlari</value>
   </data>
-  <data name="&gt;&gt;btnDers.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="btnDersYetki.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="btnSube.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+  <data name="barStaticItem5.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
   <data name="&gt;&gt;barStaticItem5.Name" xml:space="preserve">
@@ -420,11 +432,11 @@
   <data name="btnGozetmen.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
-  <data name="barStaticItem7.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="btnOkulKartlari.Caption" xml:space="preserve">
+    <value>Üniversite Kaydı</value>
   </data>
-  <data name="barStaticItem2.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt</value>
+  <data name="&gt;&gt;barStaticItem7.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="barDonem.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -432,8 +444,8 @@
   <data name="&gt;&gt;barDonem.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="ribbonStatusBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 454</value>
+  <data name="barStaticItem7.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barStaticItem3.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -444,8 +456,8 @@
   <data name="&gt;&gt;rPCAnaTanim.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;barKullanici.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="btnSube.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barDonem.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -462,14 +474,14 @@
   <data name="&gt;&gt;btnDersYetki.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="barStaticItem7.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;ribbonStatusBar.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonControl.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="barStaticItem3.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="&gt;&gt;btnGozetmen.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="barKurum.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -498,7 +510,7 @@
   <data name="&gt;&gt;btnGozetmen.Name" xml:space="preserve">
     <value>btnGozetmen</value>
   </data>
-  <data name="btnDersYetki.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+  <data name="barStaticItem5.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
   <data name="barButtonItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
@@ -507,11 +519,14 @@
   <data name="&gt;&gt;ribbonStatusBar.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="barStaticItem5.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
+  <data name="btnDersYetki.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="&gt;&gt;barKullanici.Name" xml:space="preserve">
     <value>barKullanici</value>
+  </data>
+  <data name="btnDD.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="btnDers.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>

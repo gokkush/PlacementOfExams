@@ -17,7 +17,13 @@ namespace DPU_Soft.PlacementOfExams.Model.Entities
 
         [Required, StringLength(50), ZorunluAlan("Ders Adı", "txtDersAdi")]
         public string DersAdi { get; set; }
+        public long DonemId { get; set; }
+        public long SubeId { get; set; }
+
         [StringLength(500)]
         public string Aciklama { get; set; }
+
+        public SubeEntity Sube { get; set; }
+        public DonemEntity Donem { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using DPU_Soft.PlacementOfExams.Common.Enums;
 using DPU_Soft.PlacementOfExams.Model.Entities;
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.DersForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.IlceForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.IlForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.UniversiteForms;
@@ -66,6 +67,16 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
                         {
                             _btnEdit.Id = entity.Id;
                             _btnEdit.EditValue = entity.UniversiteAdi;
+                        }
+                    }
+                    break;
+                case "txtDers":
+                    {
+                        var entity = (DersEntity)ShowListforms<DersListForm>.ShowDialogListForm(_kartTuru, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.DersAdi;
                         }
                     }
                     break;

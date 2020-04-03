@@ -790,9 +790,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
-        private DevExpress.XtraBars.BarButtonItem btnYeni;
-        private DevExpress.XtraBars.BarButtonItem btnSil;
-        private DevExpress.XtraBars.BarButtonItem btnDuzelt;
         private DevExpress.XtraBars.BarButtonItem btnYenile;
         private DevExpress.XtraBars.BarButtonItem btnCikis;
         private DevExpress.XtraBars.BarStaticItem barInsert;
@@ -832,5 +829,8 @@
         protected DevExpress.XtraBars.BarStaticItem barGonderAciklama;
         protected DevExpress.XtraBars.BarButtonItem btnAktifPasifKartlar;
         public DevExpress.XtraBars.BarButtonItem btnSec;
+        protected DevExpress.XtraBars.BarButtonItem btnYeni;
+        protected DevExpress.XtraBars.BarButtonItem btnSil;
+        protected DevExpress.XtraBars.BarButtonItem btnDuzelt;
     }
 }

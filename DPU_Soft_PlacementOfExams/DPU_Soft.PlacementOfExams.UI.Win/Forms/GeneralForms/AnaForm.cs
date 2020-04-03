@@ -11,6 +11,8 @@ using DPU_Soft.PlacementOfExams.UI.Win.Forms.KullaniciForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavSalonForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.GozetmenForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.DersForms;
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.OgrenciForms;
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
 {
@@ -98,9 +100,9 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
             {
                 ShowListforms<DersListForm>.ShowListForm(KartTuru.Ders);
             }
-            else if (e.Item==btnDersYetki)
+            else if (e.Item == btnSinavKayitlari)
             {
-                ShowEditforms<DersYetkiEditForm>.ShowDialogEditForm();
+                ShowListforms<SinavKayitListForm>.ShowListForm(KartTuru.SinavKayit);
             }
 
             Cursor.Current = Cursors.Default;

@@ -20,6 +20,7 @@ namespace DPU_Soft.PlacementOfExams.Model.Entities
 
         [ZorunluAlan("Salon Kapasitesi", "txtSalonKapasitesi")]
         public int SalonKapasitesi { get; set; }
+        public int GozetmenSayisi { get; set; }
 
         [StringLength(500)]
         public string Aciklama { get; set; }

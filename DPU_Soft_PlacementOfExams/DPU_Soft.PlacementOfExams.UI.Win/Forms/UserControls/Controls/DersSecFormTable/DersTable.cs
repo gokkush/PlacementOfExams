@@ -20,33 +20,33 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DersSecFo
         public DersTable()
         {
             InitializeComponent();
-            Bll = new DersYetkiBll();
+            Bll = new DersBll();
             Tablo = tablo;
             EventsLoad();
         }
         protected override void Listele()
         {
-            tablo.GridControl.DataSource = ((DersYetkiBll)Bll).List(x => x.SubeId == AnaForm.SubeId && x.DonemId == AnaForm.DonemId).ToBindingList<DersYetkiL>();
+           // tablo.GridControl.DataSource = ((DersBll)Bll).List(x => x.SubeId == AnaForm.SubeId && x.DonemId == AnaForm.DonemId).ToBindingList<DersL>();
         }
 
         protected override void HareketEkle()
         {
             var source = tablo.DataController.ListSource;
-            ListeDisiTutulacakKayitlar = source.Cast<DersYetkiL>().Select(x => x.DersId.Value).ToList();
+            ListeDisiTutulacakKayitlar = source.Cast<DersL>().Select(x => x.Id).ToList();
 
             var entities = ShowListforms<DersListForm>.ShowDialogListForm(ListeDisiTutulacakKayitlar, true, false).EntityListConvert<DersEntity>();
             if (entities == null) return;
 
             foreach (var entity in entities)
             {
-                var row = new DersYetkiL
+                var row = new DersL
                 {
                     Kod=entity.Kod,
+                    Id=entity.Id,
                     DersAdi=entity.DersAdi,
-                    DonemId=AnaForm.DonemId,
-                    DersId=entity.Id,
+                    DonemId=AnaForm.DonemId,                    
                     SubeId = AnaForm.SubeId,
-                    Insert = true
+                   // Insert = true
                 };
 
                 source.Add(row);

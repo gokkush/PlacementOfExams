@@ -155,6 +155,7 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DP
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.GozetmenForms.GozetmenListForm.resources
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.DersForms.DersEditForm.resources
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.DersForms.DersListForm.resources
-C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.DersForms.DersYetkiEditForm.resources
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DersSecFormTable.DersTable.resources
-C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.DersForms.DersYetkiListForm.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.OgrenciForms.OgrenciListeAlEditForm.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms.SinavKayitEditForm.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms.SinavKayitListForm.resources

@@ -1,17 +1,19 @@
-﻿using DPU_Soft.PlacementOfExams.Model.Entities.Base;
+﻿using DPU_Soft.PlacementOfExams.Model.Entities;
+using DPU_Soft.PlacementOfExams.Model.Entities.Base;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DPU_Soft.PlacementOfExams.Model.Dto
 {
-    public class DersL : BaseEntity
+    [NotMapped]
+    public class DersL : DersEntity
     {
-        public string DersAdi { get; set; }
+        public string SubeAdi { get; set; }
+        public string DonemAdi { get; set; }
 
-
-        public string Aciklama { get; set; }
     }
 }

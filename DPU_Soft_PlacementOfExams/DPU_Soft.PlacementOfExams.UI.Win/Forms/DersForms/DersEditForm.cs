@@ -3,6 +3,7 @@ using DPU_Soft.BLL.General;
 using DPU_Soft.PlacementOfExams.Common.Enums;
 using DPU_Soft.PlacementOfExams.Model.Entities;
 using DPU_Soft.PlacementOfExams.UI.Win.Functions;
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.DersForms
 {
@@ -45,6 +46,8 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.DersForms
                 Kod = txtKod.Text,
                 DersAdi = txtDersAdi.Text,
                 Aciklama = txtAciklama.Text,
+                DonemId=AnaForm.DonemId,
+                SubeId=AnaForm.SubeId,
                 durum = tglDurum.IsOn
 
             };

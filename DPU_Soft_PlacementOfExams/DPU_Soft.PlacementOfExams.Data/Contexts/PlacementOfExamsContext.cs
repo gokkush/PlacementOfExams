@@ -41,7 +41,9 @@ namespace DPU_Soft.PlacementOfExams.Data.Contexts
         public DbSet<SinavSalonuEntity> SinavSalonu { get; set; }
         public DbSet<GozetmenEntity> Gozetmen { get; set; }
 
-        public DbSet<DersYetkiEntity> Ders { get; set; }
+        public DbSet<DersEntity> Ders { get; set; }
+        public DbSet<OgrenciEntity> Ogrenci { get; set; }
+        public DbSet<SinavKayitEntity> SinavKayit { get; set; }
     }
 
 

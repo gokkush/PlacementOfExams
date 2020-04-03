@@ -232,7 +232,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
                 SecilenEntities = new List<BaseEntity>();
                 if (RowSelect.SelectedRowCount() == 0) 
                 {
-                    Messages.KartSecmemeHataMesaj();
+                   // Messages.KartSecmemeHataMesaj();
                     return;
                 }
                 SecilenEntities = RowSelect.GetSelectedRows();

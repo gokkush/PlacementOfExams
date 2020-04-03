@@ -12,10 +12,6 @@ namespace DPU_Soft.PlacementOfExams.Model.Entities
 
         [Required, StringLength(50), ZorunluAlan("Gözetmen Adı", "txtGozetmenAdi")]
         public string GozetmenAdi { get; set; }
-
-        [Required, StringLength(50), ZorunluAlan("Gözetmen Soyadı", "txtGozetmenSoyadi")]
-        public string GozetmenSoyadi { get; set; }
-
         public int GorevlendirmeSayisi { get; set; }
         public long GozetmenSubeId { get; set; }
 

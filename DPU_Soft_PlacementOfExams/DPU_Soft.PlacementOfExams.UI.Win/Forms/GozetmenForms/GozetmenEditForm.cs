@@ -34,7 +34,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GozetmenForms
 
             txtKod.Text = entity.Kod;
             txtGozetmenAdi.Text = entity.GozetmenAdi;
-            txtGozetmenSoyadi.Text = entity.GozetmenSoyadi;
             txtGorevlendirmeSayisi.Value = entity.GorevlendirmeSayisi;
             txtAciklama.Text = entity.Aciklama;
             tglDurum.IsOn = entity.durum;
@@ -47,7 +46,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GozetmenForms
                 Id = Id,
                 Kod = txtKod.Text,
                 GozetmenAdi = txtGozetmenAdi.Text,
-                GozetmenSoyadi = txtGozetmenSoyadi.Text,
                 GozetmenSubeId = AnaForm.SubeId,
                 GorevlendirmeSayisi = (int)txtGorevlendirmeSayisi.Value,
                 Aciklama = txtAciklama.Text,

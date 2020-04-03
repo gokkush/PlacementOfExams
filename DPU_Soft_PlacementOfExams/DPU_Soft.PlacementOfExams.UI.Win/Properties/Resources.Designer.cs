@@ -343,6 +343,16 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap doctor_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("doctor_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap documentmap_16x16 {
             get {
                 object obj = ResourceManager.GetObject("documentmap_16x16", resourceCulture);
@@ -476,6 +486,26 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Properties {
         internal static System.Drawing.Bitmap edit_32x32 {
             get {
                 object obj = ResourceManager.GetObject("edit_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap employee_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("employee_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap employeenotice_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("employeenotice_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -723,9 +753,29 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap list_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("list_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOGO {
             get {
                 object obj = ResourceManager.GetObject("LOGO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap meeting_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("meeting_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -956,6 +1006,16 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Properties {
         internal static System.Drawing.Bitmap Turkiye {
             get {
                 object obj = ResourceManager.GetObject("Turkiye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usergroup_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("usergroup_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

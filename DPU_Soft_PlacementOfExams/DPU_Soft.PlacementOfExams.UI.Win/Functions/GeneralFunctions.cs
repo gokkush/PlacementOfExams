@@ -68,7 +68,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
         {
             if (tablo.FocusedRowHandle > -1)
                 return (T)tablo.GetRow(rowHandle);
-                Messages.KartSecmemeHataMesaj();
+              //  Messages.KartSecmemeHataMesaj();
 
             return default(T);
         }

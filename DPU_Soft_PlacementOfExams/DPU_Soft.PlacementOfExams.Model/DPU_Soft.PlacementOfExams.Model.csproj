@@ -53,10 +53,11 @@
     <Compile Include="Attributes\Kod.cs" />
     <Compile Include="Attributes\ZorunluAlan.cs" />
     <Compile Include="Dto\DersDto.cs" />
-    <Compile Include="Dto\DersYetkiDto.cs" />
     <Compile Include="Dto\KullaniciBirimyetkileriDto.cs" />
     <Compile Include="Dto\KullaniciDto.cs" />
+    <Compile Include="Dto\OgrenciDto.cs" />
     <Compile Include="Dto\OkulDto.cs" />
+    <Compile Include="Dto\SinavKayitDto.cs" />
     <Compile Include="Dto\SubeDto.cs" />
     <Compile Include="Entities\BaglantiAyarlari.cs" />
     <Compile Include="Entities\Base\BaseEntityDurum.cs" />
@@ -66,7 +67,6 @@
     <Compile Include="Entities\Base\Interfaces\IBaseEntity.cs" />
     <Compile Include="Entities\Base\Interfaces\IBaseHareketEntity.cs" />
     <Compile Include="Entities\DersEntity.cs" />
-    <Compile Include="Entities\DersYetkiEntity.cs" />
     <Compile Include="Entities\DokumParametreleri.cs" />
     <Compile Include="Entities\DonemEntity.cs" />
     <Compile Include="Entities\FiltreEntity.cs" />
@@ -77,8 +77,10 @@
     <Compile Include="Entities\KullaniciEntity.cs" />
     <Compile Include="Entities\KurumEntity.cs" />
     <Compile Include="Entities\MailParametreEntity.cs" />
+    <Compile Include="Entities\OgrenciEntity.cs" />
     <Compile Include="Entities\OkulEntity.cs" />
     <Compile Include="Entities\SinavSalonuEntity.cs" />
+    <Compile Include="Entities\SinavKayitEntity.cs" />
     <Compile Include="Entities\SubeEntity.cs" />
     <Compile Include="Entities\UniversiteEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

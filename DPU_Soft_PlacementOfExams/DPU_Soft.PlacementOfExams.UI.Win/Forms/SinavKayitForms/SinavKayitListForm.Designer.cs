@@ -1,6 +1,6 @@
-﻿namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.DersForms
+﻿namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
 {
-    partial class DersYetkiListForm
+    partial class SinavKayitListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DersYetkiListForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SinavKayitListForm));
+            this.longNavigator = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Navigators.LongNavigator();
             this.grid = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridControl();
             this.tablo = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridView();
             this.colId = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colKod = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
-            this.colDersId = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
-            this.colDersSubeId = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
-            this.longNavigator = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Navigators.LongNavigator();
+            this.colSinavAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
+            this.colDersAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
+            this.colSinavTuru = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
+            this.colAciklama = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
@@ -58,6 +60,14 @@
             this.btnGonder.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGonder.ImageOptions.Image")));
             this.btnGonder.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnGonder.ImageOptions.LargeImage")));
             // 
+            // longNavigator
+            // 
+            this.longNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.longNavigator.Location = new System.Drawing.Point(0, 336);
+            this.longNavigator.Name = "longNavigator";
+            this.longNavigator.Size = new System.Drawing.Size(976, 24);
+            this.longNavigator.TabIndex = 2;
+            // 
             // grid
             // 
             this.grid.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -66,7 +76,7 @@
             this.grid.MenuManager = this.ribbonControl;
             this.grid.Name = "grid";
             this.grid.Size = new System.Drawing.Size(976, 227);
-            this.grid.TabIndex = 5;
+            this.grid.TabIndex = 3;
             this.grid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.tablo});
             // 
@@ -85,8 +95,10 @@
             this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colId,
             this.colKod,
-            this.colDersId,
-            this.colDersSubeId});
+            this.colSinavAdi,
+            this.colDersAdi,
+            this.colSinavTuru,
+            this.colAciklama});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
             this.tablo.OptionsMenu.EnableColumnMenu = false;
@@ -104,7 +116,7 @@
             this.tablo.StatusBarAciklama = null;
             this.tablo.StatusBarKisayol = null;
             this.tablo.StatusBarKisayolAciklama = null;
-            this.tablo.ViewCaption = "Yetkili Ders Kayıtları";
+            this.tablo.ViewCaption = "Sınav Kayıtları";
             // 
             // colId
             // 
@@ -130,43 +142,60 @@
             this.colKod.StatusBarKisayolAciklama = null;
             this.colKod.Visible = true;
             this.colKod.VisibleIndex = 0;
-            this.colKod.Width = 88;
+            this.colKod.Width = 112;
             // 
-            // colDersId
+            // colSinavAdi
             // 
-            this.colDersId.Caption = "Ders Id";
-            this.colDersId.FieldName = "DersId";
-            this.colDersId.Name = "colDersId";
-            this.colDersId.OptionsColumn.AllowEdit = false;
-            this.colDersId.StatusBarAciklama = null;
-            this.colDersId.StatusBarKisayol = null;
-            this.colDersId.StatusBarKisayolAciklama = null;
-            this.colDersId.Visible = true;
-            this.colDersId.VisibleIndex = 1;
-            this.colDersId.Width = 179;
+            this.colSinavAdi.Caption = "Sınav Adı";
+            this.colSinavAdi.FieldName = "SinavAdi";
+            this.colSinavAdi.Name = "colSinavAdi";
+            this.colSinavAdi.OptionsColumn.AllowEdit = false;
+            this.colSinavAdi.StatusBarAciklama = null;
+            this.colSinavAdi.StatusBarKisayol = null;
+            this.colSinavAdi.StatusBarKisayolAciklama = null;
+            this.colSinavAdi.Visible = true;
+            this.colSinavAdi.VisibleIndex = 1;
+            this.colSinavAdi.Width = 190;
             // 
-            // colDersSubeId
+            // colDersAdi
             // 
-            this.colDersSubeId.Caption = "Ders Şube Id";
-            this.colDersSubeId.FieldName = "DersSubeId";
-            this.colDersSubeId.Name = "colDersSubeId";
-            this.colDersSubeId.OptionsColumn.AllowEdit = false;
-            this.colDersSubeId.StatusBarAciklama = null;
-            this.colDersSubeId.StatusBarKisayol = null;
-            this.colDersSubeId.StatusBarKisayolAciklama = null;
-            this.colDersSubeId.Visible = true;
-            this.colDersSubeId.VisibleIndex = 2;
-            this.colDersSubeId.Width = 389;
+            this.colDersAdi.Caption = "DersAdi";
+            this.colDersAdi.FieldName = "DersAdi";
+            this.colDersAdi.Name = "colDersAdi";
+            this.colDersAdi.OptionsColumn.AllowEdit = false;
+            this.colDersAdi.StatusBarAciklama = null;
+            this.colDersAdi.StatusBarKisayol = null;
+            this.colDersAdi.StatusBarKisayolAciklama = null;
+            this.colDersAdi.Visible = true;
+            this.colDersAdi.VisibleIndex = 2;
+            this.colDersAdi.Width = 195;
             // 
-            // longNavigator
+            // colSinavTuru
             // 
-            this.longNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.longNavigator.Location = new System.Drawing.Point(0, 336);
-            this.longNavigator.Name = "longNavigator";
-            this.longNavigator.Size = new System.Drawing.Size(976, 24);
-            this.longNavigator.TabIndex = 4;
+            this.colSinavTuru.Caption = "Sınav Türü";
+            this.colSinavTuru.FieldName = "SinavTuru";
+            this.colSinavTuru.Name = "colSinavTuru";
+            this.colSinavTuru.OptionsColumn.AllowEdit = false;
+            this.colSinavTuru.StatusBarAciklama = null;
+            this.colSinavTuru.StatusBarKisayol = null;
+            this.colSinavTuru.StatusBarKisayolAciklama = null;
+            this.colSinavTuru.Visible = true;
+            this.colSinavTuru.VisibleIndex = 3;
+            this.colSinavTuru.Width = 133;
             // 
-            // DersYetkiListForm
+            // colAciklama
+            // 
+            this.colAciklama.Caption = "Açıklama";
+            this.colAciklama.FieldName = "Aciklama";
+            this.colAciklama.Name = "colAciklama";
+            this.colAciklama.OptionsColumn.AllowEdit = false;
+            this.colAciklama.StatusBarAciklama = null;
+            this.colAciklama.StatusBarKisayol = null;
+            this.colAciklama.StatusBarKisayolAciklama = null;
+            this.colAciklama.Visible = true;
+            this.colAciklama.VisibleIndex = 4;
+            // 
+            // SinavKayitListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -174,8 +203,8 @@
             this.Controls.Add(this.grid);
             this.Controls.Add(this.longNavigator);
             this.IconOptions.ShowIcon = false;
-            this.Name = "DersYetkiListForm";
-            this.Text = "DersYetkiListForm";
+            this.Name = "SinavKayitListForm";
+            this.Text = "Sınav Kayıtları";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.longNavigator, 0);
             this.Controls.SetChildIndex(this.grid, 0);
@@ -189,12 +218,14 @@
 
         #endregion
 
+        private UserControls.Controls.Navigators.LongNavigator longNavigator;
         private UserControls.Controls.Grid.DpuGridControl grid;
         private UserControls.Controls.Grid.DpuGridView tablo;
         private UserControls.Controls.Grid.DpuGridColumn colId;
         private UserControls.Controls.Grid.DpuGridColumn colKod;
-        private UserControls.Controls.Grid.DpuGridColumn colDersId;
-        private UserControls.Controls.Grid.DpuGridColumn colDersSubeId;
-        private UserControls.Controls.Navigators.LongNavigator longNavigator;
+        private UserControls.Controls.Grid.DpuGridColumn colSinavAdi;
+        private UserControls.Controls.Grid.DpuGridColumn colDersAdi;
+        private UserControls.Controls.Grid.DpuGridColumn colSinavTuru;
+        private UserControls.Controls.Grid.DpuGridColumn colAciklama;
     }
 }

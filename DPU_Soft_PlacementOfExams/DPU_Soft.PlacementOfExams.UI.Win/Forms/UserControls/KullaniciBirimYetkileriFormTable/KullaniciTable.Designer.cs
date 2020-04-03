@@ -95,7 +95,6 @@
             this.colKod.Name = "colKod";
             this.colKod.OptionsColumn.AllowEdit = false;
             this.colKod.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.False;
-            this.colKod.OptionsFilter.AllowAutoFilter = false;
             this.colKod.StatusBarAciklama = null;
             this.colKod.StatusBarKisayol = null;
             this.colKod.StatusBarKisayolAciklama = null;
@@ -110,7 +109,6 @@
             this.colAdi.Name = "colAdi";
             this.colAdi.OptionsColumn.AllowEdit = false;
             this.colAdi.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.False;
-            this.colAdi.OptionsFilter.AllowAutoFilter = false;
             this.colAdi.StatusBarAciklama = null;
             this.colAdi.StatusBarKisayol = null;
             this.colAdi.StatusBarKisayolAciklama = null;
@@ -125,7 +123,6 @@
             this.colSoyadi.Name = "colSoyadi";
             this.colSoyadi.OptionsColumn.AllowEdit = false;
             this.colSoyadi.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.False;
-            this.colSoyadi.OptionsFilter.AllowAutoFilter = false;
             this.colSoyadi.StatusBarAciklama = null;
             this.colSoyadi.StatusBarKisayol = null;
             this.colSoyadi.StatusBarKisayolAciklama = null;
@@ -140,7 +137,6 @@
             this.colEmail.Name = "colEmail";
             this.colEmail.OptionsColumn.AllowEdit = false;
             this.colEmail.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.False;
-            this.colEmail.OptionsFilter.AllowAutoFilter = false;
             this.colEmail.StatusBarAciklama = null;
             this.colEmail.StatusBarKisayol = null;
             this.colEmail.StatusBarKisayolAciklama = null;
@@ -155,7 +151,6 @@
             this.colAciklama.Name = "colAciklama";
             this.colAciklama.OptionsColumn.AllowEdit = false;
             this.colAciklama.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.False;
-            this.colAciklama.OptionsFilter.AllowAutoFilter = false;
             this.colAciklama.StatusBarAciklama = null;
             this.colAciklama.StatusBarKisayol = null;
             this.colAciklama.StatusBarKisayolAciklama = null;

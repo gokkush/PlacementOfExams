@@ -10,15 +10,16 @@ using System.Threading.Tasks;
 
 namespace DPU_Soft.PlacementOfExams.Model.Entities
 {
-    public class DersYetkiEntity : BaseHareketEntity
+    public class OgrenciEntity : BaseDurumEntity
     {
-        public long? DersId { get; set; }
+        [Index("IX_Kod", IsUnique = true)]
+        public override string Kod { get; set; }
 
-        public long?  DonemId { get; set; }
-
-        public long? SubeId { get; set; }
-
-        public DersEntity Ders { get; set; }
+        [Required, StringLength(50)]
+        public string OgrenciAdi { get; set; }
+        [StringLength(20)]
+        public string OkulNo { get; set; }
+        public string Bolum { get; set; }
 
     }
 }
