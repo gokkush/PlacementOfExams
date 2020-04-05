@@ -1,43 +1,62 @@
 ﻿using DPU_Soft.BLL.General;
 using DPU_Soft.PlacementOfExams.Common.Enums;
+using DPU_Soft.PlacementOfExams.Common.Massage;
 using DPU_Soft.PlacementOfExams.Model.Entities;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms;
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Functions;
 using DPU_Soft.PlacementOfExams.UI.Win.Show;
+using System;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GozetmenForms
 {
     public partial class GozetmenListForm : BaseListForm
     {
-        private readonly long _subeId;
-        private readonly string _subeAdi;
-        public GozetmenListForm(params object[] prm)
+
+        private readonly Expression<Func<GozetmenEntity, bool>> _filter;
+        public GozetmenListForm()
         {
             InitializeComponent();
             Bll = new GozetmenBll();
+            _filter = x => x.durum == AktifKartlariGoster&&x.Sube_Id==AnaForm.SubeId;
 
-            _subeId = (long)prm[0];
-            _subeAdi = prm[1].ToString();
+        }
+        public GozetmenListForm(params object[] prm) : this()
+        {
+            _filter = x => !ListeDisiTutulacakKayitlar.Contains(x.Id) && AktifKartlariGoster &&x.Sube_Id==AnaForm.SubeId;
         }
         protected override void DegiskenleriDoldur()
         {
             Tablo = tablo;
             BaseKartTuru = KartTuru.Gozetmen;
-           // FormShow = new ShowEditforms<GozetmenEditForm>();
+            FormShow = new ShowEditforms<GozetmenEditForm>();
             base.Navigator = longNavigator.Navigator;
-            Text = Text + " - (" + _subeAdi + ")";
+            Text = Text + " - (" + AnaForm.SubeAdi + ")";
 
         }
 
         protected override void Listele()
         {
-            Tablo.GridControl.DataSource = ((GozetmenBll)Bll).List(x => x.durum == AktifKartlariGoster && x.GozetmenSubeId == _subeId);
+            var list = ((GozetmenBll)Bll).List(_filter);
+            Tablo.GridControl.DataSource = list;
+            if (!MultiSelect) return;
+            if (list.Any())
+                EklenebilecekEntityVar = true;
+            else
+                Messages.KartKalmadiHataMesaj();
+
+           // Tablo.GridControl.DataSource = ((GozetmenBll)Bll).List(x => x.durum == AktifKartlariGoster && x.Sube_Id == _subeId);
         }
 
         protected override void ShowEditForm(long id)
         {
-            var result = ShowEditforms<GozetmenEditForm>.ShowDialogeditForm(KartTuru.Gozetmen, id, _subeId, _subeAdi);
-            ShowEditFormDefault(result);
+            //var entity = Tablo.GetRow<GozetmenEntity>();
+            //if (entity != null)
+            //    return;
+                var result = ShowEditforms<GozetmenEditForm>.ShowDialogeditForm(KartTuru.Gozetmen, id, AnaForm.SubeId, AnaForm.SubeAdi);
+                ShowEditFormDefault(result);
 
         }
     }

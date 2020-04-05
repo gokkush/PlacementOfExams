@@ -159,3 +159,9 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DP
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.OgrenciForms.OgrenciListeAlEditForm.resources
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms.SinavKayitEditForm.resources
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms.SinavKayitListForm.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTable.SinavSalonBilgileriTable.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTable.GozetmenBilgileriTable.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTable.OgrenciListesiTable.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\ExcelDataReader.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\ExcelDataReader.pdb
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\ExcelDataReader.xml

@@ -34,10 +34,9 @@
             this.colId = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colKod = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colGozetmenAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
+            this.colGorevlendirmeSayisi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colAciklama = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.longNavigator = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Navigators.LongNavigator();
-            this.colGozetmenSoyadi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
-            this.colGorevlendirmeSayisi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
@@ -88,7 +87,6 @@
             this.colId,
             this.colKod,
             this.colGozetmenAdi,
-            this.colGozetmenSoyadi,
             this.colGorevlendirmeSayisi,
             this.colAciklama});
             this.tablo.GridControl = this.grid;
@@ -138,7 +136,7 @@
             // 
             // colGozetmenAdi
             // 
-            this.colGozetmenAdi.Caption = "Gozetmen Adı";
+            this.colGozetmenAdi.Caption = "Gozetmen Adı Soyadı";
             this.colGozetmenAdi.FieldName = "GozetmenAdi";
             this.colGozetmenAdi.Name = "colGozetmenAdi";
             this.colGozetmenAdi.OptionsColumn.AllowEdit = false;
@@ -148,40 +146,6 @@
             this.colGozetmenAdi.Visible = true;
             this.colGozetmenAdi.VisibleIndex = 1;
             this.colGozetmenAdi.Width = 196;
-            // 
-            // colAciklama
-            // 
-            this.colAciklama.Caption = "Açıklama";
-            this.colAciklama.FieldName = "Aciklama";
-            this.colAciklama.Name = "colAciklama";
-            this.colAciklama.OptionsColumn.AllowEdit = false;
-            this.colAciklama.StatusBarAciklama = null;
-            this.colAciklama.StatusBarKisayol = null;
-            this.colAciklama.StatusBarKisayolAciklama = null;
-            this.colAciklama.Visible = true;
-            this.colAciklama.VisibleIndex = 4;
-            this.colAciklama.Width = 304;
-            // 
-            // longNavigator
-            // 
-            this.longNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.longNavigator.Location = new System.Drawing.Point(0, 336);
-            this.longNavigator.Name = "longNavigator";
-            this.longNavigator.Size = new System.Drawing.Size(976, 24);
-            this.longNavigator.TabIndex = 4;
-            // 
-            // colGozetmenSoyadi
-            // 
-            this.colGozetmenSoyadi.Caption = "Gözetmen Soyadı";
-            this.colGozetmenSoyadi.FieldName = "GozetmenSoyadi";
-            this.colGozetmenSoyadi.Name = "colGozetmenSoyadi";
-            this.colGozetmenSoyadi.OptionsColumn.AllowEdit = false;
-            this.colGozetmenSoyadi.StatusBarAciklama = null;
-            this.colGozetmenSoyadi.StatusBarKisayol = null;
-            this.colGozetmenSoyadi.StatusBarKisayolAciklama = null;
-            this.colGozetmenSoyadi.Visible = true;
-            this.colGozetmenSoyadi.VisibleIndex = 2;
-            this.colGozetmenSoyadi.Width = 220;
             // 
             // colGorevlendirmeSayisi
             // 
@@ -193,8 +157,29 @@
             this.colGorevlendirmeSayisi.StatusBarKisayol = null;
             this.colGorevlendirmeSayisi.StatusBarKisayolAciklama = null;
             this.colGorevlendirmeSayisi.Visible = true;
-            this.colGorevlendirmeSayisi.VisibleIndex = 3;
+            this.colGorevlendirmeSayisi.VisibleIndex = 2;
             this.colGorevlendirmeSayisi.Width = 166;
+            // 
+            // colAciklama
+            // 
+            this.colAciklama.Caption = "Açıklama";
+            this.colAciklama.FieldName = "Aciklama";
+            this.colAciklama.Name = "colAciklama";
+            this.colAciklama.OptionsColumn.AllowEdit = false;
+            this.colAciklama.StatusBarAciklama = null;
+            this.colAciklama.StatusBarKisayol = null;
+            this.colAciklama.StatusBarKisayolAciklama = null;
+            this.colAciklama.Visible = true;
+            this.colAciklama.VisibleIndex = 3;
+            this.colAciklama.Width = 304;
+            // 
+            // longNavigator
+            // 
+            this.longNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.longNavigator.Location = new System.Drawing.Point(0, 336);
+            this.longNavigator.Name = "longNavigator";
+            this.longNavigator.Size = new System.Drawing.Size(976, 24);
+            this.longNavigator.TabIndex = 4;
             // 
             // GozetmenListForm
             // 
@@ -226,7 +211,6 @@
         private UserControls.Controls.Grid.DpuGridColumn colGozetmenAdi;
         private UserControls.Controls.Grid.DpuGridColumn colAciklama;
         private UserControls.Controls.Navigators.LongNavigator longNavigator;
-        private UserControls.Controls.Grid.DpuGridColumn colGozetmenSoyadi;
         private UserControls.Controls.Grid.DpuGridColumn colGorevlendirmeSayisi;
     }
 }

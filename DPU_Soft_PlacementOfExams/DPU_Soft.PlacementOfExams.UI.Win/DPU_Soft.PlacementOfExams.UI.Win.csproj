@@ -54,10 +54,18 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
     <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Security" />
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -419,6 +427,24 @@
     <Compile Include="Forms\UserControls\KullaniciBirimYetkileriFormTable\SubeTable.Designer.cs">
       <DependentUpon>SubeTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UserControls\SinavKayitFormTable\GozetmenBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\SinavKayitFormTable\GozetmenBilgileriTable.Designer.cs">
+      <DependentUpon>GozetmenBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\SinavKayitFormTable\OgrenciListesiTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\SinavKayitFormTable\OgrenciListesiTable.Designer.cs">
+      <DependentUpon>OgrenciListesiTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\SinavKayitFormTable\SinavSalonBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\SinavKayitFormTable\SinavSalonBilgileriTable.Designer.cs">
+      <DependentUpon>SinavSalonBilgileriTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Functions\FileFunctions.cs" />
     <Compile Include="Functions\FilterFunctions.cs" />
     <Compile Include="Functions\GeneralFunctions.cs" />
@@ -582,6 +608,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserControls\KullaniciBirimYetkileriFormTable\SubeTable.resx">
       <DependentUpon>SubeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\SinavKayitFormTable\GozetmenBilgileriTable.resx">
+      <DependentUpon>GozetmenBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\SinavKayitFormTable\OgrenciListesiTable.resx">
+      <DependentUpon>OgrenciListesiTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\SinavKayitFormTable\SinavSalonBilgileriTable.resx">
+      <DependentUpon>SinavSalonBilgileriTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

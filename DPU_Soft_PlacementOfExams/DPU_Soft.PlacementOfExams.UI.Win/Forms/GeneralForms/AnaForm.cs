@@ -11,8 +11,11 @@ using DPU_Soft.PlacementOfExams.UI.Win.Forms.KullaniciForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavSalonForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.GozetmenForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.DersForms;
-using DPU_Soft.PlacementOfExams.UI.Win.Forms.OgrenciForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms;
+using DPU_Soft.BLL.General;
+using DPU_Soft.BLL.Base.Interfaces;
+using DPU_Soft.PlacementOfExams.Model.Dto;
+using System.Linq;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
 {
@@ -27,10 +30,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
         public static string KullaniciAdi;
         public static List<long> YetkiliOlunanSubeler = new List<long>() ;
         public static DonemEntity Donem;
-        
-
-        
-
 
         public AnaForm()
         {
@@ -74,8 +73,8 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
                 ShowListforms<OkulListForm>.ShowListForm(KartTuru.Okul);
             else if (e.Item==btnGozetmen)
             {
-                ShowListforms<GozetmenListForm>.ShowListForm(KartTuru.Gozetmen, SubeId, SubeAdi);
-                //ShowListforms<GozetmenListForm>.ShowListForm(KartTuru.Gozetmen); //Eğer Gözetmenler tüm fakültelerde aynı ise
+                //ShowListforms<GozetmenListForm>.ShowListForm(KartTuru.Gozetmen,SubeId, SubeAdi);
+                ShowListforms<GozetmenListForm>.ShowListForm(KartTuru.Gozetmen); //Eğer Gözetmenler tüm fakültelerde aynı ise
             }
             else if (e.Item==btnSinavSalon)
             {

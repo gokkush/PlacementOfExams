@@ -9,7 +9,8 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GozetmenForms
 {
     public partial class GozetmenEditForm : BaseEditForm
     {
-        public GozetmenEditForm()
+
+        public GozetmenEditForm(params object[] prm)
         {
             InitializeComponent();
             DataLayoutControl = dpuDataLayoutControl;
@@ -46,7 +47,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GozetmenForms
                 Id = Id,
                 Kod = txtKod.Text,
                 GozetmenAdi = txtGozetmenAdi.Text,
-                GozetmenSubeId = AnaForm.SubeId,
+                Sube_Id = AnaForm.SubeId,
                 GorevlendirmeSayisi = (int)txtGorevlendirmeSayisi.Value,
                 Aciklama = txtAciklama.Text,
                 durum = tglDurum.IsOn
@@ -55,6 +56,14 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GozetmenForms
 
             ButtonEnabledDurumu();
         }
+        protected override bool EntityInsert()
+        {
+            return ((GozetmenBll)Bll).Insert(CurrentEntity, x => x.Kod == CurrentEntity.Kod && x.Sube_Id == AnaForm.SubeId);
+        }
 
+        protected override bool EntityUpdate()
+        {
+            return ((GozetmenBll)Bll).Update(OldEntity, CurrentEntity, x => x.Kod == CurrentEntity.Kod && x.Sube_Id == AnaForm.SubeId);
+        }
     }
 }

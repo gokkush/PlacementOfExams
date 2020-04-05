@@ -33,8 +33,8 @@
             this.popupMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.btnHareketEkle = new DevExpress.XtraBars.BarButtonItem();
             this.btnHareketSil = new DevExpress.XtraBars.BarButtonItem();
+            this.btnHareketDuzenle = new DevExpress.XtraBars.BarButtonItem();
             this.barManager = new DevExpress.XtraBars.BarManager(this.components);
-            this.bar1 = new DevExpress.XtraBars.Bar();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
@@ -55,7 +55,8 @@
             // 
             this.popupMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btnHareketEkle),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnHareketSil)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnHareketSil),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnHareketDuzenle)});
             this.popupMenu.Manager = this.barManager;
             this.popupMenu.Name = "popupMenu";
             // 
@@ -73,10 +74,17 @@
             this.btnHareketSil.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.deletelist_16x16;
             this.btnHareketSil.Name = "btnHareketSil";
             // 
+            // btnHareketDuzenle
+            // 
+            this.btnHareketDuzenle.Caption = "Hareket Düzenle";
+            this.btnHareketDuzenle.Id = 3;
+            this.btnHareketDuzenle.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.edit_16x16;
+            this.btnHareketDuzenle.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F2);
+            this.btnHareketDuzenle.Name = "btnHareketDuzenle";
+            this.btnHareketDuzenle.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
             // barManager
             // 
-            this.barManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
-            this.bar1});
             this.barManager.DockControls.Add(this.barDockControlTop);
             this.barManager.DockControls.Add(this.barDockControlBottom);
             this.barManager.DockControls.Add(this.barDockControlLeft);
@@ -84,16 +92,9 @@
             this.barManager.Form = this;
             this.barManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.btnHareketEkle,
-            this.btnHareketSil});
-            this.barManager.MaxItemId = 3;
-            // 
-            // bar1
-            // 
-            this.bar1.BarName = "Custom 2";
-            this.bar1.DockCol = 0;
-            this.bar1.DockRow = 0;
-            this.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.bar1.Text = "Custom 2";
+            this.btnHareketSil,
+            this.btnHareketDuzenle});
+            this.barManager.MaxItemId = 4;
             // 
             // barDockControlTop
             // 
@@ -101,7 +102,7 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager;
-            this.barDockControlTop.Size = new System.Drawing.Size(495, 20);
+            this.barDockControlTop.Size = new System.Drawing.Size(495, 0);
             // 
             // barDockControlBottom
             // 
@@ -115,17 +116,17 @@
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 20);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.barManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 229);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 249);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(495, 20);
+            this.barDockControlRight.Location = new System.Drawing.Point(495, 0);
             this.barDockControlRight.Manager = this.barManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 229);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 249);
             // 
             // BaseTablo
             // 
@@ -148,7 +149,6 @@
         #endregion
 
         public Controls.Navigators.InsUptNavigator ınsUptNavigator;
-        private DevExpress.XtraBars.Bar bar1;
         private DevExpress.XtraBars.BarDockControl barDockControlTop;
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
@@ -157,5 +157,6 @@
         protected internal DevExpress.XtraBars.BarManager barManager;
         protected internal DevExpress.XtraBars.BarButtonItem btnHareketEkle;
         protected internal DevExpress.XtraBars.BarButtonItem btnHareketSil;
+        protected DevExpress.XtraBars.BarButtonItem btnHareketDuzenle;
     }
 }

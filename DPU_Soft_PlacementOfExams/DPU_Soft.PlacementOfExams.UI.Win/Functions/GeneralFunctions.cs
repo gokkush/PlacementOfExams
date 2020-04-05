@@ -24,6 +24,9 @@ using System.Net;
 using DPU_Soft.PlacementOfExams.Model.Entities.Base.Interfaces;
 using DevExpress.XtraGrid.Views.Base;
 using System.ComponentModel;
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base;
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms;
+using DevExpress.XtraLayout;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
 {
@@ -115,6 +118,13 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
             btnGeriAl.Enabled = buttonEnabeledDurumu;
             btnYeni.Enabled = !buttonEnabeledDurumu;
             btnSil.Enabled = !buttonEnabeledDurumu;
+        }
+        public static void ButtonEnabledDurumu(BarButtonItem btnYeni, BarButtonItem btnKaydet, BarButtonItem btnGeriAl, BarButtonItem btnSil)
+        {
+            btnKaydet.Enabled = false;
+            btnGeriAl.Enabled = false;
+            btnYeni.Enabled = false;
+            btnSil.Enabled = false;
         }
         public static void ButtonEnabledDurumu<T>(BarButtonItem btnYeni, BarButtonItem btnKaydet, BarButtonItem btnGeriAl, BarButtonItem btnSil, T oldEntity, T currentEntity,bool tableValueChanged)
         {
@@ -425,6 +435,26 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
                 configration.Save();
 
             }
+        }
+
+        public static BaseTablo AddTable(this BaseTablo tablo, BaseEditForm frm)
+        {
+            tablo.Dock = DockStyle.Fill;
+            tablo.OvnerForm = frm;
+            return tablo;
+        }
+
+        public static void LayoutControlInsert(this LayoutGroup grup, Control ctrl, int columnIndex, int rowIndex, int columnSpan, int rowSpan)
+        {
+            var item = new LayoutControlItem
+            {
+                Control = ctrl,
+                Parent = grup
+            };
+            item.OptionsTableLayoutItem.ColumnIndex = columnIndex;
+            item.OptionsTableLayoutItem.RowIndex = rowIndex;
+            item.OptionsTableLayoutItem.ColumnSpan = columnSpan;
+            item.OptionsTableLayoutItem.RowSpan = rowSpan;
         }
     }
 }

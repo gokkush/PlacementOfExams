@@ -26,7 +26,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
         }
         public SinavKayitListForm(params object[] prm):this()
         {
-            _filter = x => x.durum == !ListeDisiTutulacakKayitlar.Contains(x.Id) && x.durum == AktifKartlariGoster && x.DonemId==AnaForm.DonemId&&x.SubeId == AnaForm.DonemId;
+            _filter = x => x.durum == !ListeDisiTutulacakKayitlar.Contains(x.Id) && x.durum == AktifKartlariGoster && x.DonemId==AnaForm.DonemId&&x.SubeId == AnaForm.DonemId&&AktifKartlariGoster;
         }
 
         protected override void DegiskenleriDoldur()
@@ -46,7 +46,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
             if (list.Any())
                 EklenebilecekEntityVar = true;
             else
-                Messages.KartSecmemeHataMesaj();
+                Messages.KartKalmadiHataMesaj();
         }
 
     }

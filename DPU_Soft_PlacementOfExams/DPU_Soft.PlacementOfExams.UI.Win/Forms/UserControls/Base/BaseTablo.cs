@@ -59,6 +59,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base
             Tablo.ColumnWidthChanged+= Tablo_SablonChanged;
             Tablo.EndSorting+= Tablo_SablonChanged;
             Tablo.FocusedRowObjectChanged += Tablo_FocusedRowObjectChanged;
+            Tablo.DoubleClick += Tablo_DoubleClick;
         }
 
 
@@ -112,6 +113,13 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base
             ButonenableDurumu(true);
         }
 
+        protected internal virtual bool HataliGiris() { return false; }
+
+        protected virtual void OpenEntity() 
+        {
+
+        }
+
         protected void ButonenableDurumu(bool durum)
         {
             TablevalueChanged = durum;
@@ -154,6 +162,8 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base
                 HareketEkle();
             else if (e.Item == btnHareketSil)
                 HareketSil();
+            else if (e.Item == btnHareketDuzenle)
+                OpenEntity();
             Cursor.Current = Cursors.Default;
         }
 
@@ -186,6 +196,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base
             if (popupMenu == null) return;
 
             btnHareketSil.Enabled = Tablo.RowCount > 0;
+            btnHareketDuzenle.Enabled = Tablo.RowCount > 0;
             e.SagMenuGoster(popupMenu);
         }
 
@@ -229,6 +240,9 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base
                 case Keys.Delete when e.Shift:
                     HareketSil();
                     break;
+                case Keys.F2:
+                    OpenEntity();
+                    break;
 
             }
         }
@@ -260,6 +274,11 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base
         {
             _tabloSablonKayitEdilecek = true;
             SablonKaydet();
+        }
+
+        private void Tablo_DoubleClick(object sender, EventArgs e)
+        {
+            OpenEntity();
         }
 
         protected virtual void Tablo_FocusedRowObjectChanged(object sender, FocusedRowObjectChangedEventArgs e)

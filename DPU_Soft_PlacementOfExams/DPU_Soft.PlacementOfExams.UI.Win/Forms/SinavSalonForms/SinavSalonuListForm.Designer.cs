@@ -35,6 +35,7 @@
             this.colKod = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colSalonAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colSalonKapasitesi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
+            this.colGozetmenSayisi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colAciklama = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.longNavigator = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Navigators.LongNavigator();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
@@ -89,6 +90,7 @@
             this.colKod,
             this.colSalonAdi,
             this.colSalonKapasitesi,
+            this.colGozetmenSayisi,
             this.colAciklama});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
@@ -146,7 +148,7 @@
             this.colSalonAdi.StatusBarKisayolAciklama = null;
             this.colSalonAdi.Visible = true;
             this.colSalonAdi.VisibleIndex = 1;
-            this.colSalonAdi.Width = 234;
+            this.colSalonAdi.Width = 195;
             // 
             // colSalonKapasitesi
             // 
@@ -159,7 +161,20 @@
             this.colSalonKapasitesi.StatusBarKisayolAciklama = null;
             this.colSalonKapasitesi.Visible = true;
             this.colSalonKapasitesi.VisibleIndex = 2;
-            this.colSalonKapasitesi.Width = 159;
+            this.colSalonKapasitesi.Width = 119;
+            // 
+            // colGozetmenSayisi
+            // 
+            this.colGozetmenSayisi.Caption = "Gözetmen Sayısı";
+            this.colGozetmenSayisi.FieldName = "GozetmenSayisi";
+            this.colGozetmenSayisi.Name = "colGozetmenSayisi";
+            this.colGozetmenSayisi.OptionsColumn.AllowEdit = false;
+            this.colGozetmenSayisi.StatusBarAciklama = null;
+            this.colGozetmenSayisi.StatusBarKisayol = null;
+            this.colGozetmenSayisi.StatusBarKisayolAciklama = null;
+            this.colGozetmenSayisi.Visible = true;
+            this.colGozetmenSayisi.VisibleIndex = 3;
+            this.colGozetmenSayisi.Width = 89;
             // 
             // colAciklama
             // 
@@ -171,7 +186,7 @@
             this.colAciklama.StatusBarKisayol = null;
             this.colAciklama.StatusBarKisayolAciklama = null;
             this.colAciklama.Visible = true;
-            this.colAciklama.VisibleIndex = 3;
+            this.colAciklama.VisibleIndex = 4;
             this.colAciklama.Width = 389;
             // 
             // longNavigator
@@ -213,5 +228,6 @@
         private UserControls.Controls.Grid.DpuGridColumn colAciklama;
         private UserControls.Controls.Grid.DpuGridColumn colSalonKapasitesi;
         private UserControls.Controls.Navigators.LongNavigator longNavigator;
+        private UserControls.Controls.Grid.DpuGridColumn colGozetmenSayisi;
     }
 }

@@ -14,6 +14,7 @@ using DPU_Soft.PlacementOfExams.UI.Win.Interfaces;
 using DevExpress.XtraPrinting.Native;
 using DevExpress.Utils.Extensions;
 using DPU_Soft.PlacementOfExams.Model.Entities.Base.Interfaces;
+using DevExpress.XtraBars.Navigation;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
 {
@@ -35,6 +36,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
         protected bool KayitSonrasiFormuKapat = true;
         protected BarItem[] ShowItems;
         protected BarItem[] HideItems;
+        protected bool FarkliSubeIslemi;
         public BaseEditForm()
         {
             InitializeComponent();
@@ -43,10 +45,19 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
         { 
                     
         }
+        protected virtual void BagliTabloYukle()
+        {
+
+        }
+        protected virtual bool BagliTabloKaydet()
+        {
+            return false;
+        }
         protected virtual void Giris()
         {
 
         }
+
         protected internal virtual IBaseEntity ReturnEntity()
         {
             return null;
@@ -88,7 +99,9 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
                     case BaseEdit edt:
                         edt.EditValueChanged += Control_EditValueChanged;
                         break;
-
+                    case TabPane tab:
+                        tab.SelectedPageChanged += Control_SelectedPageChanged;
+                        break;
                     case DpuGridControl grd:
                         grd.MainView.GotFocus += Control_GotFocus;
                         break;
@@ -105,6 +118,11 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
                 foreach (var layout in DataLayoutControls)
                     foreach (Control ctrl in layout.Controls)
                         ControlEvents(ctrl);
+        }
+
+        protected virtual void Control_SelectedPageChanged(object sender, SelectedPageChangedEventArgs e)
+        {
+            
         }
 
         protected virtual void Control_SelectedValueChanged(object sender, EventArgs e)
@@ -228,8 +246,11 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             GuncelNesneOlustur();
             SablonYukle();
             ButtonGizleGoster();
-            //güncelleme Yap
 
+            if (FarkliSubeIslemi)
+            {
+                Messages.UyariMesaji("İşlem yapılan bilgi, Çalışılan Şubede olmadığı için değişiklikler kaydedilmeyecektir!");
+            }
         }
 
         protected virtual void Buttom_ItemClick(object sender, ItemClickEventArgs e)

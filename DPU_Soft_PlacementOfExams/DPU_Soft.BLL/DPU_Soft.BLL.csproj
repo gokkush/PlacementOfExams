@@ -68,6 +68,7 @@
     <Compile Include="General\DersBll.cs" />
     <Compile Include="General\DonemBll.cs" />
     <Compile Include="General\FiltreBll.cs" />
+    <Compile Include="General\GozetmenBilgileriBll.cs" />
     <Compile Include="General\GozetmenBll.cs" />
     <Compile Include="General\IlBll.cs" />
     <Compile Include="General\IlceBll.cs" />
@@ -75,9 +76,11 @@
     <Compile Include="General\KullaniciBll.cs" />
     <Compile Include="General\KurumBll.cs" />
     <Compile Include="General\MailParametreBll.cs" />
+    <Compile Include="General\OgrenciBilgileriBll.cs" />
     <Compile Include="General\OgrenciBll.cs" />
     <Compile Include="General\OkulBll.cs" />
     <Compile Include="General\SinavKayitBll.cs" />
+    <Compile Include="General\SinavSalonBilgileriBll.cs" />
     <Compile Include="General\SinavSalonuBll.cs" />
     <Compile Include="General\SubeBll.cs" />
     <Compile Include="General\UniversiteBll.cs" />

@@ -37,6 +37,7 @@
             DevExpress.XtraLayout.RowDefinition rowDefinition4 = new DevExpress.XtraLayout.RowDefinition();
             DevExpress.XtraLayout.RowDefinition rowDefinition5 = new DevExpress.XtraLayout.RowDefinition();
             this.dpuDataLayoutControl = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuDataLayoutControl();
+            this.txtGozetmenSayisi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuSpinEdit();
             this.txtSalonKapasitesi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuSpinEdit();
             this.txtAciklama = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuMemoEdit();
             this.txtSalonAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuTextEdit();
@@ -48,11 +49,11 @@
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtGozetmenSayisi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.DpuSpinEdit();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpuDataLayoutControl)).BeginInit();
             this.dpuDataLayoutControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGozetmenSayisi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSalonKapasitesi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAciklama.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSalonAdi.Properties)).BeginInit();
@@ -64,7 +65,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGozetmenSayisi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,6 +98,35 @@
             this.dpuDataLayoutControl.TabIndex = 0;
             this.dpuDataLayoutControl.Text = "dpuDataLayoutControl";
             // 
+            // txtGozetmenSayisi
+            // 
+            this.txtGozetmenSayisi.EditValue = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.txtGozetmenSayisi.Location = new System.Drawing.Point(97, 84);
+            this.txtGozetmenSayisi.MenuManager = this.ribbonControl;
+            this.txtGozetmenSayisi.Name = "txtGozetmenSayisi";
+            this.txtGozetmenSayisi.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
+            this.txtGozetmenSayisi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtGozetmenSayisi.Properties.Mask.EditMask = "d";
+            this.txtGozetmenSayisi.Properties.MaxValue = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.txtGozetmenSayisi.Properties.MinValue = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.txtGozetmenSayisi.Size = new System.Drawing.Size(151, 20);
+            this.txtGozetmenSayisi.StatusBarAciklama = "Gözetmen Sayısı Giriniz";
+            this.txtGozetmenSayisi.StyleController = this.dpuDataLayoutControl;
+            this.txtGozetmenSayisi.TabIndex = 2;
+            // 
             // txtSalonKapasitesi
             // 
             this.txtSalonKapasitesi.EditValue = new decimal(new int[] {
@@ -115,7 +144,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtSalonKapasitesi.Properties.Mask.EditMask = "d";
             this.txtSalonKapasitesi.Properties.MaxValue = new decimal(new int[] {
-            1,
+            10000,
             0,
             0,
             0});
@@ -295,35 +324,6 @@
             this.layoutControlItem1.Text = "Salon Kodu:";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(82, 13);
             // 
-            // txtGozetmenSayisi
-            // 
-            this.txtGozetmenSayisi.EditValue = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.txtGozetmenSayisi.Location = new System.Drawing.Point(97, 84);
-            this.txtGozetmenSayisi.MenuManager = this.ribbonControl;
-            this.txtGozetmenSayisi.Name = "txtGozetmenSayisi";
-            this.txtGozetmenSayisi.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
-            this.txtGozetmenSayisi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtGozetmenSayisi.Properties.Mask.EditMask = "d";
-            this.txtGozetmenSayisi.Properties.MaxValue = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.txtGozetmenSayisi.Properties.MinValue = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.txtGozetmenSayisi.Size = new System.Drawing.Size(151, 20);
-            this.txtGozetmenSayisi.StatusBarAciklama = "Gözetmen Sayısı Giriniz";
-            this.txtGozetmenSayisi.StyleController = this.dpuDataLayoutControl;
-            this.txtGozetmenSayisi.TabIndex = 2;
-            // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
@@ -351,6 +351,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpuDataLayoutControl)).EndInit();
             this.dpuDataLayoutControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtGozetmenSayisi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSalonKapasitesi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAciklama.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSalonAdi.Properties)).EndInit();
@@ -362,7 +363,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGozetmenSayisi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

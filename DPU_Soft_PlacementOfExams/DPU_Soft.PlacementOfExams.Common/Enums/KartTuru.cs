@@ -28,12 +28,14 @@ namespace DPU_Soft.PlacementOfExams.Common.Enums
         Gozetmen = 11,
         [Description("Ders Kaydı")]
         Ders = 12,
-        [Description("Ders Yetki Kaydı")]
-        DersYetki = 11,
         [Description("Ogrenci Kaydı")]
-        Ogrenci = 12,
+        Ogrenci = 13,
         [Description("Sınav Kaydı")]
-        SinavKayit = 13
+        SinavKayit = 14,
+        [Description("Salon-Bilgi Kaydı")]
+        SinavSalonBilgiKayit = 15,
+        [Description("Gozetmen-Bilgi Kaydı")]
+        GozetmenBilgiKayit = 16
 
 
     }

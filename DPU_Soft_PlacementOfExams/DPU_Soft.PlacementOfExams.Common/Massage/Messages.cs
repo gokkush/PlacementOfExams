@@ -56,7 +56,10 @@ namespace DPU_Soft.PlacementOfExams.Common.Massage
         {
             UyariMesaji("Lütfen bir kart seçiniz.");
         }
-
+        public static void KartKalmadiHataMesaj()
+        {
+            UyariMesaji("Eklenebilecek Kayıt Kalmadığından Form Açılamadı.");
+        }
         public static DialogResult KapanisMesaj()
         {
             return EvetSeciliEvetHayirIptal("Değişiklikler Kaydedilmesini İstiyor musunuz?", "Çıkış İşlemi");

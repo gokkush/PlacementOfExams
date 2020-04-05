@@ -43,7 +43,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.DersForms
             if (list.Any())
                 EklenebilecekEntityVar = true;
             else
-                Messages.KartSecmemeHataMesaj();
+                Messages.KartKalmadiHataMesaj();
         }
 
     }

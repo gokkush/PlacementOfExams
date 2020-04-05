@@ -47,7 +47,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.DonemForms
             if (list.Any())
                 EklenebilecekEntityVar = true;
             else
-                Messages.KartSecmemeHataMesaj();
+                Messages.KartKalmadiHataMesaj();
             //Tablo.GridControl.DataSource = ((DonemBll)Bll).List(FilterFunctions.Filter<DonemEntity>(AktifKartlariGoster));
         }
 

@@ -17,6 +17,7 @@ namespace DPU_Soft.PlacementOfExams.Model.Entities
         public string Aciklama { get; set; }
 
         public long DersId { get; set; }
+        public string DersAdi { get; set; }
         public SinavTuru SinavTuru { get; set; } = SinavTuru.Vize;
         public long SubeId { get; set; }
         public long DonemId  { get; set; }

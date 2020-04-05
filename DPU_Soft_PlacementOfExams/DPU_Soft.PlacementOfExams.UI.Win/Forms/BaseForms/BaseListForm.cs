@@ -206,7 +206,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             ShowEditFormDefault(result);
         }
 
-        protected void ShowEditFormDefault(long id)
+        protected virtual void ShowEditFormDefault(long id)
         {
             if (id <= 0) return;
             AktifKartlariGoster = true;
