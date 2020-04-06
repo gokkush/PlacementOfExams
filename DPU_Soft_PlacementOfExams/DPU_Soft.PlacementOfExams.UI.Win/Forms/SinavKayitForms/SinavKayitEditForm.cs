@@ -34,7 +34,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
             ShowItems = new BarItem[] { btnExceldenAl };
             txtSinavTuru.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<SinavTuru>());
             btnYazdir.Caption = "Sınav Kayıtları";
-
+            TabloYukle();
         }
 
         public SinavKayitEditForm(params object[] prm):this()
@@ -129,6 +129,12 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
                 if (sender == txtDers)
                     sec.Sec(txtDers);
             }
+
+        }
+        protected override void TabloYukle()
+        {
+            ogrenciListesiTable.OvnerForm = this;
+            ogrenciListesiTable.Yukle();
 
         }
         protected internal override void ButtonEnabledDurumu()

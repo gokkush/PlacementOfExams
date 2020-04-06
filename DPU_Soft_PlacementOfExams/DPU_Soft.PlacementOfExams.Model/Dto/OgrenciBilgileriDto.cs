@@ -2,12 +2,14 @@
 using DPU_Soft.PlacementOfExams.Model.Entities.Base.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DPU_Soft.PlacementOfExams.Model.Dto
 {
+    [NotMapped]
     public class OgrenciBilgileriL:OgrenciBilgileri, IBaseHareketEntity
     {
 

@@ -76,6 +76,7 @@
             this.tablo.OptionsNavigation.EnterMoveNextColumn = true;
             this.tablo.OptionsPrint.AutoWidth = false;
             this.tablo.OptionsPrint.PrintGroupFooter = false;
+            this.tablo.OptionsSelection.MultiSelect = true;
             this.tablo.OptionsView.ColumnAutoWidth = false;
             this.tablo.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
             this.tablo.OptionsView.RowAutoHeight = true;
@@ -98,7 +99,7 @@
             this.colOgrenciNo.StatusBarKisayolAciklama = null;
             this.colOgrenciNo.Visible = true;
             this.colOgrenciNo.VisibleIndex = 0;
-            this.colOgrenciNo.Width = 108;
+            this.colOgrenciNo.Width = 99;
             // 
             // colOgrenciAdi
             // 
@@ -111,7 +112,7 @@
             this.colOgrenciAdi.StatusBarKisayolAciklama = null;
             this.colOgrenciAdi.Visible = true;
             this.colOgrenciAdi.VisibleIndex = 1;
-            this.colOgrenciAdi.Width = 124;
+            this.colOgrenciAdi.Width = 131;
             // 
             // colOgrenciBolum
             // 
@@ -124,7 +125,7 @@
             this.colOgrenciBolum.StatusBarKisayolAciklama = null;
             this.colOgrenciBolum.Visible = true;
             this.colOgrenciBolum.VisibleIndex = 2;
-            this.colOgrenciBolum.Width = 188;
+            this.colOgrenciBolum.Width = 183;
             // 
             // colOgrenciDers
             // 
@@ -137,7 +138,7 @@
             this.colOgrenciDers.StatusBarKisayolAciklama = null;
             this.colOgrenciDers.Visible = true;
             this.colOgrenciDers.VisibleIndex = 3;
-            this.colOgrenciDers.Width = 197;
+            this.colOgrenciDers.Width = 186;
             // 
             // OgrenciListesiTable
             // 

@@ -3,12 +3,8 @@ using DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base;
 using DPU_Soft.BLL.General;
 using DPU_Soft.PlacementOfExams.UI.Win.Functions;
 using DPU_Soft.PlacementOfExams.Model.Dto;
-using System.IO;
-using Microsoft.Office.Interop.Excel;
-using ExcelDataReader;
-using System.Data.OleDb;
-using System.Globalization;
-using System.Data;
+using DevExpress.XtraSplashScreen;
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.Genelforms;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTable
 {
@@ -29,69 +25,65 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTabl
 
         protected override void HareketEkle()
         {
+            Cursor.Current = Cursors.WaitCursor;
+            var source = tablo.DataController.ListSource;
             OpenFileDialog opn = new OpenFileDialog();
-            opn.Title = "Lütfen Dosya Seçiniz";
-            opn.Filter = " (*.xlsx)|*.xlsx";
+            Microsoft.Office.Interop.Excel.Application _xlsUygulama;
+            Microsoft.Office.Interop.Excel.Workbook _xlsKitap;
+            Microsoft.Office.Interop.Excel.Worksheet _xlsSayfa;
+            Microsoft.Office.Interop.Excel.Range _xlsHucre;
+            int xlsRow;
+            opn.Title = "Lütfen Öğrenci Listesinin Bulunduğu Excel Dosyasını Seçiniz!";
+            opn.Filter = "Excel Dosyaları | *.xls ;*.xlsx"; //"(*.xlsx) | *.xlsx";//
             opn.FilterIndex = 1;
             opn.Multiselect = false;
-            opn.RestoreDirectory=true;
+            opn.RestoreDirectory = true;
             if (opn.ShowDialog() == DialogResult.OK)
             {
-                string filePath = opn.FileName;
-                FileStream stream = File.Open(filePath, FileMode.Open, FileAccess.Read);
-                IExcelDataReader excelReader;
-                System.Windows.Forms.ListBox lst = new System.Windows.Forms.ListBox();
-                //Gönderdiğim dosya xls'mi xlsx formatında mı kontrol ediliyor.
-                if (Path.GetExtension(filePath).ToUpper() == ".XLS")
+                var splashForm = new SplashScreenManager(OvnerForm, typeof(BekleForm), true, true);
+                splashForm.ShowWaitForm();
+                splashForm.SetWaitFormCaption("Lütfen Bekleyiniz!");
+                splashForm.SetWaitFormDescription("Excell ortamından\nÖğrenci Bilgileri Alınıyor...");
+
+                string _dosyaAdi = opn.FileName;
+                _xlsUygulama = new Microsoft.Office.Interop.Excel.Application();
+                _xlsKitap = _xlsUygulama.Workbooks.Open(_dosyaAdi);
+                _xlsSayfa = _xlsKitap.Worksheets["Page 1"];
+                _xlsHucre = _xlsSayfa.UsedRange;
+                int i=0;
+                for (xlsRow = 2; xlsRow < _xlsHucre.Rows.Count; xlsRow++)
                 {
-                    excelReader = ExcelReaderFactory.CreateBinaryReader(stream);
+                    i++;
+                    var row = new OgrenciBilgileriL
+                    {
+                        SinavKayitId = OvnerForm.Id,
+                        OgrenciAdi = _xlsHucre.Cells[xlsRow, 4].Text.ToString(),
+                        OgrenciNo = _xlsHucre.Cells[xlsRow, 2].Text.ToString(),
+                        OgrenciBolum = _xlsHucre.Cells[xlsRow, 5].Text.ToString(),
+                        OgrenciDers = _xlsHucre.Cells[xlsRow, 7].Text.ToString(),
+                        Insert = true
+                        };
+                    source.Add(row);
                 }
-                else
-                {
-                    excelReader = ExcelReaderFactory.CreateOpenXmlReader(stream);
-                }
-                while (excelReader.Read())
-                {
-                    lst.Items.Add(excelReader.GetString(1));
-                }
+                _xlsKitap.Close();
+                _xlsUygulama.Quit();
+                splashForm.CloseWaitForm();
 
-                excelReader.Close();
-                foreach (var item in lst.Items)
-                {
-                    MessageBox.Show(item.ToString());
-                }
-            }
-
-            //var source = tablo.DataController.ListSource;
-            //ListeDisiTutulacakKayitlar = source.Cast<SinavSalonBilgileriL>().Where(x => !x.Delete).Select(x => x.SinavSalonu_Id).ToList();
-
-            //var entities = ShowListforms<SinavSalonuListForm>.ShowDialogListForm(KartTuru.SinavSalonBilgiKayit, ListeDisiTutulacakKayitlar, true, false).EntityListConvert<SinavSalonuEntity>();
-            //if (entities == null) return;
-
-            //foreach (var entity in entities)
-            //{
-            //    var row = new SinavSalonBilgileriL
-            //    {
-            //        SalonAdi = entity.SalonAdi,
-            //        SinavKayitId = OvnerForm.Id,
-            //        SinavSalonu_Id = entity.Id,
-            //        SalonKapasitesi = entity.SalonKapasitesi,
-            //        GozetmenSayisi = entity.GozetmenSayisi,
-
-            //        Insert = true
-            //    };
-
-            //    source.Add(row);
-            //}
-            tablo.Focus();
+                tablo.Focus();
                 tablo.RefreshDataSource();
                 tablo.FocusedRowHandle = tablo.DataRowCount - 1;
                 tablo.FocusedColumn = colOgrenciAdi;
-
+                Cursor.Current = Cursors.Default;
                 ButonenableDurumu(true);
+
+
             }
 
+
+            
         }
+
+    }
 
     
 }
