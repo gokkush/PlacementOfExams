@@ -32,6 +32,9 @@
             this.tablo = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridView();
             this.colGozetmenAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colGorevlendirilmeSayisi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
+            this.colSinavSalonId = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
+            this.colSinavSalonAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
+            this.colId = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
@@ -63,9 +66,19 @@
             this.tablo.Appearance.ViewCaption.Options.UseForeColor = true;
             this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colGozetmenAdi,
-            this.colGorevlendirilmeSayisi});
+            this.colGorevlendirilmeSayisi,
+            this.colSinavSalonId,
+            this.colSinavSalonAdi,
+            this.colId});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
+            this.tablo.OptionsCustomization.AllowFilter = false;
+            this.tablo.OptionsCustomization.AllowSort = false;
+            this.tablo.OptionsFilter.AllowColumnMRUFilterList = false;
+            this.tablo.OptionsFilter.AllowFilterEditor = false;
+            this.tablo.OptionsFilter.AllowFilterIncrementalSearch = false;
+            this.tablo.OptionsFilter.AllowMRUFilterList = false;
+            this.tablo.OptionsFilter.AllowMultiSelectInCheckedFilterPopup = false;
             this.tablo.OptionsMenu.EnableColumnMenu = false;
             this.tablo.OptionsMenu.EnableFooterMenu = false;
             this.tablo.OptionsMenu.EnableGroupPanelMenu = false;
@@ -87,25 +100,69 @@
             this.colGozetmenAdi.FieldName = "GozetmenAdi";
             this.colGozetmenAdi.Name = "colGozetmenAdi";
             this.colGozetmenAdi.OptionsColumn.AllowEdit = false;
+            this.colGozetmenAdi.OptionsColumn.AllowMove = false;
             this.colGozetmenAdi.StatusBarAciklama = null;
             this.colGozetmenAdi.StatusBarKisayol = null;
             this.colGozetmenAdi.StatusBarKisayolAciklama = null;
             this.colGozetmenAdi.Visible = true;
             this.colGozetmenAdi.VisibleIndex = 0;
-            this.colGozetmenAdi.Width = 284;
+            this.colGozetmenAdi.Width = 692;
             // 
             // colGorevlendirilmeSayisi
             // 
             this.colGorevlendirilmeSayisi.Caption = "Görevlendirilme Sayısı";
-            this.colGorevlendirilmeSayisi.FieldName = "GorevlendirilmeSayisi";
+            this.colGorevlendirilmeSayisi.FieldName = "GorevlendirmeSayisi";
             this.colGorevlendirilmeSayisi.Name = "colGorevlendirilmeSayisi";
             this.colGorevlendirilmeSayisi.OptionsColumn.AllowEdit = false;
+            this.colGorevlendirilmeSayisi.OptionsColumn.AllowMove = false;
             this.colGorevlendirilmeSayisi.StatusBarAciklama = null;
             this.colGorevlendirilmeSayisi.StatusBarKisayol = null;
             this.colGorevlendirilmeSayisi.StatusBarKisayolAciklama = null;
             this.colGorevlendirilmeSayisi.Visible = true;
-            this.colGorevlendirilmeSayisi.VisibleIndex = 1;
+            this.colGorevlendirilmeSayisi.VisibleIndex = 2;
             this.colGorevlendirilmeSayisi.Width = 139;
+            // 
+            // colSinavSalonId
+            // 
+            this.colSinavSalonId.Caption = "SinavSalonId";
+            this.colSinavSalonId.FieldName = "SinavSalonId";
+            this.colSinavSalonId.Name = "colSinavSalonId";
+            this.colSinavSalonId.OptionsColumn.AllowFocus = false;
+            this.colSinavSalonId.OptionsColumn.AllowMove = false;
+            this.colSinavSalonId.OptionsFilter.AllowAutoFilter = false;
+            this.colSinavSalonId.OptionsFilter.AllowFilter = false;
+            this.colSinavSalonId.OptionsFilter.FilterBySortField = DevExpress.Utils.DefaultBoolean.False;
+            this.colSinavSalonId.OptionsFilter.ImmediateUpdateAutoFilter = false;
+            this.colSinavSalonId.StatusBarAciklama = null;
+            this.colSinavSalonId.StatusBarKisayol = null;
+            this.colSinavSalonId.StatusBarKisayolAciklama = null;
+            // 
+            // colSinavSalonAdi
+            // 
+            this.colSinavSalonAdi.Caption = "Görevlendirildiği Salon";
+            this.colSinavSalonAdi.FieldName = "SinavSalonAdi";
+            this.colSinavSalonAdi.Name = "colSinavSalonAdi";
+            this.colSinavSalonAdi.OptionsColumn.AllowEdit = false;
+            this.colSinavSalonAdi.OptionsColumn.AllowMove = false;
+            this.colSinavSalonAdi.StatusBarAciklama = null;
+            this.colSinavSalonAdi.StatusBarKisayol = null;
+            this.colSinavSalonAdi.StatusBarKisayolAciklama = null;
+            this.colSinavSalonAdi.Visible = true;
+            this.colSinavSalonAdi.VisibleIndex = 1;
+            this.colSinavSalonAdi.Width = 264;
+            // 
+            // colId
+            // 
+            this.colId.Caption = "id";
+            this.colId.FieldName = "id";
+            this.colId.Name = "colId";
+            this.colId.OptionsColumn.AllowEdit = false;
+            this.colId.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.False;
+            this.colId.StatusBarAciklama = null;
+            this.colId.StatusBarKisayol = null;
+            this.colId.StatusBarKisayolAciklama = null;
+            this.colId.Visible = true;
+            this.colId.VisibleIndex = 3;
             // 
             // GozetmenBilgileriTable
             // 
@@ -124,10 +181,12 @@
         }
 
         #endregion
-
-        private Controls.Grid.DpuGridControl grid;
         private Controls.Grid.DpuGridView tablo;
         private Controls.Grid.DpuGridColumn colGozetmenAdi;
         private Controls.Grid.DpuGridColumn colGorevlendirilmeSayisi;
+        private Controls.Grid.DpuGridColumn colSinavSalonId;
+        public Controls.Grid.DpuGridControl grid;
+        private Controls.Grid.DpuGridColumn colSinavSalonAdi;
+        private Controls.Grid.DpuGridColumn colId;
     }
 }

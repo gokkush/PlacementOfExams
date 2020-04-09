@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 namespace DPU_Soft.PlacementOfExams.Model.Dto
 {
     [NotMapped]
+
     public class GozetmenL : BaseEntity
     {
         public string GozetmenAdi { get; set; }

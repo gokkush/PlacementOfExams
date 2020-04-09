@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 namespace DPU_Soft.PlacementOfExams.Model.Dto
 {
     [NotMapped]
+
     public class GozetmenBilgileriL:GozetmenBilgileri, IBaseHareketEntity
     {
-
         public bool Insert { get; set; }
         public bool Update { get; set; }
         public bool Delete { get; set; }

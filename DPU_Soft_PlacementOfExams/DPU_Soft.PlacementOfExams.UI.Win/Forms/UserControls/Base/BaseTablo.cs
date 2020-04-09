@@ -124,6 +124,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base
         {
             TablevalueChanged = durum;
             OvnerForm.ButtonEnabledDurumu();
+            
         }
 
         protected internal bool Kaydet()
@@ -164,6 +165,10 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base
                 HareketSil();
             else if (e.Item == btnHareketDuzenle)
                 OpenEntity();
+            else if (e.Item==btnTabloYenile)
+            {
+                Listele();
+            }
             Cursor.Current = Cursors.Default;
         }
 
@@ -188,7 +193,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base
             var entity = Tablo.GetRow<IBaseHareketEntity>();
             if (!entity.Insert)
                 entity.Update = true;
-
             ButonenableDurumu(true);
         }
         protected virtual void Tablo_MouseUp(object sender, MouseEventArgs e)
@@ -208,7 +212,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base
            OvnerForm.statusBarAciklama.Caption = ((IStatusBarAciklama)sender).StatusBarAciklama;
            OvnerForm.statusBarKisayol.Caption = ((IStatusBarKisayol)sender).StatusBarKisayol;
            OvnerForm.statusBarKisayolAciklama.Caption = ((IStatusBarKisayol)sender).StatusBarKisayolAciklama;
-
         }
 
         private void Tablo_LostFocus(object sender, EventArgs e)

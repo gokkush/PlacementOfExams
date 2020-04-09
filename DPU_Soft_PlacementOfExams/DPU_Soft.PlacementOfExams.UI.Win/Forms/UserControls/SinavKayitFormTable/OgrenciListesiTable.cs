@@ -75,15 +75,10 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTabl
                 tablo.FocusedColumn = colOgrenciAdi;
                 Cursor.Current = Cursors.Default;
                 ButonenableDurumu(true);
-
-
-            }
-
-
-            
+            }  
         }
 
-    }
 
-    
+    }
+ 
 }

@@ -23,9 +23,12 @@ namespace DPU_Soft.BLL.General
                 GozetmenAdi = x.GozetmenAdi,
                 GozetmenId = x.GozetmenId,
                 GorevlendirmeSayisi = x.GorevlendirmeSayisi,
+                SinavSalonId=x.SinavSalonId,
                 SinavKayitId = x.SinavKayitId,
+                SinavSalonAdi=x.SinavSalon.SalonAdi,
                 durum = x.durum
-            }).ToList();
+            }).OrderBy(x=>x.GozetmenAdi).ToList();
         }
+
     }
 }

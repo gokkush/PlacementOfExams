@@ -23,7 +23,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavSalonForms
 
         public SinavSalonuListForm(params object[] prm) : this()
         {
-            _filter = x => !ListeDisiTutulacakKayitlar.Contains(x.Id)&&AktifKartlariGoster;
+            _filter = x => !ListeDisiTutulacakKayitlar.Contains(x.Id)&&AktifKartlariGoster; 
         }
 
         protected override void DegiskenleriDoldur()
@@ -43,7 +43,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavSalonForms
                 EklenebilecekEntityVar = true;
             else
                 Messages.KartKalmadiHataMesaj();
-            Tablo.GridControl.DataSource = ((SinavSalonuBll)Bll).List(FilterFunctions.Filter<SinavSalonuEntity>(AktifKartlariGoster));
+           // Tablo.GridControl.DataSource = ((SinavSalonuBll)Bll).List(FilterFunctions.Filter<SinavSalonuEntity>(AktifKartlariGoster));
 
         }
 

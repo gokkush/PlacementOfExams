@@ -34,6 +34,7 @@
             this.btnHareketEkle = new DevExpress.XtraBars.BarButtonItem();
             this.btnHareketSil = new DevExpress.XtraBars.BarButtonItem();
             this.btnHareketDuzenle = new DevExpress.XtraBars.BarButtonItem();
+            this.btnTabloYenile = new DevExpress.XtraBars.BarButtonItem();
             this.barManager = new DevExpress.XtraBars.BarManager(this.components);
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -56,7 +57,8 @@
             this.popupMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btnHareketEkle),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnHareketSil),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnHareketDuzenle)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnHareketDuzenle),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnTabloYenile)});
             this.popupMenu.Manager = this.barManager;
             this.popupMenu.Name = "popupMenu";
             // 
@@ -83,6 +85,14 @@
             this.btnHareketDuzenle.Name = "btnHareketDuzenle";
             this.btnHareketDuzenle.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             // 
+            // btnTabloYenile
+            // 
+            this.btnTabloYenile.Caption = "Verileri Yenile";
+            this.btnTabloYenile.Id = 4;
+            this.btnTabloYenile.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.recurrence_16x16;
+            this.btnTabloYenile.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.recurrence_32x32;
+            this.btnTabloYenile.Name = "btnTabloYenile";
+            // 
             // barManager
             // 
             this.barManager.DockControls.Add(this.barDockControlTop);
@@ -93,8 +103,9 @@
             this.barManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.btnHareketEkle,
             this.btnHareketSil,
-            this.btnHareketDuzenle});
-            this.barManager.MaxItemId = 4;
+            this.btnHareketDuzenle,
+            this.btnTabloYenile});
+            this.barManager.MaxItemId = 5;
             // 
             // barDockControlTop
             // 
@@ -158,5 +169,6 @@
         protected internal DevExpress.XtraBars.BarButtonItem btnHareketEkle;
         protected internal DevExpress.XtraBars.BarButtonItem btnHareketSil;
         protected DevExpress.XtraBars.BarButtonItem btnHareketDuzenle;
+        public DevExpress.XtraBars.BarButtonItem btnTabloYenile;
     }
 }

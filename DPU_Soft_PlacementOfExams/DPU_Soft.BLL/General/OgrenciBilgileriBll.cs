@@ -21,6 +21,7 @@ namespace DPU_Soft.BLL.General
                 OgrenciAdi = x.OgrenciAdi,
                 OgrenciNo = x.OgrenciNo,
                 OgrenciBolum = x.OgrenciBolum,
+                OgrenciDers=x.OgrenciDers,
                 SinavSalonBilgileriId = x.SinavSalonBilgileriId,
                 SinavKayitId = x.SinavKayitId,
                 durum = x.durum

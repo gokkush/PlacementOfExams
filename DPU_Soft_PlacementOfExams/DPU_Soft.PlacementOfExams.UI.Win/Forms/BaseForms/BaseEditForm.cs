@@ -15,6 +15,9 @@ using DevExpress.XtraPrinting.Native;
 using DevExpress.Utils.Extensions;
 using DPU_Soft.PlacementOfExams.Model.Entities.Base.Interfaces;
 using DevExpress.XtraBars.Navigation;
+using System.Collections.Generic;
+using DPU_Soft.PlacementOfExams.Model.Dto;
+using System.ComponentModel;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
 {
@@ -37,6 +40,8 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
         protected BarItem[] ShowItems;
         protected BarItem[] HideItems;
         protected bool FarkliSubeIslemi;
+
+        public BindingList<GozetmenBilgileriL> Gozetmenler;
         public BaseEditForm()
         {
             InitializeComponent();
@@ -70,8 +75,10 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
                 item.ItemClick += Buttom_ItemClick;
             }
 
-            //form Events
-            LocationChanged += BaseEditForm_LocationChanged;
+
+
+                //form Events
+                LocationChanged += BaseEditForm_LocationChanged;
             SizeChanged += BaseEditForm_SizeChanged;
             Load += BaseEditForm_Load;
             FormClosing += BaseEditForm_FormClosing;
@@ -119,6 +126,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
                     foreach (Control ctrl in layout.Controls)
                         ControlEvents(ctrl);
         }
+
 
         protected virtual void Control_SelectedPageChanged(object sender, SelectedPageChangedEventArgs e)
         {
@@ -296,10 +304,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             {
                 SifreSifirla();
             }
-            else if (e.Item == btnExceldenAl)
-            {
-                ExcelAl();
-            }
             else if (e.Item==btnGiris)
             {
                 Giris();
@@ -454,5 +458,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             GeneralFunctions.ButtonEnabledDurumu(btnYeni,btnKaydet,btnGeriAl,btnSil,OldEntity,CurrentEntity);
             
         }
+
+
     }
 }

@@ -1,6 +1,9 @@
-﻿using DPU_Soft.PlacementOfExams.Common.Enums;
+﻿using DPU_Soft.BLL.Functions;
+using DPU_Soft.PlacementOfExams.Common.Enums;
+using DPU_Soft.PlacementOfExams.Model.Dto;
 using DPU_Soft.PlacementOfExams.Model.Entities;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.DersForms;
+using DPU_Soft.PlacementOfExams.UI.Win.Forms.GozetmenForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.IlceForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.IlForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.UniversiteForms;

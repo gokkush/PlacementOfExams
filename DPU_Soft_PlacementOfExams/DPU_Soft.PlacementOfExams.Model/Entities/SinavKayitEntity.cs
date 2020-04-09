@@ -21,6 +21,7 @@ namespace DPU_Soft.PlacementOfExams.Model.Entities
         public SinavTuru SinavTuru { get; set; } = SinavTuru.Vize;
         public long SubeId { get; set; }
         public long DonemId  { get; set; }
+        public bool ListeOlustu { get; set; }
 
         public SubeEntity Sube { get; set; }
         public DonemEntity Donem { get; set; }

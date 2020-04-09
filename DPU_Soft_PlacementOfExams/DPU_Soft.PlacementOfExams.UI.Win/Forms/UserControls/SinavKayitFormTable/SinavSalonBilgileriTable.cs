@@ -9,6 +9,7 @@ using DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavSalonForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base;
 using DPU_Soft.PlacementOfExams.UI.Win.Functions;
 using DPU_Soft.PlacementOfExams.UI.Win.Show;
+using System;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -47,9 +48,9 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTabl
                     SalonKapasitesi=entity.SalonKapasitesi,
                     GozetmenSayisi=entity.GozetmenSayisi,
                     
+                    
                     Insert = true
                 };
-
                 source.Add(row);
             }
             tablo.Focus();

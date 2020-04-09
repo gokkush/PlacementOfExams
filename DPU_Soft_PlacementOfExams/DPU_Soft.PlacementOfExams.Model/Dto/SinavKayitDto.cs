@@ -8,7 +8,7 @@ namespace DPU_Soft.PlacementOfExams.Model.Dto
     [NotMapped]
     public class SinavKayitS:SinavKayitEntity
     {
-        public string DersAdi { get; set; }
+
         public string SubeAdi { get; set; }
         public string DonemAdi { get; set; }
     }

@@ -1,4 +1,6 @@
-﻿using DPU_Soft.BLL.Functions;
+﻿using DevExpress.Data;
+using DevExpress.XtraGrid.Views.Grid;
+using DPU_Soft.BLL.Functions;
 using DPU_Soft.BLL.General;
 using DPU_Soft.PlacementOfExams.Common.Enums;
 using DPU_Soft.PlacementOfExams.Common.Massage;
@@ -10,6 +12,7 @@ using DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavSalonForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base;
 using DPU_Soft.PlacementOfExams.UI.Win.Functions;
 using DPU_Soft.PlacementOfExams.UI.Win.Show;
+using System;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -25,9 +28,11 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTabl
             EventsLoad();
         }
 
+
         protected override void Listele()
         {
             tablo.GridControl.DataSource = ((GozetmenBilgileriBll)Bll).List(x => x.SinavKayitId == OvnerForm.Id).ToBindingList<GozetmenBilgileriL>();
+            colId.SortOrder = ColumnSortOrder.Ascending;
         }
 
         protected override void HareketEkle()
@@ -43,7 +48,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTabl
                 var row = new GozetmenBilgileriL
                 {
                     GozetmenAdi=entity.GozetmenAdi,
-                    GorevlendirmeSayisi=entity.GorevlendirmeSayisi,
+                    GorevlendirmeSayisi=entity.GorevlendirmeSayisi+1,
                     GozetmenId=entity.Id,
                     SinavKayitId = OvnerForm.Id,
                     Insert = true

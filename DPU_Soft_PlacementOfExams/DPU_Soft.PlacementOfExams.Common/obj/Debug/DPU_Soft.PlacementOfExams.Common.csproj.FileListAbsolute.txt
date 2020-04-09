@@ -45,5 +45,4 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\bin\Debug\ru
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.csproj.CopyComplete
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.pdb
-C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.csprojAssemblyReference.cache
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.Common\obj\Debug\DPU_Soft.PlacementOfExams.Common.csproj.CoreCompileInputs.cache

@@ -33,6 +33,7 @@
             this.colSalonAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colSalonKapasitesi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.GozetmenSayisi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
+            this.colSinavSalonu_Id = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
@@ -65,7 +66,8 @@
             this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colSalonAdi,
             this.colSalonKapasitesi,
-            this.GozetmenSayisi});
+            this.GozetmenSayisi,
+            this.colSinavSalonu_Id});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
             this.tablo.OptionsMenu.EnableColumnMenu = false;
@@ -74,8 +76,10 @@
             this.tablo.OptionsNavigation.EnterMoveNextColumn = true;
             this.tablo.OptionsPrint.AutoWidth = false;
             this.tablo.OptionsPrint.PrintGroupFooter = false;
+            this.tablo.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
             this.tablo.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
             this.tablo.OptionsView.RowAutoHeight = true;
+            this.tablo.OptionsView.ShowFooter = true;
             this.tablo.OptionsView.ShowGroupPanel = false;
             this.tablo.OptionsView.ShowViewCaption = true;
             this.tablo.StatusBarAciklama = null;
@@ -94,7 +98,7 @@
             this.colSalonAdi.StatusBarKisayolAciklama = null;
             this.colSalonAdi.Visible = true;
             this.colSalonAdi.VisibleIndex = 0;
-            this.colSalonAdi.Width = 212;
+            this.colSalonAdi.Width = 813;
             // 
             // colSalonKapasitesi
             // 
@@ -104,9 +108,11 @@
             this.colSalonKapasitesi.StatusBarAciklama = null;
             this.colSalonKapasitesi.StatusBarKisayol = null;
             this.colSalonKapasitesi.StatusBarKisayolAciklama = null;
+            this.colSalonKapasitesi.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "SalonKapasitesi", "{0:0}")});
             this.colSalonKapasitesi.Visible = true;
             this.colSalonKapasitesi.VisibleIndex = 1;
-            this.colSalonKapasitesi.Width = 89;
+            this.colSalonKapasitesi.Width = 78;
             // 
             // GozetmenSayisi
             // 
@@ -116,9 +122,21 @@
             this.GozetmenSayisi.StatusBarAciklama = null;
             this.GozetmenSayisi.StatusBarKisayol = null;
             this.GozetmenSayisi.StatusBarKisayolAciklama = null;
+            this.GozetmenSayisi.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "GozetmenSayisi", "{0:0}")});
             this.GozetmenSayisi.Visible = true;
             this.GozetmenSayisi.VisibleIndex = 2;
-            this.GozetmenSayisi.Width = 97;
+            this.GozetmenSayisi.Width = 65;
+            // 
+            // colSinavSalonu_Id
+            // 
+            this.colSinavSalonu_Id.Caption = "Salon Id";
+            this.colSinavSalonu_Id.FieldName = "SinavSalonu_Id";
+            this.colSinavSalonu_Id.Name = "colSinavSalonu_Id";
+            this.colSinavSalonu_Id.OptionsColumn.AllowEdit = false;
+            this.colSinavSalonu_Id.StatusBarAciklama = null;
+            this.colSinavSalonu_Id.StatusBarKisayol = null;
+            this.colSinavSalonu_Id.StatusBarKisayolAciklama = null;
             // 
             // SinavSalonBilgileriTable
             // 
@@ -143,5 +161,6 @@
         private Controls.Grid.DpuGridColumn colSalonAdi;
         private Controls.Grid.DpuGridColumn colSalonKapasitesi;
         private Controls.Grid.DpuGridColumn GozetmenSayisi;
+        private Controls.Grid.DpuGridColumn colSinavSalonu_Id;
     }
 }

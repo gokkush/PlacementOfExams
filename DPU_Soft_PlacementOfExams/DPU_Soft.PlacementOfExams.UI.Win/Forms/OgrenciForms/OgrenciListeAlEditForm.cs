@@ -18,7 +18,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.OgrenciForms
             DataLayoutControl = dpuDataLayoutControl;
             Bll = new OgrenciBll(dpuDataLayoutControl);
             BaseKartTuru = KartTuru.Ogrenci;
-            ShowItems = new DevExpress.XtraBars.BarItem[] {btnExceldenAl };
             HideItems = new DevExpress.XtraBars.BarItem[] { btnYeni,btnSil,btnGeriAl };
             EventsLoad();
         }

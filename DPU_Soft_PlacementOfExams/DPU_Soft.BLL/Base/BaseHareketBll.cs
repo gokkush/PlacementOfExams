@@ -15,6 +15,12 @@ namespace DPU_Soft.BLL.Base
 
         private IUnitOfWork<T> _uow;
 
+        protected TResult Basesingle<TResult>(Expression<Func<T, bool>> filter, Expression<Func<T, TResult>> selector)
+        {
+            GeneralFunctions.CreateUnitOfWork<T, TContext>(ref _uow);
+            return _uow.Rep.Find(filter, selector);
+        }
+
         protected TResult Single<TResult>(Expression<Func<T, bool>> filter, Expression<Func<T, TResult>> selector)
         {
             GeneralFunctions.CreateUnitOfWork<T, TContext>(ref _uow);

@@ -25,7 +25,7 @@ namespace DPU_Soft.BLL.General
                 SalonKapasitesi=x.SalonKapasitesi,
                 GozetmenSayisi=x.GozetmenSayisi,
                 SinavKayitId=x.SinavKayitId,
-                SinavSalonu_Id=x.SinavSalonu_Id,
+                SinavSalonu_Id=x.SinavSalonu_Id, 
             }).ToList();
         }
     }

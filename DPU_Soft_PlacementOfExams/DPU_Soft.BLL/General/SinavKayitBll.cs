@@ -38,6 +38,8 @@ namespace DPU_Soft.BLL.General
                 Aciklama=x.Aciklama,
                 SubeAdi=x.Sube.SubeAdi,
                 DonemAdi=x.Donem.DonemAdi,
+                SinavTuru=x.SinavTuru,
+                ListeOlustu=x.ListeOlustu,
                 durum=x.durum,
                 
 
