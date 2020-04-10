@@ -14,16 +14,15 @@ using DevExpress.XtraBars.Navigation;
 using System.Drawing;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
 {
     public partial class SinavKayitEditForm : BaseEditForm
     {
         private string _sinavAdi;
-        private List<SinavSalonBilgileriL> _sinavSalonlari;
-        private List<GozetmenBilgileriL> _gozetmenler;
         private bool _listeOlustu;
-        private bool _gozetmenGorevlendirilmesiTamamlandi;
+
 
         public SinavKayitEditForm()
         {
@@ -37,8 +36,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
             HideItems = new BarItem[] {btnYeni,btnSil };
             txtSinavTuru.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<SinavTuru>());
             btnYazdir.Caption = "Sınav Kayıtları";
-            _sinavSalonlari = new List<SinavSalonBilgileriL>();
-            _gozetmenler = new List<GozetmenBilgileriL>();
+
             foreach (Control control in Controls)
             {
                     switch (control)
@@ -280,16 +278,59 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
         {
 
         }
-        private bool GozetmenGorevlendirilmesiTamamlandi()
-        {
-            var source = gozetmenBilgileriTable.Tablo.DataController.ListSource;
-            var entities = source.Cast<GozetmenBilgileriL>().Where(x => !x.Delete&&x.SinavSalonId==null).ToList();
-            return _gozetmenGorevlendirilmesiTamamlandi = entities.Count > 0;
-        }
-
+        
         private void ListeDoldur()
         {
-            if (!_listeOlustu)
+            var GozetmenSource = gozetmenBilgileriTable.Tablo.DataController.ListSource;
+            var GozetmenEntities = GozetmenSource.Cast<GozetmenBilgileriL>().Where(x => !x.Delete&& x.SinavSalonId==null).OrderBy(x => x.id).ToList();
+            if (GozetmenEntities.Count>0)
+            {
+                txtGozetmenListesi.Properties.DataSource = GozetmenEntities;
+                txtGozetmenListesi.Properties.ValueMember = "id";
+                txtGozetmenListesi.Properties.DisplayMember = "GozetmenAdi";
+                txtGozetmenListesi.ItemIndex = 0;
+            }
+            else
+            {
+                txtGozetmenListesi.Properties.DataSource = null;
+                btnSalonaGozetmenAta.Enabled = false;
+            }
+                
+
+            var SalonSource = sinavSalonBilgileriTable.Tablo.DataController.ListSource;
+            var SalonEntities = SalonSource.Cast<SinavSalonBilgileriL>().Where(x => !x.Delete).ToList();
+            if (SalonEntities!=null)
+            {
+            txtSalonListesi.Properties.DataSource = SalonEntities;
+            txtSalonListesi.Properties.ValueMember = "id";
+            txtSalonListesi.Properties.DisplayMember = "SalonAdi";
+            txtSalonListesi.ItemIndex = 0;
+            }
+            else
+            {
+                txtSalonListesi.Properties.DataSource = null;
+                btnSalonaGozetmenAta.Enabled = false;
+            }
+            if (lblGozetmenDurum.Text == "Geçerli" && lblOgrenciDurum.Text == "Geçerli" && txtGozetmenListesi.Properties.DataSource == null)
+                btnOgrenciAta.Enabled = true;
+            else
+                btnOgrenciAta.Enabled = false;
+        }
+        /*cmbGozetmen.Properties.Items.Clear();
+        for (int i = 0; i < Gozetmenler.Count; i++)
+        { 
+
+            cmbGozetmen.Properties.Items.Add(Gozetmenler[i].GozetmenAdi);
+        }
+        cmbSalon.Properties.Items.Clear();
+        for (int i = 0; i < SinavSalonlari.Count; i++)
+        {
+            cmbSalon.Properties.Items.Add(SinavSalonlari[i].SalonAdi);
+        }*/
+
+
+
+        /*    if (!_listeOlustu)
             {
                 var source = sinavSalonBilgileriTable.Tablo.DataController.ListSource;
                 var entities = source.Cast<SinavSalonBilgileriL>().Where(x => !x.Delete).ToList();
@@ -364,7 +405,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
                     cmbGozetmen.Properties.Items.Add(_gozetmenler[i].GozetmenAdi);
                 }
             }
-        }
+        }*/
 
         protected override void Control_SelectedPageChanged(object sender, SelectedPageChangedEventArgs e)
         {
@@ -375,11 +416,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
             else if (e.Page == pageSalonOlustur)
             {
                 ListeDoldur();
-                if (!GozetmenGorevlendirilmesiTamamlandi())
-                {
-                    btnOgrenciAta.Enabled = true;
-                }
-
             }
             else if (e.Page==pageGozetmen)
             {
@@ -439,16 +475,24 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
 
         private void GozetmeneSalonAta()
         {
+            var gozetmenEntity = gozetmenBilgileriTable.Tablo.DataController.ListSource.Cast<GozetmenBilgileriL>().FirstOrDefault(x => !x.Delete && x.GozetmenId == (long)txtGozetmenListesi.GetColumnValue("GozetmenId"));
+            gozetmenEntity.SinavSalonId = (long)txtSalonListesi.GetColumnValue("SinavSalonu_Id");
+            gozetmenEntity.Update = true;
+            gozetmenBilgileriTable.Kaydet();
+            ListeDoldur();
+            /*
             gozetmenBilgileriTable.Tablo.FocusedRowHandle = cmbGozetmen.SelectedIndex;
-            gozetmenBilgileriTable.Tablo.SetRowCellValue(cmbGozetmen.SelectedIndex, gozetmenBilgileriTable.Tablo.Columns[2], (long)_sinavSalonlari[cmbSalon.SelectedIndex].SinavSalonu_Id);
+            gozetmenBilgileriTable.Tablo.SetRowCellValue(cmbGozetmen.SelectedIndex, gozetmenBilgileriTable.Tablo.Columns[2], (long)SinavSalonlari[cmbSalon.SelectedIndex].SinavSalonu_Id);
+            //gozetmenBilgileriTable.Tablo.SetRowCellValue(cmbGozetmen.SelectedIndex, gozetmenBilgileriTable.Tablo.Columns[2], (long)SinavSalonlari[cmbSalon.SelectedIndex].SinavSalonu_Id);
             //gozetmenBilgileriTable.Tablo.PostEditor(); //save the cell value to a data source 
             //gozetmenBilgileriTable.Tablo.UpdateCurrentRow();
             gozetmenBilgileriTable.Kaydet();
             gozetmenBilgileriTable.btnTabloYenile.PerformClick();
             ButtonEnabledDurumu();
-            cmbGozetmen.Focus();
-            cmbGozetmen.SelectedText = "";
             ListeDoldur();
+            cmbGozetmen.Focus();
+            cmbGozetmen.SelectedText = "";*/
+
 
             /*
             var gozetmenEntity = gozetmenBilgileriTable.Tablo.DataController.ListSource.Cast<GozetmenBilgileriL>().FirstOrDefault(x => !x.Delete && x.GozetmenId == _gozetmenler[cmbGozetmen.SelectedIndex].GozetmenId);

@@ -1,20 +1,17 @@
 ﻿using DevExpress.Data;
-using DevExpress.XtraGrid.Views.Grid;
 using DPU_Soft.BLL.Functions;
 using DPU_Soft.BLL.General;
 using DPU_Soft.PlacementOfExams.Common.Enums;
-using DPU_Soft.PlacementOfExams.Common.Massage;
 using DPU_Soft.PlacementOfExams.Model.Dto;
 using DPU_Soft.PlacementOfExams.Model.Entities;
-using DPU_Soft.PlacementOfExams.Model.Entities.Base.Interfaces;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.GozetmenForms;
-using DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavSalonForms;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base;
 using DPU_Soft.PlacementOfExams.UI.Win.Functions;
 using DPU_Soft.PlacementOfExams.UI.Win.Show;
-using System;
 using System.Linq;
 using System.Windows.Forms;
+using DPU_Soft.PlacementOfExams.Common.Massage;
+
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTable
 {
@@ -53,17 +50,19 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTabl
                     SinavKayitId = OvnerForm.Id,
                     Insert = true
                 };
-
                 source.Add(row);
+                
             }
+            
             tablo.Focus();
             tablo.RefreshDataSource();
             tablo.FocusedRowHandle = tablo.DataRowCount - 1;
             tablo.FocusedColumn = colGozetmenAdi;
 
+            
+            Kaydet();
             ButonenableDurumu(true);
         }
-
 
 
 

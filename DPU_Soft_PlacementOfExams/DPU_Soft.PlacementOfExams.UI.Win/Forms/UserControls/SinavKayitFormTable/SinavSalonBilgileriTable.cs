@@ -1,4 +1,5 @@
-﻿using DPU_Soft.BLL.Functions;
+﻿using DevExpress.Data;
+using DPU_Soft.BLL.Functions;
 using DPU_Soft.BLL.General;
 using DPU_Soft.PlacementOfExams.Common.Enums;
 using DPU_Soft.PlacementOfExams.Common.Massage;
@@ -28,6 +29,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTabl
         protected override void Listele()
         {
             tablo.GridControl.DataSource = ((SinavSalonBilgileriBll)Bll).List(x => x.SinavKayitId == OvnerForm.Id).ToBindingList<SinavSalonBilgileriL>();
+            colId.SortOrder = ColumnSortOrder.Ascending;
         }
 
         protected override void HareketEkle()
@@ -60,6 +62,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTabl
 
             ButonenableDurumu(true);
         }
+
 
 
     }

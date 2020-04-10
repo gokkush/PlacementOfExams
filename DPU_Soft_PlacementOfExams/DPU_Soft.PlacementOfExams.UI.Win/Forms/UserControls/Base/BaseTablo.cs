@@ -153,6 +153,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base
                     Messages.HataMesaji($"{Tablo.ViewCaption} Tablosundaki Hareketler Silinemedi");
                     return false;
                 }
+            Listele();
             ButonenableDurumu(false);
             return true;
         }

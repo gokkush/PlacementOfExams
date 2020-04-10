@@ -22,5 +22,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls
         public string StatusBarKisayol { get; set; } = "F4 : ";
 
         public string StatusBarKisayolAciklama { get; set; }
+
+
     }
 }

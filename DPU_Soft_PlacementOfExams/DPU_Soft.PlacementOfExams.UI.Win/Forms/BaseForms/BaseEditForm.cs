@@ -41,7 +41,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
         protected BarItem[] HideItems;
         protected bool FarkliSubeIslemi;
 
-        public BindingList<GozetmenBilgileriL> Gozetmenler;
         public BaseEditForm()
         {
             InitializeComponent();
