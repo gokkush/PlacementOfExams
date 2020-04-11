@@ -29,13 +29,12 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTabl
         protected override void Listele()
         {
             tablo.GridControl.DataSource = ((SinavSalonBilgileriBll)Bll).List(x => x.SinavKayitId == OvnerForm.Id).ToBindingList<SinavSalonBilgileriL>();
-            colId.SortOrder = ColumnSortOrder.Ascending;
         }
 
         protected override void HareketEkle()
         {
             var source = tablo.DataController.ListSource;
-            ListeDisiTutulacakKayitlar = source.Cast<SinavSalonBilgileriL>().Where(x=> !x.Delete).Select(x => x.SinavSalonu_Id).ToList();
+            ListeDisiTutulacakKayitlar = source.Cast<SinavSalonBilgileriL>().Where(x=> !x.Delete).Select(x => x.SinavSalonuId).ToList();
 
             var entities = ShowListforms<SinavSalonuListForm>.ShowDialogListForm(KartTuru.SinavSalonBilgiKayit,ListeDisiTutulacakKayitlar, true, false).EntityListConvert<SinavSalonuEntity>();
             if (entities == null) return;
@@ -46,7 +45,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTabl
                 {
                     SalonAdi = entity.SalonAdi,
                     SinavKayitId =OvnerForm.Id,
-                    SinavSalonu_Id=entity.Id,
+                    SinavSalonuId=entity.Id,
                     SalonKapasitesi=entity.SalonKapasitesi,
                     GozetmenSayisi=entity.GozetmenSayisi,
                     
@@ -59,7 +58,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTabl
             tablo.RefreshDataSource();
             tablo.FocusedRowHandle = tablo.DataRowCount - 1;
             tablo.FocusedColumn = colSalonAdi;
-
+            Kaydet();
             ButonenableDurumu(true);
         }
 

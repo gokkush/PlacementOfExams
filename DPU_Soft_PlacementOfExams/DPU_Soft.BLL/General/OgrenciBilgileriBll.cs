@@ -22,8 +22,9 @@ namespace DPU_Soft.BLL.General
                 OgrenciNo = x.OgrenciNo,
                 OgrenciBolum = x.OgrenciBolum,
                 OgrenciDers=x.OgrenciDers,
-                SinavSalonBilgileriId = x.SinavSalonBilgileriId,
+                SinavSalonuId = x.SinavSalonuId,
                 SinavKayitId = x.SinavKayitId,
+                SalonAdi=x.SinavSalonu.SalonAdi,
                 durum = x.durum
             }).ToList();
         }

@@ -29,7 +29,6 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTabl
         protected override void Listele()
         {
             tablo.GridControl.DataSource = ((GozetmenBilgileriBll)Bll).List(x => x.SinavKayitId == OvnerForm.Id).ToBindingList<GozetmenBilgileriL>();
-            colId.SortOrder = ColumnSortOrder.Ascending;
         }
 
         protected override void HareketEkle()
@@ -40,17 +39,25 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.SinavKayitFormTabl
             var entities = ShowListforms<GozetmenListForm>.ShowDialogListForm(KartTuru.GozetmenBilgiKayit, ListeDisiTutulacakKayitlar, true, false).EntityListConvert<GozetmenEntity>();
             if (entities == null) return;
 
-            foreach (var entity in entities)
+            try
             {
-                var row = new GozetmenBilgileriL
+                foreach (var entity in entities)
                 {
-                    GozetmenAdi=entity.GozetmenAdi,
-                    GorevlendirmeSayisi=entity.GorevlendirmeSayisi+1,
-                    GozetmenId=entity.Id,
-                    SinavKayitId = OvnerForm.Id,
-                    Insert = true
-                };
-                source.Add(row);
+                    var row = new GozetmenBilgileriL
+                    {
+                        GozetmenAdi = entity.GozetmenAdi,
+                        GorevlendirmeSayisi = entity.GorevlendirmeSayisi + 1,
+                        GozetmenId = entity.Id,
+                        SinavKayitId = OvnerForm.Id,
+                        Insert = true
+                    };
+                    source.Add(row);
+
+                }
+            }
+            catch (System.Exception)
+            {
+
                 
             }
             

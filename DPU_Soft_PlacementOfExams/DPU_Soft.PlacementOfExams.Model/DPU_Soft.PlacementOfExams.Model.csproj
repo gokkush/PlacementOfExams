@@ -60,6 +60,7 @@
     <Compile Include="Dto\OgrenciBilgileriDto.cs" />
     <Compile Include="Dto\OgrenciDto.cs" />
     <Compile Include="Dto\OkulDto.cs" />
+    <Compile Include="Dto\RaporDto.cs" />
     <Compile Include="Dto\SinavKayitDto.cs" />
     <Compile Include="Dto\SinavSalonBilgileriDto.cs" />
     <Compile Include="Dto\SubeDto.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Entities\Base\Interfaces\IBaseHareketEntity.cs" />
     <Compile Include="Entities\GozetmenBilgileri.cs" />
     <Compile Include="Entities\OgrenciBilgileri.cs" />
+    <Compile Include="Entities\RaporEntity.cs" />
     <Compile Include="Entities\SinavSalonBilgileri.cs" />
     <Compile Include="Entities\DersEntity.cs" />
     <Compile Include="Entities\DokumParametreleri.cs" />

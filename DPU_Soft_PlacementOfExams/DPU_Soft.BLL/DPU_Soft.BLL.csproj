@@ -79,6 +79,7 @@
     <Compile Include="General\OgrenciBilgileriBll.cs" />
     <Compile Include="General\OgrenciBll.cs" />
     <Compile Include="General\OkulBll.cs" />
+    <Compile Include="General\RaporBll.cs" />
     <Compile Include="General\SinavKayitBll.cs" />
     <Compile Include="General\SinavSalonBilgileriBll.cs" />
     <Compile Include="General\SinavSalonuBll.cs" />

@@ -20,9 +20,9 @@ namespace DPU_Soft.BLL.General
             return List(filter, x => new GozetmenBilgileriL
             {
                 id = x.id,
-                GozetmenAdi = x.GozetmenAdi,
+                GozetmenAdi = x.Gozetmen.GozetmenAdi,
                 GozetmenId = x.GozetmenId,
-                GorevlendirmeSayisi = x.GorevlendirmeSayisi,
+                GorevlendirmeSayisi = x.Gozetmen.GorevlendirmeSayisi,
                 SinavSalonId=x.SinavSalonId,
                 SinavKayitId = x.SinavKayitId,
                 SinavSalonAdi=x.SinavSalon.SalonAdi,

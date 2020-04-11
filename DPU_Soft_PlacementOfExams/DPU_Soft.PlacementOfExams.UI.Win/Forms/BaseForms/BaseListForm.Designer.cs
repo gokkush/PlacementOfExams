@@ -90,6 +90,11 @@
             DevExpress.Utils.ToolTipItem toolTipItem12 = new DevExpress.Utils.ToolTipItem();
             DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem12 = new DevExpress.Utils.ToolTipSeparatorItem();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem24 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip13 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem25 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem13 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem13 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem26 = new DevExpress.Utils.ToolTipTitleItem();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnYeni = new DevExpress.XtraBars.BarButtonItem();
             this.btnSil = new DevExpress.XtraBars.BarButtonItem();
@@ -130,6 +135,14 @@
             this.barCikisAciklama = new DevExpress.XtraBars.BarStaticItem();
             this.btnAktifPasifKartlar = new DevExpress.XtraBars.BarButtonItem();
             this.btnBagliKartlar = new DevExpress.XtraBars.BarButtonItem();
+            this.btnYeniRapor = new DevExpress.XtraBars.BarSubItem();
+            this.btnBosRapor = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSinavListesi = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSalonListesi = new DevExpress.XtraBars.BarButtonItem();
+            this.btnYoklamaListesi = new DevExpress.XtraBars.BarButtonItem();
+            this.btnTabloYazdir = new DevExpress.XtraBars.BarButtonItem();
+            this.btnTasarimDegistir = new DevExpress.XtraBars.BarButtonItem();
+            this.btnBaskiOnizleme = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
@@ -185,9 +198,17 @@
             this.btnWordDosyasi,
             this.btnPdfDosyasi,
             this.btnTxtDosyasi,
-            this.btnBagliKartlar});
+            this.btnBagliKartlar,
+            this.btnYeniRapor,
+            this.btnBosRapor,
+            this.btnSinavListesi,
+            this.btnSalonListesi,
+            this.btnYoklamaListesi,
+            this.btnTabloYazdir,
+            this.btnTasarimDegistir,
+            this.btnBaskiOnizleme});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 41;
+            this.ribbonControl.MaxItemId = 49;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -699,6 +720,87 @@
             this.btnBagliKartlar.SuperTip = superToolTip12;
             this.btnBagliKartlar.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             // 
+            // btnYeniRapor
+            // 
+            this.btnYeniRapor.Caption = "Yeni";
+            this.btnYeniRapor.Id = 41;
+            this.btnYeniRapor.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.addfile_16x163;
+            this.btnYeniRapor.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.addfile_32x321;
+            this.btnYeniRapor.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnBosRapor),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnSinavListesi),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnSalonListesi),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnYoklamaListesi)});
+            this.btnYeniRapor.Name = "btnYeniRapor";
+            this.btnYeniRapor.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // btnBosRapor
+            // 
+            this.btnBosRapor.Caption = "Boş Rapor";
+            this.btnBosRapor.Id = 42;
+            this.btnBosRapor.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.addfile_16x16;
+            this.btnBosRapor.Name = "btnBosRapor";
+            // 
+            // btnSinavListesi
+            // 
+            this.btnSinavListesi.Caption = "Sınav Listesi";
+            this.btnSinavListesi.Id = 43;
+            this.btnSinavListesi.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.insert_16x16;
+            this.btnSinavListesi.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.insert_32x32;
+            this.btnSinavListesi.Name = "btnSinavListesi";
+            // 
+            // btnSalonListesi
+            // 
+            this.btnSalonListesi.Caption = "Salon Listesi";
+            this.btnSalonListesi.Id = 44;
+            this.btnSalonListesi.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.insert_16x16;
+            this.btnSalonListesi.Name = "btnSalonListesi";
+            // 
+            // btnYoklamaListesi
+            // 
+            this.btnYoklamaListesi.Caption = "Yoklama Listesi";
+            this.btnYoklamaListesi.Id = 45;
+            this.btnYoklamaListesi.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.insert_16x16;
+            this.btnYoklamaListesi.Name = "btnYoklamaListesi";
+            // 
+            // btnTabloYazdir
+            // 
+            this.btnTabloYazdir.Caption = "Tablo Yazdır";
+            this.btnTabloYazdir.Id = 46;
+            this.btnTabloYazdir.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.print_16x161;
+            this.btnTabloYazdir.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.print_32x32;
+            this.btnTabloYazdir.Name = "btnTabloYazdir";
+            this.btnTabloYazdir.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // btnTasarimDegistir
+            // 
+            this.btnTasarimDegistir.Caption = "Tasarım Değiştir";
+            this.btnTasarimDegistir.Id = 47;
+            this.btnTasarimDegistir.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.design_16x16;
+            this.btnTasarimDegistir.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.design_32x32;
+            this.btnTasarimDegistir.Name = "btnTasarimDegistir";
+            this.btnTasarimDegistir.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // btnBaskiOnizleme
+            // 
+            this.btnBaskiOnizleme.Caption = "Baskı Önizleme";
+            this.btnBaskiOnizleme.Id = 48;
+            this.btnBaskiOnizleme.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.printpreview_16x16;
+            this.btnBaskiOnizleme.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.printpreview_32x32;
+            this.btnBaskiOnizleme.Name = "btnBaskiOnizleme";
+            toolTipTitleItem25.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.comment_16x16;
+            toolTipItem13.LeftIndent = 6;
+            toolTipItem13.Text = "Baskı Önizleme";
+            toolTipTitleItem26.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipTitleItem26.LeftIndent = 6;
+            toolTipTitleItem26.Text = "Rapor Çıktısı Önizleme Modunda Açılır";
+            superToolTip13.Items.Add(toolTipTitleItem25);
+            superToolTip13.Items.Add(toolTipItem13);
+            superToolTip13.Items.Add(toolTipSeparatorItem13);
+            superToolTip13.Items.Add(toolTipTitleItem26);
+            this.btnBaskiOnizleme.SuperTip = superToolTip13;
+            this.btnBaskiOnizleme.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -708,14 +810,16 @@
             // 
             // ribbonPageGroup1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.btnYeni);
-            this.ribbonPageGroup1.ItemLinks.Add(this.btnSil);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnSec);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnYeni);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnYeniRapor);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnSil);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnDuzelt);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnYenile);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnFiltrele);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnBagliKartlar);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnKolonlar);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnBaskiOnizleme);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnYazdir);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnGonder);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnCikis);
@@ -832,5 +936,13 @@
         protected DevExpress.XtraBars.BarButtonItem btnYeni;
         protected DevExpress.XtraBars.BarButtonItem btnSil;
         protected DevExpress.XtraBars.BarButtonItem btnDuzelt;
+        private DevExpress.XtraBars.BarSubItem btnYeniRapor;
+        private DevExpress.XtraBars.BarButtonItem btnBosRapor;
+        private DevExpress.XtraBars.BarButtonItem btnSinavListesi;
+        private DevExpress.XtraBars.BarButtonItem btnSalonListesi;
+        private DevExpress.XtraBars.BarButtonItem btnYoklamaListesi;
+        protected DevExpress.XtraBars.BarButtonItem btnBaskiOnizleme;
+        protected DevExpress.XtraBars.BarButtonItem btnTabloYazdir;
+        protected DevExpress.XtraBars.BarButtonItem btnTasarimDegistir;
     }
 }

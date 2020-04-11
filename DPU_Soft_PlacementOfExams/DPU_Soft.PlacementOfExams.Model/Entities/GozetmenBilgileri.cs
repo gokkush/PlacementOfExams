@@ -9,12 +9,11 @@ namespace DPU_Soft.PlacementOfExams.Model.Entities
 {
     public class GozetmenBilgileri : BaseHareketEntity
     {
-        public string GozetmenAdi { get; set; }
-        public int GorevlendirmeSayisi { get; set; }
+
         public long GozetmenId { get; set; }
-        public string SinavSalonAdi { get; set; }
         public long? SinavSalonId { get; set; }
         public long SinavKayitId { get; set; }
+        public GozetmenEntity Gozetmen { get; set; }
         public SinavKayitEntity SinavKayit { get; set; }
         public SinavSalonuEntity SinavSalon { get; set; }
 

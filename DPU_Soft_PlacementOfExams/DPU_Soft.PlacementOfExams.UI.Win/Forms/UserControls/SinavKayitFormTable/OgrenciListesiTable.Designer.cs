@@ -34,8 +34,7 @@
             this.colOgrenciAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colOgrenciBolum = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colOgrenciDers = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
-            this.colSinavSalonId = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
-            this.colSinavSalonAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
+            this.colSalonAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
@@ -70,8 +69,7 @@
             this.colOgrenciAdi,
             this.colOgrenciBolum,
             this.colOgrenciDers,
-            this.colSinavSalonId,
-            this.colSinavSalonAdi});
+            this.colSalonAdi});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
             this.tablo.OptionsMenu.EnableColumnMenu = false;
@@ -148,31 +146,18 @@
             this.colOgrenciDers.VisibleIndex = 3;
             this.colOgrenciDers.Width = 186;
             // 
-            // colSinavSalonId
+            // colSalonAdi
             // 
-            this.colSinavSalonId.Caption = "SinavSalonId";
-            this.colSinavSalonId.FieldName = "SinavSalonId";
-            this.colSinavSalonId.Name = "colSinavSalonId";
-            this.colSinavSalonId.OptionsColumn.AllowEdit = false;
-            this.colSinavSalonId.OptionsColumn.AllowMove = false;
-            this.colSinavSalonId.StatusBarAciklama = null;
-            this.colSinavSalonId.StatusBarKisayol = null;
-            this.colSinavSalonId.StatusBarKisayolAciklama = null;
-            this.colSinavSalonId.Visible = true;
-            this.colSinavSalonId.VisibleIndex = 4;
-            // 
-            // colSinavSalonAdi
-            // 
-            this.colSinavSalonAdi.Caption = "Sınav Salonu";
-            this.colSinavSalonAdi.FieldName = "SinavSalonAdi";
-            this.colSinavSalonAdi.Name = "colSinavSalonAdi";
-            this.colSinavSalonAdi.OptionsColumn.AllowEdit = false;
-            this.colSinavSalonAdi.OptionsColumn.AllowMove = false;
-            this.colSinavSalonAdi.StatusBarAciklama = null;
-            this.colSinavSalonAdi.StatusBarKisayol = null;
-            this.colSinavSalonAdi.StatusBarKisayolAciklama = null;
-            this.colSinavSalonAdi.Visible = true;
-            this.colSinavSalonAdi.VisibleIndex = 5;
+            this.colSalonAdi.Caption = "Sınav Salonu";
+            this.colSalonAdi.FieldName = "SalonAdi";
+            this.colSalonAdi.Name = "colSalonAdi";
+            this.colSalonAdi.OptionsColumn.AllowEdit = false;
+            this.colSalonAdi.OptionsColumn.AllowMove = false;
+            this.colSalonAdi.StatusBarAciklama = null;
+            this.colSalonAdi.StatusBarKisayol = null;
+            this.colSalonAdi.StatusBarKisayolAciklama = null;
+            this.colSalonAdi.Visible = true;
+            this.colSalonAdi.VisibleIndex = 4;
             // 
             // OgrenciListesiTable
             // 
@@ -198,7 +183,6 @@
         private Controls.Grid.DpuGridColumn colOgrenciAdi;
         private Controls.Grid.DpuGridColumn colOgrenciBolum;
         private Controls.Grid.DpuGridColumn colOgrenciDers;
-        private Controls.Grid.DpuGridColumn colSinavSalonId;
-        private Controls.Grid.DpuGridColumn colSinavSalonAdi;
+        private Controls.Grid.DpuGridColumn colSalonAdi;
     }
 }

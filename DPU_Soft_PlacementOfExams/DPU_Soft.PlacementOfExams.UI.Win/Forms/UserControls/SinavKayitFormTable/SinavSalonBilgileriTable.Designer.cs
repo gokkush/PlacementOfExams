@@ -33,8 +33,6 @@
             this.colSalonAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colSalonKapasitesi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.GozetmenSayisi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
-            this.colSinavSalonu_Id = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
-            this.colId = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
@@ -67,9 +65,7 @@
             this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colSalonAdi,
             this.colSalonKapasitesi,
-            this.GozetmenSayisi,
-            this.colSinavSalonu_Id,
-            this.colId});
+            this.GozetmenSayisi});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
             this.tablo.OptionsMenu.EnableColumnMenu = false;
@@ -130,28 +126,6 @@
             this.GozetmenSayisi.VisibleIndex = 2;
             this.GozetmenSayisi.Width = 65;
             // 
-            // colSinavSalonu_Id
-            // 
-            this.colSinavSalonu_Id.Caption = "Salon Id";
-            this.colSinavSalonu_Id.FieldName = "SinavSalonu_Id";
-            this.colSinavSalonu_Id.Name = "colSinavSalonu_Id";
-            this.colSinavSalonu_Id.OptionsColumn.AllowEdit = false;
-            this.colSinavSalonu_Id.StatusBarAciklama = null;
-            this.colSinavSalonu_Id.StatusBarKisayol = null;
-            this.colSinavSalonu_Id.StatusBarKisayolAciklama = null;
-            // 
-            // colId
-            // 
-            this.colId.Caption = "id";
-            this.colId.FieldName = "id";
-            this.colId.Name = "colId";
-            this.colId.OptionsColumn.AllowEdit = false;
-            this.colId.StatusBarAciklama = null;
-            this.colId.StatusBarKisayol = null;
-            this.colId.StatusBarKisayolAciklama = null;
-            this.colId.Visible = true;
-            this.colId.VisibleIndex = 3;
-            // 
             // SinavSalonBilgileriTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -175,7 +149,5 @@
         private Controls.Grid.DpuGridColumn colSalonAdi;
         private Controls.Grid.DpuGridColumn colSalonKapasitesi;
         private Controls.Grid.DpuGridColumn GozetmenSayisi;
-        private Controls.Grid.DpuGridColumn colSinavSalonu_Id;
-        private Controls.Grid.DpuGridColumn colId;
     }
 }

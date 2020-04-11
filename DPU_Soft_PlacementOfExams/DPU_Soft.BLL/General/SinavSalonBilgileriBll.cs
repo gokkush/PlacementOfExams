@@ -21,11 +21,11 @@ namespace DPU_Soft.BLL.General
             return List(filter, x => new SinavSalonBilgileriL
             {
                 id=x.id,
-                SalonAdi=x.SalonAdi,
+                SalonAdi=x.SinavSalonu.SalonAdi,
                 SalonKapasitesi=x.SalonKapasitesi,
                 GozetmenSayisi=x.GozetmenSayisi,
                 SinavKayitId=x.SinavKayitId,
-                SinavSalonu_Id=x.SinavSalonu_Id, 
+                SinavSalonuId=x.SinavSalonuId, 
             }).ToList();
         }
     }

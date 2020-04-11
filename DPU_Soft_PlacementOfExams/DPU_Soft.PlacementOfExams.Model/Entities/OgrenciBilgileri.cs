@@ -13,8 +13,8 @@ namespace DPU_Soft.PlacementOfExams.Model.Entities
         public string OgrenciBolum { get; set; }
         public string OgrenciDers { get; set; }
         public string OgrenciNo { get; set; }
-        public long? SinavSalonBilgileriId { get; set; }
-        public SinavSalonBilgileri SinavSalonBilgileri { get; set; }
+        public long? SinavSalonuId { get; set; }
+        public SinavSalonuEntity SinavSalonu { get; set; }
         public long SinavKayitId { get; set; }
         public SinavKayitEntity SinavKayit { get; set; }
 

@@ -26,38 +26,16 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
 
         public SinavKayitEditForm()
         {
-            
             InitializeComponent();
             DataLayoutControls = new[] {dpuDataLayoutControlDis, dpuDataLayoutControlGenelBilgiler };
             Bll = new SinavKayitBll(dpuDataLayoutControlGenelBilgiler);
             BaseKartTuru = KartTuru.SinavKayit;
             EventsLoad();
-            
-            HideItems = new BarItem[] {btnYeni,btnSil };
+            ShowItems = new BarItem[] { btnYazdir};
+            HideItems = new BarItem[] {btnSil };
             txtSinavTuru.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<SinavTuru>());
-            btnYazdir.Caption = "Sınav Kayıtları";
-
-            foreach (Control control in Controls)
-            {
-                    switch (control)
-                    {
-                        case SimpleButton btn:
-                        {
-                            if (btn == btnSalonaGozetmenAta)
-                            {
-                                btn.Click += Control_Click;
-                            }
-                        }
-                            break;
-                    }
-            }
-        }
-
-        private void Control_Click(object sender, EventArgs e)
-        {
-            Cursor.Current = Cursors.WaitCursor;
-            OgrenciAta();
-            Cursor.Current = Cursors.Default;           
+            btnYazdir.Caption = "Raporlar";
+            KayitSonrasiFormuKapat = false;
         }
 
             public SinavKayitEditForm(params object[] prm):this()
@@ -69,11 +47,20 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
         public override void Yukle()
         {
             OldEntity = BaseIslemTuru == IslemTuru.EntityInsert ? new SinavKayitS() : ((SinavKayitBll)Bll).Single(FilterFunctions.Filter<SinavKayitEntity>(Id));
-            NesneyiKontrollereBagla();
+            if (BaseIslemTuru==IslemTuru.EntityInsert)
             {
+                pageSalonOlustur.PageVisible = false;
+                pageGozetmen.PageVisible = false;
+                pageOgrenciListesi.PageVisible = false;
+                pageSalonGozetmen.PageVisible = false;
+            }
+
+                
+            NesneyiKontrollereBagla();
+
                 //BagliTabloYukle();
                 TabloYukle();
-            }
+
             if (BaseIslemTuru != IslemTuru.EntityInsert) return;
             Id = BaseIslemTuru.IdOlustur(OldEntity);
             txtKod.Text = ((SinavKayitBll)Bll).YeniKodVer(x=>x.SubeId==AnaForm.SubeId&&x.DonemId==AnaForm.DonemId);
@@ -147,6 +134,11 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
                 //BagliTabloYukle();
                 TabloYukle();
             }
+            pageSalonOlustur.PageVisible = true;
+            pageGozetmen.PageVisible = true;
+            pageOgrenciListesi.PageVisible = true;
+            pageSalonGozetmen.PageVisible = true;
+            BaseIslemTuru = IslemTuru.EntityUpdate;
             return result;
         }
         protected override bool EntityUpdate()
@@ -237,18 +229,18 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
                 lblOgrenciDurum.ForeColor = Color.Red;
                 btnSalonaGozetmenAta.Enabled = false;
                 btnOgrenciAta.Enabled = false;
-                cmbGozetmen.Enabled = false;
-                cmbSalon.Enabled = false;
+                txtGozetmenListesi.Enabled = false;
+                txtSalonListesi.Enabled = false;
             }
                 
-            else if(!_listeOlustu)
+            else
             {
                 lblOgrenciDurum.Text = "Geçerli";
                 lblOgrenciDurum.ForeColor = Color.Green;
                 btnSalonaGozetmenAta.Enabled = true;
                 btnOgrenciAta.Enabled = false;
-                cmbGozetmen.Enabled = true;
-                cmbSalon.Enabled = true;
+                txtGozetmenListesi.Enabled = true;
+                txtSalonListesi.Enabled = true;
             }
             if (toplamGozetmenSayisi > gozetmenSayisi)
             {
@@ -256,27 +248,20 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
                 lblGozetmenDurum.ForeColor = Color.Red;
                 btnSalonaGozetmenAta.Enabled = false;
                 btnOgrenciAta.Enabled = false;
-                cmbGozetmen.Enabled = false;
-                cmbSalon.Enabled = false;
+                txtGozetmenListesi.Enabled = false;
+                txtSalonListesi.Enabled = false;
             }
 
-            else if(!_listeOlustu)
+            else
             {
                 lblGozetmenDurum.Text = "Geçerli";
                 lblGozetmenDurum.ForeColor = Color.Green;
                 btnSalonaGozetmenAta.Enabled = true;
                 btnOgrenciAta.Enabled = false;
-                cmbGozetmen.Enabled = true;
-                cmbSalon.Enabled = true;
+                txtGozetmenListesi.Enabled = true;
+                txtSalonListesi.Enabled = true;
             }
-        }
-
-
-
-
-        private void OgrenciAta()
-        {
-
+            
         }
         
         private void ListeDoldur()
@@ -412,16 +397,20 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
             if (e.Page==pageGenelBilgiler)
             {
                 txtDers.Focus();
+
             }
             else if (e.Page == pageSalonOlustur)
             {
                 ListeDoldur();
+
             }
             else if (e.Page==pageGozetmen)
             {
-                gozetmenBilgileriTable.Tablo.Columns[2].Visible = false;
-                gozetmenBilgileriTable.Tablo.Columns[1].Visible = true;
-                gozetmenBilgileriTable.Tablo.Focus();
+
+            }
+            else if (e.Page==pageOgrenciListesi)
+            {
+
             }
 
             #region EgerSonradanEklenirse
@@ -475,8 +464,9 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
 
         private void GozetmeneSalonAta()
         {
+            sinavSalonBilgileriTable.Kaydet();
             var gozetmenEntity = gozetmenBilgileriTable.Tablo.DataController.ListSource.Cast<GozetmenBilgileriL>().FirstOrDefault(x => !x.Delete && x.GozetmenId == (long)txtGozetmenListesi.GetColumnValue("GozetmenId"));
-            gozetmenEntity.SinavSalonId = (long)txtSalonListesi.GetColumnValue("SinavSalonu_Id");
+            gozetmenEntity.SinavSalonId = (long)txtSalonListesi.GetColumnValue("SinavSalonuId");
             gozetmenEntity.Update = true;
             gozetmenBilgileriTable.Kaydet();
             ListeDoldur();
@@ -503,9 +493,32 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
              */
         }
 
+        private void OgrenciAta()
+        {
+            Random rnd = new Random();
+            var source = sinavSalonBilgileriTable.Tablo.DataController.ListSource;
+            var entities = source.Cast<SinavSalonBilgileriL>().Where(x => !x.Delete).ToList();
+            foreach (var entity in entities)
+            {
+
+                for (int i = 0; i < entity.SalonKapasitesi; i++)
+                {
+                    var OgrenciSource = ogrenciListesiTable.Tablo.DataController.ListSource;
+                    var OgrenciEntities = OgrenciSource.Cast<OgrenciBilgileriL>().Where(x => !x.Delete&&x.SinavSalonuId==null).ToList();
+                    if (OgrenciEntities.Count == 0) return;
+                    int secilenOgrenci = rnd.Next(OgrenciEntities.Count);
+                    OgrenciEntities[secilenOgrenci].SinavSalonuId = entity.SinavSalonuId;
+                    OgrenciEntities[secilenOgrenci].Update = true;
+                }
+
+            }
+            ogrenciListesiTable.Kaydet();
+            ButtonEnabledDurumu();
+            _listeOlustu = true;
+        }
         private void btnOgrenciAta_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hayıır");
+            OgrenciAta();
         }
     }
 

@@ -217,3 +217,4 @@ C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\Do
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\ICSharpCode.SharpZipLib.pdb
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\bin\Debug\ICSharpCode.SharpZipLib.xml
 C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.Genelforms.BekleForm.resources
+C:\PROJE\DPU_Soft_PlacementOfExams\DPU_Soft.PlacementOfExams.UI.Win\obj\Debug\DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms.RaporSecim.resources

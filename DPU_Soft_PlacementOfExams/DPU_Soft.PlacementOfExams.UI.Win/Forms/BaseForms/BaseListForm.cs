@@ -404,6 +404,5 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
                     break;
             }
         }
-
     }
 }

@@ -32,9 +32,7 @@
             this.tablo = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridView();
             this.colGozetmenAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colGorevlendirilmeSayisi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
-            this.colSinavSalonId = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colSinavSalonAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
-            this.colId = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
@@ -67,9 +65,7 @@
             this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colGozetmenAdi,
             this.colGorevlendirilmeSayisi,
-            this.colSinavSalonId,
-            this.colSinavSalonAdi,
-            this.colId});
+            this.colSinavSalonAdi});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
             this.tablo.OptionsCustomization.AllowFilter = false;
@@ -122,21 +118,6 @@
             this.colGorevlendirilmeSayisi.VisibleIndex = 2;
             this.colGorevlendirilmeSayisi.Width = 139;
             // 
-            // colSinavSalonId
-            // 
-            this.colSinavSalonId.Caption = "SinavSalonId";
-            this.colSinavSalonId.FieldName = "SinavSalonId";
-            this.colSinavSalonId.Name = "colSinavSalonId";
-            this.colSinavSalonId.OptionsColumn.AllowFocus = false;
-            this.colSinavSalonId.OptionsColumn.AllowMove = false;
-            this.colSinavSalonId.OptionsFilter.AllowAutoFilter = false;
-            this.colSinavSalonId.OptionsFilter.AllowFilter = false;
-            this.colSinavSalonId.OptionsFilter.FilterBySortField = DevExpress.Utils.DefaultBoolean.False;
-            this.colSinavSalonId.OptionsFilter.ImmediateUpdateAutoFilter = false;
-            this.colSinavSalonId.StatusBarAciklama = null;
-            this.colSinavSalonId.StatusBarKisayol = null;
-            this.colSinavSalonId.StatusBarKisayolAciklama = null;
-            // 
             // colSinavSalonAdi
             // 
             this.colSinavSalonAdi.Caption = "Görevlendirildiği Salon";
@@ -150,19 +131,6 @@
             this.colSinavSalonAdi.Visible = true;
             this.colSinavSalonAdi.VisibleIndex = 1;
             this.colSinavSalonAdi.Width = 264;
-            // 
-            // colId
-            // 
-            this.colId.Caption = "id";
-            this.colId.FieldName = "id";
-            this.colId.Name = "colId";
-            this.colId.OptionsColumn.AllowEdit = false;
-            this.colId.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.False;
-            this.colId.StatusBarAciklama = null;
-            this.colId.StatusBarKisayol = null;
-            this.colId.StatusBarKisayolAciklama = null;
-            this.colId.Visible = true;
-            this.colId.VisibleIndex = 3;
             // 
             // GozetmenBilgileriTable
             // 
@@ -184,9 +152,7 @@
         private Controls.Grid.DpuGridView tablo;
         private Controls.Grid.DpuGridColumn colGozetmenAdi;
         private Controls.Grid.DpuGridColumn colGorevlendirilmeSayisi;
-        private Controls.Grid.DpuGridColumn colSinavSalonId;
         public Controls.Grid.DpuGridControl grid;
         private Controls.Grid.DpuGridColumn colSinavSalonAdi;
-        private Controls.Grid.DpuGridColumn colId;
     }
 }

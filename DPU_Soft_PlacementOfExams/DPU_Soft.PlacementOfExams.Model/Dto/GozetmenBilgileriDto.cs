@@ -13,6 +13,9 @@ namespace DPU_Soft.PlacementOfExams.Model.Dto
 
     public class GozetmenBilgileriL:GozetmenBilgileri, IBaseHareketEntity
     {
+        public string SinavSalonAdi { get; set; }
+        public string GozetmenAdi { get; set; }
+        public int GorevlendirmeSayisi { get; set; }
         public bool Insert { get; set; }
         public bool Update { get; set; }
         public bool Delete { get; set; }

@@ -7,7 +7,7 @@ namespace DPU_Soft.PlacementOfExams.Model.Dto
     [NotMapped]
     public class SinavSalonBilgileriL : SinavSalonBilgileri, IBaseHareketEntity
     {
-        
+        public string SalonAdi { get; set; }
         public bool Insert { get; set; }
         public bool Update { get; set; }
         public bool Delete { get; set; }
