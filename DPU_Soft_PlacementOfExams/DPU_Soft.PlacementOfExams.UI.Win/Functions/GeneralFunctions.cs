@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using System.Drawing.Printing;
+using DevExpress.XtraPrinting.Native;
 using System.Configuration;
 using System.Security;
 using System.Data.SqlClient;
@@ -27,6 +28,9 @@ using System.ComponentModel;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Base;
 using DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms;
 using DevExpress.XtraLayout;
+using DevExpress.Utils.Extensions;
+using System.IO;
+using DevExpress.XtraReports.UI;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
 {
@@ -456,5 +460,32 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
             item.OptionsTableLayoutItem.ColumnSpan = columnSpan;
             item.OptionsTableLayoutItem.RowSpan = rowSpan;
         }
+        public static void CreateDropDownMenu(this BarButtonItem baseButtonItem,BarItem[] buttonItems)
+        {
+            baseButtonItem.ButtonStyle = BarButtonStyle.CheckDropDown;
+            var popupMenu = new PopupMenu();
+            buttonItems.ForEach(x => x.Visibility = BarItemVisibility.Always);
+            popupMenu.ItemLinks.AddRange(buttonItems);
+            baseButtonItem.DropDownControl = popupMenu;
+        }
+
+        public static DpuXtraReport StreamToReport(this MemoryStream stream)
+        {
+            return (DpuXtraReport)XtraReport.FromStream(stream,true);
+
+        }
+
+        public static MemoryStream ByteToStream(this byte[] report)
+        {
+            return new MemoryStream(report);
+        }
+
+        public static MemoryStream ReportToStream(this XtraReport rapor)
+        {
+            var stream= new MemoryStream();
+            rapor.SaveLayout(stream);
+            return stream;
+        }
+
     }
 }

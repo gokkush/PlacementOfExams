@@ -57,7 +57,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Functions
 
         public bool IsRowSelected(int rowHandle)
         {
-            var row = _tablo.GetRow<BaseEntity>(rowHandle);
+            var row = (BaseEntity)_tablo.GetRow(rowHandle);
             return GetSelectedRowIndex(row)>-1;
         }
 

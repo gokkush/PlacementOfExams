@@ -88,5 +88,10 @@ namespace DPU_Soft.PlacementOfExams.Common.Massage
         {
             return HayirSeciliEvetHayir($"Kullanıcı Şifresi sıfırlanarak, Kullanıcı Bilgilerini İçeren Yeni Bir Mail Gönderilecektir. Onaylıyor musunuz?", "Şifre Sıfırla Onayı");
         }
+
+        public static DialogResult RaporuTasarimaGonder()
+        {
+            return HayirSeciliEvetHayir("Rapor Tasarım Görünümünde Açılacaktır. Onaylıyor musunuz?","Onay");
+        }
     }
 }

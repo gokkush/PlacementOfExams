@@ -47,6 +47,27 @@ namespace DPU_Soft.BLL.General
         }
 
 
+        public SinavKayitR SingleDetail(Expression<Func<SinavKayitEntity, bool>> filter)
+        {
+            return Basesingle(filter, x => new SinavKayitR
+            {
+
+                Adres=x.Sube.Adres,
+                AdresIlAdi=x.Sube.AdresIl.IlAdi,
+                AdresIlceAdi=x.Sube.AdresIlce.IlceAdi,
+                Telefon=x.Sube.Telefon,
+                Faks=x.Sube.Faks,
+                DersAdi = x.Ders.DersAdi,
+                SubeAdi = x.Sube.SubeAdi,
+                DonemAdi = x.Donem.DonemAdi,
+                SinavTuru = x.SinavTuru,
+                SinavAdi=x.SinavAdi,
+                SalonAdi=x.SinavSalonu.SalonAdi,
+                
+
+            });
+        }
+
 
         public override IEnumerable<BaseEntity> List(Expression<Func<SinavKayitEntity, bool>> filter)
         {

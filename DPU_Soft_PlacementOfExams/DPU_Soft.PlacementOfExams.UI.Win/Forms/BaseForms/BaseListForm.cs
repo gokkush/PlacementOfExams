@@ -296,7 +296,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             else
                 btnDuzelt.PerformClick();
         }
-        private void Button_ItemClick(object sender, ItemClickEventArgs e)
+        protected virtual void Button_ItemClick(object sender, ItemClickEventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
 
@@ -362,6 +362,14 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
             {
                 Yazdir();
             }
+            else if (e.Item==btnBaskiOnizleme)
+            {
+                BaskiOnizleme();
+            }
+            else if (e.Item==btnTasarimDegistir)
+            {
+                Duzelt();
+            }
             else if (e.Item == btnCikis)
             {
                 Close();
@@ -403,6 +411,15 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
                     Close();
                     break;
             }
+        }
+
+        protected virtual void Duzelt()
+        {
+
+        }
+        protected virtual void BaskiOnizleme()
+        {
+
         }
     }
 }

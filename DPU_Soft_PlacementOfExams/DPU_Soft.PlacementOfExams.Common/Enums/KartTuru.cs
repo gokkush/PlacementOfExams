@@ -37,7 +37,19 @@ namespace DPU_Soft.PlacementOfExams.Common.Enums
         [Description("Gozetmen-Bilgi Kaydı")]
         GozetmenBilgiKayit = 16,
         [Description("Rapor Kaydı")]
-        RaporTuru = 17
+        RaporTuru = 17,
+        [Description("Rapor-Tasarım Kaydı")]
+        RaporTasarim = 18,
+        [Description("Salon-Listesi Raporu")]
+        SalonListesiRaporu = 19,
+        [Description("Yoklama-Listesi Raporu")]
+        YoklamaListesiRaporu = 20,
+        [Description("Sinav-Listesi Raporu")]
+        SinavListesiRaporu = 21,
+        [Description("Boş Rapor")]
+        BosRapor = 22
+
+
 
     }
 }

@@ -15,6 +15,9 @@ using System.Drawing;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Collections;
+using DPU_Soft.PlacementOfExams.Model.Entities.Base.Interfaces;
+using DPU_Soft.BLL.Functions;
+using DPU_Soft.PlacementOfExams.UI.Win.Show;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
 {
@@ -38,7 +41,16 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
             KayitSonrasiFormuKapat = false;
         }
 
-            public SinavKayitEditForm(params object[] prm):this()
+        protected override void Yazdir()
+        {
+            var sinavKayitBilgileri = ((SinavKayitBll)Bll).SingleDetail(x => x.Id == Id);
+            var ogrenciBilgileri = ogrenciListesiTable.Tablo.DataController.ListSource.Cast<IBaseEntity>().EntityListConvert<OgrenciBilgileriR>();
+            var salonBilgileri = sinavSalonBilgileriTable.Tablo.DataController.ListSource.Cast<IBaseEntity>().EntityListConvert<SinavSalonBilgileriR>();
+            var gozetmenBilgileri= gozetmenBilgileriTable.Tablo.DataController.ListSource.Cast<IBaseEntity>().EntityListConvert<GozetmenBilgileriR>();
+            ShowListforms<RaporSecim>.ShowDialogListForm(KartTuru.RaporTuru, true,sinavKayitBilgileri,salonBilgileri,gozetmenBilgileri,ogrenciBilgileri);
+        }
+
+        public SinavKayitEditForm(params object[] prm):this()
         {
             if (prm[0] is bool)
                 FarkliSubeIslemi = (bool)prm[0];

@@ -1,6 +1,8 @@
 ﻿using DPU_Soft.PlacementOfExams.Common.Enums;
 using DPU_Soft.PlacementOfExams.Model.Attributes;
 using DPU_Soft.PlacementOfExams.Model.Entities.Base;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -26,6 +28,10 @@ namespace DPU_Soft.PlacementOfExams.Model.Entities
         public SubeEntity Sube { get; set; }
         public DonemEntity Donem { get; set; }
         public DersEntity Ders { get; set; }
+        public SinavSalonuEntity SinavSalonu { get; set; }
+        public ICollection<OgrenciBilgileri> OgrenciBilgileri { get; set; }
+        public ICollection<SinavSalonBilgileri> SinavSalonBilgileri { get; set; }
+        public ICollection<GozetmenBilgileri> GozetmenBilgileri { get; set; }
 
 
     }

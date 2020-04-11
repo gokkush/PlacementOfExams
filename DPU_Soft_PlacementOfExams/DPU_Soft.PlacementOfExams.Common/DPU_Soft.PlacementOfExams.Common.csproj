@@ -56,6 +56,7 @@
     <Compile Include="Enums\RaporuKagidaSigdir.cs" />
     <Compile Include="Enums\SinavTuru.cs" />
     <Compile Include="Enums\VeriDegisimYeri.cs" />
+    <Compile Include="Enums\YazdirmaSekli.cs" />
     <Compile Include="Enums\YazdirmaYonu.cs" />
     <Compile Include="Enums\YetkilendirmeTuru.cs" />
     <Compile Include="Functions\EnumFunctions.cs" />

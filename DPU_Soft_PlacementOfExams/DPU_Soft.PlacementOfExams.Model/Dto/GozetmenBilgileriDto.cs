@@ -1,4 +1,5 @@
-﻿using DPU_Soft.PlacementOfExams.Model.Entities;
+﻿using DevExpress.DataAccess.ObjectBinding;
+using DPU_Soft.PlacementOfExams.Model.Entities;
 using DPU_Soft.PlacementOfExams.Model.Entities.Base.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -19,5 +20,11 @@ namespace DPU_Soft.PlacementOfExams.Model.Dto
         public bool Insert { get; set; }
         public bool Update { get; set; }
         public bool Delete { get; set; }
+    }
+    [HighlightedClass]
+    public class GozetmenBilgileriR
+    {
+        public string SinavSalonAdi { get; set; }
+        public string GozetmenAdi { get; set; }
     }
 }

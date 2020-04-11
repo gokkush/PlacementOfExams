@@ -726,6 +726,7 @@
             this.btnYeniRapor.Id = 41;
             this.btnYeniRapor.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.addfile_16x163;
             this.btnYeniRapor.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.addfile_32x321;
+            this.btnYeniRapor.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.Insert);
             this.btnYeniRapor.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btnBosRapor),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnSinavListesi),
@@ -936,13 +937,13 @@
         protected DevExpress.XtraBars.BarButtonItem btnYeni;
         protected DevExpress.XtraBars.BarButtonItem btnSil;
         protected DevExpress.XtraBars.BarButtonItem btnDuzelt;
-        private DevExpress.XtraBars.BarSubItem btnYeniRapor;
-        private DevExpress.XtraBars.BarButtonItem btnBosRapor;
-        private DevExpress.XtraBars.BarButtonItem btnSinavListesi;
-        private DevExpress.XtraBars.BarButtonItem btnSalonListesi;
-        private DevExpress.XtraBars.BarButtonItem btnYoklamaListesi;
         protected DevExpress.XtraBars.BarButtonItem btnBaskiOnizleme;
         protected DevExpress.XtraBars.BarButtonItem btnTabloYazdir;
         protected DevExpress.XtraBars.BarButtonItem btnTasarimDegistir;
+        protected DevExpress.XtraBars.BarSubItem btnYeniRapor;
+        protected DevExpress.XtraBars.BarButtonItem btnBosRapor;
+        protected DevExpress.XtraBars.BarButtonItem btnSinavListesi;
+        protected DevExpress.XtraBars.BarButtonItem btnSalonListesi;
+        protected DevExpress.XtraBars.BarButtonItem btnYoklamaListesi;
     }
 }

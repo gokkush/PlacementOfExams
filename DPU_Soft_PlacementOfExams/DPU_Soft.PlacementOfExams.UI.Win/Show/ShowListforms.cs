@@ -61,6 +61,19 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Show
                 return frm.DialogResult == DialogResult.OK ? frm.SecilenEntities : null;
             }
         }
+        public static IEnumerable<IBaseEntity> ShowDialogListForm(KartTuru kartTuru, bool multiSelect, params object[] prm)
+        {
+
+
+            using (var frm = (TForm)Activator.CreateInstance(typeof(TForm), prm))
+            {
+                frm.MultiSelect = multiSelect;
+                frm.Yukle();
+                frm.RowSelect = new Functions.SelectRowFunctions(frm.Tablo);
+                    frm.ShowDialog();
+                return frm.DialogResult == DialogResult.OK ? frm.SecilenEntities : null;
+            }
+        }
         public static IEnumerable<IBaseEntity>ShowDialogListForm(IList<long> listeDisiTutulacakKayitlar, bool multiSelect, params object[] prm)
         {
         
