@@ -635,11 +635,11 @@
     <Compile Include="Interfaces\IStatusBarKisayol.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reports\XtraReports\SalonRaporu.cs">
+    <Compile Include="Reports\XtraReports\YoklamaRaporu.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\XtraReports\SalonRaporu.Designer.cs">
-      <DependentUpon>SalonRaporu.cs</DependentUpon>
+    <Compile Include="Reports\XtraReports\YoklamaRaporu.Designer.cs">
+      <DependentUpon>YoklamaRaporu.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\XtraReports\SinavRaporu.cs">
       <SubType>Component</SubType>
@@ -647,11 +647,11 @@
     <Compile Include="Reports\XtraReports\SinavRaporu.Designer.cs">
       <DependentUpon>SinavRaporu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\XtraReports\YoklamaRaporu.cs">
+    <Compile Include="Reports\XtraReports\SalonRaporu.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\XtraReports\YoklamaRaporu.Designer.cs">
-      <DependentUpon>YoklamaRaporu.cs</DependentUpon>
+    <Compile Include="Reports\XtraReports\SalonRaporu.Designer.cs">
+      <DependentUpon>SalonRaporu.cs</DependentUpon>
     </Compile>
     <Compile Include="Show\Interfaces\IBaseFormshow.cs" />
     <Compile Include="Show\ShowRibbonForms.cs" />
@@ -848,14 +848,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Reports\XtraReports\SalonRaporu.resx">
-      <DependentUpon>SalonRaporu.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\XtraReports\YoklamaRaporu.resx">
+      <DependentUpon>YoklamaRaporu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\XtraReports\SinavRaporu.resx">
       <DependentUpon>SinavRaporu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\XtraReports\YoklamaRaporu.resx">
-      <DependentUpon>YoklamaRaporu.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\XtraReports\SalonRaporu.resx">
+      <DependentUpon>SalonRaporu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -1215,6 +1215,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dpu-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gozetmen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sifre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hideproduct_16x16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

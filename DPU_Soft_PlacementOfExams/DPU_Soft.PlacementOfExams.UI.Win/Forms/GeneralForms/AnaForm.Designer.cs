@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaForm));
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.btnOkulKartlari = new DevExpress.XtraBars.BarButtonItem();
             this.btnGozetmen = new DevExpress.XtraBars.BarButtonItem();
             this.btnSinavSalon = new DevExpress.XtraBars.BarButtonItem();
             this.btnSubeSecim = new DevExpress.XtraBars.BarButtonItem();
@@ -44,7 +43,6 @@
             this.barStaticItem7 = new DevExpress.XtraBars.BarStaticItem();
             this.btnSifreDegistir = new DevExpress.XtraBars.BarButtonItem();
             this.btnDers = new DevExpress.XtraBars.BarButtonItem();
-            this.btnDersYetki = new DevExpress.XtraBars.BarButtonItem();
             this.btnSinavKayitlari = new DevExpress.XtraBars.BarButtonItem();
             this.rPTanimlar = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rPCAnaTanim = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -66,7 +64,6 @@
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl.ExpandCollapseItem,
             this.ribbonControl.SearchEditItem,
-            this.btnOkulKartlari,
             this.btnGozetmen,
             this.btnSinavSalon,
             this.btnSubeSecim,
@@ -79,7 +76,6 @@
             this.barStaticItem7,
             this.btnSifreDegistir,
             this.btnDers,
-            this.btnDersYetki,
             this.btnSinavKayitlari});
             this.ribbonControl.MaxItemId = 16;
             this.ribbonControl.Name = "ribbonControl";
@@ -87,20 +83,13 @@
             this.rPTanimlar});
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
             // 
-            // btnOkulKartlari
-            // 
-            resources.ApplyResources(this.btnOkulKartlari, "btnOkulKartlari");
-            this.btnOkulKartlari.Id = 1;
-            this.btnOkulKartlari.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnOkulKartlari.ImageOptions.ImageIndex")));
-            this.btnOkulKartlari.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnOkulKartlari.ImageOptions.LargeImageIndex")));
-            this.btnOkulKartlari.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnOkulKartlari.ImageOptions.SvgImage")));
-            this.btnOkulKartlari.Name = "btnOkulKartlari";
-            // 
             // btnGozetmen
             // 
             resources.ApplyResources(this.btnGozetmen, "btnGozetmen");
             this.btnGozetmen.Id = 2;
+            this.btnGozetmen.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.gozetmen;
             this.btnGozetmen.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnGozetmen.ImageOptions.ImageIndex")));
+            this.btnGozetmen.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.gozetmen;
             this.btnGozetmen.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnGozetmen.ImageOptions.LargeImageIndex")));
             this.btnGozetmen.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnGozetmen.ImageOptions.SvgImage")));
             this.btnGozetmen.Name = "btnGozetmen";
@@ -109,7 +98,9 @@
             // 
             resources.ApplyResources(this.btnSinavSalon, "btnSinavSalon");
             this.btnSinavSalon.Id = 3;
+            this.btnSinavSalon.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.salon;
             this.btnSinavSalon.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnSinavSalon.ImageOptions.ImageIndex")));
+            this.btnSinavSalon.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.salon;
             this.btnSinavSalon.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnSinavSalon.ImageOptions.LargeImageIndex")));
             this.btnSinavSalon.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSinavSalon.ImageOptions.SvgImage")));
             this.btnSinavSalon.Name = "btnSinavSalon";
@@ -210,7 +201,9 @@
             // 
             resources.ApplyResources(this.btnSifreDegistir, "btnSifreDegistir");
             this.btnSifreDegistir.Id = 12;
+            this.btnSifreDegistir.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.sifre;
             this.btnSifreDegistir.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnSifreDegistir.ImageOptions.ImageIndex")));
+            this.btnSifreDegistir.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.sifre;
             this.btnSifreDegistir.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnSifreDegistir.ImageOptions.LargeImageIndex")));
             this.btnSifreDegistir.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSifreDegistir.ImageOptions.SvgImage")));
             this.btnSifreDegistir.Name = "btnSifreDegistir";
@@ -219,45 +212,39 @@
             // 
             resources.ApplyResources(this.btnDers, "btnDers");
             this.btnDers.Id = 13;
+            this.btnDers.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.ders;
             this.btnDers.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnDers.ImageOptions.ImageIndex")));
+            this.btnDers.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.ders;
             this.btnDers.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnDers.ImageOptions.LargeImageIndex")));
             this.btnDers.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDers.ImageOptions.SvgImage")));
             this.btnDers.Name = "btnDers";
-            // 
-            // btnDersYetki
-            // 
-            resources.ApplyResources(this.btnDersYetki, "btnDersYetki");
-            this.btnDersYetki.Id = 14;
-            this.btnDersYetki.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnDersYetki.ImageOptions.ImageIndex")));
-            this.btnDersYetki.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnDersYetki.ImageOptions.LargeImageIndex")));
-            this.btnDersYetki.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDersYetki.ImageOptions.SvgImage")));
-            this.btnDersYetki.Name = "btnDersYetki";
             // 
             // btnSinavKayitlari
             // 
             resources.ApplyResources(this.btnSinavKayitlari, "btnSinavKayitlari");
             this.btnSinavKayitlari.Id = 15;
-            this.btnSinavKayitlari.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnDD.ImageOptions.ImageIndex")));
-            this.btnSinavKayitlari.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnDD.ImageOptions.LargeImageIndex")));
-            this.btnSinavKayitlari.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDD.ImageOptions.SvgImage")));
+            this.btnSinavKayitlari.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.sinav;
+            this.btnSinavKayitlari.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnSinavKayitlari.ImageOptions.ImageIndex")));
+            this.btnSinavKayitlari.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.sinav;
+            this.btnSinavKayitlari.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnSinavKayitlari.ImageOptions.LargeImageIndex")));
+            this.btnSinavKayitlari.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSinavKayitlari.ImageOptions.SvgImage")));
             this.btnSinavKayitlari.Name = "btnSinavKayitlari";
             // 
             // rPTanimlar
             // 
             this.rPTanimlar.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.rPCAnaTanim});
+            this.rPTanimlar.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.hideproduct_16x16;
             this.rPTanimlar.Name = "rPTanimlar";
             resources.ApplyResources(this.rPTanimlar, "rPTanimlar");
             // 
             // rPCAnaTanim
             // 
-            this.rPCAnaTanim.ItemLinks.Add(this.btnOkulKartlari);
             this.rPCAnaTanim.ItemLinks.Add(this.btnGozetmen);
             this.rPCAnaTanim.ItemLinks.Add(this.btnSinavSalon);
-            this.rPCAnaTanim.ItemLinks.Add(this.btnSifreDegistir);
             this.rPCAnaTanim.ItemLinks.Add(this.btnDers);
-            this.rPCAnaTanim.ItemLinks.Add(this.btnDersYetki);
             this.rPCAnaTanim.ItemLinks.Add(this.btnSinavKayitlari);
+            this.rPCAnaTanim.ItemLinks.Add(this.btnSifreDegistir);
             this.rPCAnaTanim.Name = "rPCAnaTanim";
             resources.ApplyResources(this.rPCAnaTanim, "rPCAnaTanim");
             // 
@@ -304,7 +291,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rPCAnaTanim;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.Alerter.AlertControl ALC;
-        private DevExpress.XtraBars.BarButtonItem btnOkulKartlari;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
         private DevExpress.XtraBars.BarButtonItem btnGozetmen;
@@ -319,7 +305,6 @@
         private DevExpress.XtraBars.BarStaticItem barStaticItem7;
         private DevExpress.XtraBars.BarButtonItem btnSifreDegistir;
         private DevExpress.XtraBars.BarButtonItem btnDers;
-        private DevExpress.XtraBars.BarButtonItem btnDersYetki;
         private DevExpress.XtraBars.BarButtonItem btnSinavKayitlari;
     }
 }

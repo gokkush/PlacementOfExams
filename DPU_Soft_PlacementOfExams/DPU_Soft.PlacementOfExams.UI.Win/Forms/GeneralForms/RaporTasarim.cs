@@ -37,7 +37,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
 
         private void Kaydet()
         {
-            _rapor.Dosya = reportDesigner.ActiveDesignPanel.Report.ReportToStream().GetBuffer();
+            _rapor.Dosya = reportDesigner.ActiveDesignPanel.Report.ReportToStream().ToArray();
             var result = ShowEditforms<RaporEditForm>.ShowDialogeditForm(Common.Enums.KartTuru.RaporTuru,_rapor.Id,_rapor.RaporTuru,_rapor.RaporBolumTuru,_rapor.Dosya);
             if (result <= 0) return;
             reportDesigner.ActiveDesignPanel.ReportState = ReportState.Saved;

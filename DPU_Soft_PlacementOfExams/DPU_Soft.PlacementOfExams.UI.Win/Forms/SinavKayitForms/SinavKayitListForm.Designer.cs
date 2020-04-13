@@ -34,7 +34,6 @@
             this.tablo = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridView();
             this.colId = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colKod = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
-            this.colSinavAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colDersAdi = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colSinavTuru = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
             this.colAciklama = new DPU_Soft.PlacementOfExams.UI.Win.Forms.UserControls.Controls.Grid.DpuGridColumn();
@@ -59,6 +58,11 @@
             // 
             this.btnGonder.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGonder.ImageOptions.Image")));
             this.btnGonder.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnGonder.ImageOptions.LargeImage")));
+            // 
+            // btnYeniRapor
+            // 
+            this.btnYeniRapor.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniRapor.ImageOptions.Image")));
+            this.btnYeniRapor.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnYeniRapor.ImageOptions.LargeImage")));
             // 
             // longNavigator
             // 
@@ -95,10 +99,9 @@
             this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colId,
             this.colKod,
-            this.colSinavAdi,
+            this.colAciklama,
             this.colDersAdi,
-            this.colSinavTuru,
-            this.colAciklama});
+            this.colSinavTuru});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
             this.tablo.OptionsMenu.EnableColumnMenu = false;
@@ -144,19 +147,6 @@
             this.colKod.VisibleIndex = 0;
             this.colKod.Width = 112;
             // 
-            // colSinavAdi
-            // 
-            this.colSinavAdi.Caption = "Sınav Adı";
-            this.colSinavAdi.FieldName = "SinavAdi";
-            this.colSinavAdi.Name = "colSinavAdi";
-            this.colSinavAdi.OptionsColumn.AllowEdit = false;
-            this.colSinavAdi.StatusBarAciklama = null;
-            this.colSinavAdi.StatusBarKisayol = null;
-            this.colSinavAdi.StatusBarKisayolAciklama = null;
-            this.colSinavAdi.Visible = true;
-            this.colSinavAdi.VisibleIndex = 1;
-            this.colSinavAdi.Width = 190;
-            // 
             // colDersAdi
             // 
             this.colDersAdi.Caption = "DersAdi";
@@ -185,7 +175,7 @@
             // 
             // colAciklama
             // 
-            this.colAciklama.Caption = "Açıklama";
+            this.colAciklama.Caption = "Sınav Açıklaması";
             this.colAciklama.FieldName = "Aciklama";
             this.colAciklama.Name = "colAciklama";
             this.colAciklama.OptionsColumn.AllowEdit = false;
@@ -193,7 +183,8 @@
             this.colAciklama.StatusBarKisayol = null;
             this.colAciklama.StatusBarKisayolAciklama = null;
             this.colAciklama.Visible = true;
-            this.colAciklama.VisibleIndex = 4;
+            this.colAciklama.VisibleIndex = 1;
+            this.colAciklama.Width = 348;
             // 
             // SinavKayitListForm
             // 
@@ -223,7 +214,6 @@
         private UserControls.Controls.Grid.DpuGridView tablo;
         private UserControls.Controls.Grid.DpuGridColumn colId;
         private UserControls.Controls.Grid.DpuGridColumn colKod;
-        private UserControls.Controls.Grid.DpuGridColumn colSinavAdi;
         private UserControls.Controls.Grid.DpuGridColumn colDersAdi;
         private UserControls.Controls.Grid.DpuGridColumn colSinavTuru;
         private UserControls.Controls.Grid.DpuGridColumn colAciklama;

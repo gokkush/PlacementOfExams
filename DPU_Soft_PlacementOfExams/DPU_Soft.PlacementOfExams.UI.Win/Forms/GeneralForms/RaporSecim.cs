@@ -27,6 +27,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
         private readonly IEnumerable<OgrenciBilgileriR> _ogrenbiBilgileri;
         private readonly IEnumerable<SinavSalonBilgileriR> _sinavSalonBilgileri;
         private readonly IEnumerable<GozetmenBilgileriR> _gozetmenBilgileri;
+        private readonly long _salonId;
         public RaporSecim(params object[] prm)
         {
             InitializeComponent();
@@ -44,6 +45,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
             _sinavSalonBilgileri = (IEnumerable <SinavSalonBilgileriR>)prm[1];
             _gozetmenBilgileri = (IEnumerable <GozetmenBilgileriR>)prm[2];
             _ogrenbiBilgileri = (IEnumerable <OgrenciBilgileriR>)prm[3];
+            _salonId = (long)prm[4];
         }
 
         protected override void DegiskenleriDoldur()
@@ -116,18 +118,21 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
             {
                 case SalonRaporu rpr:
                     rpr.Sinav_Kayit_Bilgileri.DataSource = _sinavKayitBilgileri;
-                    rpr.Ogrenci_Bilgileri.DataSource = _ogrenbiBilgileri;
-                    rpr.Gozetmen_Bilgileri.DataSource = _gozetmenBilgileri.GroupBy(x => new { x.SinavSalonAdi,x.GozetmenAdi})
-                        .Select(x=> new
-                        {
-                            x.Key.GozetmenAdi,
-                            x.Key.SinavSalonAdi
-                        });
-                    rpr.Salon_Bilgileri.DataSource = _sinavSalonBilgileri.GroupBy(x => new { x.SalonAdi}); 
+                    rpr.Ogrenci_Bilgileri.DataSource = _ogrenbiBilgileri.Where(x=>x.SinavSalonuId==_salonId).OrderBy(x=>x.SiraNo);
+                    rpr.Gozetmen_Bilgileri.DataSource = _gozetmenBilgileri.Where(x=>x.SinavSalonId== _salonId);
+                    rpr.Salon_Bilgileri.DataSource = _sinavSalonBilgileri.Where(x =>x.SinavSalonuId== _salonId); 
                     break;
                 case SinavRaporu rpr:
+                    rpr.Sinav_Kayit_Bilgileri.DataSource = _sinavKayitBilgileri;
+                    rpr.Ogrenci_Bilgileri.DataSource = _ogrenbiBilgileri.OrderBy(x=>x.OgrenciNo) ;
+                    rpr.Gozetmen_Bilgileri.DataSource = _gozetmenBilgileri;
+                    rpr.Salon_Bilgileri.DataSource = _sinavSalonBilgileri;
                     break;
                 case YoklamaRaporu rpr:
+                    rpr.Sinav_Kayit_Bilgileri.DataSource = _sinavKayitBilgileri;
+                    rpr.Ogrenci_Bilgileri.DataSource = _ogrenbiBilgileri.Where(x => x.SinavSalonuId == _salonId).OrderBy(x=>x.SiraNo);
+                    rpr.Gozetmen_Bilgileri.DataSource = _gozetmenBilgileri.Where(x => x.SinavSalonId == _salonId);
+                    rpr.Salon_Bilgileri.DataSource = _sinavSalonBilgileri.Where(x => x.SinavSalonuId == _salonId);
                     break;
             }
         }
@@ -145,7 +150,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
         protected override void BaskiOnizleme()
         {
             var raporlar = RaporHazirla();
-            raporlar.ForEach(x=>ShowRibbonForms<RaporOnizleme>.ShowForm(true, x.PrintingSystem, x.Baslik));
+            raporlar.ForEach(x=>ShowRibbonForms<RaporOnizleme>.ShowForm(false, x.PrintingSystem, x.Baslik));
 
         }
 

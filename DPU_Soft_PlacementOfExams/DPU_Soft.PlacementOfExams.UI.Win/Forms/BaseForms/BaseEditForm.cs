@@ -351,14 +351,14 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
         protected virtual void SecimYap(object sender)
         {
         }
-        private void EntityDelete()
+        protected virtual void EntityDelete()
         {
             if (!((IBaseCommonBll)Bll).Delete(OldEntity)) return;
             RefreshYapilacak = true;
             Close();
         }
 
-        private void ButtonGizleGoster()
+        protected virtual void ButtonGizleGoster()
         {
 
           

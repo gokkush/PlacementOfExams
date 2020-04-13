@@ -13,13 +13,10 @@ namespace DPU_Soft.PlacementOfExams.Model.Entities
         [Index("IX_Kod", IsUnique = false)]
         public override string Kod { get; set; }
 
-        public string SinavAdi { get; set; }
-
         [StringLength(500)]
         public string Aciklama { get; set; }
 
         public long DersId { get; set; }
-        public string DersAdi { get; set; }
         public SinavTuru SinavTuru { get; set; } = SinavTuru.Vize;
         public long SubeId { get; set; }
         public long DonemId  { get; set; }

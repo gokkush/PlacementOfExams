@@ -16,9 +16,8 @@ namespace DPU_Soft.PlacementOfExams.Model.Dto
     [HighlightedClass]
     public class SinavSalonBilgileriR
     {
+        public long SinavSalonuId { get; set; }
         public string SalonAdi { get; set; }
-        public int SalonKapasitesi { get; set; }
-        public int GozetmenSayisi { get; set; }
 
     }
 }

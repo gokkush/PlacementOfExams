@@ -69,9 +69,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
         private void Butonlar_ItemClick(object sender, ItemClickEventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
-            if (e.Item == btnOkulKartlari)
-                ShowListforms<OkulListForm>.ShowListForm(KartTuru.Okul);
-            else if (e.Item==btnGozetmen)
+            if (e.Item==btnGozetmen)
             {
                 //ShowListforms<GozetmenListForm>.ShowListForm(KartTuru.Gozetmen,SubeId, SubeAdi);
                 ShowListforms<GozetmenListForm>.ShowListForm(KartTuru.Gozetmen); //Eğer Gözetmenler tüm fakültelerde aynı ise

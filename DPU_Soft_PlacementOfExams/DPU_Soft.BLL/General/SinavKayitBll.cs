@@ -40,9 +40,7 @@ namespace DPU_Soft.BLL.General
                 DonemAdi=x.Donem.DonemAdi,
                 SinavTuru=x.SinavTuru,
                 ListeOlustu=x.ListeOlustu,
-                durum=x.durum,
-                
-
+                durum=x.durum
             });
         }
 
@@ -51,20 +49,11 @@ namespace DPU_Soft.BLL.General
         {
             return Basesingle(filter, x => new SinavKayitR
             {
-
-                Adres=x.Sube.Adres,
-                AdresIlAdi=x.Sube.AdresIl.IlAdi,
-                AdresIlceAdi=x.Sube.AdresIlce.IlceAdi,
-                Telefon=x.Sube.Telefon,
-                Faks=x.Sube.Faks,
                 DersAdi = x.Ders.DersAdi,
                 SubeAdi = x.Sube.SubeAdi,
                 DonemAdi = x.Donem.DonemAdi,
                 SinavTuru = x.SinavTuru,
-                SinavAdi=x.SinavAdi,
-                SalonAdi=x.SinavSalonu.SalonAdi,
-                
-
+                Aciklama=x.Aciklama
             });
         }
 
@@ -75,11 +64,12 @@ namespace DPU_Soft.BLL.General
             {
                 Id = x.Id,
                 Kod = x.Kod,
-                SinavAdi=x.SinavAdi,
                 DersAdi = x.Ders.DersAdi,
                 SubeAdi = x.Sube.SubeAdi,
                 DonemAdi = x.Donem.DonemAdi,
                 SinavTuru = x.SinavTuru,
+                ListeOlustu=x.ListeOlustu,
+                Aciklama=x.Aciklama,
                 Durum = x.durum
 
 

@@ -27,7 +27,7 @@
     </property>
     <property name="Item3" isnull="true" iskey="true">
       <property name="Name">colSinavAdi</property>
-      <property name="VisibleIndex">1</property>
+      <property name="VisibleIndex">4</property>
       <property name="Visible">true</property>
       <property name="Width">299</property>
       <property name="MinWidth">20</property>
@@ -51,9 +51,9 @@
     </property>
     <property name="Item6" isnull="true" iskey="true">
       <property name="Name">colAciklama</property>
-      <property name="VisibleIndex">4</property>
+      <property name="VisibleIndex">1</property>
       <property name="Visible">true</property>
-      <property name="Width">75</property>
+      <property name="Width">239</property>
       <property name="MinWidth">20</property>
       <property name="MaxWidth">0</property>
     </property>

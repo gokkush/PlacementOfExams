@@ -342,3 +342,4 @@ C:\PROJE\DPU_Soft_PlacementOfExams\Dpu_Soft.PlacementOfExams.UI.Yonetim\bin\Debu
 C:\PROJE\DPU_Soft_PlacementOfExams\Dpu_Soft.PlacementOfExams.UI.Yonetim\bin\Debug\ja\DevExpress.Diagram.v19.2.Core.resources.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\Dpu_Soft.PlacementOfExams.UI.Yonetim\bin\Debug\ru\DevExpress.Diagram.v19.2.Core.resources.dll
 C:\PROJE\DPU_Soft_PlacementOfExams\Dpu_Soft.PlacementOfExams.UI.Yonetim\bin\Debug\tr\DevExpress.Diagram.v19.2.Core.resources.dll
+C:\PROJE\DPU_Soft_PlacementOfExams\Dpu_Soft.PlacementOfExams.UI.Yonetim\bin\Debug\tr\DevExpress.DataAccess.v19.2.resources.dll

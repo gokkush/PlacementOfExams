@@ -363,6 +363,16 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ders {
+            get {
+                object obj = ResourceManager.GetObject("ders", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap design_16x16 {
             get {
                 object obj = ResourceManager.GetObject("design_16x16", resourceCulture);
@@ -753,6 +763,26 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gozetmen {
+            get {
+                object obj = ResourceManager.GetObject("gozetmen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hideproduct_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("hideproduct_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap insert_16x16 {
             get {
                 object obj = ResourceManager.GetObject("insert_16x16", resourceCulture);
@@ -843,9 +873,29 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap manu2 {
+            get {
+                object obj = ResourceManager.GetObject("manu2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap meeting_16x16 {
             get {
                 object obj = ResourceManager.GetObject("meeting_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap menu {
+            get {
+                object obj = ResourceManager.GetObject("menu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1043,6 +1093,16 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap salon {
+            get {
+                object obj = ResourceManager.GetObject("salon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap save_16x16 {
             get {
                 object obj = ResourceManager.GetObject("save_16x16", resourceCulture);
@@ -1076,6 +1136,26 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Properties {
         internal static System.Drawing.Bitmap saveall_32x32 {
             get {
                 object obj = ResourceManager.GetObject("saveall_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sifre {
+            get {
+                object obj = ResourceManager.GetObject("sifre", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sinav {
+            get {
+                object obj = ResourceManager.GetObject("sinav", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

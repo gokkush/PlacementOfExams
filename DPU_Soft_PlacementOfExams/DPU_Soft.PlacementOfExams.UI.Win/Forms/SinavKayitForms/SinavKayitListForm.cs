@@ -26,7 +26,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.SinavKayitForms
         }
         public SinavKayitListForm(params object[] prm):this()
         {
-            _filter = x => x.durum == !ListeDisiTutulacakKayitlar.Contains(x.Id) && x.durum == AktifKartlariGoster && x.DonemId==AnaForm.DonemId&&x.SubeId == AnaForm.DonemId&&AktifKartlariGoster;
+            _filter = x => x.durum == !ListeDisiTutulacakKayitlar.Contains(x.Id) && x.durum == AktifKartlariGoster && x.DonemId==AnaForm.DonemId&&x.SubeId == AnaForm.DonemId;
         }
 
         protected override void DegiskenleriDoldur()

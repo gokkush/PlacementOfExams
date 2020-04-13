@@ -22,11 +22,13 @@ namespace DPU_Soft.PlacementOfExams.Model.Dto
     [HighlightedClass]
     public class OgrenciBilgileriR
     {
-        public string SalonAdi { get; set; }
+        public long SinavSalonuId { get; set; }
         public string OgrenciAdi { get; set; }
         public string OgrenciBolum { get; set; }
         public string OgrenciDers { get; set; }
         public string OgrenciNo { get; set; }
+        public string SalonAdi { get; set; }
+        public int SiraNo { get; set; }
     }
 }
 

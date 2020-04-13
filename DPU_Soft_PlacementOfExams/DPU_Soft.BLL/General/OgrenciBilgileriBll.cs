@@ -24,6 +24,7 @@ namespace DPU_Soft.BLL.General
                 OgrenciDers=x.OgrenciDers,
                 SinavSalonuId = x.SinavSalonuId,
                 SinavKayitId = x.SinavKayitId,
+                SiraNo=x.SiraNo,
                 SalonAdi=x.SinavSalonu.SalonAdi,
                 durum = x.durum
             }).ToList();

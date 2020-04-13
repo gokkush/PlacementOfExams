@@ -120,8 +120,15 @@
   <data name="btnGozetmen.Caption" xml:space="preserve">
     <value>Gözetmenler</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnGozetmen.LargeWidth" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
   <data name="btnSinavSalon.Caption" xml:space="preserve">
     <value>Sınav Salonları</value>
+  </data>
+  <data name="btnSinavSalon.LargeWidth" type="System.Int32, mscorlib">
+    <value>70</value>
   </data>
   <data name="btnSubeSecim.Caption" xml:space="preserve">
     <value>barButtonItem1</value>
@@ -207,13 +214,26 @@
   <data name="btnSifreDegistir.Caption" xml:space="preserve">
     <value>Şifre Değiştir</value>
   </data>
+  <data name="btnSifreDegistir.LargeWidth" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
   <data name="btnDers.Caption" xml:space="preserve">
     <value>Dersler</value>
   </data>
-  <data name="btnDersYetki.Caption" xml:space="preserve">
-    <value>Ders Yetkileri</value>
+  <data name="btnDers.LargeWidth" type="System.Int32, mscorlib">
+    <value>70</value>
   </data>
   <data name="btnSinavKayitlari.Caption" xml:space="preserve">
     <value>Sınav Kayıtları</value>
+  </data>
+  <data name="btnSinavKayitlari.LargeWidth" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="rPTanimlar.Text" xml:space="preserve">
+    <value>Menü</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ribbonControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>893, 161</value>
   </data>
 </root>

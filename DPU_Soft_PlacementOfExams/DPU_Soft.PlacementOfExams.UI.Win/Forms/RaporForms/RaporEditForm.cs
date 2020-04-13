@@ -33,7 +33,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.RaporForms
 
             if (BaseIslemTuru != IslemTuru.EntityInsert) return;
             Id = BaseIslemTuru.IdOlustur(OldEntity);
-            txtKod.Text = ((RaporBll)Bll).YeniKodVer();
+            txtKod.Text = ((RaporBll)Bll).YeniKodVer(x=>x.RaporBolumTuru==_raporBolumTuru);
             txtRaporAdi.Focus();
         }
         protected override void NesneyiKontrollereBagla()
@@ -66,11 +66,11 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.RaporForms
 
         protected override bool EntityInsert()
         {
-            return ((RaporBll)Bll).Insert(CurrentEntity, x => x.Kod == CurrentEntity.Kod && x.RaporTuru == _raporTuru);
+            return ((RaporBll)Bll).Insert(CurrentEntity, x => x.Kod == CurrentEntity.Kod && x.RaporBolumTuru == _raporBolumTuru);
         }
         protected override bool EntityUpdate()
         {
-            return ((RaporBll)Bll).Update(OldEntity, CurrentEntity, x => x.Kod == CurrentEntity.Kod && x.RaporTuru == _raporTuru);
+            return ((RaporBll)Bll).Update(OldEntity, CurrentEntity, x => x.Kod == CurrentEntity.Kod && x.RaporBolumTuru == _raporBolumTuru);
         }
     }
 }
