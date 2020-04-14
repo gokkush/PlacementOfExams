@@ -134,7 +134,7 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.BaseForms
         {
             Tablo.Focus();
             ButtonGizleGoster();
-          //  SutunGizleGoster();
+            //  SutunGizleGoster();
             if (IsMdiChild || SeciliGelecekId == null) return;
             Tablo.RowFocus("Id",SeciliGelecekId);
         }

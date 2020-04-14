@@ -29,7 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaForm));
+            DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem1 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnGozetmen = new DevExpress.XtraBars.BarButtonItem();
             this.btnSinavSalon = new DevExpress.XtraBars.BarButtonItem();
@@ -44,23 +49,25 @@
             this.btnSifreDegistir = new DevExpress.XtraBars.BarButtonItem();
             this.btnDers = new DevExpress.XtraBars.BarButtonItem();
             this.btnSinavKayitlari = new DevExpress.XtraBars.BarButtonItem();
+            this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
+            this.skinPaletteRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem();
             this.rPTanimlar = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rPCAnaTanim = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ALC = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.imgArkaResim = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgArkaResim.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
             // 
-            resources.ApplyResources(this.ribbonControl, "ribbonControl");
             this.ribbonControl.ExpandCollapseItem.Id = 0;
-            this.ribbonControl.ExpandCollapseItem.ImageOptions.ImageIndex = ((int)(resources.GetObject("ribbonControl.ExpandCollapseItem.ImageOptions.ImageIndex")));
-            this.ribbonControl.ExpandCollapseItem.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("ribbonControl.ExpandCollapseItem.ImageOptions.LargeImageIndex")));
-            this.ribbonControl.ExpandCollapseItem.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonControl.ExpandCollapseItem.ImageOptions.SvgImage")));
-            this.ribbonControl.ExpandCollapseItem.SearchTags = resources.GetString("ribbonControl.ExpandCollapseItem.SearchTags");
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl.ExpandCollapseItem,
             this.ribbonControl.SearchEditItem,
@@ -76,54 +83,65 @@
             this.barStaticItem7,
             this.btnSifreDegistir,
             this.btnDers,
-            this.btnSinavKayitlari});
-            this.ribbonControl.MaxItemId = 16;
+            this.btnSinavKayitlari,
+            this.skinRibbonGalleryBarItem1,
+            this.skinPaletteRibbonGalleryBarItem1});
+            this.ribbonControl.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl.MaxItemId = 19;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rPTanimlar});
+            this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbonControl.ShowCategoryInCaption = false;
+            this.ribbonControl.ShowSearchItem = true;
+            this.ribbonControl.ShowToolbarCustomizeItem = false;
+            this.ribbonControl.Size = new System.Drawing.Size(893, 161);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
+            this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
             // btnGozetmen
             // 
-            resources.ApplyResources(this.btnGozetmen, "btnGozetmen");
+            this.btnGozetmen.Caption = "Gözetmenler";
             this.btnGozetmen.Id = 2;
             this.btnGozetmen.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.gozetmen;
-            this.btnGozetmen.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnGozetmen.ImageOptions.ImageIndex")));
             this.btnGozetmen.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.gozetmen;
-            this.btnGozetmen.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnGozetmen.ImageOptions.LargeImageIndex")));
-            this.btnGozetmen.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnGozetmen.ImageOptions.SvgImage")));
+            this.btnGozetmen.LargeWidth = 70;
             this.btnGozetmen.Name = "btnGozetmen";
             // 
             // btnSinavSalon
             // 
-            resources.ApplyResources(this.btnSinavSalon, "btnSinavSalon");
+            this.btnSinavSalon.Caption = "Sınav Salonları";
             this.btnSinavSalon.Id = 3;
             this.btnSinavSalon.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.salon;
-            this.btnSinavSalon.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnSinavSalon.ImageOptions.ImageIndex")));
             this.btnSinavSalon.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.salon;
-            this.btnSinavSalon.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnSinavSalon.ImageOptions.LargeImageIndex")));
-            this.btnSinavSalon.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSinavSalon.ImageOptions.SvgImage")));
+            this.btnSinavSalon.LargeWidth = 70;
             this.btnSinavSalon.Name = "btnSinavSalon";
             // 
             // btnSubeSecim
             // 
-            resources.ApplyResources(this.btnSubeSecim, "btnSubeSecim");
             this.btnSubeSecim.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.btnSubeSecim.Caption = "barButtonItem1";
             this.btnSubeSecim.Id = 4;
-            this.btnSubeSecim.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnSubeSecim.ImageOptions.ImageIndex")));
-            this.btnSubeSecim.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnSubeSecim.ImageOptions.LargeImageIndex")));
-            this.btnSubeSecim.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSubeSecim.ImageOptions.SvgImage")));
             this.btnSubeSecim.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D));
             this.btnSubeSecim.Name = "btnSubeSecim";
+            toolTipTitleItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            toolTipTitleItem1.Text = "(Ctrl+D)";
+            toolTipItem1.LeftIndent = 6;
+            toolTipItem1.Text = "Falükte Seçimi";
+            toolTipTitleItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            toolTipTitleItem2.LeftIndent = 6;
+            toolTipTitleItem2.Text = "Görevlendirildiğiniz Fakülte Seçimi Yapınız.";
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            superToolTip1.Items.Add(toolTipItem1);
+            superToolTip1.Items.Add(toolTipSeparatorItem1);
+            superToolTip1.Items.Add(toolTipTitleItem2);
+            this.btnSubeSecim.SuperTip = superToolTip1;
             // 
             // barStaticItem1
             // 
-            resources.ApplyResources(this.barStaticItem1, "barStaticItem1");
+            this.barStaticItem1.Caption = "Kullanıcı: ";
             this.barStaticItem1.Id = 5;
-            this.barStaticItem1.ImageOptions.ImageIndex = ((int)(resources.GetObject("barStaticItem1.ImageOptions.ImageIndex")));
-            this.barStaticItem1.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barStaticItem1.ImageOptions.LargeImageIndex")));
-            this.barStaticItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barStaticItem1.ImageOptions.SvgImage")));
-            this.barStaticItem1.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barStaticItem1.ItemAppearance.Normal.Font")));
+            this.barStaticItem1.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.barStaticItem1.ItemAppearance.Normal.ForeColor = System.Drawing.Color.DarkBlue;
             this.barStaticItem1.ItemAppearance.Normal.Options.UseFont = true;
             this.barStaticItem1.ItemAppearance.Normal.Options.UseForeColor = true;
@@ -131,22 +149,16 @@
             // 
             // barKullanici
             // 
-            resources.ApplyResources(this.barKullanici, "barKullanici");
+            this.barKullanici.Caption = "Kullanıcı";
             this.barKullanici.Id = 6;
-            this.barKullanici.ImageOptions.ImageIndex = ((int)(resources.GetObject("barKullanici.ImageOptions.ImageIndex")));
-            this.barKullanici.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barKullanici.ImageOptions.LargeImageIndex")));
-            this.barKullanici.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barKullanici.ImageOptions.SvgImage")));
             this.barKullanici.ItemAppearance.Normal.Options.UseFont = true;
             this.barKullanici.Name = "barKullanici";
             // 
             // barStaticItem3
             // 
-            resources.ApplyResources(this.barStaticItem3, "barStaticItem3");
+            this.barStaticItem3.Caption = "Fakülte:";
             this.barStaticItem3.Id = 7;
-            this.barStaticItem3.ImageOptions.ImageIndex = ((int)(resources.GetObject("barStaticItem3.ImageOptions.ImageIndex")));
-            this.barStaticItem3.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barStaticItem3.ImageOptions.LargeImageIndex")));
-            this.barStaticItem3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barStaticItem3.ImageOptions.SvgImage")));
-            this.barStaticItem3.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barStaticItem3.ItemAppearance.Normal.Font")));
+            this.barStaticItem3.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.barStaticItem3.ItemAppearance.Normal.ForeColor = System.Drawing.Color.DarkBlue;
             this.barStaticItem3.ItemAppearance.Normal.Options.UseFont = true;
             this.barStaticItem3.ItemAppearance.Normal.Options.UseForeColor = true;
@@ -154,21 +166,15 @@
             // 
             // barKurum
             // 
-            resources.ApplyResources(this.barKurum, "barKurum");
+            this.barKurum.Caption = "Kurum";
             this.barKurum.Id = 8;
-            this.barKurum.ImageOptions.ImageIndex = ((int)(resources.GetObject("barKurum.ImageOptions.ImageIndex")));
-            this.barKurum.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barKurum.ImageOptions.LargeImageIndex")));
-            this.barKurum.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barKurum.ImageOptions.SvgImage")));
             this.barKurum.Name = "barKurum";
             // 
             // barStaticItem5
             // 
-            resources.ApplyResources(this.barStaticItem5, "barStaticItem5");
+            this.barStaticItem5.Caption = "Dönem:";
             this.barStaticItem5.Id = 9;
-            this.barStaticItem5.ImageOptions.ImageIndex = ((int)(resources.GetObject("barStaticItem5.ImageOptions.ImageIndex")));
-            this.barStaticItem5.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barStaticItem5.ImageOptions.LargeImageIndex")));
-            this.barStaticItem5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barStaticItem5.ImageOptions.SvgImage")));
-            this.barStaticItem5.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barStaticItem5.ItemAppearance.Normal.Font")));
+            this.barStaticItem5.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.barStaticItem5.ItemAppearance.Normal.ForeColor = System.Drawing.Color.DarkBlue;
             this.barStaticItem5.ItemAppearance.Normal.Options.UseFont = true;
             this.barStaticItem5.ItemAppearance.Normal.Options.UseForeColor = true;
@@ -176,22 +182,16 @@
             // 
             // barDonem
             // 
-            resources.ApplyResources(this.barDonem, "barDonem");
+            this.barDonem.Caption = "Dönem";
             this.barDonem.Id = 10;
-            this.barDonem.ImageOptions.ImageIndex = ((int)(resources.GetObject("barDonem.ImageOptions.ImageIndex")));
-            this.barDonem.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barDonem.ImageOptions.LargeImageIndex")));
-            this.barDonem.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barDonem.ImageOptions.SvgImage")));
             this.barDonem.Name = "barDonem";
             // 
             // barStaticItem7
             // 
-            resources.ApplyResources(this.barStaticItem7, "barStaticItem7");
             this.barStaticItem7.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.barStaticItem7.Caption = "Şube:";
             this.barStaticItem7.Id = 11;
-            this.barStaticItem7.ImageOptions.ImageIndex = ((int)(resources.GetObject("barStaticItem7.ImageOptions.ImageIndex")));
-            this.barStaticItem7.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barStaticItem7.ImageOptions.LargeImageIndex")));
-            this.barStaticItem7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barStaticItem7.ImageOptions.SvgImage")));
-            this.barStaticItem7.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barStaticItem7.ItemAppearance.Normal.Font")));
+            this.barStaticItem7.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.barStaticItem7.ItemAppearance.Normal.ForeColor = System.Drawing.Color.DarkBlue;
             this.barStaticItem7.ItemAppearance.Normal.Options.UseFont = true;
             this.barStaticItem7.ItemAppearance.Normal.Options.UseForeColor = true;
@@ -199,58 +199,83 @@
             // 
             // btnSifreDegistir
             // 
-            resources.ApplyResources(this.btnSifreDegistir, "btnSifreDegistir");
+            this.btnSifreDegistir.Caption = "Şifre Değiştir";
             this.btnSifreDegistir.Id = 12;
             this.btnSifreDegistir.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.sifre;
-            this.btnSifreDegistir.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnSifreDegistir.ImageOptions.ImageIndex")));
             this.btnSifreDegistir.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.sifre;
-            this.btnSifreDegistir.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnSifreDegistir.ImageOptions.LargeImageIndex")));
-            this.btnSifreDegistir.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSifreDegistir.ImageOptions.SvgImage")));
+            this.btnSifreDegistir.LargeWidth = 70;
             this.btnSifreDegistir.Name = "btnSifreDegistir";
             // 
             // btnDers
             // 
-            resources.ApplyResources(this.btnDers, "btnDers");
+            this.btnDers.Caption = "Dersler";
             this.btnDers.Id = 13;
             this.btnDers.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.ders;
-            this.btnDers.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnDers.ImageOptions.ImageIndex")));
             this.btnDers.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.ders;
-            this.btnDers.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnDers.ImageOptions.LargeImageIndex")));
-            this.btnDers.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDers.ImageOptions.SvgImage")));
+            this.btnDers.LargeWidth = 70;
             this.btnDers.Name = "btnDers";
             // 
             // btnSinavKayitlari
             // 
-            resources.ApplyResources(this.btnSinavKayitlari, "btnSinavKayitlari");
+            this.btnSinavKayitlari.Caption = "Sınav Kayıtları";
             this.btnSinavKayitlari.Id = 15;
             this.btnSinavKayitlari.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.sinav;
-            this.btnSinavKayitlari.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnSinavKayitlari.ImageOptions.ImageIndex")));
             this.btnSinavKayitlari.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.sinav;
-            this.btnSinavKayitlari.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnSinavKayitlari.ImageOptions.LargeImageIndex")));
-            this.btnSinavKayitlari.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSinavKayitlari.ImageOptions.SvgImage")));
+            this.btnSinavKayitlari.LargeWidth = 70;
             this.btnSinavKayitlari.Name = "btnSinavKayitlari";
+            // 
+            // skinRibbonGalleryBarItem1
+            // 
+            this.skinRibbonGalleryBarItem1.Caption = "skinRibbonGalleryBarItem1";
+            this.skinRibbonGalleryBarItem1.Id = 17;
+            this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
+            // 
+            // skinPaletteRibbonGalleryBarItem1
+            // 
+            this.skinPaletteRibbonGalleryBarItem1.Caption = "skinPaletteRibbonGalleryBarItem1";
+            this.skinPaletteRibbonGalleryBarItem1.Id = 18;
+            this.skinPaletteRibbonGalleryBarItem1.Name = "skinPaletteRibbonGalleryBarItem1";
             // 
             // rPTanimlar
             // 
             this.rPTanimlar.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rPCAnaTanim});
+            this.rPCAnaTanim,
+            this.ribbonPageGroup2,
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup3});
             this.rPTanimlar.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.hideproduct_16x16;
             this.rPTanimlar.Name = "rPTanimlar";
-            resources.ApplyResources(this.rPTanimlar, "rPTanimlar");
+            this.rPTanimlar.Text = "Menü";
+            // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.ItemLinks.Add(this.skinRibbonGalleryBarItem1);
+            this.ribbonPageGroup3.ItemLinks.Add(this.skinPaletteRibbonGalleryBarItem1);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.Text = "Tema İşlemleri";
             // 
             // rPCAnaTanim
             // 
             this.rPCAnaTanim.ItemLinks.Add(this.btnGozetmen);
             this.rPCAnaTanim.ItemLinks.Add(this.btnSinavSalon);
             this.rPCAnaTanim.ItemLinks.Add(this.btnDers);
-            this.rPCAnaTanim.ItemLinks.Add(this.btnSinavKayitlari);
-            this.rPCAnaTanim.ItemLinks.Add(this.btnSifreDegistir);
             this.rPCAnaTanim.Name = "rPCAnaTanim";
-            resources.ApplyResources(this.rPCAnaTanim, "rPCAnaTanim");
+            this.rPCAnaTanim.Text = "Tanım İşlemleri";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnSifreDegistir);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Şifre İşlemleri";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.btnSinavKayitlari);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "Sınav İşlemleri";
             // 
             // ribbonStatusBar
             // 
-            resources.ApplyResources(this.ribbonStatusBar, "ribbonStatusBar");
             this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem7);
             this.ribbonStatusBar.ItemLinks.Add(this.btnSubeSecim);
             this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem1);
@@ -259,28 +284,53 @@
             this.ribbonStatusBar.ItemLinks.Add(this.barKurum);
             this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem5, true);
             this.ribbonStatusBar.ItemLinks.Add(this.barDonem);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 454);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbonControl;
+            this.ribbonStatusBar.Size = new System.Drawing.Size(893, 24);
             // 
             // xtraTabbedMdiManager
             // 
             this.xtraTabbedMdiManager.MdiParent = this;
             // 
+            // imgArkaResim
+            // 
+            this.imgArkaResim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.imgArkaResim.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.imgArkaResim.EditValue = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.arkafon2;
+            this.imgArkaResim.Location = new System.Drawing.Point(0, 161);
+            this.imgArkaResim.MenuManager = this.ribbonControl;
+            this.imgArkaResim.Name = "imgArkaResim";
+            this.imgArkaResim.Properties.AllowFocused = false;
+            this.imgArkaResim.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.imgArkaResim.Properties.Appearance.Options.UseBackColor = true;
+            this.imgArkaResim.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Transparent;
+            this.imgArkaResim.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.imgArkaResim.Properties.NullText = " ";
+            this.imgArkaResim.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.imgArkaResim.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.imgArkaResim.Size = new System.Drawing.Size(893, 317);
+            this.imgArkaResim.TabIndex = 3;
+            // 
             // AnaForm
             // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(893, 478);
             this.Controls.Add(this.ribbonStatusBar);
+            this.Controls.Add(this.imgArkaResim);
             this.Controls.Add(this.ribbonControl);
             this.IconOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Win.Properties.Resources.placement_icon;
             this.IsMdiContainer = true;
             this.Name = "AnaForm";
             this.Ribbon = this.ribbonControl;
             this.StatusBar = this.ribbonStatusBar;
+            this.Text = "PlacementOfExams";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AnaForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgArkaResim.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,5 +356,11 @@
         private DevExpress.XtraBars.BarButtonItem btnSifreDegistir;
         private DevExpress.XtraBars.BarButtonItem btnDers;
         private DevExpress.XtraBars.BarButtonItem btnSinavKayitlari;
+        private DevExpress.XtraEditors.PictureEdit imgArkaResim;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
+        private DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem skinPaletteRibbonGalleryBarItem1;
     }
 }

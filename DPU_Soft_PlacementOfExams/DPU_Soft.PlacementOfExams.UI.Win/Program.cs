@@ -8,6 +8,8 @@ using System.Windows.Forms;
 using System.Globalization;
 using DevExpress.Skins;
 using DevExpress.LookAndFeel;
+using System.Configuration;
+using DevExpress.UserSkins;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win
 {
@@ -25,8 +27,9 @@ namespace DPU_Soft.PlacementOfExams.UI.Win
             Thread.CurrentThread.CurrentCulture = new CultureInfo("tr-TR");
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("tr-TR");
 
-            SkinManager.EnableFormSkins();
-            UserLookAndFeel.Default.SetSkinStyle("Office 2010 Blue");
+            //SkinManager.EnableFormSkins();
+            BonusSkins.Register();
+            UserLookAndFeel.Default.SetSkinStyle(ConfigurationManager.AppSettings["Skin"], ConfigurationManager.AppSettings["Palette"]);
             Application.Run(new GirisForm());
         }
     }

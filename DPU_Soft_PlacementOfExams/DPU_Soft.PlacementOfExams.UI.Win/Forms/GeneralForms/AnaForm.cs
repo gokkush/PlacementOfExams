@@ -16,6 +16,9 @@ using DPU_Soft.BLL.General;
 using DPU_Soft.BLL.Base.Interfaces;
 using DPU_Soft.PlacementOfExams.Model.Dto;
 using System.Linq;
+using DevExpress.XtraTabbedMdi;
+using DevExpress.XtraBars.Ribbon.Gallery;
+using DPU_Soft.PlacementOfExams.UI.Win.Functions;
 
 namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
 {
@@ -30,6 +33,8 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
         public static string KullaniciAdi;
         public static List<long> YetkiliOlunanSubeler = new List<long>() ;
         public static DonemEntity Donem;
+        public static bool ResimGizleGoster;
+        public static PictureBox Pictrure=new PictureBox();
 
         public AnaForm()
         {
@@ -44,15 +49,68 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
             {
                 switch (item)
                 {
+                    case SkinRibbonGalleryBarItem btn:
+                        btn.GalleryItemClick += GaleryItem_GalleryItemClick;
+                        break;
+                    case SkinPaletteRibbonGalleryBarItem btn:
+                        btn.GalleryItemClick += GaleryItem_GalleryItemClick;
+                        break;
                     case BarButtonItem btn:
                         btn.ItemClick += Butonlar_ItemClick;
                         break;
+                  
                 }
 
 
             }
+            foreach (Control control in Controls)
+            {
+                control.KeyDown += Control_KeyDown;
+            }
+            KeyDown += Control_KeyDown;
             FormClosing += AnaForm_FormClosing;
+            xtraTabbedMdiManager.PageAdded += XtraTabbedMdiManager_PageAdded;
+            xtraTabbedMdiManager.PageRemoved += XtraTabbedMdiManager_PageRemoved;
         }
+
+
+
+        private void GaleryItem_GalleryItemClick(object sender, DevExpress.XtraBars.Ribbon.GalleryItemClickEventArgs e)
+        {
+            var galery = sender as InRibbonGallery;
+            if (galery.OwnerItem.GetType() == typeof(SkinRibbonGalleryBarItem))
+                GeneralFunctions.AppSettingsWrite("Skin",e.Item.Caption);
+            else if (galery.OwnerItem.GetType() == typeof(SkinPaletteRibbonGalleryBarItem))
+                GeneralFunctions.AppSettingsWrite("Palette",e.Item.Caption);
+        }
+
+        private void Control_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Escape:
+                    Close();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void XtraTabbedMdiManager_PageAdded(object sender, DevExpress.XtraTabbedMdi.MdiTabPageEventArgs e)
+        {
+            imgArkaResim.Visible = false;
+        }
+
+        private void XtraTabbedMdiManager_PageRemoved(object sender, DevExpress.XtraTabbedMdi.MdiTabPageEventArgs e)
+        {
+            if (((XtraTabbedMdiManager)sender).Pages.Count==0)
+            {
+                imgArkaResim.Visible = true;
+            }
+        }
+
+
+
         private void SubeDonemSecimi(bool subeSecimButonunaBasildi)
         {
             ShowEditforms<SubeDonemSecimiEditForm>.ShowDialogEditForm(null,KullaniciId,subeSecimButonunaBasildi,SubeId,DonemId);
@@ -62,7 +120,12 @@ namespace DPU_Soft.PlacementOfExams.UI.Win.Forms.GeneralForms
 
         private void AnaForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            if (Messages.HayirSeciliEvetHayir("Programdan Çıkmak İstiyor musunuz?", "Çıkış Onayı") == DialogResult.Yes)
+            {
+                Application.ExitThread();
+            }
+            else
+                e.Cancel = true;
 
         }
 
