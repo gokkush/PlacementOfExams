@@ -211,10 +211,10 @@
             this.subeTablo.OptionsView.ShowColumnHeaders = false;
             this.subeTablo.OptionsView.ShowGroupPanel = false;
             this.subeTablo.OptionsView.ShowViewCaption = true;
-            this.subeTablo.StatusBarAciklama = "Kullanıcının Yetkili Olduğu Fakülteler";
+            this.subeTablo.StatusBarAciklama = "Kullanıcının Yetkili Olduğu Bölümler";
             this.subeTablo.StatusBarKisayol = null;
             this.subeTablo.StatusBarKisayolAciklama = null;
-            this.subeTablo.ViewCaption = "Fakülte Kartları";
+            this.subeTablo.ViewCaption = "Bölüm Kartları";
             // 
             // colSubeId
             // 
@@ -229,7 +229,7 @@
             // 
             // colSubeAdi
             // 
-            this.colSubeAdi.Caption = "Fakülte Adı";
+            this.colSubeAdi.Caption = "Bölüm Adı";
             this.colSubeAdi.FieldName = "SubeAdi";
             this.colSubeAdi.Name = "colSubeAdi";
             this.colSubeAdi.OptionsColumn.AllowEdit = false;

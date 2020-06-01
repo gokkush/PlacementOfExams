@@ -106,6 +106,8 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Kod", "Kod", 30, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("KurumAdi", "Fakülte Adı", 80, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.txtFakulte.Properties.HeaderClickMode = DevExpress.XtraEditors.Controls.HeaderClickMode.AutoSearch;
+            this.txtFakulte.Properties.NullText = "[Kayıt Bulunamadı!]";
+            this.txtFakulte.Properties.NullValuePrompt = "Kayıt Bulunamadı";
             this.txtFakulte.Properties.ShowFooter = false;
             this.txtFakulte.Size = new System.Drawing.Size(319, 20);
             this.txtFakulte.StatusBarAciklama = null;

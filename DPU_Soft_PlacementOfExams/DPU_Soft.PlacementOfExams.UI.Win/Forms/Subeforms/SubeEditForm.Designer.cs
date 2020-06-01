@@ -327,7 +327,7 @@
             this.layoutControlItem2.OptionsTableLayoutItem.ColumnSpan = 4;
             this.layoutControlItem2.OptionsTableLayoutItem.RowIndex = 1;
             this.layoutControlItem2.Size = new System.Drawing.Size(338, 24);
-            this.layoutControlItem2.Text = "Şube Adı:";
+            this.layoutControlItem2.Text = "Bölüm Adı:";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(87, 13);
             // 
             // layoutControlItem4
@@ -418,7 +418,7 @@
             this.IconOptions.ShowIcon = false;
             this.MinimumSize = new System.Drawing.Size(450, 340);
             this.Name = "SubeEditForm";
-            this.Text = "Şube Kartı";
+            this.Text = "Bölüm Kartı";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.dpuDataLayoutControl, 0);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();

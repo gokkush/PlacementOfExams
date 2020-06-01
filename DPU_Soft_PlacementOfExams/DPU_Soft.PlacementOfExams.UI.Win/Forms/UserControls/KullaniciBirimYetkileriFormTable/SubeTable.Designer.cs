@@ -40,10 +40,10 @@
             // grid
             // 
             this.grid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grid.Location = new System.Drawing.Point(0, 20);
+            this.grid.Location = new System.Drawing.Point(0, 0);
             this.grid.MainView = this.tablo;
             this.grid.Name = "grid";
-            this.grid.Size = new System.Drawing.Size(495, 205);
+            this.grid.Size = new System.Drawing.Size(495, 225);
             this.grid.TabIndex = 5;
             this.grid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.tablo});
@@ -78,7 +78,7 @@
             this.tablo.StatusBarAciklama = "Kullanıcıya Yetki Verilen Fakülteler";
             this.tablo.StatusBarKisayol = null;
             this.tablo.StatusBarKisayolAciklama = "Şube Ekle";
-            this.tablo.ViewCaption = "Fakülte Kayıtları";
+            this.tablo.ViewCaption = "Bölüm Kayıtları";
             // 
             // colKod
             // 

@@ -185,6 +185,7 @@
             this.btnYeni.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.addfile_16x16;
             this.btnYeni.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.addfile_32x32;
             this.btnYeni.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.Insert);
+            this.btnYeni.LargeWidth = 60;
             this.btnYeni.Name = "btnYeni";
             toolTipTitleItem1.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.comment_16x16;
             toolTipTitleItem1.Text = "(Insert)";
@@ -206,6 +207,7 @@
             this.btnDuzelt.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.edit_16x16;
             this.btnDuzelt.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.edit_32x32;
             this.btnDuzelt.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F2);
+            this.btnDuzelt.LargeWidth = 60;
             this.btnDuzelt.Name = "btnDuzelt";
             toolTipTitleItem3.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.comment_16x16;
             toolTipTitleItem3.Text = "(F2)";
@@ -226,6 +228,7 @@
             this.btnSil.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.deletelist_16x16;
             this.btnSil.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.deletelist_32x32;
             this.btnSil.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.Delete);
+            this.btnSil.LargeWidth = 60;
             this.btnSil.Name = "btnSil";
             toolTipTitleItem5.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.comment_16x16;
             toolTipTitleItem5.Text = "(Delete)";
@@ -246,6 +249,7 @@
             this.btnKurumBilgileri.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.home_16x16;
             this.btnKurumBilgileri.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.home_32x32;
             this.btnKurumBilgileri.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F4);
+            this.btnKurumBilgileri.LargeWidth = 60;
             this.btnKurumBilgileri.Name = "btnKurumBilgileri";
             toolTipTitleItem7.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.comment_16x16;
             toolTipTitleItem7.Text = "(F4)";
@@ -262,11 +266,12 @@
             // 
             // btnSubekartlari
             // 
-            this.btnSubekartlari.Caption = "Fakülte Bilgileri";
+            this.btnSubekartlari.Caption = "Bölüm Bilgileri";
             this.btnSubekartlari.Id = 5;
             this.btnSubekartlari.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.documentmap_16x16;
             this.btnSubekartlari.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.documentmap_32x32;
             this.btnSubekartlari.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F5);
+            this.btnSubekartlari.LargeWidth = 60;
             this.btnSubekartlari.Name = "btnSubekartlari";
             toolTipTitleItem9.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.comment_16x16;
             toolTipTitleItem9.Text = "(F5)";
@@ -287,6 +292,7 @@
             this.btnDonemKartlari.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.monthview_16x16;
             this.btnDonemKartlari.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.monthview_32x32;
             this.btnDonemKartlari.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F6);
+            this.btnDonemKartlari.LargeWidth = 60;
             this.btnDonemKartlari.Name = "btnDonemKartlari";
             toolTipTitleItem11.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.comment_16x16;
             toolTipTitleItem11.Text = "(F6)";
@@ -308,6 +314,7 @@
             this.btnKullaniciKartlari.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.usergroup_16x16;
             this.btnKullaniciKartlari.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.usergroup_32x32;
             this.btnKullaniciKartlari.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F7);
+            this.btnKullaniciKartlari.LargeWidth = 60;
             this.btnKullaniciKartlari.Name = "btnKullaniciKartlari";
             toolTipTitleItem13.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.comment_16x16;
             toolTipTitleItem13.Text = "(F7)";
@@ -329,6 +336,7 @@
             this.btnKullaniciYetkileri.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.newitem_16x16;
             this.btnKullaniciYetkileri.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.newitem_32x32;
             this.btnKullaniciYetkileri.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F8);
+            this.btnKullaniciYetkileri.LargeWidth = 60;
             this.btnKullaniciYetkileri.Name = "btnKullaniciYetkileri";
             toolTipTitleItem15.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.comment_16x16;
             toolTipTitleItem15.Text = "(F8)";
@@ -350,6 +358,7 @@
             this.btnKullaniciRolleri.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.newgroup_16x16;
             this.btnKullaniciRolleri.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.newgroup_32x32;
             this.btnKullaniciRolleri.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F9);
+            this.btnKullaniciRolleri.LargeWidth = 60;
             this.btnKullaniciRolleri.Name = "btnKullaniciRolleri";
             toolTipTitleItem17.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.comment_16x16;
             toolTipTitleItem17.Text = "(F9)";
@@ -371,6 +380,7 @@
             this.btnEmailParametreleri.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.emailtemplate_16x16;
             this.btnEmailParametreleri.ImageOptions.LargeImage = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.emailtemplate_32x32;
             this.btnEmailParametreleri.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F11);
+            this.btnEmailParametreleri.LargeWidth = 80;
             this.btnEmailParametreleri.Name = "btnEmailParametreleri";
             toolTipTitleItem19.ImageOptions.Image = global::DPU_Soft.PlacementOfExams.UI.Yonetim.Properties.Resources.comment_16x16;
             toolTipTitleItem19.Text = "(F11)";
@@ -564,7 +574,6 @@
             // 
             // ribbonPageGroup2
             // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.btnKurumBilgileri);
             this.ribbonPageGroup2.ItemLinks.Add(this.btnSubekartlari);
             this.ribbonPageGroup2.ItemLinks.Add(this.btnDonemKartlari);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";

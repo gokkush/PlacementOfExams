@@ -60,6 +60,11 @@
             this.btnGonder.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGonder.ImageOptions.Image")));
             this.btnGonder.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnGonder.ImageOptions.LargeImage")));
             // 
+            // btnYeniRapor
+            // 
+            this.btnYeniRapor.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniRapor.ImageOptions.Image")));
+            this.btnYeniRapor.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnYeniRapor.ImageOptions.LargeImage")));
+            // 
             // longNavigator
             // 
             this.longNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -116,7 +121,7 @@
             this.tablo.StatusBarAciklama = null;
             this.tablo.StatusBarKisayol = null;
             this.tablo.StatusBarKisayolAciklama = null;
-            this.tablo.ViewCaption = "ŞUBE KARTLARI";
+            this.tablo.ViewCaption = "BÖLÜM KARTLARI";
             // 
             // colId
             // 
@@ -146,7 +151,7 @@
             // 
             // colSubeAdi
             // 
-            this.colSubeAdi.Caption = "Şube Adı";
+            this.colSubeAdi.Caption = "Bölüm Adı";
             this.colSubeAdi.FieldName = "SubeAdi";
             this.colSubeAdi.Name = "colSubeAdi";
             this.colSubeAdi.OptionsColumn.AllowEdit = false;
@@ -205,7 +210,7 @@
             this.Controls.Add(this.longNavigator);
             this.IconOptions.ShowIcon = false;
             this.Name = "SubeListForm";
-            this.Text = "Şube Kartları";
+            this.Text = "Bölüm Kartları";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.longNavigator, 0);
             this.Controls.SetChildIndex(this.grid, 0);

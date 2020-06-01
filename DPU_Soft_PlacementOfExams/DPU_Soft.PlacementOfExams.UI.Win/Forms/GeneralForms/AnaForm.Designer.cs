@@ -52,10 +52,10 @@
             this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.skinPaletteRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem();
             this.rPTanimlar = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rPCAnaTanim = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ALC = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
@@ -120,7 +120,7 @@
             // btnSubeSecim
             // 
             this.btnSubeSecim.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.btnSubeSecim.Caption = "barButtonItem1";
+            this.btnSubeSecim.Caption = "Bölüm Bilgisi Bekleniyor.";
             this.btnSubeSecim.Id = 4;
             this.btnSubeSecim.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D));
             this.btnSubeSecim.Name = "btnSubeSecim";
@@ -189,7 +189,7 @@
             // barStaticItem7
             // 
             this.barStaticItem7.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.barStaticItem7.Caption = "Şube:";
+            this.barStaticItem7.Caption = "Bölüm:";
             this.barStaticItem7.Id = 11;
             this.barStaticItem7.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.barStaticItem7.ItemAppearance.Normal.ForeColor = System.Drawing.Color.DarkBlue;
@@ -247,13 +247,6 @@
             this.rPTanimlar.Name = "rPTanimlar";
             this.rPTanimlar.Text = "Menü";
             // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.skinRibbonGalleryBarItem1);
-            this.ribbonPageGroup3.ItemLinks.Add(this.skinPaletteRibbonGalleryBarItem1);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.Text = "Tema İşlemleri";
-            // 
             // rPCAnaTanim
             // 
             this.rPCAnaTanim.ItemLinks.Add(this.btnGozetmen);
@@ -262,17 +255,24 @@
             this.rPCAnaTanim.Name = "rPCAnaTanim";
             this.rPCAnaTanim.Text = "Tanım İşlemleri";
             // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.btnSinavKayitlari);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "Sınav İşlemleri";
+            // 
             // ribbonPageGroup1
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.btnSifreDegistir);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "Şifre İşlemleri";
             // 
-            // ribbonPageGroup2
+            // ribbonPageGroup3
             // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.btnSinavKayitlari);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "Sınav İşlemleri";
+            this.ribbonPageGroup3.ItemLinks.Add(this.skinRibbonGalleryBarItem1);
+            this.ribbonPageGroup3.ItemLinks.Add(this.skinPaletteRibbonGalleryBarItem1);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.Text = "Tema İşlemleri";
             // 
             // ribbonStatusBar
             // 
